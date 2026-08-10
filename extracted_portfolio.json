@@ -1,0 +1,677 @@
+[
+  {
+    "slide_num": 20,
+    "name": "All Public Areas",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "LUCKNOW, UTTAR PRADESH",
+    "scope": ", All Public Areas, , Rooms, LUCKNOW, UTTAR PRADESH, PALACE",
+    "image": "assets/images/portfolio/project_20.jpg"
+  },
+  {
+    "slide_num": 21,
+    "name": "AYODHYA, UTTAR PRADESH",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "AYODHYA, UTTAR PRADESH",
+    "scope": "AYODHYA, UTTAR PRADESH, AYODHYAM, , All Public Areas, , Rooms",
+    "image": "assets/images/portfolio/project_21.jpg"
+  },
+  {
+    "slide_num": 22,
+    "name": "All Public Areas",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "RAICHAK, WEST BENGAL",
+    "scope": ", All Public Areas, , Restaurants, , Presidential Suites, RAICHAK, WEST BENGAL, GANGA KUTIR",
+    "image": "assets/images/portfolio/project_22.jpg"
+  },
+  {
+    "slide_num": 23,
+    "name": "150 Rooms + 10 Villas",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "RAICHAK, WEST BENGAL",
+    "scope": ", Gym, , 150 Rooms + 10 Villas, , Corridor, , Lift Lobby, RAICHAK, WEST BENGAL, GANGA KUTIR",
+    "image": "assets/images/portfolio/project_23.jpg"
+  },
+  {
+    "slide_num": 24,
+    "name": "Guest Rooms",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "PURI, ODISHA",
+    "scope": ", Guest Rooms, , Deluxe Suites, , Family Suites, , Presidential Suites, , Pre- Function and, , Ball Room, , All Day Dining, RESORT & SPA, PURI, ODISHA",
+    "image": "assets/images/portfolio/project_24.jpg"
+  },
+  {
+    "slide_num": 25,
+    "name": "Speciality Restaurant",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "PURI, ODISHA",
+    "scope": ", Speciality Restaurant, , Spa & Fitness Centre, , Reception, RESORT & SPA, PURI, ODISHA",
+    "image": "assets/images/portfolio/project_25.jpg"
+  },
+  {
+    "slide_num": 26,
+    "name": "Guest rooms",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "JAISALMER, RAJASTHAN",
+    "scope": ", Guest rooms, , Executive suites, , All day dining, , Veranda, JAISALMER, RAJASTHAN, GORBANDH PALACE",
+    "image": "assets/images/portfolio/project_26.jpg"
+  },
+  {
+    "slide_num": 27,
+    "name": "Library/ Bar Lounge",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "JAISALMER, RAJASTHAN",
+    "scope": ", Library/ Bar Lounge, , Speciality Restaurant, , Spa, , Gym, , Conference Hall, GORBANDH PALACE, JAISALMER, RAJASTHAN",
+    "image": "assets/images/portfolio/project_27.jpg"
+  },
+  {
+    "slide_num": 28,
+    "name": "173 King Rooms",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "JAIPUR, RAJASTHAN",
+    "scope": ", 173 King Rooms, , 52 Twin Rooms, , 19 Suites, , Presidential Suite, , Reception, , All Day Dining, AMER, JAIPUR, RAJASTHAN",
+    "image": "assets/images/portfolio/project_28.jpg"
+  },
+  {
+    "slide_num": 29,
+    "name": "Spa & Fitness Centre",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "JAIPUR, RAJASTHAN",
+    "scope": ", Spa & Fitness Centre, , The Executive Club, , Specialty Restaurant, , Board Meeting Room, , Bar Lounge, , Ballroom & Pre Function, AMER, JAIPUR, RAJASTHAN",
+    "image": "assets/images/portfolio/project_29.jpg"
+  },
+  {
+    "slide_num": 30,
+    "name": "Ballrooms & Pre",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "VIKHROLI, MUMBAI",
+    "scope": ", Ballrooms & Pre, Function, , Lobby & Circulation, , Guest Lift Lobby, , Public Toilets, , Conference Area, , Reception Lobby, THE TREES, VIKHROLI, MUMBAI",
+    "image": "assets/images/portfolio/project_30.jpg"
+  },
+  {
+    "slide_num": 31,
+    "name": "Changing Room",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "VIKHROLI, MUMBAI",
+    "scope": ", Changing Room, , Gym & Yoga, , Reception & Retail, , Relaxation Treatment Room, , Spa Circulation, , Lift Lobby, , Speciality Restaurant, THE TREES, VIKHROLI, MUMBAI",
+    "image": "assets/images/portfolio/project_31.jpg"
+  },
+  {
+    "slide_num": 32,
+    "name": "TAJ MAHAL PALACE, MUMBAI",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "TAJ MAHAL PALACE, MUMBAI",
+    "scope": "TAJ MAHAL PALACE, MUMBAI, , Furniture, , Waiting Area, , Dining, , Conference Room, , Lift Lobby",
+    "image": "assets/images/portfolio/project_32.jpg"
+  },
+  {
+    "slide_num": 33,
+    "name": "TAJ MAHAL PALACE, MUMBAI",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "TAJ MAHAL PALACE, MUMBAI",
+    "scope": "TAJ MAHAL PALACE, MUMBAI",
+    "image": "assets/images/portfolio/project_33.jpg"
+  },
+  {
+    "slide_num": 34,
+    "name": "TAJ MAHAL PALACE, MUMBAI",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "TAJ MAHAL PALACE, MUMBAI",
+    "scope": "TAJ MAHAL PALACE, MUMBAI",
+    "image": "assets/images/portfolio/project_34.jpg"
+  },
+  {
+    "slide_num": 35,
+    "name": "CIADADE DE GOA",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "Pan India",
+    "scope": "CIADADE DE GOA, , All Public Areas, , Restaurants, , Grand Ball room & pre function, , BOH areas, , GM office",
+    "image": "assets/images/portfolio/project_35.jpg"
+  },
+  {
+    "slide_num": 36,
+    "name": "BHUBANESHWAR, ODISHA",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "Pan India",
+    "scope": "BHUBANESHWAR, ODISHA, , 136 Guest Rooms, , Speciality Restaurants, , All Public Areas, , Grand Ball room & pre function",
+    "image": "assets/images/portfolio/project_36.jpg"
+  },
+  {
+    "slide_num": 37,
+    "name": "JAMSHEDPUR, JHARKHAND",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "JAMSHEDPUR, JHARKHAND",
+    "scope": "JAMSHEDPUR, JHARKHAND, , Guest Rooms, , Premium Suites, , Owner Suites, , Ball Room and Pre- Function, , Presidential Suites, , Lobby Reception, , All Day Dining",
+    "image": "assets/images/portfolio/project_37.jpg"
+  },
+  {
+    "slide_num": 38,
+    "name": "AWARDED",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "CHENNAI, TAMIL NADU",
+    "scope": "AWARDED, HICSA - Hotel of the year 2019, CHENNAI, TAMIL NADU, , 158 Keys, , Bar Area, , Dining, , Common Areas, , Pool Area, , Gym, , Market, , Conference Room",
+    "image": "assets/images/portfolio/project_38.jpg"
+  },
+  {
+    "slide_num": 39,
+    "name": "HYDERABAD, TELANGANA",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "HYDERABAD, TELANGANA",
+    "scope": "HYDERABAD, TELANGANA, , 152 Keys, , Common Area",
+    "image": "assets/images/portfolio/project_39.jpg"
+  },
+  {
+    "slide_num": 40,
+    "name": "Lobby",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "RANCHI, JHARKHAND",
+    "scope": ", Lobby, , Common Areas, , Reception, , Rooms, RANCHI, JHARKHAND",
+    "image": "assets/images/portfolio/project_40.jpg"
+  },
+  {
+    "slide_num": 41,
+    "name": "330 Keys",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "BANGALORE, KARNATAKA",
+    "scope": ", 330 Keys, , Lobby, , Common Areas, BANGALORE, KARNATAKA",
+    "image": "assets/images/portfolio/project_41.jpg"
+  },
+  {
+    "slide_num": 42,
+    "name": "Lobby",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "PUNE, MAHARASHTRA",
+    "scope": ", Lobby, , Banquet Area, , Bar, PUNE, MAHARASHTRA",
+    "image": "assets/images/portfolio/project_42.jpg"
+  },
+  {
+    "slide_num": 43,
+    "name": "Reception",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "PUNE, MAHARASHTRA",
+    "scope": ", Reception, , Restaurant, , Common Areas, PUNE, MAHARASHTRA",
+    "image": "assets/images/portfolio/project_43.jpg"
+  },
+  {
+    "slide_num": 44,
+    "name": "156 Keys",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "Pan India",
+    "scope": ", 156 Keys, , Waiting Area, , Dining, , Conference Room, GURUGRAM, HARYANA",
+    "image": "assets/images/portfolio/project_44.jpg"
+  },
+  {
+    "slide_num": 45,
+    "name": "300 Keys",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "PUNE, MAHARASHTRA",
+    "scope": ", 300 Keys, , All Day Dining,, , Specialty Restaurant, , Common  Areas, PUNE, MAHARASHTRA",
+    "image": "assets/images/portfolio/project_45.jpg"
+  },
+  {
+    "slide_num": 46,
+    "name": "JIO WORLD DRIVE, BKC",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "Pan India",
+    "scope": "JIO WORLD DRIVE, BKC",
+    "image": "assets/images/portfolio/project_46.jpg"
+  },
+  {
+    "slide_num": 47,
+    "name": "MUMBAI (14,000 SQ.FT)",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "MUMBAI (14,000 SQ.FT)",
+    "scope": "MUMBAI (14,000 SQ.FT), Members only Club House",
+    "image": "assets/images/portfolio/project_47.jpg"
+  },
+  {
+    "slide_num": 48,
+    "name": "Members only Club",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "HYDERABAD",
+    "scope": "Members only Club, HYDERABAD",
+    "image": "assets/images/portfolio/project_48.jpg"
+  },
+  {
+    "slide_num": 49,
+    "name": "Members only Club",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "HYDERABAD",
+    "scope": "Members only Club, HYDERABAD",
+    "image": "assets/images/portfolio/project_49.jpg"
+  },
+  {
+    "slide_num": 50,
+    "name": "CORPORATE CLIENTELE",
+    "cat": "banking",
+    "cat_name": "Commercial/ Banking Sector",
+    "location": "Pan India",
+    "scope": "CORPORATE CLIENTELE, BANKING, IT SECTOR, FINANCE OFFICES, MEDIA, OTHERS",
+    "image": "assets/images/portfolio/project_50.jpg"
+  },
+  {
+    "slide_num": 51,
+    "name": "PRESENCE IN",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "MUMBAI",
+    "scope": "PRESENCE IN, CORPORATE DIVISION, PAN INDIA, GURUGRAM, NOIDA, DELHI, AHMEDABAD, LUCKNOW, BHUBANESWAR, MUMBAI, PUNE, HYDERABAD, GOA, BANGALORE, CHENNAI, COIMBATORE",
+    "image": "assets/images/portfolio/project_51.jpg"
+  },
+  {
+    "slide_num": 52,
+    "name": "PALAVA",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Pan India",
+    "scope": "PALAVA, 1,50,000 SQ. FT",
+    "image": "assets/images/portfolio/project_52.jpg"
+  },
+  {
+    "slide_num": 53,
+    "name": "RESIDENTIAL TRAINING CENTRE",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Pan India",
+    "scope": "RESIDENTIAL TRAINING CENTRE",
+    "image": "assets/images/portfolio/project_53.jpg"
+  },
+  {
+    "slide_num": 54,
+    "name": "AHMEDABAD HEAD QUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "AHMEDABAD HEAD QUARTERS",
+    "scope": "AHMEDABAD HEAD QUARTERS, 95000 SQ. FT",
+    "image": "assets/images/portfolio/project_54.jpg"
+  },
+  {
+    "slide_num": 55,
+    "name": "MUMBAI HEAD QUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "MUMBAI HEAD QUARTERS",
+    "scope": "MUMBAI HEAD QUARTERS, 75000 SQ. FT",
+    "image": "assets/images/portfolio/project_55.jpg"
+  },
+  {
+    "slide_num": 56,
+    "name": "Pune",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Mumbai",
+    "scope": ", Pune, , Gurgaon, , Bangalore, , Delhi, , Chandigarh, , Mumbai, PAN INDIA, 10,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_56.jpg"
+  },
+  {
+    "slide_num": 57,
+    "name": "Mumbai",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Mumbai",
+    "scope": ", Mumbai, , Pune, PAN INDIA, 4,50,000 SQ. FT",
+    "image": "assets/images/portfolio/project_57.jpg"
+  },
+  {
+    "slide_num": 58,
+    "name": "Mumbai",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Mumbai",
+    "scope": ", Mumbai, , Bangalore, , Chennai, PAN INDIA, 35,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_58.jpg"
+  },
+  {
+    "slide_num": 59,
+    "name": "Airoli",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Pan India",
+    "scope": ", Airoli, , Turbhe, , Nagpur, PAN INDIA, 35,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_59.jpg"
+  },
+  {
+    "slide_num": 60,
+    "name": "Surat",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Jaipur",
+    "scope": ", Surat, , Jaipur, PAN INDIA, 35,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_60.jpg"
+  },
+  {
+    "slide_num": 61,
+    "name": "Bhubaneswar",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Kolkata",
+    "scope": ", Bhubaneswar, , Kolkata, PAN INDIA, 35,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_61.jpg"
+  },
+  {
+    "slide_num": 62,
+    "name": "Hyderabad",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Mumbai",
+    "scope": ", Hyderabad, , Mumbai, , Kolkata, , Gujarat, PAN INDIA, 10,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_62.jpg"
+  },
+  {
+    "slide_num": 63,
+    "name": "Mumbai",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Mumbai",
+    "scope": ", Mumbai, , Chennai, , Kolkata, , Delhi, , Ahmedabad, PAN INDIA, 15,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_63.jpg"
+  },
+  {
+    "slide_num": 64,
+    "name": "MUMBAI HEADQUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "MUMBAI HEADQUARTERS",
+    "scope": "MUMBAI HEADQUARTERS",
+    "image": "assets/images/portfolio/project_64.jpg"
+  },
+  {
+    "slide_num": 65,
+    "name": "MUMBAI HEADQUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "MUMBAI HEADQUARTERS",
+    "scope": "MUMBAI HEADQUARTERS",
+    "image": "assets/images/portfolio/project_65.jpg"
+  },
+  {
+    "slide_num": 66,
+    "name": "PUNE",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "PUNE",
+    "scope": "PUNE, 3,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_66.jpg"
+  },
+  {
+    "slide_num": 67,
+    "name": "PUNE",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "PUNE",
+    "scope": "PUNE, 2,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_67.jpg"
+  },
+  {
+    "slide_num": 68,
+    "name": "PUNE",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "PUNE",
+    "scope": "PUNE, 1,50,000 SQ. FT",
+    "image": "assets/images/portfolio/project_68.jpg"
+  },
+  {
+    "slide_num": 69,
+    "name": "PUNE",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "PUNE",
+    "scope": "PUNE, 3,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_69.jpg"
+  },
+  {
+    "slide_num": 70,
+    "name": "KERALA REGIONAL HEADQUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "KERALA REGIONAL HEADQUARTERS",
+    "scope": "KERALA REGIONAL HEADQUARTERS, 13,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_70.jpg"
+  },
+  {
+    "slide_num": 71,
+    "name": "2,00,000 SQ. FT",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "KERALA REGIONAL HEADQUARTERS",
+    "scope": "2,00,000 SQ. FT, KERALA REGIONAL HEADQUARTERS",
+    "image": "assets/images/portfolio/project_71.jpg"
+  },
+  {
+    "slide_num": 72,
+    "name": "KOLKATA",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "KOLKATA",
+    "scope": "KOLKATA, 1,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_72.jpg"
+  },
+  {
+    "slide_num": 73,
+    "name": "NOIDA HEADQUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "NOIDA HEADQUARTERS",
+    "scope": "NOIDA HEADQUARTERS, 1,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_73.jpg"
+  },
+  {
+    "slide_num": 74,
+    "name": "MUMBAI HEADQUARTERS",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "MUMBAI HEADQUARTERS",
+    "scope": "MUMBAI HEADQUARTERS, 2,50,000 SQ. FT",
+    "image": "assets/images/portfolio/project_74.jpg"
+  },
+  {
+    "slide_num": 75,
+    "name": "MALLS/RETAIL/EDUCATION/HEALTHCARE CLIENTELE",
+    "cat": "healthcare",
+    "cat_name": "Healthcare",
+    "location": "Pan India",
+    "scope": "MALLS/RETAIL/EDUCATION/HEALTHCARE CLIENTELE",
+    "image": "assets/images/portfolio/project_75.jpg"
+  },
+  {
+    "slide_num": 76,
+    "name": "DHIRUBHAI AMBANI INTERNATIONAL SCHOOL, BKC",
+    "cat": "education",
+    "cat_name": "Education",
+    "location": "Pan India",
+    "scope": "DHIRUBHAI AMBANI INTERNATIONAL SCHOOL, BKC, EDUCATIONAL PROJECT",
+    "image": "assets/images/portfolio/project_76.jpg"
+  },
+  {
+    "slide_num": 77,
+    "name": "CLIENTELE HEALTHCARE",
+    "cat": "healthcare",
+    "cat_name": "Healthcare",
+    "location": "AIMS Hospital Faridabad",
+    "scope": "CLIENTELE HEALTHCARE, ICU\u2019s, OT, Rooms, No. Of. Floor, 302, 4, 158, 4, AIMS Hospital Faridabad, 9,00,000 sq/ft, 100 crore Work order, CIVIL & INTERIORS, Flooring, PCC, Plaster & POP, works, Ceilinh finishes, dry wall, partition, Doors, Wall, Panelling, along with Bespoke Furniture",
+    "image": "assets/images/portfolio/project_77.jpg"
+  },
+  {
+    "slide_num": 78,
+    "name": "BHOPAL",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "\u2022\t BHOPAL",
+    "scope": "BHOPAL, 15,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_78.jpg"
+  },
+  {
+    "slide_num": 79,
+    "name": "RANCHI",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "\u2022\t RANCHI",
+    "scope": "RANCHI, 8,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_79.jpg"
+  },
+  {
+    "slide_num": 80,
+    "name": "MUMBAI",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "\u2022\t MUMBAI",
+    "scope": "MUMBAI, 1,50,000 SQ. FT",
+    "image": "assets/images/portfolio/project_80.jpg"
+  },
+  {
+    "slide_num": 81,
+    "name": "40 STORES PAN INDIA",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "Pan India",
+    "scope": "40 STORES PAN INDIA, 20,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_81.jpg"
+  },
+  {
+    "slide_num": 82,
+    "name": "DELHI",
+    "cat": "malls-shopping",
+    "cat_name": "Malls/ Shopping Centre",
+    "location": "\u2022\t DELHI",
+    "scope": "DELHI, 6,00,000 SQ. FT",
+    "image": "assets/images/portfolio/project_82.jpg"
+  },
+  {
+    "slide_num": 83,
+    "name": "HI-END RESIDENCIAL PROJECT",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "BANDRA, MUMBAI (45000 SQFT exclusive multi storey )",
+    "scope": "HI-END RESIDENCIAL PROJECT, Celebrity Cricketer Home, BANDRA, MUMBAI (45000 SQFT exclusive multi storey )",
+    "image": "assets/images/portfolio/project_83.jpg"
+  },
+  {
+    "slide_num": 84,
+    "name": "HI-END RESIDENCIAL PROJECT",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "NEW DELHI. (15000 SQFT multi storey)",
+    "scope": "HI-END RESIDENCIAL PROJECT, MD of the Publishing House, NEW DELHI. (15000 SQFT multi storey)",
+    "image": "assets/images/portfolio/project_84.jpg"
+  },
+  {
+    "slide_num": 85,
+    "name": "HI-END RESIDENCIAL PROJECT",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "NEW DELHI. (15000 SQFT multi storey)",
+    "scope": "HI-END RESIDENCIAL PROJECT, MD of the Publishing House, NEW DELHI. (15000 SQFT multi storey)",
+    "image": "assets/images/portfolio/project_85.jpg"
+  },
+  {
+    "slide_num": 86,
+    "name": "HI-END RESIDENCIAL PROJECT",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "MUMBAI. (3 BHK, 4 BHK and 5 BHK)",
+    "scope": "HI-END RESIDENCIAL PROJECT, Reliance Apartment Building, MUMBAI. (3 BHK, 4 BHK and 5 BHK)",
+    "image": "assets/images/portfolio/project_86.jpg"
+  },
+  {
+    "slide_num": 87,
+    "name": "HI-END RESIDENCIAL PROJECT",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "JAMNAGAR  (15000 SQFT multi storey)",
+    "scope": "HI-END RESIDENCIAL PROJECT, MD and Chairman of RIL, JAMNAGAR  (15000 SQFT multi storey)",
+    "image": "assets/images/portfolio/project_87.jpg"
+  },
+  {
+    "slide_num": 93,
+    "name": "Indian Accent",
+    "cat": "restaurant",
+    "cat_name": "Restaurant",
+    "location": "New Delhi",
+    "scope": "Turnkey Interior Fit-out for India's Best Fine-Dining Restaurant",
+    "image": "assets/images/portfolio/project_93.jpg"
+  },
+  {
+    "slide_num": 94,
+    "name": "Citibank Corporate Offices",
+    "cat": "banking",
+    "cat_name": "Commercial/ Banking Sector",
+    "location": "Pan India",
+    "scope": "Space Planning & Interior fit-out for Banking Branches",
+    "image": "assets/images/portfolio/project_94.jpg"
+  },
+  {
+    "slide_num": 95,
+    "name": "BNP Paribas Headquarters",
+    "cat": "banking",
+    "cat_name": "Commercial/ Banking Sector",
+    "location": "Mumbai & Pune",
+    "scope": "1,50,000 Sq. Ft. Corporate Banking Headquarters",
+    "image": "assets/images/portfolio/project_95.jpg"
+  },
+  {
+    "slide_num": 96,
+    "name": "Samhi Hotels Portfolio",
+    "cat": "hospitality",
+    "cat_name": "Hospitality",
+    "location": "Pan India",
+    "scope": "2,500 Guest Rooms & Public Suites Complete Fit-out",
+    "image": "assets/images/portfolio/project_96.jpg"
+  },
+  {
+    "slide_num": 97,
+    "name": "Vantara Niwas",
+    "cat": "residential",
+    "cat_name": "Residencial",
+    "location": "Jamnagar, Gujarat",
+    "scope": "Ultra-Luxury Private Estate Interiors & Fit-out",
+    "image": "assets/images/portfolio/project_97.jpg"
+  },
+  {
+    "slide_num": 98,
+    "name": "BNP Factory Craft Village",
+    "cat": "corporate-hq",
+    "cat_name": "Corporate Head Quarter",
+    "location": "Rajasthan",
+    "scope": "27-Acre state-of-the-art Furniture Manufacturing plant & Craft Village",
+    "image": "assets/images/portfolio/project_98.jpg"
+  },
+  {
+    "slide_num": 99,
+    "name": "Deutsche Bank Offices",
+    "cat": "banking",
+    "cat_name": "Commercial/ Banking Sector",
+    "location": "Pan India",
+    "scope": "Turnkey Interior Fit-out & High-Security Transaction Hubs",
+    "image": "assets/images/portfolio/project_99.jpg"
+  }
+]

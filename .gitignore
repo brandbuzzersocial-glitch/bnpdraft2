@@ -1,0 +1,14 @@
+node_modules/
+backend/node_modules/
+backend/.tmp/
+backend/build/
+backend/dist/
+backend/.cache/
+backend/public/uploads/
+.env
+*.log
+__pycache__/
+*.pyc
+.gemini/
+assets/extracted_profile/
+

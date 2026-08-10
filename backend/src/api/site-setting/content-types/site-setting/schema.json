@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Setting",
+    "description": "Global website configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteTitle": {
+      "type": "string",
+      "default": "Antra Architecture & Interior Design"
+    },
+    "phone": {
+      "type": "string",
+      "default": "(+480) 123 678 900"
+    },
+    "email": {
+      "type": "string",
+      "default": "info@antra-design.com"
+    },
+    "address": {
+      "type": "string",
+      "default": "5609 E Sprague Ave, Spokane Valley, WA 99212, USA"
+    },
+    "workingHours": {
+      "type": "string",
+      "default": "Mon - Fri: 9:00 AM - 6:00 PM"
+    },
+    "socialFacebook": {
+      "type": "string"
+    },
+    "socialInstagram": {
+      "type": "string"
+    },
+    "socialTwitter": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
