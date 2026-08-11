@@ -586,4 +586,657 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+
+  // ---- Interactive National Footprint Map Interactivity -------
+  const mapData = {
+  "up": {
+    "name": "Uttar Pradesh",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Taj Palace",
+        "location": "Lucknow, Uttar Pradesh",
+        "scope": "All Public Areas, Presidential Suites & Guest Rooms",
+        "image": "assets/images/portfolio/project_20.jpg"
+      },
+      {
+        "name": "Ayodhyam",
+        "location": "Ayodhya, Uttar Pradesh",
+        "scope": "All Public Areas & Luxury Guest Rooms",
+        "image": "assets/images/portfolio/project_21.jpg"
+      },
+      {
+        "name": "Adani Headquarters",
+        "location": "Noida, Uttar Pradesh",
+        "scope": "1,00,000 Sq. Ft. Regional Headquarters Offices",
+        "image": "assets/images/portfolio/project_73.jpg"
+      }
+    ]
+  },
+  "wb": {
+    "name": "West Bengal",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Taj Ganga Kutir",
+        "location": "Raichak, West Bengal",
+        "scope": "All Public Areas, Specialty Restaurants & Presidential Suites",
+        "image": "assets/images/portfolio/project_22.jpg"
+      },
+      {
+        "name": "Taj Ganga Kutir (Phase II)",
+        "location": "Raichak, West Bengal",
+        "scope": "150 Guest Rooms, 10 Luxury Villas & Lobbies",
+        "image": "assets/images/portfolio/project_23.jpg"
+      },
+      {
+        "name": "L&T Offices",
+        "location": "Kolkata, West Bengal",
+        "scope": "1,00,000 Sq. Ft. Regional Corporate Offices",
+        "image": "assets/images/portfolio/project_72.jpg"
+      }
+    ]
+  },
+  "or": {
+    "name": "Odisha",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Taj Puri Resort & Spa",
+        "location": "Puri, Odisha",
+        "scope": "Guest Rooms, Deluxe Suites & Grand Ballroom",
+        "image": "assets/images/portfolio/project_24.jpg"
+      },
+      {
+        "name": "Taj Puri Resort & Spa (Phase II)",
+        "location": "Puri, Odisha",
+        "scope": "Specialty Restaurant, Spa, Fitness Center & Reception",
+        "image": "assets/images/portfolio/project_25.jpg"
+      },
+      {
+        "name": "Vivanta by Taj",
+        "location": "Bhubaneswar, Odisha",
+        "scope": "136 Guest Rooms, Specialty Restaurants & Public Areas",
+        "image": "assets/images/portfolio/project_36.jpg"
+      }
+    ]
+  },
+  "rj": {
+    "name": "Rajasthan",
+    "count": 7,
+    "projects": [
+      {
+        "name": "Taj Gorbandh Palace",
+        "location": "Jaisalmer, Rajasthan",
+        "scope": "Guest Rooms, Executive Suites & All-Day Dining",
+        "image": "assets/images/portfolio/project_26.jpg"
+      },
+      {
+        "name": "Taj Gorbandh Palace (Phase II)",
+        "location": "Jaisalmer, Rajasthan",
+        "scope": "Library Bar Lounge, Specialty Restaurant, Spa & Gym",
+        "image": "assets/images/portfolio/project_27.jpg"
+      },
+      {
+        "name": "Taj Amer",
+        "location": "Jaipur, Rajasthan",
+        "scope": "173 King Rooms, 52 Twin Rooms & 19 Suites",
+        "image": "assets/images/portfolio/project_28.jpg"
+      },
+      {
+        "name": "Taj Amer (Phase II)",
+        "location": "Jaipur, Rajasthan",
+        "scope": "Spa & Fitness Centre, The Executive Club & Boardrooms",
+        "image": "assets/images/portfolio/project_29.jpg"
+      },
+      {
+        "name": "Taj Amer (Phase III)",
+        "location": "Jaipur, Rajasthan",
+        "scope": "Grand Ballrooms, Pre-Function Area & Guest Lobbies",
+        "image": "assets/images/portfolio/project_30.jpg"
+      },
+      {
+        "name": "Taj Amer (Spa & Retail)",
+        "location": "Jaipur, Rajasthan",
+        "scope": "Spa Lobbies, Reception, Treatment Rooms & Yoga Studio",
+        "image": "assets/images/portfolio/project_31.jpg"
+      },
+      {
+        "name": "BNP Factory Craft Village",
+        "location": "Rajasthan",
+        "scope": "27-Acre state-of-the-art Furniture Manufacturing plant & Craft Village",
+        "image": "assets/images/portfolio/project_98.jpg"
+      }
+    ]
+  },
+  "mh": {
+    "name": "Maharashtra",
+    "count": 23,
+    "projects": [
+      {
+        "name": "The Chambers, Taj Mahal Palace",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Executive Waiting Area, Dining & Lift Lobbies",
+        "image": "assets/images/portfolio/project_32.jpg"
+      },
+      {
+        "name": "Taj Mahal Palace (Conference Suites)",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Premium Boardrooms & Conference Rooms",
+        "image": "assets/images/portfolio/project_33.jpg"
+      },
+      {
+        "name": "Taj Mahal Palace (Private Lounges)",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Elite Members' Lounges & Dining Spaces",
+        "image": "assets/images/portfolio/project_34.jpg"
+      },
+      {
+        "name": "Hyatt Regency",
+        "location": "Pune, Maharashtra",
+        "scope": "Grand Lobby, Banquet Area, Bar & Pre-Function",
+        "image": "assets/images/portfolio/project_42.jpg"
+      },
+      {
+        "name": "Hyatt Regency (Phase II)",
+        "location": "Pune, Maharashtra",
+        "scope": "Main Reception, Specialty Restaurant & Common Areas",
+        "image": "assets/images/portfolio/project_43.jpg"
+      },
+      {
+        "name": "Novotel Hotel",
+        "location": "Pune, Maharashtra",
+        "scope": "300 Keys, All-Day Dining, Specialty Restaurant & Common Areas",
+        "image": "assets/images/portfolio/project_45.jpg"
+      },
+      {
+        "name": "Jio World Drive Club",
+        "location": "BKC, Mumbai, Maharashtra",
+        "scope": "Luxe Reception, Members' Lounges & Common Areas",
+        "image": "assets/images/portfolio/project_46.jpg"
+      },
+      {
+        "name": "Jio World Drive Club (Clubhouse)",
+        "location": "BKC, Mumbai, Maharashtra",
+        "scope": "14,00,050 Sq. Ft. Members-Only Clubhouse",
+        "image": "assets/images/portfolio/project_47.jpg"
+      },
+      {
+        "name": "L&T Training Centre",
+        "location": "Palava, Maharashtra",
+        "scope": "1,50,000 Sq. Ft. Residential Training Centre",
+        "image": "assets/images/portfolio/project_52.jpg"
+      },
+      {
+        "name": "L&T Training Centre (Lobby)",
+        "location": "Palava, Maharashtra",
+        "scope": "Lobby & Classroom Common Areas",
+        "image": "assets/images/portfolio/project_53.jpg"
+      },
+      {
+        "name": "Motilal Oswal Headquarters",
+        "location": "Mumbai, Maharashtra",
+        "scope": "75,000 Sq. Ft. Executive HQ Offices",
+        "image": "assets/images/portfolio/project_55.jpg"
+      },
+      {
+        "name": "L&T Headquarters",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Executive Corporate Headquarters & Boardrooms",
+        "image": "assets/images/portfolio/project_64.jpg"
+      },
+      {
+        "name": "L&T Headquarters (Lobby)",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Double-Height Entrance Lobby & Waiting Area",
+        "image": "assets/images/portfolio/project_65.jpg"
+      },
+      {
+        "name": "Wipro Campus (Block A)",
+        "location": "Pune, Maharashtra",
+        "scope": "3,00,000 Sq. Ft. Corporate IT Campus Offices",
+        "image": "assets/images/portfolio/project_66.jpg"
+      },
+      {
+        "name": "Wipro Campus (Block B)",
+        "location": "Pune, Maharashtra",
+        "scope": "2,00,000 Sq. Ft. Corporate IT Campus Offices",
+        "image": "assets/images/portfolio/project_67.jpg"
+      },
+      {
+        "name": "Wipro Campus (Block C)",
+        "location": "Pune, Maharashtra",
+        "scope": "1,50,000 Sq. Ft. Corporate IT Campus Offices",
+        "image": "assets/images/portfolio/project_68.jpg"
+      },
+      {
+        "name": "Wipro Campus (Block D)",
+        "location": "Pune, Maharashtra",
+        "scope": "3,00,000 Sq. Ft. Corporate IT Campus Offices",
+        "image": "assets/images/portfolio/project_69.jpg"
+      },
+      {
+        "name": "Reliance Headquarters",
+        "location": "Mumbai, Maharashtra",
+        "scope": "2,50,000 Sq. Ft. Corporate Headquarters",
+        "image": "assets/images/portfolio/project_74.jpg"
+      },
+      {
+        "name": "Dhirubhai Ambani International School",
+        "location": "BKC, Mumbai, Maharashtra",
+        "scope": "Full Campus Interiors & Classroom Spaces",
+        "image": "assets/images/portfolio/project_76.jpg"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "Mumbai, Maharashtra",
+        "scope": "1,50,000 Sq. Ft. Retail Store Layout & Furniture",
+        "image": "assets/images/portfolio/project_80.jpg"
+      },
+      {
+        "name": "Celebrity Cricketer Home",
+        "location": "Bandra, Mumbai, Maharashtra",
+        "scope": "45,000 Sq. Ft. Ultra-Luxury Exclusive Multi-Storey Residence",
+        "image": "assets/images/portfolio/project_83.jpg"
+      },
+      {
+        "name": "Reliance Apartment Building",
+        "location": "Mumbai, Maharashtra",
+        "scope": "Turnkey Luxury 3 BHK, 4 BHK, and 5 BHK Apartments",
+        "image": "assets/images/portfolio/project_86.jpg"
+      },
+      {
+        "name": "BNP Paribas Headquarters",
+        "location": "Mumbai & Pune",
+        "scope": "1,50,000 Sq. Ft. Corporate Banking Headquarters",
+        "image": "assets/images/portfolio/project_95.jpg"
+      }
+    ]
+  },
+  "ga": {
+    "name": "Goa",
+    "count": 1,
+    "projects": [
+      {
+        "name": "SeleQtions by Taj \u2014 Cidade de Goa",
+        "location": "Goa",
+        "scope": "Public Areas, Restaurants, Grand Ballroom & BOH Areas",
+        "image": "assets/images/portfolio/project_35.jpg"
+      }
+    ]
+  },
+  "jh": {
+    "name": "Jharkhand",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Radisson Hotel",
+        "location": "Jamshedpur, Jharkhand",
+        "scope": "Guest Rooms, Premium Suites, Owner's Suite & Ballroom",
+        "image": "assets/images/portfolio/project_37.jpg"
+      },
+      {
+        "name": "Radisson Hotel",
+        "location": "Ranchi, Jharkhand",
+        "scope": "Main Lobby, Common Areas, Reception & Guest Rooms",
+        "image": "assets/images/portfolio/project_40.jpg"
+      },
+      {
+        "name": "DB Mall (Phase II)",
+        "location": "Ranchi, Jharkhand",
+        "scope": "8,00,000 Sq. Ft. Shopping Centre Interiors",
+        "image": "assets/images/portfolio/project_79.jpg"
+      }
+    ]
+  },
+  "tn": {
+    "name": "Tamil Nadu",
+    "count": 1,
+    "projects": [
+      {
+        "name": "Novotel Hotel",
+        "location": "Chennai, Tamil Nadu",
+        "scope": "158 Keys, Bar Area, All-Day Dining & Common Areas",
+        "image": "assets/images/portfolio/project_38.jpg"
+      }
+    ]
+  },
+  "tg": {
+    "name": "Telangana",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Novotel Hotel",
+        "location": "Hyderabad, Telangana",
+        "scope": "152 Keys, Main Lobby & All Common Areas",
+        "image": "assets/images/portfolio/project_39.jpg"
+      },
+      {
+        "name": "Members Only Club",
+        "location": "Hyderabad, Telangana",
+        "scope": "Exclusive Clubhouse Reception & Private Lounges",
+        "image": "assets/images/portfolio/project_48.jpg"
+      },
+      {
+        "name": "Members Only Club (Dining)",
+        "location": "Hyderabad, Telangana",
+        "scope": "Fine Dining Areas, Cigar Lounge & Sports Room",
+        "image": "assets/images/portfolio/project_49.jpg"
+      }
+    ]
+  },
+  "ka": {
+    "name": "Karnataka",
+    "count": 1,
+    "projects": [
+      {
+        "name": "Marriott Hotel",
+        "location": "Bangalore, Karnataka",
+        "scope": "330 Keys, Lobby, Common Areas & Corridors",
+        "image": "assets/images/portfolio/project_41.jpg"
+      }
+    ]
+  },
+  "hr": {
+    "name": "Haryana",
+    "count": 2,
+    "projects": [
+      {
+        "name": "Novotel Hotel",
+        "location": "Gurugram, Haryana",
+        "scope": "156 Keys, Waiting Area, All-Day Dining & Conference Rooms",
+        "image": "assets/images/portfolio/project_44.jpg"
+      },
+      {
+        "name": "Amrita Hospitals (AIMS)",
+        "location": "Faridabad, Haryana",
+        "scope": "9,00,000 Sq. Ft. Turnkey Hospital, 302 ICUs, 4 OT Rooms",
+        "image": "assets/images/portfolio/project_77.jpg"
+      }
+    ]
+  },
+  "gj": {
+    "name": "Gujarat",
+    "count": 3,
+    "projects": [
+      {
+        "name": "Motilal Oswal Headquarters",
+        "location": "Ahmedabad, Gujarat",
+        "scope": "95,000 Sq. Ft. Corporate HQ Offices",
+        "image": "assets/images/portfolio/project_54.jpg"
+      },
+      {
+        "name": "MD and Chairman of RIL",
+        "location": "Jamnagar, Gujarat",
+        "scope": "15,00,000 Sq. Ft. Private Residential Estate",
+        "image": "assets/images/portfolio/project_87.jpg"
+      },
+      {
+        "name": "Vantara Niwas",
+        "location": "Jamnagar, Gujarat",
+        "scope": "Ultra-Luxury Private Estate Interiors & Fit-out",
+        "image": "assets/images/portfolio/project_97.jpg"
+      }
+    ]
+  },
+  "pan": {
+    "name": "Pan India",
+    "count": 12,
+    "projects": [
+      {
+        "name": "Wipro Offices",
+        "location": "Pan India",
+        "scope": "10,00,000 Sq. Ft. IT Campus Offices Across Major Cities",
+        "image": "assets/images/portfolio/project_56.jpg"
+      },
+      {
+        "name": "L&T Corporate Offices",
+        "location": "Pan India",
+        "scope": "4,50,000 Sq. Ft. Corporate Offices (Mumbai & Pune)",
+        "image": "assets/images/portfolio/project_57.jpg"
+      },
+      {
+        "name": "TCS IT Offices",
+        "location": "Pan India",
+        "scope": "35,00,000 Sq. Ft. IT & Corporate Offices",
+        "image": "assets/images/portfolio/project_58.jpg"
+      },
+      {
+        "name": "Reliance Corporate Offices",
+        "location": "Pan India",
+        "scope": "35,00,000 Sq. Ft. Corporate Spaces",
+        "image": "assets/images/portfolio/project_59.jpg"
+      },
+      {
+        "name": "Adani Corporate Offices",
+        "location": "Pan India",
+        "scope": "35,00,000 Sq. Ft. Corporate Spaces",
+        "image": "assets/images/portfolio/project_60.jpg"
+      },
+      {
+        "name": "HDFC Bank Offices",
+        "location": "Pan India",
+        "scope": "35,00,000 Sq. Ft. Banking Branches (Bhubaneswar & Kolkata)",
+        "image": "assets/images/portfolio/project_61.jpg"
+      },
+      {
+        "name": "ICICI Bank Offices",
+        "location": "Pan India",
+        "scope": "10,00,000 Sq. Ft. Banking Offices",
+        "image": "assets/images/portfolio/project_62.jpg"
+      },
+      {
+        "name": "HSBC Bank Offices",
+        "location": "Pan India",
+        "scope": "15,00,000 Sq. Ft. Corporate Banking Offices",
+        "image": "assets/images/portfolio/project_63.jpg"
+      },
+      {
+        "name": "Shoppers Stop (Pan India)",
+        "location": "Pan India",
+        "scope": "20,00,000 Sq. Ft. Turnkey Retail Outlets (40 Stores)",
+        "image": "assets/images/portfolio/project_81.jpg"
+      },
+      {
+        "name": "Citibank Corporate Offices",
+        "location": "Pan India",
+        "scope": "Space Planning & Interior fit-out for Banking Branches",
+        "image": "assets/images/portfolio/project_94.jpg"
+      },
+      {
+        "name": "Samhi Hotels Portfolio",
+        "location": "Pan India",
+        "scope": "2,500 Guest Rooms & Public Suites Complete Fit-out",
+        "image": "assets/images/portfolio/project_96.jpg"
+      },
+      {
+        "name": "Deutsche Bank Offices",
+        "location": "Pan India",
+        "scope": "Turnkey Interior Fit-out & High-Security Transaction Hubs",
+        "image": "assets/images/portfolio/project_99.jpg"
+      }
+    ]
+  },
+  "kl": {
+    "name": "Kerala",
+    "count": 2,
+    "projects": [
+      {
+        "name": "UST Global Kerala HQ",
+        "location": "Kerala",
+        "scope": "13,00,000 Sq. Ft. IT Regional Headquarters",
+        "image": "assets/images/portfolio/project_70.jpg"
+      },
+      {
+        "name": "UST Global Kerala HQ (Phase II)",
+        "location": "Kerala",
+        "scope": "2,00,000 Sq. Ft. Regional Office Spaces",
+        "image": "assets/images/portfolio/project_71.jpg"
+      }
+    ]
+  },
+  "mp": {
+    "name": "Madhya Pradesh",
+    "count": 1,
+    "projects": [
+      {
+        "name": "DB Mall",
+        "location": "Bhopal, Madhya Pradesh",
+        "scope": "15,00,000 Sq. Ft. Shopping Centre Public Areas",
+        "image": "assets/images/portfolio/project_78.jpg"
+      }
+    ]
+  },
+  "dl": {
+    "name": "Delhi NCR",
+    "count": 4,
+    "projects": [
+      {
+        "name": "Luxe Retail Mall",
+        "location": "Delhi",
+        "scope": "6,00,000 Sq. Ft. Shopping Centre Atrium & Retail Layouts",
+        "image": "assets/images/portfolio/project_82.jpg"
+      },
+      {
+        "name": "MD of the Publishing House",
+        "location": "New Delhi",
+        "scope": "15,00,000 Sq. Ft. Elite Residential Estate",
+        "image": "assets/images/portfolio/project_84.jpg"
+      },
+      {
+        "name": "MD of the Publishing House (Lobby)",
+        "location": "New Delhi",
+        "scope": "15,00,000 Sq. Ft. Residential Reception & Dining Areas",
+        "image": "assets/images/portfolio/project_85.jpg"
+      },
+      {
+        "name": "Indian Accent",
+        "location": "New Delhi",
+        "scope": "Turnkey Interior Fit-out for India's Best Fine-Dining Restaurant",
+        "image": "assets/images/portfolio/project_93.jpg"
+      }
+    ]
+  },
+  "pb": {
+    "name": "Punjab",
+    "count": 1,
+    "projects": [
+      {
+        "name": "Taj Swarna",
+        "location": "Amritsar, Punjab",
+        "scope": "Turnkey Interior Executions (Lobby & Public Areas)",
+        "image": "assets/images/portfolio/project_20.jpg"
+      }
+    ]
+  }
+};
+
+  const mapPins = document.querySelectorAll('.map-pin');
+  const activeStateName = document.getElementById('active-state-name');
+  const activeStateCount = document.getElementById('active-state-count');
+  const activeStateList = document.getElementById('active-state-list');
+  const panIndiaTrigger = document.getElementById('pan-india-trigger');
+  const indiaSvgMap = document.getElementById('india-svg-map');
+
+  if (activeStateList) {
+    const renderStateProjects = (stateCode) => {
+      const stateInfo = mapData[stateCode] || { name: 'Region Details', count: 0, projects: [] };
+      
+      // Update Name & Count
+      if (activeStateName) activeStateName.textContent = stateInfo.name;
+      if (activeStateCount) activeStateCount.textContent = `${stateInfo.count} Projects`;
+      
+      // Highlight matching state path in SVG if present
+      if (indiaSvgMap) {
+        indiaSvgMap.querySelectorAll('.state-path').forEach(path => path.classList.remove('active'));
+        const activePath = indiaSvgMap.getElementById(stateCode);
+        if (activePath) activePath.classList.add('active');
+      }
+
+      // Highlight matching map pin
+      mapPins.forEach(pin => {
+        if (pin.getAttribute('data-state') === stateCode) {
+          pin.classList.add('active');
+        } else {
+          pin.classList.remove('active');
+        }
+      });
+
+      // Clear & render scrollable cards
+      activeStateList.innerHTML = '';
+      
+      if (stateInfo.projects.length === 0) {
+        activeStateList.innerHTML = `
+          <div style="text-align: center; color: #80808a; padding: 40px 0;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-bottom: 10px; opacity: 0.5;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            <p>No localized projects logged under this region.</p>
+          </div>
+        `;
+        return;
+      }
+
+      stateInfo.projects.forEach(p => {
+        const itemHtml = `
+          <div class="map-project-item" style="opacity: 0; animation: tabFadeIn 0.4s ease forwards;">
+            <img src="${p.image}" alt="${p.name}" style="width: 70px; height: 70px; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.06);">
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 4px;">
+              <h4 style="font-size: 0.95rem; color: var(--color-secondary); font-weight: 600; margin: 0; line-height: 1.3;">${p.name}</h4>
+              <p style="font-size: 0.8rem; color: var(--color-text); margin: 0; line-height: 1.3;">${p.location}</p>
+              <p style="font-size: 0.75rem; color: var(--color-primary); font-weight: 500; margin: 0; line-height: 1.3; font-style: italic;">${p.scope}</p>
+            </div>
+          </div>
+        `;
+        activeStateList.insertAdjacentHTML('beforeend', itemHtml);
+      });
+    };
+
+    // Hover / Click Event listeners on pins
+    mapPins.forEach(pin => {
+      const stateCode = pin.getAttribute('data-state');
+      
+      pin.addEventListener('mouseenter', () => {
+        renderStateProjects(stateCode);
+      });
+      
+      pin.addEventListener('click', (e) => {
+        e.preventDefault();
+        renderStateProjects(stateCode);
+      });
+    });
+
+    // Hover / Click Event listeners on state paths themselves to prevent hover miss or lag
+    if (indiaSvgMap) {
+      const statePaths = indiaSvgMap.querySelectorAll('.state-path');
+      statePaths.forEach(path => {
+        const stateCode = path.getAttribute('id');
+        if (mapData[stateCode]) {
+          path.style.cursor = 'pointer';
+          
+          path.addEventListener('mouseenter', () => {
+            renderStateProjects(stateCode);
+          });
+          
+          path.addEventListener('click', (e) => {
+            e.preventDefault();
+            renderStateProjects(stateCode);
+          });
+        }
+      });
+    }
+
+    // Pan India Trigger Click
+    if (panIndiaTrigger) {
+      panIndiaTrigger.addEventListener('mouseenter', () => {
+        renderStateProjects('pan');
+      });
+      panIndiaTrigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        renderStateProjects('pan');
+      });
+    }
+
+    // Initialize with Maharashtra
+    renderStateProjects('mh');
+  }
+
 });

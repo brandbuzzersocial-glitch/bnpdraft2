@@ -745,10 +745,11 @@ h6 { font-size: 1rem; }
 }
 
 .site-header.scrolled {
-  background: rgba(255,255,255,0.97);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  box-shadow: 0 1px 30px rgba(0,0,0,0.08);
+  background: rgba(18, 18, 20, 0.95) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+  border-bottom: 1px solid rgba(202, 160, 92, 0.15) !important;
   height: 74px;
 }
 
@@ -772,7 +773,7 @@ h6 { font-size: 1rem; }
   letter-spacing: 4px;
   transition: color var(--dur);
 }
-.site-header.scrolled .logo-text { color: var(--color-secondary); }
+.site-header.scrolled .logo-text { color: var(--color-white); }
 
 /* Nav */
 .main-nav { margin-left: auto; }
@@ -804,7 +805,7 @@ h6 { font-size: 1rem; }
 .main-nav a:hover { color: var(--color-primary); }
 .main-nav a.active { color: var(--color-primary); }
 
-.site-header.scrolled .main-nav a { color: var(--color-secondary); }
+.site-header.scrolled .main-nav a { color: var(--color-white); }
 .site-header.scrolled .main-nav a:hover,
 .site-header.scrolled .main-nav a.active { color: var(--color-primary); }
 
@@ -820,7 +821,7 @@ h6 { font-size: 1rem; }
   font-weight: 500;
   transition: color var(--dur);
 }
-.site-header.scrolled .header-phone { color: var(--color-secondary); }
+.site-header.scrolled .header-phone { color: rgba(255,255,255,0.9); }
 .header-phone:hover { color: var(--color-primary) !important; }
 
 /* Mobile toggle */
@@ -838,7 +839,7 @@ h6 { font-size: 1rem; }
   transition: all var(--dur) var(--ease);
   transform-origin: center;
 }
-.site-header.scrolled .menu-toggle span { background: var(--color-secondary); }
+.site-header.scrolled .menu-toggle span { background: var(--color-white); }
 .menu-toggle.active span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
 .menu-toggle.active span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .menu-toggle.active span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
@@ -3068,11 +3069,11 @@ h6 { font-size: 1rem; }
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.96) !important;
+  background: rgba(18, 18, 20, 0.95) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.08) !important;
-  border-bottom: 1px solid rgba(202, 160, 92, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
+  border-bottom: 1px solid rgba(202, 160, 92, 0.15) !important;
 }
 
 /* PROJECTS HORIZONTAL SLIDER CAROUSEL TRACK */
@@ -3280,3 +3281,113 @@ body.mouse-moving .mouse-glow-element {
   color: var(--color-primary);
 }
 
+
+
+/* ============================================================
+   INTERACTIVE VECTOR MAP SECTION STYLING (BLUEPRINT DNA)
+   ============================================================ */
+.india-vector-map {
+  width: 100%;
+  max-width: 520px;
+  height: auto;
+  filter: drop-shadow(0 15px 30px rgba(0,0,0,0.08));
+}
+.state-path {
+  fill: rgba(0, 0, 0, 0.005);
+  stroke: rgba(13, 13, 16, 0.15);
+  stroke-width: 1.2px;
+  stroke-linejoin: round;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.state-path:hover, .state-path.active {
+  fill: rgba(202, 160, 92, 0.05);
+  stroke: var(--color-primary);
+  stroke-width: 1.8px;
+  filter: drop-shadow(0 0 6px rgba(202,160,92,0.15));
+}
+.map-pin {
+  cursor: pointer;
+  outline: none;
+}
+.map-pin .pin-pulse {
+  transform-origin: center;
+  fill: var(--pin-color);
+  animation: pinPulse 2s infinite ease-out;
+  pointer-events: none;
+}
+.map-pin .pin-core {
+  fill: var(--pin-color);
+  stroke: var(--color-white);
+  stroke-width: 1.5px;
+  transition: all 0.3s ease;
+}
+.map-pin:hover .pin-core, .map-pin.active .pin-core {
+  r: 8px;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 10px var(--pin-color));
+}
+.pan-india-badge:hover {
+  background: rgba(202,160,92,0.18) !important;
+  border-color: var(--color-primary) !important;
+  box-shadow: 0 0 15px rgba(202,160,92,0.08);
+}
+
+@keyframes pinPulse {
+  0% {
+    r: 6px;
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    r: 22px;
+    opacity: 0;
+  }
+}
+
+/* Scrollbar for Map list */
+#active-state-list::-webkit-scrollbar {
+  width: 6px;
+}
+#active-state-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.01);
+  border-radius: 4px;
+}
+#active-state-list::-webkit-scrollbar-thumb {
+  background: rgba(202, 160, 92, 0.25);
+  border-radius: 4px;
+}
+#active-state-list::-webkit-scrollbar-thumb:hover {
+  background: var(--color-primary);
+}
+
+/* Map item card */
+.map-project-item {
+  display: flex;
+  gap: 15px;
+  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0,0,0,0.02);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+.map-project-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+  border-color: rgba(202, 160, 92, 0.25);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .map-grid-container {
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
+  }
+  .map-viewport {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .map-details-panel {
+    min-height: auto !important;
+  }
+}
