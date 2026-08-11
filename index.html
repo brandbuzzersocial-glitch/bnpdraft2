@@ -1345,15 +1345,16 @@
     }
     .holo-glow {
       position: absolute;
-      width: 500px;
-      height: 500px;
+      width: 600px;
+      height: 600px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(202, 160, 92, 0.12) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(202, 160, 92, 0.25) 0%, rgba(202, 160, 92, 0.05) 50%, transparent 70%);
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%) rotateX(80deg);
+      transform: translate(-50%, -50%) rotateX(75deg);
       pointer-events: none;
-      box-shadow: 0 0 80px rgba(202,160,92,0.03);
+      box-shadow: 0 0 150px rgba(202,160,92,0.2), inset 0 0 60px rgba(202,160,92,0.1);
+      filter: blur(8px);
     }
     .carousel-3d-cylinder {
       position: relative;
@@ -1372,8 +1373,8 @@
       background: #111;
       border-radius: 16px;
       overflow: hidden;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-      border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.6), 0 0 20px rgba(202,160,92,0.1);
+      border: 1px solid rgba(202,160,92,0.2);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
       transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(400px);
@@ -1425,10 +1426,10 @@
     .card-3d-item:hover {
       transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(430px) scale(1.05);
       border-color: var(--color-primary);
-      box-shadow: 0 20px 45px rgba(202,160,92,0.25);
+      box-shadow: 0 30px 60px rgba(0,0,0,0.7), 0 0 40px rgba(202,160,92,0.4);
     }
     .card-3d-item:hover img {
-      filter: brightness(1) contrast(1.1);
+      filter: brightness(1.1) contrast(1.15);
     }
     /* Controls style */
     .btn-3d-ctrl {
@@ -1516,7 +1517,7 @@
       function startAutoplay() {
         if (autoplayTimer) clearInterval(autoplayTimer);
         autoplayTimer = setInterval(() => {
-          if (isAutoplay && !isDragging) {
+          if (isAutoplay && !isDragging && !isHovered) {
             goNext();
           }
         }, 3000);
@@ -1560,21 +1561,16 @@
       if (container) {
         container.addEventListener('mouseenter', () => {
           isHovered = true;
-          clearInterval(autoplayTimer);
         });
         
         container.addEventListener('mouseleave', () => {
           isHovered = false;
-          if (isAutoplay && !isDragging) {
-            startAutoplay();
-          }
         });
 
         container.addEventListener('mousedown', (e) => {
           isDragging = true;
           startX = e.clientX;
           currentRotation = rotationY;
-          clearInterval(autoplayTimer);
         });
 
         window.addEventListener('mousemove', (e) => {
@@ -1594,12 +1590,10 @@
           }
         });
 
-        // Touch support for Mobile
         container.addEventListener('touchstart', (e) => {
           isDragging = true;
           startX = e.touches[0].clientX;
           currentRotation = rotationY;
-          clearInterval(autoplayTimer);
         });
 
         container.addEventListener('touchmove', (e) => {
