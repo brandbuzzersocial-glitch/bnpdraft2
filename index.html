@@ -1167,7 +1167,7 @@
   </section>
 
   <!-- 3D IMMERSIVE SHOWCASE GALLERY -->
-  <section class="section immersive-3d-section sketch-bg blueprint-grid-bg" style="background: var(--color-bg-section); padding: 100px 0; overflow: hidden; position: relative;" id="landmark-showcase-3d">
+  <section class="section immersive-3d-section sketch-bg blueprint-grid-bg" style="background: var(--color-bg-section); padding: 150px 0; overflow: hidden; position: relative;" id="landmark-showcase-3d">
     <!-- Grid pattern decoration -->
     <div style="position:absolute; inset:0; background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.8) 100%); pointer-events:none; z-index:1;"></div>
     
@@ -1357,7 +1357,7 @@
     }
     .carousel-3d-cylinder {
       position: relative;
-      width: 300px;
+      width: 250px;
       height: 350px;
       transform-style: preserve-3d;
       transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -1376,7 +1376,7 @@
       border: 1px solid rgba(255,255,255,0.08);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(460px);
+      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(400px);
       transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     .card-3d-item img {
@@ -1423,7 +1423,7 @@
     }
     /* Hover effects on individual card: pushes it out and highlights it */
     .card-3d-item:hover {
-      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(490px) scale(1.05);
+      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(430px) scale(1.05);
       border-color: var(--color-primary);
       box-shadow: 0 20px 45px rgba(202,160,92,0.25);
     }
@@ -1463,11 +1463,11 @@
         height: 250px;
       }
       .card-3d-item {
-        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(300px);
+        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(280px);
         border-radius: 12px;
       }
       .card-3d-item:hover {
-        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(320px) scale(1.03);
+        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(300px) scale(1.03);
       }
       .card-3d-details h4 {
         font-size: 0.9rem;
