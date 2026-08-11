@@ -1216,7 +1216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderStateProjects('mh');
 
     // Video Playback Performance Observer (pauses autoplay videos when off-screen)
-    const autoplayVideos = document.querySelectorAll('video[autoplay]');
+    const autoplayVideos = document.querySelectorAll('video[autoplay]:not(#worker-video)');
     if ('IntersectionObserver' in window && autoplayVideos.length > 0) {
       const videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -1226,7 +1226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             entry.target.pause();
           }
         });
-      }, { threshold: 0.05 });
+      }, { threshold: 0, rootMargin: "300px 0px 300px 0px" });
       
       autoplayVideos.forEach((v) => videoObserver.observe(v));
     }

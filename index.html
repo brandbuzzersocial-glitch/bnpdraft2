@@ -294,7 +294,7 @@
           video.pause();
         }
       });
-    }, { threshold: 0.01 });
+    }, { threshold: 0, rootMargin: "350px 0px 350px 0px" });
     obs.observe(wrap);
 
   })();
