@@ -155,6 +155,8 @@
               left: 0;
               height: 100%;
               width: auto;
+              filter: blur(0.4px);
+              -webkit-filter: blur(0.4px);
             "></canvas>
           </div>
 
@@ -200,29 +202,31 @@
       for (var i = 0; i < d.length; i += 4) {
         var r = d[i], g = d[i+1], b = d[i+2];
         
-        // Skip very dark pixels (shadows, black clothing elements) to prevent artifacts
-        if (g < 60) continue;
+        // Skip very dark shadow zones to prevent transparency holes
+        if (g < 55) continue;
         
-        var greenness = g - Math.max(r, b);
+        // Calculate green dominance compared to average of red and blue
+        var avgRB = (r + b) / 2;
+        var greenness = g - avgRB;
         
-        // High-precision threshold values for sub-pixel anti-aliasing
-        var thresholdLow = 8;
-        var thresholdHigh = 32;
+        // Tuned thresholds for soft-edge sub-pixel anti-aliasing
+        var thresholdLow = 6;
+        var thresholdHigh = 28;
         
         if (greenness > thresholdHigh) {
-          d[i+3] = 0; // Transparent background
+          d[i+3] = 0; // Fully transparent background
         } else if (greenness > thresholdLow) {
           // Soft-edge alpha blending (anti-aliasing)
           var factor = (greenness - thresholdLow) / (thresholdHigh - thresholdLow);
           d[i+3] = Math.round((1 - factor) * 255);
           
-          // Spill suppression on transition edges
-          d[i+1] = Math.round(g - (greenness * factor * 0.85));
+          // Complete color de-spilling on transition edges (clamp to red/blue average)
+          d[i+1] = Math.round(g - (greenness * factor));
         } else {
-          // Spill suppression on outer fringes
-          var spill = g - Math.max(r, b);
-          if (spill > 4) {
-            d[i+1] = g - Math.round(spill * 0.65);
+          // De-spilling on outer fringes of the worker body
+          var spill = g - avgRB;
+          if (spill > 2) {
+            d[i+1] = Math.round(g - spill * 0.7);
           }
         }
       }
