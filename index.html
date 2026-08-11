@@ -1372,7 +1372,6 @@
         <button class="btn-3d-ctrl" id="cylinder-prev" aria-label="Previous project">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         </button>
-        <button class="btn btn-outline" id="cylinder-autoplay-toggle" style="padding:10px 24px; font-size:0.85rem; border-color:var(--color-primary); color:var(--color-primary);">Pause Rotation</button>
         <button class="btn-3d-ctrl" id="cylinder-next" aria-label="Next project">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </button>
@@ -1545,7 +1544,6 @@
       const container = document.querySelector('.scene-3d-container');
       const prevBtn = document.getElementById('cylinder-prev');
       const nextBtn = document.getElementById('cylinder-next');
-      const autoBtn = document.getElementById('cylinder-autoplay-toggle');
       if (!cylinder) return;
 
       let rotationY = 0;
@@ -1584,30 +1582,13 @@
       // Controls
       if (nextBtn) {
         nextBtn.addEventListener('click', () => {
-          isAutoplay = false;
-          if (autoBtn) autoBtn.textContent = 'Resume Rotation';
           goNext();
         });
       }
 
       if (prevBtn) {
         prevBtn.addEventListener('click', () => {
-          isAutoplay = false;
-          if (autoBtn) autoBtn.textContent = 'Resume Rotation';
           goPrev();
-        });
-      }
-
-      if (autoBtn) {
-        autoBtn.addEventListener('click', () => {
-          isAutoplay = !isAutoplay;
-          if (isAutoplay) {
-            autoBtn.textContent = 'Pause Rotation';
-            startAutoplay();
-          } else {
-            autoBtn.textContent = 'Resume Rotation';
-            clearInterval(autoplayTimer);
-          }
         });
       }
 
