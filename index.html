@@ -121,7 +121,7 @@
       <div class="worker-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: flex-end;">
 
         <!-- LEFT: WORKER — full figure, slides in from left, no crop -->
-        <div id="worker-wrap" style="position: relative; height: 540px; overflow: hidden; background: transparent;">
+        <div id="worker-wrap" style="position: relative; height: 540px; overflow: visible; background: transparent;">
 
           <!-- SLIDE WRAPPER — animation lives here, NOT on canvas/video
                This keeps the CSS transition on the compositor thread,
@@ -133,8 +133,8 @@
             height: 100%;
             display: flex;
             align-items: flex-end;
-            transform: translateX(-110%);
-            transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+            transform: translateX(-300%);
+            transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
             will-change: transform;
           ">
             <!-- Raw video — always visible, fallback on file:// -->
@@ -286,9 +286,7 @@
           }
           if (!slid) {
             slid = true;
-            setTimeout(function () {
-              slider.style.transform = 'translateX(0)';
-            }, 120);
+            slider.style.transform = 'translateX(0)';
           }
         } else {
           // Pause video and deactivate loop when off-screen to save CPU/GPU cycles
@@ -296,7 +294,7 @@
           video.pause();
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.01 });
     obs.observe(wrap);
 
   })();
