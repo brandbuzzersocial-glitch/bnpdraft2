@@ -1246,6 +1246,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize with Maharashtra
     renderStateProjects('mh');
+
+    // Video Playback Performance Observer (pauses autoplay videos when off-screen)
+    const autoplayVideos = document.querySelectorAll('video[autoplay]');
+    if ('IntersectionObserver' in window && autoplayVideos.length > 0) {
+      const videoObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.play().catch(() => {});
+          } else {
+            entry.target.pause();
+          }
+        });
+      }, { threshold: 0.05 });
+      
+      autoplayVideos.forEach((v) => videoObserver.observe(v));
+    }
+
   }
 
 });

@@ -33,7 +33,7 @@
   <!-- PAGE LOADER -->
   <div class="page-loader" id="page-loader">
     <div class="loader-inner">
-      <div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto"></div>
+      <div class="loader-logo" style="display:flex;align-items:center;justify-content:center"><img src="assets/images/bnp-logo.png" alt="BNP Interiors" style="height:55px;width:auto" loading="eager"></div>
       <div class="loader-bar"><div class="loader-bar-fill"></div></div>
     </div>
   </div>
@@ -45,7 +45,7 @@
     <div class="scroll-progress-bar" id="scroll-progress-bar"></div>
     <div class="header-inner">
       <a href="index.html" class="logo">
-        <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:36px;width:auto">
+        <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:36px;width:auto" loading="eager">
       </a>
       <nav class="main-nav" id="main-nav">
         <ul>
@@ -249,18 +249,31 @@
     if (video.readyState >= 2) startChromaKey();
     video.play().catch(function(){});
 
-    /* ─── Slide-in: animate only the wrapper div (compositor thread) ─── */
+    /* ─── Slide-in on scroll, and PAUSE video/loop when out of viewport ─── */
     var slid = false;
-    new IntersectionObserver(function (entries) {
+    var obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
-        if (e.isIntersecting && !slid) {
-          slid = true;
-          setTimeout(function () {
-            slider.style.transform = 'translateX(0)';
-          }, 120);
+        if (e.isIntersecting) {
+          // Play video and activate loop when visible
+          if (!active) {
+            active = true;
+            video.play().catch(function(){});
+            renderLoop();
+          }
+          if (!slid) {
+            slid = true;
+            setTimeout(function () {
+              slider.style.transform = 'translateX(0)';
+            }, 120);
+          }
+        } else {
+          // Pause video and deactivate loop when off-screen to save CPU/GPU cycles
+          active = false;
+          video.pause();
         }
       });
-    }, { threshold: 0.15 }).observe(wrap);
+    }, { threshold: 0.1 });
+    obs.observe(wrap);
 
   })();
   </script>
@@ -300,7 +313,7 @@
         <!-- RIGHT: FOUNDER PORTRAIT & BADGES -->
         <div class="about-images" data-anim="fadeLeft">
           <div class="about-img-main" style="border-radius: var(--radius-lg); overflow: hidden; border: 1px solid rgba(202, 160, 92, 0.35); box-shadow: 0 24px 48px rgba(0,0,0,0.1);">
-            <img src="assets/images/soh/punam-kularia-soh.jpg" alt="Mr. Punam D. Kularia – Founder & Managing Director" style="width: 100%; height: 540px; object-fit: cover; object-position: center 20%; display: block;">
+            <img src="assets/images/soh/punam-kularia-soh.jpg" alt="Mr. Punam D. Kularia – Founder & Managing Director" style="width: 100%; height: 540px; object-fit: cover; object-position: center 20%; display: block;" loading="lazy">
           </div>
           <div class="about-stat-card">
             <span class="stat-num">20+</span>
@@ -1278,7 +1291,7 @@
         <div class="media-3d-card featured-card" style="flex: 0 0 clamp(320px, 80vw, 385px); scroll-snap-align: start; background: #ffffff; border-radius: 24px; padding: 0; overflow: hidden; border: 1px solid rgba(202, 160, 92, 0.45); box-shadow: 0 16px 40px rgba(0,0,0,0.06); display: flex; flex-direction: column; justify-content: space-between; position: relative;">
           <div>
             <div class="media-card-thumb" style="position: relative; height: 230px; overflow: hidden; background: #121214;">
-              <img src="assets/images/soh/soh-spread.png" alt="SOH Magazine Feature Spread" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+              <img src="assets/images/soh/soh-spread.png" alt="SOH Magazine Feature Spread" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;" loading="lazy">
               <span style="position: absolute; top: 16px; left: 16px; background: var(--color-primary); color: var(--color-secondary); font-family: var(--font-heading); font-size: 0.75rem; font-weight: 700; padding: 5px 14px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 4px 12px rgba(0,0,0,0.25);">⭐ Cover & Double Spread</span>
               <button onclick="document.getElementById('hp-soh-video-modal').classList.add('active')" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 58px; height: 58px; border-radius: 50%; background: var(--color-primary); color: var(--color-secondary); border: none; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 0 30px rgba(202,160,92,0.85); transition: transform 0.3s ease;">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" style="margin-left: 3px;"><path d="M8 5v14l11-7z"/></svg>
@@ -1310,10 +1323,10 @@
             <div class="media-card-thumb" style="position: relative; height: 230px; overflow: hidden; background: #0d0d10;">
               <!-- 2x2 photo grid -->
               <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; height: 100%; gap: 2px;">
-                <img src="assets/images/leadership/moment_8.jpeg" alt="National Conclave Award" style="width:100%; height:100%; object-fit:cover; object-position: center top; filter: brightness(0.6);">
-                <img src="assets/images/leadership/moment_5.jpeg" alt="Rajasthan State Honour" style="width:100%; height:100%; object-fit:cover; object-position: center top; filter: brightness(0.6);">
-                <img src="assets/images/leadership/moment_7.jpeg" alt="Gautam Adani Meeting" style="width:100%; height:100%; object-fit:cover; object-position: center 20%; filter: brightness(0.6);">
-                <img src="assets/images/leadership/moment_4.jpeg" alt="L&T Partnership" style="width:100%; height:100%; object-fit:cover; object-position: center; filter: brightness(0.6);">
+                <img src="assets/images/leadership/moment_8.jpeg" alt="National Conclave Award" style="width:100%; height:100%; object-fit:cover; object-position: center top; filter: brightness(0.6);" loading="lazy">
+                <img src="assets/images/leadership/moment_5.jpeg" alt="Rajasthan State Honour" style="width:100%; height:100%; object-fit:cover; object-position: center top; filter: brightness(0.6);" loading="lazy">
+                <img src="assets/images/leadership/moment_7.jpeg" alt="Gautam Adani Meeting" style="width:100%; height:100%; object-fit:cover; object-position: center 20%; filter: brightness(0.6);" loading="lazy">
+                <img src="assets/images/leadership/moment_4.jpeg" alt="L&T Partnership" style="width:100%; height:100%; object-fit:cover; object-position: center; filter: brightness(0.6);" loading="lazy">
               </div>
               <!-- Overlay -->
               <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(13,13,16,0.82) 0%, transparent 60%);"></div>
@@ -1347,7 +1360,7 @@
         <div class="media-3d-card" style="flex: 0 0 clamp(320px, 80vw, 385px); scroll-snap-align: start; background: #ffffff; border-radius: 24px; padding: 0; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 12px 35px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div class="media-card-thumb" style="position: relative; height: 230px; overflow: hidden; background: #f5f5f5;">
-              <img src="assets/images/h1-banner01.jpg" alt="Architectural Digest Feature" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+              <img src="assets/images/h1-banner01.jpg" alt="Architectural Digest Feature" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;" loading="eager">
               <span style="position: absolute; top: 16px; left: 16px; background: rgba(28,28,29,0.85); color: #ffffff; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; text-transform: uppercase;">Journal Feature</span>
             </div>
             <div style="padding: 28px 28px 15px;">
@@ -1370,7 +1383,7 @@
         <div class="media-3d-card" style="flex: 0 0 clamp(320px, 80vw, 385px); scroll-snap-align: start; background: #ffffff; border-radius: 24px; padding: 0; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 12px 35px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div class="media-card-thumb" style="position: relative; height: 230px; overflow: hidden; background: #f5f5f5;">
-              <img src="assets/images/h1-slider1-280x300.jpg" alt="The Economic Times Feature" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+              <img src="assets/images/h1-slider1-280x300.jpg" alt="The Economic Times Feature" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;" loading="eager">
               <span style="position: absolute; top: 16px; left: 16px; background: rgba(28,28,29,0.85); color: #ffffff; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; text-transform: uppercase;">Corporate Review</span>
             </div>
             <div style="padding: 28px 28px 15px;">
@@ -1393,7 +1406,7 @@
         <div class="media-3d-card" style="flex: 0 0 clamp(320px, 80vw, 385px); scroll-snap-align: start; background: #ffffff; border-radius: 24px; padding: 0; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 12px 35px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between;">
           <div>
             <div class="media-card-thumb" style="position: relative; height: 230px; overflow: hidden; background: #f5f5f5;">
-              <img src="assets/images/about-4.jpg" alt="Elle Decor Coverage" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;">
+              <img src="assets/images/about-4.jpg" alt="Elle Decor Coverage" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.6s ease;" loading="lazy">
               <span style="position: absolute; top: 16px; left: 16px; background: rgba(28,28,29,0.85); color: #ffffff; font-family: var(--font-heading); font-size: 0.75rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; text-transform: uppercase;">Design Award</span>
             </div>
             <div style="padding: 28px 28px 15px;">
@@ -1838,7 +1851,7 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="footer-logo">
-            <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto">
+            <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto" loading="eager">
           </a>
           <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
