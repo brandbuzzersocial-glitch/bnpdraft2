@@ -334,24 +334,18 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Function to calculate and update sizes dynamically based on actual width
     const updateTimelineDimensions = () => {
-      const isDesktop = window.innerWidth > 768;
+      // Calculate the total scrollable width of the timeline
+      const containerWidth = timelineContainer.scrollWidth;
+      const viewportWidth = window.innerWidth;
       
-      if (isDesktop) {
-        // Calculate the total scrollable width of the timeline
-        const containerWidth = timelineContainer.scrollWidth;
-        const viewportWidth = window.innerWidth;
-        
-        // Horizontal distance the timeline needs to scroll:
-        // We want the last card to fully reveal and center, so add some extra end padding
-        const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
-        
-        // Make the vertical section height directly proportional to the horizontal scrollable width!
-        // Scroll travel = maxTranslate. Adding window.innerHeight keeps it sticky for exactly that scroll travel.
-        const scrollHeight = maxTranslate + window.innerHeight;
-        timelineSection.style.height = `${scrollHeight}px`;
-      } else {
-        timelineSection.style.height = 'auto';
-      }
+      // Horizontal distance the timeline needs to scroll:
+      // We want the last card to fully reveal and center, so add some extra end padding
+      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
+      
+      // Make the vertical section height directly proportional to the horizontal scrollable width!
+      // Scroll travel = maxTranslate. Adding window.innerHeight keeps it sticky for exactly that scroll travel.
+      const scrollHeight = maxTranslate + window.innerHeight;
+      timelineSection.style.height = `${scrollHeight}px`;
     };
 
     // Calculate dimensions on load and resize
@@ -359,72 +353,46 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(updateTimelineDimensions, 300);
 
     const updateScrollState = () => {
-      const isDesktop = window.innerWidth > 768;
       let lastActiveCard = null;
       
-      if (isDesktop) {
-        const sectionRect = timelineSection.getBoundingClientRect();
-        const sectionHeight = timelineSection.offsetHeight;
-        const windowHeight = window.innerHeight;
+      const sectionRect = timelineSection.getBoundingClientRect();
+      const sectionHeight = timelineSection.offsetHeight;
+      const windowHeight = window.innerHeight;
 
-        // Start scroll is when the top of the section hits the top of viewport
-        const startScroll = window.pageYOffset + sectionRect.top;
-        const totalScrollable = sectionHeight - windowHeight;
-        const currentScroll = window.pageYOffset - startScroll;
+      // Start scroll is when the top of the section hits the top of viewport
+      const startScroll = window.pageYOffset + sectionRect.top;
+      const totalScrollable = sectionHeight - windowHeight;
+      const currentScroll = window.pageYOffset - startScroll;
 
-        // Calculate progress percentage (0 to 1)
-        let pct = currentScroll / totalScrollable;
-        pct = Math.max(0, Math.min(1, pct));
+      // Calculate progress percentage (0 to 1)
+      let pct = currentScroll / totalScrollable;
+      pct = Math.max(0, Math.min(1, pct));
 
-        // Calculate translation
-        const containerWidth = timelineContainer.scrollWidth;
-        const viewportWidth = window.innerWidth;
-        const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
-        const currentTranslate = pct * maxTranslate;
-        
-        // Translate track
-        timelineContainer.style.transform = `translateX(-${currentTranslate}px)`;
+      // Calculate translation
+      const containerWidth = timelineContainer.scrollWidth;
+      const viewportWidth = window.innerWidth;
+      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
+      const currentTranslate = pct * maxTranslate;
+      
+      // Translate track
+      timelineContainer.style.transform = `translateX(-${currentTranslate}px)`;
 
-        // Update bottom progress bar
-        if (bottomFill) {
-          bottomFill.style.width = `${pct * 100}%`;
-        }
-
-        // Highlight active cards based on horizontal viewport position
-        timelineCards.forEach((card) => {
-          const cardRect = card.getBoundingClientRect();
-          // Card is active when it occupies the center area of screen
-          if (cardRect.left < window.innerWidth * 0.65) {
-            card.classList.add('active');
-            lastActiveCard = card;
-          } else {
-            card.classList.remove('active');
-          }
-        });
-      } else {
-        // Mobile horizontal swiping active cards observer
-        timelineContainer.style.transform = '';
-        
-        // Calculate scroll progress for mobile based on native horizontal scrolling
-        const maxScroll = timelineViewport.scrollWidth - timelineViewport.clientWidth;
-        if (maxScroll > 0) {
-          const pct = timelineViewport.scrollLeft / maxScroll;
-          if (bottomFill) {
-            bottomFill.style.width = `${pct * 100}%`;
-          }
-        }
-        
-        timelineCards.forEach((card) => {
-          const cardRect = card.getBoundingClientRect();
-          // Active card sits in the center viewport of mobile
-          if (cardRect.left < window.innerWidth * 0.7 && cardRect.right > window.innerWidth * 0.1) {
-            card.classList.add('active');
-            lastActiveCard = card;
-          } else {
-            card.classList.remove('active');
-          }
-        });
+      // Update bottom progress bar
+      if (bottomFill) {
+        bottomFill.style.width = `${pct * 100}%`;
       }
+
+      // Highlight active cards based on horizontal viewport position
+      timelineCards.forEach((card) => {
+        const cardRect = card.getBoundingClientRect();
+        // Card is active when it occupies the center area of screen
+        if (cardRect.left < window.innerWidth * 0.65) {
+          card.classList.add('active');
+          lastActiveCard = card;
+        } else {
+          card.classList.remove('active');
+        }
+      });
 
       // Default to first card if none are active
       if (!lastActiveCard && timelineCards.length > 0) {

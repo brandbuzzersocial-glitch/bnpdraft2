@@ -2448,19 +2448,6 @@ h6 { font-size: 1rem; }
   background: #0d0d10;
 }
 
-@media (max-width: 768px) {
-  .timeline-section {
-    height: auto !important;
-    padding: 40px 0;
-  }
-  .timeline-sticky-wrapper {
-    position: relative;
-    height: auto;
-    overflow: visible;
-    padding: 0;
-  }
-}
-
 .timeline-section .section-header {
   margin-bottom: 20px !important;
 }
@@ -2484,20 +2471,6 @@ h6 { font-size: 1rem; }
   padding: 20px 0;
 }
 
-@media (max-width: 768px) {
-  .timeline-horizontal-viewport {
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    -webkit-overflow-scrolling: touch !important;
-    padding: 15px 0;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-  }
-  .timeline-horizontal-viewport::-webkit-scrollbar {
-    display: none;
-  }
-}
-
 .timeline-container {
   position: relative;
   display: flex;
@@ -2509,14 +2482,6 @@ h6 { font-size: 1rem; }
   margin: 0;
   will-change: transform;
   transition: transform 0.1s ease-out;
-}
-
-@media (max-width: 768px) {
-  .timeline-container {
-    padding: 0 20px;
-    gap: 20px;
-    transition: none;
-  }
 }
 
 /* Timeline Cards */
