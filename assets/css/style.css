@@ -2486,7 +2486,9 @@ h6 { font-size: 1rem; }
 
 @media (max-width: 768px) {
   .timeline-horizontal-viewport {
-    overflow-x: auto;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
     padding: 15px 0;
     scrollbar-width: none;
     -ms-overflow-style: none;
@@ -2497,6 +2499,7 @@ h6 { font-size: 1rem; }
 }
 
 .timeline-container {
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -3499,4 +3502,63 @@ body.mouse-moving .mouse-glow-element {
     padding: 0 10px;
   }
 }
+
+/* ============================================================
+   GLOBAL CROSS-PAGE MOBILE OPTIMIZATIONS (WITHOUT DESKTOP AFFECT)
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Stack inline grids that use explicit fractional/columns templates */
+  .container > div[style*="grid-template-columns: 1fr 1fr"],
+  .container > div[style*="grid-template-columns: 1fr 1.2fr"],
+  .container > div[style*="grid-template-columns: 1.2fr 1fr"],
+  .container > div[style*="grid-template-columns: 1.1fr 1fr"],
+  .container > div[style*="grid-template-columns: 1.1fr 0.9fr"] {
+    grid-template-columns: 1fr !important;
+    gap: 35px !important;
+  }
+
+  /* Optimize portrait panels & teasers (prevent text cropping & giant heights) */
+  div[style*="min-height:500px"], 
+  div[style*="min-height: 500px"] {
+    min-height: 300px !important;
+    height: 300px !important;
+  }
+  
+  /* Prevent text from clipping inside narrow content panels */
+  div[style*="padding: 60px 50px"] {
+    padding: 30px 20px !important;
+  }
+
+  /* Biographical Origins & Success Mantras image heights */
+  img[style*="height: 500px"], 
+  img[style*="height:500px"],
+  img[style*="height: 580px"],
+  img[style*="height:580px"] {
+    height: 340px !important;
+  }
+
+  /* SOH Crawler Card layout fixes */
+  .media-3d-card {
+    height: auto !important;
+  }
+  .media-card-thumb {
+    height: 180px !important;
+  }
+  .media-3d-card p {
+    font-size: 0.82rem !important;
+    line-height: 1.5 !important;
+  }
+
+  /* Process steps stacking in founder.html */
+  .process-step {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+    padding: 25px 20px !important;
+    gap: 15px !important;
+  }
+  .process-step > div:first-child {
+    margin: 0 auto 10px !important;
+  }
+}
+
 

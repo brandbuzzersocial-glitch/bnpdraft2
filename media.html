@@ -174,14 +174,14 @@
       <!-- End Awards Grid -->
 
       <!-- AWARD 5 — Full Width: Gautam Adani & L&T Banner -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;" data-anim="fadeUp">
+      <div class="awards-banner-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;" data-anim="fadeUp">
 
         <!-- Gautam Adani -->
-        <div style="position: relative; border-radius: 18px; overflow: hidden; height: 200px; background: #0d0d10; box-shadow: 0 8px 28px rgba(0,0,0,0.15);">
+        <div class="award-banner-card" style="position: relative; border-radius: 18px; overflow: hidden; height: 200px; background: #0d0d10; box-shadow: 0 8px 28px rgba(0,0,0,0.15);">
           <img src="assets/images/leadership/moment_7.jpeg" alt="Gautam Adani — A meeting of Visionaries" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; position: absolute; inset: 0; filter: brightness(0.42);">
           <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,13,16,0.92) 35%, rgba(13,13,16,0.3) 100%); z-index: 1;"></div>
           <div style="position: absolute; top: 0; bottom: 0; left: 0; width: 4px; background: linear-gradient(to bottom, var(--color-primary), rgba(202,160,92,0.2)); z-index: 2;"></div>
-          <div style="position: absolute; inset: 0; padding: 28px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+          <div class="award-banner-card-content" style="position: absolute; inset: 0; padding: 28px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
             <span style="display: inline-block; background: rgba(202,160,92,0.15); border: 1px solid rgba(202,160,92,0.35); color: var(--color-primary); font-family: var(--font-heading); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px; width: fit-content;">Industry Pioneer</span>
             <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #ffffff; line-height: 1.3; margin: 0 0 8px;">A Meeting of Visionaries — Gautam Adani</h3>
             <p style="font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin: 0; max-width: 380px;">A significant on-site meeting between Mr. Punam Kularia and Mr. <strong style="color: rgba(255,255,255,0.85);">Gautam Adani</strong> at the NMIA Project — a landmark moment defining BNP's presence at the apex of Indian enterprise.</p>
@@ -189,11 +189,11 @@
         </div>
 
         <!-- L&T Strategic Alliance -->
-        <div style="position: relative; border-radius: 18px; overflow: hidden; height: 200px; background: #0d0d10; box-shadow: 0 8px 28px rgba(0,0,0,0.15);">
+        <div class="award-banner-card" style="position: relative; border-radius: 18px; overflow: hidden; height: 200px; background: #0d0d10; box-shadow: 0 8px 28px rgba(0,0,0,0.15);">
           <img src="assets/images/leadership/moment_4.jpeg" alt="Strategic Alliance with L&T — S.N. Subrahmanyan" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; object-position: center; position: absolute; inset: 0; filter: brightness(0.42);">
           <div style="position: absolute; inset: 0; background: linear-gradient(to right, rgba(13,13,16,0.92) 35%, rgba(13,13,16,0.3) 100%); z-index: 1;"></div>
           <div style="position: absolute; top: 0; bottom: 0; left: 0; width: 4px; background: linear-gradient(to bottom, var(--color-primary), rgba(202,160,92,0.2)); z-index: 2;"></div>
-          <div style="position: absolute; inset: 0; padding: 28px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
+          <div class="award-banner-card-content" style="position: absolute; inset: 0; padding: 28px 30px; z-index: 2; display: flex; flex-direction: column; justify-content: center;">
             <span style="display: inline-block; background: rgba(202,160,92,0.15); border: 1px solid rgba(202,160,92,0.35); color: var(--color-primary); font-family: var(--font-heading); font-size: 0.6rem; font-weight: 700; letter-spacing: 0.1em; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; margin-bottom: 12px; width: fit-content;">L&amp;T Partnership</span>
             <h3 style="font-family: var(--font-heading); font-size: 1.1rem; color: #ffffff; line-height: 1.3; margin: 0 0 8px;">Strategic Alliance with L&amp;T Leadership</h3>
             <p style="font-size: 0.8rem; color: rgba(255,255,255,0.55); line-height: 1.6; margin: 0; max-width: 380px;">BNP Interiors partners alongside <strong style="color: rgba(255,255,255,0.85);">S.N. Subrahmanyan, MD &amp; CEO of L&amp;T</strong> — a union of visionaries driving India's infrastructure and interior future.</p>
@@ -207,12 +207,26 @@
 
   <style>
     @media (max-width: 991px) {
-      .awards-grid-media {
+      .awards-grid-media,
+      .awards-banner-grid {
         grid-template-columns: 1fr !important;
       }
       .awards-grid-media > div:first-child,
       .awards-grid-media > div:last-child {
         grid-column: span 1 !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .award-banner-card {
+        height: auto !important;
+        min-height: 200px !important;
+        display: flex !important;
+        flex-direction: column !important;
+      }
+      .award-banner-card-content {
+        position: relative !important;
+        inset: auto !important;
+        padding: 24px 20px !important;
       }
     }
     @media (max-width: 600px) {

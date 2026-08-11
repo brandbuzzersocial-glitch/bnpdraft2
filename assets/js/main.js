@@ -405,10 +405,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Mobile horizontal swiping active cards observer
         timelineContainer.style.transform = '';
         
+        // Calculate scroll progress for mobile based on native horizontal scrolling
+        const maxScroll = timelineViewport.scrollWidth - timelineViewport.clientWidth;
+        if (maxScroll > 0) {
+          const pct = timelineViewport.scrollLeft / maxScroll;
+          if (bottomFill) {
+            bottomFill.style.width = `${pct * 100}%`;
+          }
+        }
+        
         timelineCards.forEach((card) => {
           const cardRect = card.getBoundingClientRect();
-          // Active card is the one sitting in the left-center of mobile screen
-          if (cardRect.left < window.innerWidth * 0.7) {
+          // Active card sits in the center viewport of mobile
+          if (cardRect.left < window.innerWidth * 0.7 && cardRect.right > window.innerWidth * 0.1) {
             card.classList.add('active');
             lastActiveCard = card;
           } else {
