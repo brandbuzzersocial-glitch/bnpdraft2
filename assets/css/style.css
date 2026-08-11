@@ -3376,9 +3376,7 @@ body.mouse-moving .mouse-glow-element {
   background: rgba(0, 0, 0, 0.03);
   border-color: rgba(202, 160, 92, 0.25);
   transform: translateY(-2px);
-}
-
-@media (max-width: 991px) {
+}@media (max-width: 991px) {
   .map-grid-container {
     grid-template-columns: 1fr !important;
     gap: 40px !important;
@@ -3391,3 +3389,114 @@ body.mouse-moving .mouse-glow-element {
     min-height: auto !important;
   }
 }
+
+/* ============================================================
+   MOBILE & CROSS-DEVICE OPTIMIZATION OVERRIDES
+   ============================================================ */
+@media (max-width: 768px) {
+  /* Prevent horizontal scroll issues globally */
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  /* Section Padding reduction for density & structure */
+  .section {
+    padding: 60px 0 !important;
+  }
+  
+  /* Retain worker section's bottom flush layout */
+  #worker-section {
+    padding: 60px 0 0 !important;
+  }
+
+  /* Worker section grid stacking */
+  .worker-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+    text-align: center;
+  }
+  .worker-grid > div:last-child {
+    padding-bottom: 50px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Worker graphic container sizing & positioning */
+  #worker-wrap {
+    height: 380px !important;
+    width: 100%;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+  }
+  #worker-slider {
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    margin: 0 auto !important;
+  }
+
+  /* Header adjustments for smaller viewport */
+  .site-header {
+    height: 70px !important;
+  }
+  .site-header.scrolled {
+    height: 64px !important;
+  }
+  
+  /* Font size overrides for mobile readability */
+  .section-title {
+    font-size: 1.8rem !important;
+    line-height: 1.25 !important;
+  }
+  .section-desc {
+    font-size: 0.9rem !important;
+    line-height: 1.6 !important;
+  }
+
+  /* Stat numbers */
+  .stat-value {
+    font-size: 2.2rem !important;
+  }
+  
+  /* Buttons touch target compliance (min 44px) */
+  .btn, .crawler-btn, .soh-play-btn, .map-pin {
+    min-height: 44px;
+  }
+
+  /* Touch target list spacing */
+  .map-project-item {
+    padding: 14px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smaller margins & alignments for tiny displays */
+  .container {
+    padding: 0 20px !important;
+  }
+  .worker-grid {
+    gap: 20px !important;
+  }
+  #worker-wrap {
+    height: 320px !important;
+  }
+  
+  /* Experience badge center alignment */
+  .experience-badge {
+    padding: 12px 20px !important;
+    margin: 15px auto 0 !important;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Adjust map container */
+  .map-viewport {
+    max-width: 100% !important;
+    padding: 0 10px;
+  }
+}
+
