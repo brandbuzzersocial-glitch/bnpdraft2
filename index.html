@@ -273,15 +273,13 @@
     if (video.readyState >= 2) startChromaKey();
     video.play().catch(function(){});
 
-    /* ─── Slide-in on scroll, and PAUSE video/loop when out of viewport ─── */
+    /* ─── Slide-in on scroll, and pause active canvas loop when off-screen to save CPU ─── */
     var slid = false;
     var obs = new IntersectionObserver(function (entries) {
       entries.forEach(function (e) {
         if (e.isIntersecting) {
-          // Play video and activate loop when visible
           if (!active) {
             active = true;
-            video.play().catch(function(){});
             renderLoop();
           }
           if (!slid) {
@@ -289,9 +287,7 @@
             slider.style.transform = 'translateX(0)';
           }
         } else {
-          // Pause video and deactivate loop when off-screen to save CPU/GPU cycles
-          active = false;
-          video.pause();
+          active = false; // Pause canvas rendering loop off-screen
         }
       });
     }, { threshold: 0, rootMargin: "350px 0px 350px 0px" });
