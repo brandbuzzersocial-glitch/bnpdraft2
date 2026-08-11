@@ -1171,20 +1171,33 @@
     <!-- Grid pattern decoration -->
     <div style="position:absolute; inset:0; background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.8) 100%); pointer-events:none; z-index:1;"></div>
     
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="section-header centered" data-anim="fadeUp" style="margin-bottom: 70px;">
-        <span class="section-tag" style="background: rgba(202,160,92,0.08); color: var(--color-primary); border-color: rgba(202,160,92,0.25);">DESIGN PORTFOLIO</span>
-        <h2 class="section-title" style="color: var(--color-secondary); margin-top: 8px;">Scroll Through Our <em>Projects</em></h2>
-        <p class="section-desc" style="color: var(--color-text); max-width:680px; margin: 12px auto 0;">Explore a curated selection of our turnkey commercial, residential, corporate, and hospitality landmarks. Click &amp; drag or swipe to rotate the showcase.</p>
-      </div>
+    <!-- Blueprint sketches flanking the 3D scene -->
+    <div style="position: absolute; left: -5%; top: 20%; width: 30vw; height: auto; opacity: 0.06; pointer-events: none; z-index: 1;">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="200" cy="200" r="180" stroke="var(--color-primary)" stroke-width="2" stroke-dasharray="10 5" />
+        <rect x="50" y="50" width="300" height="300" stroke="var(--color-primary)" stroke-width="1" />
+        <line x1="0" y1="200" x2="400" y2="200" stroke="var(--color-primary)" stroke-width="0.5" />
+        <line x1="200" y1="0" x2="200" y2="400" stroke="var(--color-primary)" stroke-width="0.5" />
+        <circle cx="200" cy="200" r="100" stroke="var(--color-primary)" stroke-width="1" stroke-dasharray="4 4" />
+      </svg>
+    </div>
+    <div style="position: absolute; right: -5%; top: 20%; width: 30vw; height: auto; opacity: 0.06; pointer-events: none; z-index: 1;">
+      <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="50" y="50" width="300" height="300" stroke="var(--color-primary)" stroke-width="2" stroke-dasharray="10 5" />
+        <circle cx="200" cy="200" r="150" stroke="var(--color-primary)" stroke-width="1" />
+        <line x1="50" y1="50" x2="350" y2="350" stroke="var(--color-primary)" stroke-width="0.5" />
+        <line x1="350" y1="50" x2="50" y2="350" stroke="var(--color-primary)" stroke-width="0.5" />
+        <rect x="100" y="100" width="200" height="200" stroke="var(--color-primary)" stroke-width="1" stroke-dasharray="4 4" />
+      </svg>
+    </div>
 
+    <div class="container" style="position: relative; z-index: 2;">
       <!-- 3D Scene Wrapper -->
       <div class="scene-3d-container">
         <!-- Holographic projector styling background center -->
         <div class="holo-glow"></div>
-        <div class="holo-ring-floor"></div>
         
-        <div class="carousel-3d-cylinder" id="cylinder-track" style="transform: rotateX(-8deg) rotateY(0deg);">
+        <div class="carousel-3d-cylinder" id="cylinder-track">
           <!-- Card 1 -->
           <div class="card-3d-item" style="--card-idx: 0;">
             <img src="assets/images/portfolio/project_20.jpg" alt="Taj Amer Palace, Jaipur" loading="lazy">
@@ -1344,10 +1357,9 @@
     }
     .carousel-3d-cylinder {
       position: relative;
-      width: 250px;
+      width: 300px;
       height: 350px;
       transform-style: preserve-3d;
-      transform: rotateX(-8deg) rotateY(0deg);
       transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
       will-change: transform;
     }
@@ -1364,7 +1376,7 @@
       border: 1px solid rgba(255,255,255,0.08);
       backface-visibility: hidden;
       -webkit-backface-visibility: hidden;
-      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(400px);
+      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(460px);
       transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
     .card-3d-item img {
@@ -1411,7 +1423,7 @@
     }
     /* Hover effects on individual card: pushes it out and highlights it */
     .card-3d-item:hover {
-      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(430px) scale(1.05);
+      transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(490px) scale(1.05);
       border-color: var(--color-primary);
       box-shadow: 0 20px 45px rgba(202,160,92,0.25);
     }
@@ -1451,11 +1463,11 @@
         height: 250px;
       }
       .card-3d-item {
-        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(280px);
+        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(300px);
         border-radius: 12px;
       }
       .card-3d-item:hover {
-        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(300px) scale(1.03);
+        transform: rotateY(calc(var(--card-idx) * 36deg)) translateZ(320px) scale(1.03);
       }
       .card-3d-details h4 {
         font-size: 0.9rem;
@@ -1467,32 +1479,6 @@
         width: 320px;
         height: 320px;
       }
-      .holo-ring-floor {
-        width: 580px;
-        height: 580px;
-        transform: translate(-50%, -50%) rotateX(80deg) translateZ(-120px);
-        animation: spinRingMobile 24s linear infinite;
-      }
-    }
-    .holo-ring-floor {
-      position: absolute;
-      width: 820px;
-      height: 820px;
-      border: 1px dashed rgba(202, 160, 92, 0.18);
-      border-radius: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%) rotateX(80deg) translateZ(-160px);
-      pointer-events: none;
-      animation: spinRing 24s linear infinite;
-    }
-    @keyframes spinRing {
-      0% { transform: translate(-50%, -50%) rotateX(80deg) translateZ(-160px) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotateX(80deg) translateZ(-160px) rotate(360deg); }
-    }
-    @keyframes spinRingMobile {
-      0% { transform: translate(-50%, -50%) rotateX(80deg) translateZ(-120px) rotate(0deg); }
-      100% { transform: translate(-50%, -50%) rotateX(80deg) translateZ(-120px) rotate(360deg); }
     }
   </style>
 
@@ -1515,7 +1501,7 @@
       // Rotate function
       function rotateCylinder(deg) {
         rotationY = deg;
-        cylinder.style.transform = `rotateX(-8deg) rotateY(${rotationY}deg)`;
+        cylinder.style.transform = `rotateY(${rotationY}deg)`;
       }
 
       function goNext() {
@@ -1568,8 +1554,22 @@
         });
       }
 
+      let isHovered = false;
+
       // Touch & Drag Support
       if (container) {
+        container.addEventListener('mouseenter', () => {
+          isHovered = true;
+          clearInterval(autoplayTimer);
+        });
+        
+        container.addEventListener('mouseleave', () => {
+          isHovered = false;
+          if (isAutoplay && !isDragging) {
+            startAutoplay();
+          }
+        });
+
         container.addEventListener('mousedown', (e) => {
           isDragging = true;
           startX = e.clientX;
@@ -1590,7 +1590,7 @@
             // Snap to nearest 36deg card angle
             const snappedAngle = Math.round(rotationY / 36) * 36;
             rotateCylinder(snappedAngle);
-            if (isAutoplay) startAutoplay();
+            if (isAutoplay && !isHovered) startAutoplay();
           }
         });
 
@@ -1613,7 +1613,7 @@
             isDragging = false;
             const snappedAngle = Math.round(rotationY / 36) * 36;
             rotateCylinder(snappedAngle);
-            if (isAutoplay) startAutoplay();
+            if (isAutoplay && !isHovered) startAutoplay();
           }
         });
       }
