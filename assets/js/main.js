@@ -350,6 +350,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Expose recalculate to window for 'Show More' functionality
     window.updateTimelineDimensions = updateTimelineDimensions;
+    
+    window.expandTimeline = function() {
+      const hiddenCards = document.querySelectorAll('.timeline-hidden');
+      hiddenCards.forEach(card => card.classList.remove('timeline-hidden'));
+      const showMoreCard = document.querySelector('.timeline-show-more-card');
+      if (showMoreCard) {
+        showMoreCard.style.display = 'none';
+      }
+      setTimeout(updateTimelineDimensions, 50);
+    };
 
     // Calculate dimensions on load and resize
     window.addEventListener('resize', updateTimelineDimensions);
