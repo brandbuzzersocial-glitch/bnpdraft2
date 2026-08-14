@@ -47,62 +47,63 @@
   </header>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
+/* Using site DNA fonts: 'Golos Text' and 'Cal Sans' or 'var(--font-heading)' */
 
 .newspaper-page {
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: #faf9f6; /* Off-white for a premium paper feel */
+  color: #0d0d10;
   font-family: 'Golos Text', sans-serif;
 }
 
 .newspaper-header {
   text-align: center;
   padding: 160px 20px 40px;
-  border-bottom: 2px solid #111;
-  border-top: 4px solid #111;
+  border-bottom: 2px solid var(--color-primary);
+  border-top: 4px solid #0d0d10;
   margin-top: 10px;
-  background: #ffffff;
+  background: #faf9f6;
 }
 
 .newspaper-tag {
   font-family: 'Golos Text', sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #555;
+  color: var(--color-primary);
+  font-weight: 700;
   display: block;
   margin-bottom: 15px;
 }
 
 .newspaper-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
   font-size: clamp(3.5rem, 7vw, 6rem);
   line-height: 1;
-  color: #111;
+  color: #0d0d10;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: -1px;
 }
 
 .newspaper-subtitle {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.2rem, 2vw, 1.5rem);
-  font-style: italic;
+  font-family: 'Golos Text', sans-serif;
+  font-size: clamp(1.1rem, 1.5vw, 1.3rem);
   color: #444;
   max-width: 800px;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 .newspaper-section {
   padding: 60px 0;
-  border-bottom: 1px solid #ccc;
-  background: #ffffff;
+  border-bottom: 1px solid rgba(13,13,16,0.1);
+  background: #faf9f6;
 }
 
 .newspaper-section-title {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
   font-size: 2.5rem;
-  color: #111;
+  color: #0d0d10;
   text-align: center;
   margin-bottom: 50px;
   text-transform: uppercase;
@@ -112,7 +113,7 @@
   content: "";
   display: block;
   width: 60px;
-  height: 2px;
+  height: 3px;
   background: var(--color-primary);
   margin: 15px auto 0;
 }
@@ -124,8 +125,8 @@
   gap: 40px;
   flex-wrap: wrap;
   padding: 30px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;
+  border-top: 1px solid rgba(13,13,16,0.1);
+  border-bottom: 1px solid rgba(13,13,16,0.1);
   margin-bottom: 60px;
   background: #ffffff;
 }
@@ -134,44 +135,51 @@
   padding: 0 20px;
 }
 .newspaper-stat-icon {
-  font-size: 2rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
 }
 .newspaper-stat-val {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #111;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--color-primary);
   line-height: 1;
 }
 .newspaper-stat-label {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #666;
-  margin-top: 5px;
+  letter-spacing: 1.5px;
+  color: #0d0d10;
+  margin-top: 8px;
 }
 
 /* Award Cards */
 .award-card-np {
   background: #ffffff;
-  border: 1px solid #eee;
+  border: 1px solid rgba(13,13,16,0.08);
   padding: 25px;
   display: flex;
   flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.award-card-np:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .award-card-np img {
   width: 100%;
   height: 220px;
   object-fit: cover;
   margin-bottom: 20px;
-  filter: grayscale(20%);
+  filter: grayscale(80%);
+  transition: 0.4s ease;
 }
 .award-card-np:hover img {
   filter: grayscale(0%);
 }
 .award-tag-np {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--color-primary);
@@ -180,15 +188,15 @@
   display: block;
 }
 .award-title-np {
-  font-family: 'Playfair Display', serif;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
   font-size: 1.4rem;
-  color: #111;
+  color: #0d0d10;
   margin-bottom: 10px;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 .award-desc-np {
-  font-size: 0.9rem;
-  color: #444;
+  font-size: 0.95rem;
+  color: #555;
   line-height: 1.6;
 }
 
@@ -198,14 +206,16 @@
   display: flex;
   gap: 30px;
   background: #ffffff;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(13,13,16,0.1);
   padding: 30px;
   margin-bottom: 30px;
+  border-top: 3px solid var(--color-primary);
 }
 .award-featured-np img {
   width: 50%;
   height: auto;
   object-fit: cover;
+  filter: grayscale(30%);
 }
 .award-featured-content {
   width: 50%;
@@ -235,9 +245,11 @@
   display: flex;
   gap: 40px;
   align-items: center;
-  border: 1px solid #ccc;
+  border: 1px solid rgba(13,13,16,0.1);
+  background: #ffffff;
   padding: 40px;
   margin-bottom: 50px;
+  border-left: 4px solid var(--color-primary);
 }
 .soh-media-np {
   width: 45%;
@@ -259,27 +271,34 @@
   display: flex; align-items: center; justify-content: center;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
+}
+.soh-play-np:hover {
+  background: #0d0d10;
+  transform: translate(-50%, -50%) scale(1.1);
 }
 .soh-play-np svg { width: 24px; fill: currentColor; }
 .soh-content-np {
   width: 55%;
 }
 .soh-content-np h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2rem;
-  color: #111;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
+  font-size: 2.2rem;
+  color: #0d0d10;
   margin-bottom: 20px;
   line-height: 1.2;
 }
 .soh-quote-np {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Golos Text', sans-serif;
   font-size: 1.2rem;
-  font-style: italic;
-  color: #333;
+  font-weight: 500;
+  color: #0d0d10;
   border-left: 3px solid var(--color-primary);
   padding-left: 20px;
   margin: 20px 0;
   line-height: 1.6;
+  background: rgba(202,160,92,0.05);
+  padding: 20px;
 }
 
 @media (max-width: 991px) {
@@ -294,7 +313,7 @@
   gap: 30px;
 }
 .article-card-np {
-  border-top: 2px solid #111;
+  border-top: 3px solid #0d0d10;
   padding-top: 15px;
 }
 .article-card-np img {
@@ -302,16 +321,21 @@
   height: 200px;
   object-fit: cover;
   margin-bottom: 15px;
-  filter: grayscale(10%);
+  filter: grayscale(80%);
+  transition: 0.4s ease;
+}
+.article-card-np:hover img {
+  filter: grayscale(0%);
 }
 .article-card-np h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
+  font-family: var(--font-heading), 'Cal Sans', sans-serif;
+  font-size: 1.4rem;
   margin-bottom: 10px;
   line-height: 1.3;
+  color: #0d0d10;
 }
 .article-card-np p {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #555;
   line-height: 1.5;
 }
@@ -435,7 +459,7 @@
         </div>
       </div>
 
-      <h3 style="font-family: 'Playfair Display', serif; font-size: 2rem; margin-bottom: 30px; border-bottom: 1px solid #111; padding-bottom: 10px;">More Press Coverage</h3>
+      <h3 style="font-family: var(--font-heading), 'Cal Sans', sans-serif; font-size: 2rem; margin-bottom: 30px; border-bottom: 2px solid #0d0d10; padding-bottom: 10px; color: #0d0d10;">More Press Coverage</h3>
 
       <div class="articles-grid">
         <div class="article-card-np">
@@ -464,10 +488,10 @@
 </main>
 
 <!-- SOH VIDEO MODAL -->
-<div class="soh-video-modal" id="soh-video-modal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(0,0,0,0.9); align-items:center; justify-content:center;">
+<div class="soh-video-modal" id="soh-video-modal" style="display:none; position:fixed; inset:0; z-index:9999; background:rgba(13,13,16,0.95); align-items:center; justify-content:center;">
   <div class="soh-video-modal-content" style="position:relative; width:90%; max-width:900px;">
-    <button class="soh-modal-close" id="close-soh-video" aria-label="Close Video" style="position:absolute; top:-40px; right:0; background:none; border:none; color:#fff; font-size:2rem; cursor:pointer;">&times;</button>
-    <video controls preload="metadata" poster="assets/images/soh/soh-spread.png" id="soh-modal-video-player" style="width:100%; display:block;">
+    <button class="soh-modal-close" id="close-soh-video" aria-label="Close Video" style="position:absolute; top:-40px; right:0; background:none; border:none; color:var(--color-primary); font-size:2.5rem; cursor:pointer;">&times;</button>
+    <video controls preload="metadata" poster="assets/images/soh/soh-spread.png" id="soh-modal-video-player" style="width:100%; display:block; border: 2px solid var(--color-primary);">
       <source src="assets/images/soh/soh-feature.mp4" type="video/mp4">
       Your browser does not support HTML5 video playback.
     </video>
