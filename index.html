@@ -513,7 +513,18 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2018">
+          
+          <!-- SHOW MORE CARD -->
+          <div class="timeline-card timeline-show-more-card" style="display:flex; justify-content:center; align-items:center;">
+            <div class="timeline-card-node"></div>
+            <div class="timeline-content" style="cursor:pointer; text-align:center; min-height:180px; display:flex; flex-direction:column; justify-content:center;" onclick="expandTimeline()">
+              <h3 style="margin-bottom:10px; color:var(--color-primary);">Discover More Milestones</h3>
+              <p style="font-size:0.9rem;">Explore our journey from 2018 to 2026</p>
+              <button class="btn btn-outline" style="margin-top:15px; pointer-events:none;">Show More</button>
+            </div>
+          </div>
+
+          <div class="timeline-card timeline-hidden" data-year="2018">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -530,7 +541,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2019">
+          <div class="timeline-card timeline-hidden" data-year="2019">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -547,7 +558,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2020">
+          <div class="timeline-card timeline-hidden" data-year="2020">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -564,7 +575,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2021">
+          <div class="timeline-card timeline-hidden" data-year="2021">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -580,7 +591,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2022">
+          <div class="timeline-card timeline-hidden" data-year="2022">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -597,7 +608,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2023">
+          <div class="timeline-card timeline-hidden" data-year="2023">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -615,7 +626,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2024">
+          <div class="timeline-card timeline-hidden" data-year="2024">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -632,7 +643,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2025">
+          <div class="timeline-card timeline-hidden" data-year="2025">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -649,7 +660,7 @@
             </div>
           </div>
 
-          <div class="timeline-card" data-year="2026">
+          <div class="timeline-card timeline-hidden" data-year="2026">
             <div class="timeline-card-node"></div>
             <div class="timeline-content">
               <div class="timeline-badge-header">
@@ -1382,6 +1393,8 @@
 
   <style>
     /* CSS 3D Cylinder Styles */
+    .timeline-hidden { display: none !important; }
+
     .scene-3d-container {
       position: relative;
       width: 100%;

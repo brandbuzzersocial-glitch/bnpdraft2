@@ -347,6 +347,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const scrollHeight = maxTranslate + window.innerHeight;
       timelineSection.style.height = `${scrollHeight}px`;
     };
+    
+    // Expose recalculate to window for 'Show More' functionality
+    window.updateTimelineDimensions = updateTimelineDimensions;
 
     // Calculate dimensions on load and resize
     window.addEventListener('resize', updateTimelineDimensions);
