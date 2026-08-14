@@ -1368,11 +1368,11 @@
       </div>
 
       <!-- Controls -->
-      <div class="scene-3d-controls" style="display:flex; justify-content:center; align-items:center; gap:20px; margin-top:50px;">
-        <button class="btn-3d-ctrl" id="cylinder-prev" aria-label="Previous project">
+      <div class="scene-3d-controls" style="position: absolute; top: 50%; left: 0; width: 100%; display: flex; justify-content: space-between; transform: translateY(-50%); pointer-events: none; padding: 0 5%; z-index: 100;">
+        <button class="btn-3d-ctrl" id="cylinder-prev" aria-label="Previous project" style="pointer-events: auto; background: var(--color-primary); color: var(--color-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>
         </button>
-        <button class="btn-3d-ctrl" id="cylinder-next" aria-label="Next project">
+        <button class="btn-3d-ctrl" id="cylinder-next" aria-label="Next project" style="pointer-events: auto; background: var(--color-primary); color: var(--color-dark); box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
         </button>
       </div>
@@ -1574,7 +1574,7 @@
           if (isAutoplay && !isDragging && !isHovered) {
             goNext();
           }
-        }, 3000);
+        }, 1800);
       }
 
       startAutoplay();
