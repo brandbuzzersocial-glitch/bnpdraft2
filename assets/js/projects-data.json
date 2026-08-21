@@ -24,19 +24,10 @@
     "name": "Taj Ganga Kutir",
     "category": "hospitality",
     "location": "Raichak, West Bengal",
-    "scope": "All Public Areas, Specialty Restaurants & Presidential Suites",
+    "scope": "All Public Areas, Specialty Restaurants & Presidential Suites, 150 Guest Rooms, 10 Luxury Villas & Lobbies",
     "images": [
       "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_1.webp",
-      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp"
-    ]
-  },
-  "taj-ganga-kutir-phase-ii": {
-    "id": "taj-ganga-kutir-phase-ii",
-    "name": "Taj Ganga Kutir (Phase II)",
-    "category": "hospitality",
-    "location": "Raichak, West Bengal",
-    "scope": "150 Guest Rooms, 10 Luxury Villas & Lobbies",
-    "images": [
+      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp",
       "assets/images/portfolio/project_23.jpg"
     ]
   },
@@ -45,18 +36,9 @@
     "name": "Taj Puri Resort & Spa",
     "category": "hospitality",
     "location": "Puri, Odisha",
-    "scope": "Guest Rooms, Deluxe Suites & Grand Ballroom",
+    "scope": "Guest Rooms, Deluxe Suites & Grand Ballroom, Specialty Restaurant, Spa, Fitness Center & Reception",
     "images": [
-      "assets/images/portfolio/project_24.jpg"
-    ]
-  },
-  "taj-puri-resort-spa-phase-ii": {
-    "id": "taj-puri-resort-spa-phase-ii",
-    "name": "Taj Puri Resort & Spa (Phase II)",
-    "category": "hospitality",
-    "location": "Puri, Odisha",
-    "scope": "Specialty Restaurant, Spa, Fitness Center & Reception",
-    "images": [
+      "assets/images/portfolio/project_24.jpg",
       "assets/images/portfolio/project_25.jpg"
     ]
   },
@@ -65,7 +47,7 @@
     "name": "Taj Gorbandh Palace",
     "category": "hospitality",
     "location": "Jaisalmer, Rajasthan",
-    "scope": "Guest Rooms, Executive Suites & All-Day Dining",
+    "scope": "Guest Rooms, Executive Suites & All-Day Dining, Library Bar Lounge, Specialty Restaurant, Spa & Gym",
     "images": [
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__1.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__10.png",
@@ -82,16 +64,7 @@
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__6.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__7.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__8.png",
-      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png"
-    ]
-  },
-  "taj-gorbandh-palace-phase-ii": {
-    "id": "taj-gorbandh-palace-phase-ii",
-    "name": "Taj Gorbandh Palace (Phase II)",
-    "category": "hospitality",
-    "location": "Jaisalmer, Rajasthan",
-    "scope": "Library Bar Lounge, Specialty Restaurant, Spa & Gym",
-    "images": [
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png",
       "assets/images/portfolio/project_27.jpg"
     ]
   },
@@ -100,40 +73,13 @@
     "name": "Taj Amer",
     "category": "hospitality",
     "location": "Jaipur, Rajasthan",
-    "scope": "173 King Rooms, 52 Twin Rooms & 19 Suites",
+    "scope": "173 King Rooms, 52 Twin Rooms & 19 Suites, Spa & Fitness Centre, The Executive Club & Boardrooms, Grand Ballrooms, Pre-Function Area & Guest Lobbies, Spa Lobbies, Reception, Treatment Rooms & Yoga Studio",
     "images": [
       "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
       "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png",
-      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png"
-    ]
-  },
-  "taj-amer-phase-ii": {
-    "id": "taj-amer-phase-ii",
-    "name": "Taj Amer (Phase II)",
-    "category": "hospitality",
-    "location": "Jaipur, Rajasthan",
-    "scope": "Spa & Fitness Centre, The Executive Club & Boardrooms",
-    "images": [
-      "assets/images/portfolio/project_29.jpg"
-    ]
-  },
-  "taj-amer-phase-iii": {
-    "id": "taj-amer-phase-iii",
-    "name": "Taj Amer (Phase III)",
-    "category": "hospitality",
-    "location": "Jaipur, Rajasthan",
-    "scope": "Grand Ballrooms, Pre-Function Area & Guest Lobbies",
-    "images": [
-      "assets/images/portfolio/project_30.jpg"
-    ]
-  },
-  "taj-amer-spa-retail": {
-    "id": "taj-amer-spa-retail",
-    "name": "Taj Amer (Spa & Retail)",
-    "category": "hospitality",
-    "location": "Jaipur, Rajasthan",
-    "scope": "Spa Lobbies, Reception, Treatment Rooms & Yoga Studio",
-    "images": [
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png",
+      "assets/images/portfolio/project_29.jpg",
+      "assets/images/portfolio/project_30.jpg",
       "assets/images/portfolio/project_31.jpg"
     ]
   },
@@ -203,9 +149,9 @@
       "assets/images/portfolio/project_36.jpg"
     ]
   },
-  "radisson-hotel": {
-    "id": "radisson-hotel",
-    "name": "Radisson Hotel",
+  "radisson-hotel-jamshedpur": {
+    "id": "radisson-hotel-jamshedpur",
+    "name": "Radisson Hotel - Jamshedpur",
     "category": "hospitality",
     "location": "Jamshedpur, Jharkhand",
     "scope": "Guest Rooms, Premium Suites, Owner's Suite & Ballroom",
@@ -219,9 +165,9 @@
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png"
     ]
   },
-  "novotel-hotel": {
-    "id": "novotel-hotel",
-    "name": "Novotel Hotel",
+  "novotel-hotel-chennai": {
+    "id": "novotel-hotel-chennai",
+    "name": "Novotel Hotel - Chennai",
     "category": "hospitality",
     "location": "Chennai, Tamil Nadu",
     "scope": "158 Keys, Bar Area, All-Day Dining & Common Areas",
@@ -234,9 +180,9 @@
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png"
     ]
   },
-  "novotel-hotel-1": {
-    "id": "novotel-hotel-1",
-    "name": "Novotel Hotel",
+  "novotel-hotel-hyderabad": {
+    "id": "novotel-hotel-hyderabad",
+    "name": "Novotel Hotel - Hyderabad",
     "category": "hospitality",
     "location": "Hyderabad, Telangana",
     "scope": "152 Keys, Main Lobby & All Common Areas",
@@ -244,9 +190,9 @@
       "assets/images/portfolio/project_39.jpg"
     ]
   },
-  "radisson-hotel-1": {
-    "id": "radisson-hotel-1",
-    "name": "Radisson Hotel",
+  "radisson-hotel-ranchi": {
+    "id": "radisson-hotel-ranchi",
+    "name": "Radisson Hotel - Ranchi",
     "category": "hospitality",
     "location": "Ranchi, Jharkhand",
     "scope": "Main Lobby, Common Areas, Reception & Guest Rooms",
@@ -254,9 +200,9 @@
       "assets/images/portfolio/project_40.jpg"
     ]
   },
-  "marriott-hotel": {
-    "id": "marriott-hotel",
-    "name": "Marriott Hotel",
+  "marriott-hotel-bangalore": {
+    "id": "marriott-hotel-bangalore",
+    "name": "Marriott Hotel - Bangalore",
     "category": "hospitality",
     "location": "Bangalore, Karnataka",
     "scope": "330 Keys, Lobby, Common Areas & Corridors",
@@ -264,12 +210,12 @@
       "assets/images/portfolio/project_41.jpg"
     ]
   },
-  "hyatt-regency": {
-    "id": "hyatt-regency",
-    "name": "Hyatt Regency",
+  "hyatt-regency-pune": {
+    "id": "hyatt-regency-pune",
+    "name": "Hyatt Regency - Pune",
     "category": "hospitality",
     "location": "Pune, Maharashtra",
-    "scope": "Grand Lobby, Banquet Area, Bar & Pre-Function",
+    "scope": "Grand Lobby, Banquet Area, Bar & Pre-Function, Main Reception, Specialty Restaurant & Common Areas",
     "images": [
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__2.png",
@@ -278,19 +224,9 @@
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png"
     ]
   },
-  "hyatt-regency-phase-ii": {
-    "id": "hyatt-regency-phase-ii",
-    "name": "Hyatt Regency (Phase II)",
-    "category": "hospitality",
-    "location": "Pune, Maharashtra",
-    "scope": "Main Reception, Specialty Restaurant & Common Areas",
-    "images": [
-      "assets/images/portfolio/project_43.jpg"
-    ]
-  },
-  "novotel-hotel-2": {
-    "id": "novotel-hotel-2",
-    "name": "Novotel Hotel",
+  "novotel-hotel-gurugram": {
+    "id": "novotel-hotel-gurugram",
+    "name": "Novotel Hotel - Gurugram",
     "category": "hospitality",
     "location": "Gurugram, Haryana",
     "scope": "156 Keys, Waiting Area, All-Day Dining & Conference Rooms",
@@ -298,9 +234,9 @@
       "assets/images/portfolio/project_44.jpg"
     ]
   },
-  "novotel-hotel-3": {
-    "id": "novotel-hotel-3",
-    "name": "Novotel Hotel",
+  "novotel-hotel-pune": {
+    "id": "novotel-hotel-pune",
+    "name": "Novotel Hotel - Pune",
     "category": "hospitality",
     "location": "Pune, Maharashtra",
     "scope": "300 Keys, All-Day Dining, Specialty Restaurant & Common Areas",
@@ -374,20 +310,11 @@
     "id": "motilal-oswal-headquarters",
     "name": "Motilal Oswal Headquarters",
     "category": "corporate-hq",
-    "location": "Ahmedabad, Gujarat",
-    "scope": "95,000 Sq. Ft. Corporate HQ Offices",
-    "images": [
-      "assets/images/portfolio/project_54.jpg"
-    ]
-  },
-  "motilal-oswal-headquarters-1": {
-    "id": "motilal-oswal-headquarters-1",
-    "name": "Motilal Oswal Headquarters",
-    "category": "corporate-hq",
     "location": "Mumbai, Maharashtra",
     "scope": "75,000 Sq. Ft. Executive HQ Offices",
     "images": [
-      "assets/images/portfolio/project_55.jpg"
+      "assets/images/portfolio/project_55.jpg",
+      "assets/images/portfolio/project_54.jpg"
     ]
   },
   "wipro-offices": {
@@ -535,18 +462,9 @@
     "name": "UST Global Kerala HQ",
     "category": "corporate-hq",
     "location": "Kerala",
-    "scope": "13,00,000 Sq. Ft. IT Regional Headquarters",
+    "scope": "13,00,000 Sq. Ft. IT Regional Headquarters, 2,00,000 Sq. Ft. Regional Office Spaces",
     "images": [
-      "assets/images/portfolio/project_70.jpg"
-    ]
-  },
-  "ust-global-kerala-hq-phase-ii": {
-    "id": "ust-global-kerala-hq-phase-ii",
-    "name": "UST Global Kerala HQ (Phase II)",
-    "category": "corporate-hq",
-    "location": "Kerala",
-    "scope": "2,00,000 Sq. Ft. Regional Office Spaces",
-    "images": [
+      "assets/images/portfolio/project_70.jpg",
       "assets/images/portfolio/project_71.jpg"
     ]
   },
@@ -605,18 +523,9 @@
     "name": "DB Mall",
     "category": "malls-shopping",
     "location": "Bhopal, Madhya Pradesh",
-    "scope": "15,00,000 Sq. Ft. Shopping Centre Public Areas",
+    "scope": "15,00,000 Sq. Ft. Shopping Centre Public Areas, 8,00,000 Sq. Ft. Shopping Centre Interiors",
     "images": [
-      "assets/images/portfolio/project_78.jpg"
-    ]
-  },
-  "db-mall-phase-ii": {
-    "id": "db-mall-phase-ii",
-    "name": "DB Mall (Phase II)",
-    "category": "malls-shopping",
-    "location": "Ranchi, Jharkhand",
-    "scope": "8,00,000 Sq. Ft. Shopping Centre Interiors",
-    "images": [
+      "assets/images/portfolio/project_78.jpg",
       "assets/images/portfolio/project_79.jpg"
     ]
   },
