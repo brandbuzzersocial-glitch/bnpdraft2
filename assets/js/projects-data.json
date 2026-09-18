@@ -3,19 +3,37 @@
     "id": "taj-palace",
     "name": "Taj Palace",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Lucknow, Uttar Pradesh",
-    "scope": "All Public Areas, Presidential Suites & Guest Rooms",
+    "scope": "All Public Areas, Presidential Suites & Luxury Guest Rooms",
     "images": [
+      "assets/images/portfolio/taj_palace_lucknow/img_20_2.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_1.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_3.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_4.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_5.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_6.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_7.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_8.jpeg",
       "assets/images/portfolio/project_20.jpg"
     ]
   },
-  "ayodhyam": {
-    "id": "ayodhyam",
-    "name": "Ayodhyam",
+  "taj-ayodhyam": {
+    "id": "taj-ayodhyam",
+    "name": "Taj Ayodhyam",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Ayodhya, Uttar Pradesh",
     "scope": "All Public Areas & Luxury Guest Rooms",
     "images": [
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_3.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_1.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_2.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_4.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_5.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_6.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_7.jpeg",
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_8.jpeg",
       "assets/images/portfolio/project_21.jpg"
     ]
   },
@@ -23,11 +41,13 @@
     "id": "taj-ganga-kutir",
     "name": "Taj Ganga Kutir",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Raichak, West Bengal",
-    "scope": "All Public Areas, Specialty Restaurants & Presidential Suites, 150 Guest Rooms, 10 Luxury Villas & Lobbies",
+    "scope": "All Public Areas, Specialty Restaurants, Presidential Suites, 150 Guest Rooms, 10 Luxury Villas & Lobbies",
     "images": [
-      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_1.webp",
       "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp",
+      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_1.webp",
+      "assets/images/portfolio/project_22.jpg",
       "assets/images/portfolio/project_23.jpg"
     ]
   },
@@ -35,26 +55,41 @@
     "id": "taj-puri-resort-spa",
     "name": "Taj Puri Resort & Spa",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Puri, Odisha",
-    "scope": "Guest Rooms, Deluxe Suites & Grand Ballroom, Specialty Restaurant, Spa, Fitness Center & Reception",
+    "scope": "Guest Rooms, Deluxe Suites, Grand Ballroom, Specialty Restaurant, Spa, Fitness Center & Reception",
     "images": [
-      "assets/images/portfolio/project_24.jpg",
-      "assets/images/portfolio/project_25.jpg"
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_4.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_1.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_2.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_3.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_5.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_6.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_1.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_2.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_3.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_4.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_5.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_6.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_7.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_8.jpeg",
+      "assets/images/portfolio/taj_puri_resort_spa/img_25_9.jpeg"
     ]
   },
   "taj-gorbandh-palace": {
     "id": "taj-gorbandh-palace",
     "name": "Taj Gorbandh Palace",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Jaisalmer, Rajasthan",
-    "scope": "Guest Rooms, Executive Suites & All-Day Dining, Library Bar Lounge, Specialty Restaurant, Spa & Gym",
+    "scope": "Guest Rooms, Executive Suites, All-Day Dining, Library Bar Lounge, Specialty Restaurant, Spa & Gym",
     "images": [
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__1.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__10.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__11.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__12.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__13.png",
-      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__15.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__16.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__2.png",
@@ -65,6 +100,7 @@
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__7.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__8.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png",
+      "assets/images/portfolio/project_26.jpg",
       "assets/images/portfolio/project_27.jpg"
     ]
   },
@@ -72,13 +108,33 @@
     "id": "taj-amer",
     "name": "Taj Amer",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Jaipur, Rajasthan",
-    "scope": "173 King Rooms, 52 Twin Rooms & 19 Suites, Spa & Fitness Centre, The Executive Club & Boardrooms, Grand Ballrooms, Pre-Function Area & Guest Lobbies, Spa Lobbies, Reception, Treatment Rooms & Yoga Studio",
+    "scope": "173 King Rooms, 52 Twin Rooms, 19 Suites, Spa & Fitness Centre, Executive Club, Boardrooms & Grand Ballrooms",
     "images": [
-      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
       "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png",
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
       "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png",
-      "assets/images/portfolio/project_29.jpg",
+      "assets/images/portfolio/project_28.jpg",
+      "assets/images/portfolio/project_29.jpg"
+    ]
+  },
+  "taj-the-trees": {
+    "id": "taj-the-trees",
+    "name": "Taj The Trees",
+    "category": "hospitality",
+    "category_label": "Hospitality",
+    "location": "Vikhroli, Mumbai, Maharashtra",
+    "scope": "Grand Ballrooms, Pre-Function Area, Reception Lobby, Circulation, Specialty Restaurant, Spa & Conference Facilities",
+    "images": [
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_7.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_1.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_2.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_3.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_4.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_5.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_8.png",
       "assets/images/portfolio/project_30.jpg",
       "assets/images/portfolio/project_31.jpg"
     ]
@@ -87,9 +143,11 @@
     "id": "the-chambers-taj-mahal-palace",
     "name": "The Chambers, Taj Mahal Palace",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Mumbai, Maharashtra",
-    "scope": "Executive Waiting Area, Dining & Lift Lobbies",
+    "scope": "Bespoke Furniture, Executive Waiting Area, Elite Members' Lounges, Private Dining, Conference Suites & Lift Lobbies",
     "images": [
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__1.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__10.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__11.png",
@@ -100,615 +158,184 @@
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__3.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__4.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__5.png",
-      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__7.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__8.png",
-      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__9.png"
-    ]
-  },
-  "taj-mahal-palace-conference-suites": {
-    "id": "taj-mahal-palace-conference-suites",
-    "name": "Taj Mahal Palace (Conference Suites)",
-    "category": "hospitality",
-    "location": "Mumbai, Maharashtra",
-    "scope": "Premium Boardrooms & Conference Rooms",
-    "images": [
-      "assets/images/portfolio/project_33.jpg"
-    ]
-  },
-  "taj-mahal-palace-private-lounges": {
-    "id": "taj-mahal-palace-private-lounges",
-    "name": "Taj Mahal Palace (Private Lounges)",
-    "category": "hospitality",
-    "location": "Mumbai, Maharashtra",
-    "scope": "Elite Members' Lounges & Dining Spaces",
-    "images": [
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__9.png",
+      "assets/images/portfolio/project_32.jpg",
+      "assets/images/portfolio/project_33.jpg",
       "assets/images/portfolio/project_34.jpg"
     ]
   },
   "seleqtions-by-taj-cidade-de-goa": {
     "id": "seleqtions-by-taj-cidade-de-goa",
-    "name": "SeleQtions by Taj \u2014 Cidade de Goa",
+    "name": "SeleQtions by Taj - Cidade de Goa",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Goa",
-    "scope": "Public Areas, Restaurants, Grand Ballroom & BOH Areas",
+    "scope": "All Public Areas, Restaurants, Grand Ballroom, Pre-Function, BOH Areas & General Manager's Office",
     "images": [
-      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__1.png",
       "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__2.png",
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__1.png",
       "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__3.png",
-      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__4.png"
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__4.png",
+      "assets/images/portfolio/project_35.jpg"
     ]
   },
   "vivanta-by-taj": {
     "id": "vivanta-by-taj",
     "name": "Vivanta by Taj",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Bhubaneswar, Odisha",
-    "scope": "136 Guest Rooms, Specialty Restaurants & Public Areas",
+    "scope": "136 Guest Rooms, Specialty Restaurants, Grand Ballroom, Pre-Function & Public Areas",
     "images": [
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_1.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_2.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_3.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_5.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_6.png",
       "assets/images/portfolio/project_36.jpg"
     ]
   },
-  "radisson-hotel-jamshedpur": {
-    "id": "radisson-hotel-jamshedpur",
-    "name": "Radisson Hotel - Jamshedpur",
+  "radisson-hotel": {
+    "id": "radisson-hotel",
+    "name": "Radisson Hotel",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Jamshedpur, Jharkhand",
-    "scope": "Guest Rooms, Premium Suites, Owner's Suite & Ballroom",
+    "scope": "Guest Rooms, Premium Suites, Owner's Suite, Presidential Suites, Ballroom, Pre-Function & All-Day Dining",
     "images": [
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_1.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_2.png",
-      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_4.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_5.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_6.png",
-      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png"
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png",
+      "assets/images/portfolio/project_37.jpg"
     ]
   },
-  "novotel-hotel-chennai": {
-    "id": "novotel-hotel-chennai",
-    "name": "Novotel Hotel - Chennai",
+  "fairfield-by-marriott": {
+    "id": "fairfield-by-marriott",
+    "name": "Fairfield by Marriott",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Chennai, Tamil Nadu",
-    "scope": "158 Keys, Bar Area, All-Day Dining & Common Areas",
+    "scope": "158 Keys, Bar Area, All-Day Dining, Pool Area, Gym, Market & Conference Rooms (HICSA Hotel of the Year 2019 Award Winner)",
     "images": [
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__1.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__2.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__3.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__5.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png"
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png",
+      "assets/images/portfolio/project_38.jpg"
     ]
   },
-  "novotel-hotel-hyderabad": {
-    "id": "novotel-hotel-hyderabad",
-    "name": "Novotel Hotel - Hyderabad",
+  "sheraton": {
+    "id": "sheraton",
+    "name": "Sheraton",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Hyderabad, Telangana",
-    "scope": "152 Keys, Main Lobby & All Common Areas",
+    "scope": "152 Keys, Grand Lobby & All Common Circulation Areas",
     "images": [
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__2.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__3.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__4.png",
       "assets/images/portfolio/project_39.jpg"
     ]
   },
-  "radisson-hotel-ranchi": {
-    "id": "radisson-hotel-ranchi",
-    "name": "Radisson Hotel - Ranchi",
+  "courtyard-by-marriott": {
+    "id": "courtyard-by-marriott",
+    "name": "Courtyard by Marriott",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Ranchi, Jharkhand",
-    "scope": "Main Lobby, Common Areas, Reception & Guest Rooms",
+    "scope": "Grand Lobby, Reception, Deluxe Guest Rooms & Public Circulation Spaces",
     "images": [
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_1.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_2.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_4.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_5.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_6.png",
       "assets/images/portfolio/project_40.jpg"
     ]
   },
-  "marriott-hotel-bangalore": {
-    "id": "marriott-hotel-bangalore",
-    "name": "Marriott Hotel - Bangalore",
+  "marriott-hotel": {
+    "id": "marriott-hotel",
+    "name": "Marriott Hotel",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Bangalore, Karnataka",
-    "scope": "330 Keys, Lobby, Common Areas & Corridors",
+    "scope": "330 Keys, Lobby, Corridors & Common Circulation Areas",
     "images": [
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_3.jpeg",
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_1.jpeg",
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_2.jpeg",
       "assets/images/portfolio/project_41.jpg"
     ]
   },
-  "hyatt-regency-pune": {
-    "id": "hyatt-regency-pune",
-    "name": "Hyatt Regency - Pune",
+  "hyatt-regency": {
+    "id": "hyatt-regency",
+    "name": "Hyatt Regency",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Pune, Maharashtra",
-    "scope": "Grand Lobby, Banquet Area, Bar & Pre-Function, Main Reception, Specialty Restaurant & Common Areas",
+    "scope": "Grand Lobby, Reception, Banquet Area, Bar, Specialty Restaurant & Common Areas",
     "images": [
-      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__2.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__3.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__4.png",
-      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png"
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png",
+      "assets/images/portfolio/project_42.jpg",
+      "assets/images/portfolio/project_43.jpg"
     ]
   },
-  "novotel-hotel-gurugram": {
-    "id": "novotel-hotel-gurugram",
-    "name": "Novotel Hotel - Gurugram",
+  "hyatt-place": {
+    "id": "hyatt-place",
+    "name": "Hyatt Place",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Gurugram, Haryana",
     "scope": "156 Keys, Waiting Area, All-Day Dining & Conference Rooms",
     "images": [
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__1.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__2.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__3.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__4.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__5.png",
       "assets/images/portfolio/project_44.jpg"
     ]
   },
-  "novotel-hotel-pune": {
-    "id": "novotel-hotel-pune",
-    "name": "Novotel Hotel - Pune",
+  "novotel-hotel-suites-resort": {
+    "id": "novotel-hotel-suites-resort",
+    "name": "Novotel Hotel, Suites & Resort",
     "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Pune, Maharashtra",
     "scope": "300 Keys, All-Day Dining, Specialty Restaurant & Common Areas",
     "images": [
       "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__1.png",
       "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__2.png",
-      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__3.png"
-    ]
-  },
-  "jio-world-drive-club": {
-    "id": "jio-world-drive-club",
-    "name": "Jio World Drive Club",
-    "category": "malls-shopping",
-    "location": "BKC, Mumbai, Maharashtra",
-    "scope": "Luxe Reception, Members' Lounges & Common Areas",
-    "images": [
-      "assets/images/portfolio/project_46.jpg"
-    ]
-  },
-  "jio-world-drive-club-clubhouse": {
-    "id": "jio-world-drive-club-clubhouse",
-    "name": "Jio World Drive Club (Clubhouse)",
-    "category": "malls-shopping",
-    "location": "BKC, Mumbai, Maharashtra",
-    "scope": "14,00,050 Sq. Ft. Members-Only Clubhouse",
-    "images": [
-      "assets/images/portfolio/project_47.jpg"
-    ]
-  },
-  "members-only-club": {
-    "id": "members-only-club",
-    "name": "Members Only Club",
-    "category": "malls-shopping",
-    "location": "Hyderabad, Telangana",
-    "scope": "Exclusive Clubhouse Reception & Private Lounges",
-    "images": [
-      "assets/images/portfolio/project_48.jpg"
-    ]
-  },
-  "members-only-club-dining": {
-    "id": "members-only-club-dining",
-    "name": "Members Only Club (Dining)",
-    "category": "malls-shopping",
-    "location": "Hyderabad, Telangana",
-    "scope": "Fine Dining Areas, Cigar Lounge & Sports Room",
-    "images": [
-      "assets/images/portfolio/project_49.jpg"
-    ]
-  },
-  "lt-training-centre": {
-    "id": "lt-training-centre",
-    "name": "L&T Training Centre",
-    "category": "corporate-hq",
-    "location": "Palava, Maharashtra",
-    "scope": "1,50,000 Sq. Ft. Residential Training Centre",
-    "images": [
-      "assets/images/portfolio/project_52.jpg"
-    ]
-  },
-  "lt-training-centre-lobby": {
-    "id": "lt-training-centre-lobby",
-    "name": "L&T Training Centre (Lobby)",
-    "category": "corporate-hq",
-    "location": "Palava, Maharashtra",
-    "scope": "Lobby & Classroom Common Areas",
-    "images": [
-      "assets/images/portfolio/project_53.jpg"
-    ]
-  },
-  "motilal-oswal-headquarters": {
-    "id": "motilal-oswal-headquarters",
-    "name": "Motilal Oswal Headquarters",
-    "category": "corporate-hq",
-    "location": "Mumbai, Maharashtra",
-    "scope": "75,000 Sq. Ft. Executive HQ Offices",
-    "images": [
-      "assets/images/portfolio/project_55.jpg",
-      "assets/images/portfolio/project_54.jpg"
-    ]
-  },
-  "wipro-offices": {
-    "id": "wipro-offices",
-    "name": "Wipro Offices",
-    "category": "corporate-hq",
-    "location": "Pan India",
-    "scope": "10,00,000 Sq. Ft. IT Campus Offices Across Major Cities",
-    "images": [
-      "assets/images/portfolio/project_56.jpg"
-    ]
-  },
-  "lt-corporate-offices": {
-    "id": "lt-corporate-offices",
-    "name": "L&T Corporate Offices",
-    "category": "corporate-hq",
-    "location": "Pan India",
-    "scope": "4,50,000 Sq. Ft. Corporate Offices (Mumbai & Pune)",
-    "images": [
-      "assets/images/portfolio/project_57.jpg"
-    ]
-  },
-  "tcs-it-offices": {
-    "id": "tcs-it-offices",
-    "name": "TCS IT Offices",
-    "category": "corporate-hq",
-    "location": "Pan India",
-    "scope": "35,00,000 Sq. Ft. IT & Corporate Offices",
-    "images": [
-      "assets/images/portfolio/project_58.jpg"
-    ]
-  },
-  "reliance-corporate-offices": {
-    "id": "reliance-corporate-offices",
-    "name": "Reliance Corporate Offices",
-    "category": "corporate-hq",
-    "location": "Pan India",
-    "scope": "35,00,000 Sq. Ft. Corporate Spaces",
-    "images": [
-      "assets/images/portfolio/project_59.jpg"
-    ]
-  },
-  "adani-corporate-offices": {
-    "id": "adani-corporate-offices",
-    "name": "Adani Corporate Offices",
-    "category": "corporate-hq",
-    "location": "Pan India",
-    "scope": "35,00,000 Sq. Ft. Corporate Spaces",
-    "images": [
-      "assets/images/portfolio/project_60.jpg"
-    ]
-  },
-  "hdfc-bank-offices": {
-    "id": "hdfc-bank-offices",
-    "name": "HDFC Bank Offices",
-    "category": "banking",
-    "location": "Pan India",
-    "scope": "35,00,000 Sq. Ft. Banking Branches (Bhubaneswar & Kolkata)",
-    "images": [
-      "assets/images/portfolio/project_61.jpg"
-    ]
-  },
-  "icici-bank-offices": {
-    "id": "icici-bank-offices",
-    "name": "ICICI Bank Offices",
-    "category": "banking",
-    "location": "Pan India",
-    "scope": "10,00,000 Sq. Ft. Banking Offices",
-    "images": [
-      "assets/images/portfolio/project_62.jpg"
-    ]
-  },
-  "hsbc-bank-offices": {
-    "id": "hsbc-bank-offices",
-    "name": "HSBC Bank Offices",
-    "category": "banking",
-    "location": "Pan India",
-    "scope": "15,00,000 Sq. Ft. Corporate Banking Offices",
-    "images": [
-      "assets/images/portfolio/project_63.jpg"
-    ]
-  },
-  "lt-headquarters": {
-    "id": "lt-headquarters",
-    "name": "L&T Headquarters",
-    "category": "corporate-hq",
-    "location": "Mumbai, Maharashtra",
-    "scope": "Executive Corporate Headquarters & Boardrooms",
-    "images": [
-      "assets/images/portfolio/project_64.jpg"
-    ]
-  },
-  "lt-headquarters-lobby": {
-    "id": "lt-headquarters-lobby",
-    "name": "L&T Headquarters (Lobby)",
-    "category": "corporate-hq",
-    "location": "Mumbai, Maharashtra",
-    "scope": "Double-Height Entrance Lobby & Waiting Area",
-    "images": [
-      "assets/images/portfolio/project_65.jpg"
-    ]
-  },
-  "wipro-campus-block-a": {
-    "id": "wipro-campus-block-a",
-    "name": "Wipro Campus (Block A)",
-    "category": "corporate-hq",
-    "location": "Pune, Maharashtra",
-    "scope": "3,00,000 Sq. Ft. Corporate IT Campus Offices",
-    "images": [
-      "assets/images/portfolio/project_66.jpg"
-    ]
-  },
-  "wipro-campus-block-b": {
-    "id": "wipro-campus-block-b",
-    "name": "Wipro Campus (Block B)",
-    "category": "corporate-hq",
-    "location": "Pune, Maharashtra",
-    "scope": "2,00,000 Sq. Ft. Corporate IT Campus Offices",
-    "images": [
-      "assets/images/portfolio/project_67.jpg"
-    ]
-  },
-  "wipro-campus-block-c": {
-    "id": "wipro-campus-block-c",
-    "name": "Wipro Campus (Block C)",
-    "category": "corporate-hq",
-    "location": "Pune, Maharashtra",
-    "scope": "1,50,000 Sq. Ft. Corporate IT Campus Offices",
-    "images": [
-      "assets/images/portfolio/project_68.jpg"
-    ]
-  },
-  "wipro-campus-block-d": {
-    "id": "wipro-campus-block-d",
-    "name": "Wipro Campus (Block D)",
-    "category": "corporate-hq",
-    "location": "Pune, Maharashtra",
-    "scope": "3,00,000 Sq. Ft. Corporate IT Campus Offices",
-    "images": [
-      "assets/images/portfolio/project_69.jpg"
-    ]
-  },
-  "ust-global-kerala-hq": {
-    "id": "ust-global-kerala-hq",
-    "name": "UST Global Kerala HQ",
-    "category": "corporate-hq",
-    "location": "Kerala",
-    "scope": "13,00,000 Sq. Ft. IT Regional Headquarters, 2,00,000 Sq. Ft. Regional Office Spaces",
-    "images": [
-      "assets/images/portfolio/project_70.jpg",
-      "assets/images/portfolio/project_71.jpg"
-    ]
-  },
-  "lt-offices": {
-    "id": "lt-offices",
-    "name": "L&T Offices",
-    "category": "corporate-hq",
-    "location": "Kolkata, West Bengal",
-    "scope": "1,00,000 Sq. Ft. Regional Corporate Offices",
-    "images": [
-      "assets/images/portfolio/project_72.jpg"
-    ]
-  },
-  "adani-headquarters": {
-    "id": "adani-headquarters",
-    "name": "Adani Headquarters",
-    "category": "corporate-hq",
-    "location": "Noida, Uttar Pradesh",
-    "scope": "1,00,000 Sq. Ft. Regional Headquarters Offices",
-    "images": [
-      "assets/images/portfolio/project_73.jpg"
-    ]
-  },
-  "reliance-headquarters": {
-    "id": "reliance-headquarters",
-    "name": "Reliance Headquarters",
-    "category": "corporate-hq",
-    "location": "Mumbai, Maharashtra",
-    "scope": "2,50,000 Sq. Ft. Corporate Headquarters",
-    "images": [
-      "assets/images/portfolio/project_74.jpg"
-    ]
-  },
-  "dhirubhai-ambani-international-school": {
-    "id": "dhirubhai-ambani-international-school",
-    "name": "Dhirubhai Ambani International School",
-    "category": "education",
-    "location": "BKC, Mumbai, Maharashtra",
-    "scope": "Full Campus Interiors & Classroom Spaces",
-    "images": [
-      "assets/images/portfolio/project_76.jpg"
-    ]
-  },
-  "amrita-hospitals-aims": {
-    "id": "amrita-hospitals-aims",
-    "name": "Amrita Hospitals (AIMS)",
-    "category": "healthcare",
-    "location": "Faridabad, Haryana",
-    "scope": "9,00,000 Sq. Ft. Turnkey Hospital, 302 ICUs, 4 OT Rooms",
-    "images": [
-      "assets/images/portfolio/project_77.jpg"
-    ]
-  },
-  "db-mall": {
-    "id": "db-mall",
-    "name": "DB Mall",
-    "category": "malls-shopping",
-    "location": "Bhopal, Madhya Pradesh",
-    "scope": "15,00,000 Sq. Ft. Shopping Centre Public Areas, 8,00,000 Sq. Ft. Shopping Centre Interiors",
-    "images": [
-      "assets/images/portfolio/project_78.jpg",
-      "assets/images/portfolio/project_79.jpg"
-    ]
-  },
-  "shoppers-stop": {
-    "id": "shoppers-stop",
-    "name": "Shoppers Stop",
-    "category": "malls-shopping",
-    "location": "Mumbai, Maharashtra",
-    "scope": "1,50,000 Sq. Ft. Retail Store Layout & Furniture",
-    "images": [
-      "assets/images/portfolio/project_80.jpg"
-    ]
-  },
-  "shoppers-stop-pan-india": {
-    "id": "shoppers-stop-pan-india",
-    "name": "Shoppers Stop (Pan India)",
-    "category": "malls-shopping",
-    "location": "Pan India",
-    "scope": "20,00,000 Sq. Ft. Turnkey Retail Outlets (40 Stores)",
-    "images": [
-      "assets/images/portfolio/project_81.jpg"
-    ]
-  },
-  "luxe-retail-mall": {
-    "id": "luxe-retail-mall",
-    "name": "Luxe Retail Mall",
-    "category": "malls-shopping",
-    "location": "Delhi",
-    "scope": "6,00,000 Sq. Ft. Shopping Centre Atrium & Retail Layouts",
-    "images": [
-      "assets/images/portfolio/project_82.jpg"
-    ]
-  },
-  "celebrity-cricketer-home": {
-    "id": "celebrity-cricketer-home",
-    "name": "Celebrity Cricketer Home",
-    "category": "residential",
-    "location": "Bandra, Mumbai, Maharashtra",
-    "scope": "45,000 Sq. Ft. Ultra-Luxury Exclusive Multi-Storey Residence",
-    "images": [
-      "assets/images/portfolio/project_83.jpg"
-    ]
-  },
-  "md-of-the-publishing-house": {
-    "id": "md-of-the-publishing-house",
-    "name": "MD of the Publishing House",
-    "category": "residential",
-    "location": "New Delhi",
-    "scope": "15,00,000 Sq. Ft. Elite Residential Estate",
-    "images": [
-      "assets/images/portfolio/project_84.jpg"
-    ]
-  },
-  "md-of-the-publishing-house-lobby": {
-    "id": "md-of-the-publishing-house-lobby",
-    "name": "MD of the Publishing House (Lobby)",
-    "category": "residential",
-    "location": "New Delhi",
-    "scope": "15,00,000 Sq. Ft. Residential Reception & Dining Areas",
-    "images": [
-      "assets/images/portfolio/project_85.jpg"
-    ]
-  },
-  "reliance-apartment-building": {
-    "id": "reliance-apartment-building",
-    "name": "Reliance Apartment Building",
-    "category": "residential",
-    "location": "Mumbai, Maharashtra",
-    "scope": "Turnkey Luxury 3 BHK, 4 BHK, and 5 BHK Apartments",
-    "images": [
-      "assets/images/portfolio/project_86.jpg"
-    ]
-  },
-  "md-and-chairman-of-ril": {
-    "id": "md-and-chairman-of-ril",
-    "name": "MD and Chairman of RIL",
-    "category": "residential",
-    "location": "Jamnagar, Gujarat",
-    "scope": "15,00,000 Sq. Ft. Private Residential Estate",
-    "images": [
-      "assets/images/portfolio/project_87.jpg"
-    ]
-  },
-  "indian-accent": {
-    "id": "indian-accent",
-    "name": "Indian Accent",
-    "category": "restaurant",
-    "location": "New Delhi",
-    "scope": "Turnkey Interior Fit-out for India's Best Fine-Dining Restaurant",
-    "images": [
-      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_1.png",
-      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_2.png",
-      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_3.png",
-      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_4.png",
-      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_5.png"
-    ]
-  },
-  "citibank-corporate-offices": {
-    "id": "citibank-corporate-offices",
-    "name": "Citibank Corporate Offices",
-    "category": "banking",
-    "location": "Pan India",
-    "scope": "Space Planning & Interior fit-out for Banking Branches",
-    "images": [
-      "assets/images/portfolio/project_94.jpg"
-    ]
-  },
-  "bnp-paribas-headquarters": {
-    "id": "bnp-paribas-headquarters",
-    "name": "BNP Paribas Headquarters",
-    "category": "banking",
-    "location": "Mumbai & Pune",
-    "scope": "1,50,000 Sq. Ft. Corporate Banking Headquarters",
-    "images": [
-      "assets/images/portfolio/project_95.jpg"
-    ]
-  },
-  "samhi-hotels-portfolio": {
-    "id": "samhi-hotels-portfolio",
-    "name": "Samhi Hotels Portfolio",
-    "category": "hospitality",
-    "location": "Pan India",
-    "scope": "2,500 Guest Rooms & Public Suites Complete Fit-out",
-    "images": [
-      "assets/images/portfolio/project_96.jpg"
-    ]
-  },
-  "vantara-niwas": {
-    "id": "vantara-niwas",
-    "name": "Vantara Niwas",
-    "category": "residential",
-    "location": "Jamnagar, Gujarat",
-    "scope": "Ultra-Luxury Private Estate Interiors & Fit-out",
-    "images": [
-      "assets/images/portfolio/project_97.jpg"
-    ]
-  },
-  "bnp-factory-craft-village": {
-    "id": "bnp-factory-craft-village",
-    "name": "BNP Factory Craft Village",
-    "category": "corporate-hq",
-    "location": "Rajasthan",
-    "scope": "27-Acre state-of-the-art Furniture Manufacturing plant & Craft Village",
-    "images": [
-      "assets/images/portfolio/project_98.jpg"
-    ]
-  },
-  "deutsche-bank-offices": {
-    "id": "deutsche-bank-offices",
-    "name": "Deutsche Bank Offices",
-    "category": "banking",
-    "location": "Pan India",
-    "scope": "Turnkey Interior Fit-out & High-Security Transaction Hubs",
-    "images": [
-      "assets/images/portfolio/project_99.jpg"
-    ]
-  },
-  "taj-the-trees": {
-    "id": "taj-the-trees",
-    "name": "Taj The Trees",
-    "category": "hospitality",
-    "location": "Taj The Trees, Vikhroli, Maharashtra",
-    "scope": "",
-    "images": [
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_1.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_2.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_3.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_4.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_5.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_7.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_8.png"
+      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__3.png",
+      "assets/images/portfolio/project_45.jpg"
     ]
   },
   "piramal-clubhouse": {
     "id": "piramal-clubhouse",
     "name": "Piramal Clubhouse",
     "category": "hospitality",
-    "location": "Piramal Clubhouse, Mumbai, Maharsthra",
-    "scope": "",
+    "category_label": "Hospitality",
+    "location": "Mumbai, Maharashtra",
+    "scope": "Ultra-Luxury Private Clubhouse, Reception, Multi-Purpose Recreational & Dining Lounges",
     "images": [
-      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_1.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_2.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_1.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_3.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_4.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_5.png",
@@ -719,87 +346,617 @@
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_9_2.png"
     ]
   },
-  "hyatt-place": {
-    "id": "hyatt-place",
-    "name": "Hyatt Place",
-    "category": "hospitality",
-    "location": "Hyatt Place, Gurugram, Haryana",
-    "scope": "",
-    "images": [
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__1.png",
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__2.png",
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__3.png",
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__4.png",
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__5.png"
-    ]
-  },
-  "sheraton": {
-    "id": "sheraton",
-    "name": "Sheraton",
-    "category": "hospitality",
-    "location": "Sheraton, Hyderabad, Telangana",
-    "scope": "",
-    "images": [
-      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png",
-      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__2.png",
-      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__3.png",
-      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__4.png"
-    ]
-  },
-  "courtyard-by-marriot": {
-    "id": "courtyard-by-marriot",
-    "name": "Courtyard By Marriot",
-    "category": "hospitality",
-    "location": "Courtyard By Marriot, Ranchi, Jharkhand",
-    "scope": "",
-    "images": [
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_1.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_2.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_4.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_5.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_6.png"
-    ]
-  },
   "quorum-club": {
     "id": "quorum-club",
     "name": "Quorum Club",
     "category": "hospitality",
-    "location": "Quorum Club, Hyderabad",
-    "scope": "",
+    "category_label": "Hospitality",
+    "location": "Hyderabad, Telangana",
+    "scope": "Exclusive Members-Only Club, Executive Workspaces, Meeting Suites & Lounges",
     "images": [
+      "assets/images/portfolio/quorum_club_hyderabad/1_4.png",
       "assets/images/portfolio/quorum_club_hyderabad/1_1.png",
       "assets/images/portfolio/quorum_club_hyderabad/1_2.png",
-      "assets/images/portfolio/quorum_club_hyderabad/1_3.png",
-      "assets/images/portfolio/quorum_club_hyderabad/1_4.png"
+      "assets/images/portfolio/quorum_club_hyderabad/1_3.png"
     ]
   },
   "district-150": {
     "id": "district-150",
     "name": "District 150",
     "category": "hospitality",
-    "location": "District 150, Hyderabad",
-    "scope": "",
+    "category_label": "Hospitality",
+    "location": "Hyderabad, Telangana",
+    "scope": "Hospitality-Powered Cultural & Lifestyle Workspaces, Event Lounges & Public Areas",
     "images": [
+      "assets/images/portfolio/district_150_hyderabad/1_3.png",
       "assets/images/portfolio/district_150_hyderabad/1_1.png",
       "assets/images/portfolio/district_150_hyderabad/1_2.png",
-      "assets/images/portfolio/district_150_hyderabad/1_3.png",
       "assets/images/portfolio/district_150_hyderabad/1_4.png"
     ]
   },
-  "vivanta": {
-    "id": "vivanta",
-    "name": "Vivanta",
+  "samhi-hotels-portfolio": {
+    "id": "samhi-hotels-portfolio",
+    "name": "Samhi Hotels Portfolio",
     "category": "hospitality",
-    "location": "Vivanta, Bhubaneshwar, Odisha",
-    "scope": "",
+    "category_label": "Hospitality",
+    "location": "Pan India",
+    "scope": "2,500 Guest Rooms & Public Suites Complete Turnkey Fit-out Across India",
     "images": [
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_1.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_2.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_3.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_5.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_6.png"
+      "assets/images/portfolio/project_96.jpg"
+    ]
+  },
+  "hdfc-bank-offices": {
+    "id": "hdfc-bank-offices",
+    "name": "HDFC Bank Offices",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Pan India (Bhubaneswar & Kolkata)",
+    "scope": "35,00,000 Sq. Ft. Banking Branches & Regional Operational Facilities",
+    "images": [
+      "assets/images/portfolio/hdfc_bank_offices/img_61_1.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_2.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_4.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_5.jpeg",
+      "assets/images/portfolio/project_61.jpg"
+    ]
+  },
+  "icici-bank-offices": {
+    "id": "icici-bank-offices",
+    "name": "ICICI Bank Offices",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Pan India (Hyderabad, Mumbai, Kolkata, Gujarat)",
+    "scope": "10,00,000 Sq. Ft. Banking Branches, Customer Zones & Executive Suites",
+    "images": [
+      "assets/images/portfolio/icici_bank_offices/img_62_1.jpeg",
+      "assets/images/portfolio/icici_bank_offices/img_62_2.jpeg",
+      "assets/images/portfolio/icici_bank_offices/img_62_3.jpeg",
+      "assets/images/portfolio/icici_bank_offices/img_62_4.jpeg",
+      "assets/images/portfolio/icici_bank_offices/img_62_5.jpeg",
+      "assets/images/portfolio/project_62.jpg"
+    ]
+  },
+  "hsbc-bank-offices": {
+    "id": "hsbc-bank-offices",
+    "name": "HSBC Bank Offices",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Pan India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+    "scope": "15,00,000 Sq. Ft. Corporate Banking Headquarters & Client Dealing Floors",
+    "images": [
+      "assets/images/portfolio/hsbc_bank_offices/img_63_3.jpeg",
+      "assets/images/portfolio/hsbc_bank_offices/img_63_1.jpeg",
+      "assets/images/portfolio/hsbc_bank_offices/img_63_2.jpeg",
+      "assets/images/portfolio/hsbc_bank_offices/img_63_4.jpeg",
+      "assets/images/portfolio/project_63.jpg"
+    ]
+  },
+  "citibank-corporate-offices": {
+    "id": "citibank-corporate-offices",
+    "name": "Citibank Corporate Offices",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Pan India",
+    "scope": "Space Planning, Acoustic Partitioning & Turnkey Fit-out for High-Security Banking Operations",
+    "images": [
+      "assets/images/portfolio/project_94.jpg"
+    ]
+  },
+  "bnp-paribas-headquarters": {
+    "id": "bnp-paribas-headquarters",
+    "name": "BNP Paribas Headquarters",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Mumbai & Pune",
+    "scope": "1,50,000 Sq. Ft. Multinational Corporate Banking Headquarters & Trading Floors",
+    "images": [
+      "assets/images/portfolio/project_95.jpg"
+    ]
+  },
+  "deutsche-bank-offices": {
+    "id": "deutsche-bank-offices",
+    "name": "Deutsche Bank Offices",
+    "category": "banking",
+    "category_label": "Banking",
+    "location": "Pan India",
+    "scope": "Turnkey Interior Fit-out, High-Security Transaction Hubs & Corporate Workspaces",
+    "images": [
+      "assets/images/portfolio/project_99.jpg"
+    ]
+  },
+  "lt-training-centre": {
+    "id": "lt-training-centre",
+    "name": "L&T Training Centre",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Palava, Maharashtra",
+    "scope": "1,50,000 Sq. Ft. Residential Training Centre, Double-Height Entrance Lobby & Classrooms",
+    "images": [
+      "assets/images/portfolio/lt_training_centre_palava/img_53_3.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_52_1.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_52_2.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_52_3.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_52_4.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_52_5.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_53_1.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_53_2.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_53_4.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_53_5.jpeg",
+      "assets/images/portfolio/lt_training_centre_palava/img_53_6.jpeg",
+      "assets/images/portfolio/project_52.jpg",
+      "assets/images/portfolio/project_53.jpg"
+    ]
+  },
+  "motilal-oswal-headquarters": {
+    "id": "motilal-oswal-headquarters",
+    "name": "Motilal Oswal Headquarters",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Ahmedabad & Mumbai",
+    "scope": "1,70,000 Sq. Ft. Combined Corporate Headquarters, Executive Boardrooms & Dealing Desks",
+    "images": [
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_4.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_1.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_2.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_3.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_4.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_5.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_6.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_54_7.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_1.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_2.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_3.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_5.jpeg",
+      "assets/images/portfolio/motilal_oswal_headquarters/img_55_6.jpeg",
+      "assets/images/portfolio/project_54.jpg",
+      "assets/images/portfolio/project_55.jpg"
+    ]
+  },
+  "wipro-offices": {
+    "id": "wipro-offices",
+    "name": "Wipro Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Pan India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+    "scope": "10,00,000 Sq. Ft. IT Campus Offices Across Major Metropolitan Hubs",
+    "images": [
+      "assets/images/portfolio/wipro_offices_pan_india/img_56_1.jpeg",
+      "assets/images/portfolio/wipro_offices_pan_india/img_56_2.jpeg",
+      "assets/images/portfolio/wipro_offices_pan_india/img_56_3.jpeg",
+      "assets/images/portfolio/wipro_offices_pan_india/img_56_4.jpeg",
+      "assets/images/portfolio/project_56.jpg"
+    ]
+  },
+  "wipro-campus": {
+    "id": "wipro-campus",
+    "name": "Wipro Campus",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Pune, Maharashtra",
+    "scope": "9,50,000 Sq. Ft. Corporate IT Campus Across Blocks A, B, C & D",
+    "images": [
+      "assets/images/portfolio/wipro_campus_pune/img_67_3.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_66_1.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_66_2.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_66_3.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_67_1.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_67_2.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_67_4.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_67_5.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_68_1.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_68_2.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_68_3.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_68_4.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_68_5.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_69_1.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_69_2.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_69_3.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_69_4.jpeg",
+      "assets/images/portfolio/wipro_campus_pune/img_69_5.jpeg",
+      "assets/images/portfolio/project_66.jpg",
+      "assets/images/portfolio/project_67.jpg",
+      "assets/images/portfolio/project_68.jpg",
+      "assets/images/portfolio/project_69.jpg"
+    ]
+  },
+  "lt-headquarters": {
+    "id": "lt-headquarters",
+    "name": "L&T Headquarters",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Mumbai, Maharashtra",
+    "scope": "Executive Corporate Headquarters, Boardrooms & Double-Height Reception Atrium",
+    "images": [
+      "assets/images/portfolio/lt_headquarters_mumbai/img_65_3.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_64_1.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_64_2.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_64_3.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_65_1.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_65_2.jpeg",
+      "assets/images/portfolio/lt_headquarters_mumbai/img_65_4.jpeg",
+      "assets/images/portfolio/project_64.jpg",
+      "assets/images/portfolio/project_65.jpg"
+    ]
+  },
+  "lt-corporate-offices": {
+    "id": "lt-corporate-offices",
+    "name": "L&T Corporate Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Mumbai & Pune",
+    "scope": "4,50,000 Sq. Ft. Corporate Offices & Workspaces",
+    "images": [
+      "assets/images/portfolio/lt_corporate_offices/img_57_1.jpeg",
+      "assets/images/portfolio/lt_corporate_offices/img_57_2.jpeg",
+      "assets/images/portfolio/lt_corporate_offices/img_57_3.jpeg",
+      "assets/images/portfolio/lt_corporate_offices/img_57_4.jpeg",
+      "assets/images/portfolio/project_57.jpg"
+    ]
+  },
+  "lt-offices": {
+    "id": "lt-offices",
+    "name": "L&T Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Kolkata, West Bengal",
+    "scope": "1,00,000 Sq. Ft. Regional Corporate Offices & Administrative Suites",
+    "images": [
+      "assets/images/portfolio/lt_offices_kolkata/img_72_3.jpeg",
+      "assets/images/portfolio/lt_offices_kolkata/img_72_1.jpeg",
+      "assets/images/portfolio/lt_offices_kolkata/img_72_2.jpeg",
+      "assets/images/portfolio/lt_offices_kolkata/img_72_4.jpeg",
+      "assets/images/portfolio/project_72.jpg"
+    ]
+  },
+  "tcs-it-offices": {
+    "id": "tcs-it-offices",
+    "name": "TCS IT Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Pan India (Mumbai, Bangalore, Chennai)",
+    "scope": "35,00,000 Sq. Ft. IT & Corporate Offices",
+    "images": [
+      "assets/images/portfolio/tcs_it_offices/img_58_5.jpeg",
+      "assets/images/portfolio/tcs_it_offices/img_58_1.jpeg",
+      "assets/images/portfolio/tcs_it_offices/img_58_2.jpeg",
+      "assets/images/portfolio/tcs_it_offices/img_58_3.jpeg",
+      "assets/images/portfolio/tcs_it_offices/img_58_4.jpeg"
+    ]
+  },
+  "reliance-corporate-offices": {
+    "id": "reliance-corporate-offices",
+    "name": "Reliance Corporate Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Pan India (Airoli, Turbhe, Nagpur)",
+    "scope": "35,00,000 Sq. Ft. Corporate Spaces & Technology Campuses",
+    "images": [
+      "assets/images/portfolio/reliance_corporate_offices/img_59_4.jpeg",
+      "assets/images/portfolio/reliance_corporate_offices/img_59_1.jpeg",
+      "assets/images/portfolio/reliance_corporate_offices/img_59_2.jpeg",
+      "assets/images/portfolio/reliance_corporate_offices/img_59_3.jpeg",
+      "assets/images/portfolio/reliance_corporate_offices/img_59_5.jpeg",
+      "assets/images/portfolio/project_59.jpg"
+    ]
+  },
+  "reliance-headquarters": {
+    "id": "reliance-headquarters",
+    "name": "Reliance Headquarters",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Mumbai, Maharashtra",
+    "scope": "2,50,000 Sq. Ft. Corporate Headquarters & Executive Suites",
+    "images": [
+      "assets/images/portfolio/reliance_headquarters_mumbai/img_74_1.jpeg",
+      "assets/images/portfolio/reliance_headquarters_mumbai/img_74_2.jpeg",
+      "assets/images/portfolio/reliance_headquarters_mumbai/img_74_3.jpeg",
+      "assets/images/portfolio/reliance_headquarters_mumbai/img_74_4.jpeg",
+      "assets/images/portfolio/project_74.jpg"
+    ]
+  },
+  "adani-corporate-offices": {
+    "id": "adani-corporate-offices",
+    "name": "Adani Corporate Offices",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Pan India (Surat, Jaipur)",
+    "scope": "35,00,000 Sq. Ft. Regional Corporate Offices & Executive Floors",
+    "images": [
+      "assets/images/portfolio/adani_corporate_offices/img_60_5.jpeg",
+      "assets/images/portfolio/adani_corporate_offices/img_60_1.jpeg",
+      "assets/images/portfolio/adani_corporate_offices/img_60_2.jpeg",
+      "assets/images/portfolio/adani_corporate_offices/img_60_3.jpeg",
+      "assets/images/portfolio/adani_corporate_offices/img_60_4.jpeg",
+      "assets/images/portfolio/adani_corporate_offices/img_60_6.jpeg",
+      "assets/images/portfolio/project_60.jpg"
+    ]
+  },
+  "adani-headquarters": {
+    "id": "adani-headquarters",
+    "name": "Adani Headquarters",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Noida, Uttar Pradesh",
+    "scope": "1,00,000 Sq. Ft. Regional Headquarters & Corporate Operations Hub",
+    "images": [
+      "assets/images/portfolio/adani_headquarters_noida/img_73_3.jpeg",
+      "assets/images/portfolio/adani_headquarters_noida/img_73_1.jpeg",
+      "assets/images/portfolio/adani_headquarters_noida/img_73_2.jpeg",
+      "assets/images/portfolio/adani_headquarters_noida/img_73_4.jpeg",
+      "assets/images/portfolio/adani_headquarters_noida/img_73_5.jpeg",
+      "assets/images/portfolio/project_73.jpg"
+    ]
+  },
+  "ust-global-kerala-regional-hq": {
+    "id": "ust-global-kerala-regional-hq",
+    "name": "UST Global Kerala Regional HQ",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Kerala",
+    "scope": "15,00,000 Sq. Ft. IT Regional Headquarters & Sustainable Tech Campus",
+    "images": [
+      "assets/images/portfolio/ust_global_kerala/img_70_2.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_70_1.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_70_3.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_70_4.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_70_5.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_1.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_2.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_3.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_4.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_5.jpeg",
+      "assets/images/portfolio/ust_global_kerala/img_71_6.jpeg",
+      "assets/images/portfolio/project_70.jpg",
+      "assets/images/portfolio/project_71.jpg"
+    ]
+  },
+  "bnp-factory-craft-village": {
+    "id": "bnp-factory-craft-village",
+    "name": "BNP Factory Craft Village",
+    "category": "corporate-hq",
+    "category_label": "Corporate",
+    "location": "Rajasthan",
+    "scope": "27-Acre State-of-the-Art Furniture Manufacturing Plant & Artisanal Craft Village",
+    "images": [
+      "assets/images/portfolio/project_98.jpg"
+    ]
+  },
+  "jio-world-drive-club": {
+    "id": "jio-world-drive-club",
+    "name": "Jio World Drive Club",
+    "category": "malls-shopping",
+    "category_label": "Mall/Retail",
+    "location": "BKC, Mumbai, Maharashtra",
+    "scope": "14,000 Sq. Ft. Ultra-Luxe Members' Club, Reception Atrium & Private Dining",
+    "images": [
+      "assets/images/portfolio/jio_world_drive_club/img_47_2.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_46_1.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_46_2.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_46_3.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_46_4.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_1.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_3.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_4.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_5.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_6.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_7.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_8.jpeg",
+      "assets/images/portfolio/jio_world_drive_club/img_47_9.jpeg",
+      "assets/images/portfolio/project_46.jpg",
+      "assets/images/portfolio/project_47.jpg"
+    ]
+  },
+  "members-only-club": {
+    "id": "members-only-club",
+    "name": "Members Only Club",
+    "category": "malls-shopping",
+    "category_label": "Mall/Retail",
+    "location": "Hyderabad, Telangana",
+    "scope": "Exclusive Private Club, Reception, Fine Dining, Cigar Lounge & Sports Facility",
+    "images": [
+      "assets/images/portfolio/members_only_club_hyderabad/img_49_5.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_48_1.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_48_2.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_48_3.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_48_4.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_48_5.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_49_1.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_49_2.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_49_3.jpeg",
+      "assets/images/portfolio/members_only_club_hyderabad/img_49_4.jpeg",
+      "assets/images/portfolio/project_48.jpg",
+      "assets/images/portfolio/project_49.jpg"
+    ]
+  },
+  "db-mall": {
+    "id": "db-mall",
+    "name": "DB Mall",
+    "category": "malls-shopping",
+    "category_label": "Mall/Retail",
+    "location": "Bhopal & Ranchi",
+    "scope": "23,00,000 Sq. Ft. Landmark Shopping Mall Atriums, Retail Layouts & Public Zones",
+    "images": [
+      "assets/images/portfolio/db_mall/img_79_2.jpeg",
+      "assets/images/portfolio/db_mall/img_78_1.jpeg",
+      "assets/images/portfolio/db_mall/img_78_2.jpeg",
+      "assets/images/portfolio/db_mall/img_78_3.jpeg",
+      "assets/images/portfolio/db_mall/img_78_4.jpeg",
+      "assets/images/portfolio/db_mall/img_78_5.jpeg",
+      "assets/images/portfolio/db_mall/img_79_1.jpeg",
+      "assets/images/portfolio/db_mall/img_79_3.jpeg",
+      "assets/images/portfolio/db_mall/img_79_4.jpeg",
+      "assets/images/portfolio/project_78.jpg",
+      "assets/images/portfolio/project_79.jpg"
+    ]
+  },
+  "shoppers-stop": {
+    "id": "shoppers-stop",
+    "name": "Shoppers Stop",
+    "category": "malls-shopping",
+    "category_label": "Mall/Retail",
+    "location": "Mumbai & Pan India",
+    "scope": "21,50,000 Sq. Ft. Turnkey Retail Department Store Execution Across 40 Outlets Nationwide",
+    "images": [
+      "assets/images/portfolio/shoppers_stop/img_80_3.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_80_1.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_80_2.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_80_4.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_80_5.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_81_1.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_81_2.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_81_3.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_81_4.jpeg",
+      "assets/images/portfolio/shoppers_stop/img_81_5.jpeg",
+      "assets/images/portfolio/project_80.jpg",
+      "assets/images/portfolio/project_81.jpg"
+    ]
+  },
+  "luxe-retail-mall": {
+    "id": "luxe-retail-mall",
+    "name": "Luxe Retail Mall",
+    "category": "malls-shopping",
+    "category_label": "Mall/Retail",
+    "location": "Delhi",
+    "scope": "6,00,000 Sq. Ft. Multi-Level Shopping Centre Atrium & Designer Retail Layouts",
+    "images": [
+      "assets/images/portfolio/luxe_retail_mall/img_82_3.jpeg",
+      "assets/images/portfolio/luxe_retail_mall/img_82_1.jpeg",
+      "assets/images/portfolio/luxe_retail_mall/img_82_2.jpeg",
+      "assets/images/portfolio/luxe_retail_mall/img_82_4.jpeg",
+      "assets/images/portfolio/luxe_retail_mall/img_82_5.jpeg",
+      "assets/images/portfolio/project_82.jpg"
+    ]
+  },
+  "indian-accent": {
+    "id": "indian-accent",
+    "name": "Indian Accent",
+    "category": "restaurant",
+    "category_label": "Restaurants",
+    "location": "NMACC, BKC, Mumbai, Maharashtra",
+    "scope": "Turnkey Interior Fit-out for India's Premier Fine-Dining Landmark at Nita Mukesh Ambani Cultural Centre",
+    "images": [
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_1.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_2.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_3.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_4.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_5.png",
+      "assets/images/portfolio/project_93.jpg"
+    ]
+  },
+  "celebrity-cricketer-home": {
+    "id": "celebrity-cricketer-home",
+    "name": "Celebrity Cricketer Home",
+    "category": "residential",
+    "category_label": "Residential",
+    "location": "Bandra, Mumbai, Maharashtra",
+    "scope": "45,00,000 Sq. Ft. Ultra-Luxury Multi-Storey Private Landmark Residence",
+    "images": [
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_4.jpeg",
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_1.jpeg",
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_2.jpeg",
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_3.jpeg",
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_5.jpeg",
+      "assets/images/portfolio/celebrity_cricketer_home/img_83_6.jpeg",
+      "assets/images/portfolio/project_83.jpg"
+    ]
+  },
+  "md-of-the-publishing-house": {
+    "id": "md-of-the-publishing-house",
+    "name": "MD of the Publishing House",
+    "category": "residential",
+    "category_label": "Residential",
+    "location": "New Delhi",
+    "scope": "15,000 Sq. Ft. Elite Private Multi-Storey Residence, Reception & Dining Suites",
+    "images": [
+      "assets/images/portfolio/md_publishing_house/img_85_2.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_1.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_2.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_3.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_4.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_5.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_6.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_84_7.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_85_1.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_85_3.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_85_4.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_85_5.jpeg",
+      "assets/images/portfolio/md_publishing_house/img_85_6.jpeg",
+      "assets/images/portfolio/project_84.jpg",
+      "assets/images/portfolio/project_85.jpg"
+    ]
+  },
+  "reliance-apartment-building": {
+    "id": "reliance-apartment-building",
+    "name": "Reliance Apartment Building",
+    "category": "residential",
+    "category_label": "Residential",
+    "location": "Mumbai, Maharashtra",
+    "scope": "Turnkey Luxury 3 BHK, 4 BHK, and 5 BHK Executive Residences",
+    "images": [
+      "assets/images/portfolio/reliance_apartment_building/img_86_6.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_1.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_2.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_3.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_4.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_5.jpeg",
+      "assets/images/portfolio/reliance_apartment_building/img_86_7.jpeg",
+      "assets/images/portfolio/project_86.jpg"
+    ]
+  },
+  "md-and-chairman-of-ril": {
+    "id": "md-and-chairman-of-ril",
+    "name": "MD and Chairman of RIL",
+    "category": "residential",
+    "category_label": "Residential",
+    "location": "Jamnagar, Gujarat",
+    "scope": "15,000 Sq. Ft. High-End Private Residential Estate",
+    "images": [
+      "assets/images/portfolio/md_chairman_ril/img_87_5.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_1.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_2.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_3.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_4.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_6.jpeg",
+      "assets/images/portfolio/md_chairman_ril/img_87_7.jpeg",
+      "assets/images/portfolio/project_87.jpg"
+    ]
+  },
+  "vantara-niwas": {
+    "id": "vantara-niwas",
+    "name": "Vantara Niwas",
+    "category": "residential",
+    "category_label": "Residential",
+    "location": "Jamnagar, Gujarat",
+    "scope": "Ultra-Luxury Private Estate Interiors, Architectural Millwork & Handcrafted Finishes",
+    "images": [
+      "assets/images/portfolio/project_97.jpg"
+    ]
+  },
+  "amrita-hospitals-aims": {
+    "id": "amrita-hospitals-aims",
+    "name": "Amrita Hospitals (AIMS)",
+    "category": "healthcare",
+    "category_label": "Healthcare",
+    "location": "Faridabad, Haryana",
+    "scope": "9,00,000 Sq. Ft. Turnkey Hospital, 302 ICUs, 4 OT Suites & Specialized Clinical Floors",
+    "images": [
+      "assets/images/portfolio/amrita_hospitals_faridabad/img_77_1.jpeg",
+      "assets/images/portfolio/project_77.jpg"
+    ]
+  },
+  "dhirubhai-ambani-international-school": {
+    "id": "dhirubhai-ambani-international-school",
+    "name": "Dhirubhai Ambani International School",
+    "category": "education",
+    "category_label": "Education",
+    "location": "BKC, Mumbai, Maharashtra",
+    "scope": "Full Campus Interiors, Acoustic Auditorium, Advanced Science Labs & Collaborative Learning Classrooms",
+    "images": [
+      "assets/images/portfolio/dhirubhai_ambani_school/img_76_1.jpeg",
+      "assets/images/portfolio/dhirubhai_ambani_school/img_76_2.jpeg",
+      "assets/images/portfolio/dhirubhai_ambani_school/img_76_3.jpeg",
+      "assets/images/portfolio/project_76.jpg"
     ]
   }
 }

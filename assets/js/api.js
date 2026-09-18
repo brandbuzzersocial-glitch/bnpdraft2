@@ -83,6 +83,48 @@ const StrapiAPI = {
       console.error('Contact submission error:', e);
       return false;
     }
+  },
+
+  // Check if Blog is enabled from Strapi backend or fallback config
+  async isBlogEnabled() {
+    // 1. Check URL query params override (?blog=1 or ?enableBlog=true)
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('blog') === '1' || urlParams.get('enableBlog') === 'true' || urlParams.get('preview') === 'true') {
+      return true;
+    }
+
+    // 2. Check localStorage override (allows developer/admin toggle in browser)
+    if (localStorage.getItem('bnp_enable_blog') === 'true') {
+      return true;
+    }
+
+    // 3. Try Strapi site-setting
+    try {
+      const settings = await this.getSiteSettings();
+      if (settings && typeof settings.enableBlog === 'boolean') {
+        return settings.enableBlog;
+      }
+    } catch (e) {}
+
+    // 4. Try Strapi backend features.json
+    try {
+      const res = await fetch(`${STRAPI_BASE_URL}/features.json`);
+      if (res.ok) {
+        const data = await res.json();
+        if (typeof data.enableBlog === 'boolean') return data.enableBlog;
+      }
+    } catch (e) {}
+
+    // 5. Try local site config fallback
+    try {
+      const res2 = await fetch('/config/site-config.json');
+      if (res2.ok) {
+        const data2 = await res2.json();
+        if (typeof data2.enableBlog === 'boolean') return data2.enableBlog;
+      }
+    } catch (e) {}
+
+    return false; // Default: blog disabled/removed
   }
 };
 

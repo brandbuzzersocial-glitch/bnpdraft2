@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#F2EBE0"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA73"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#9E7530"/>
+    </linearGradient>
+    <linearGradient id="navyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24375A"/>
+      <stop offset="100%" stop-color="#111B2E"/>
+    </linearGradient>
+    <pattern id="gridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="20" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.22"/>
+    </pattern>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bgGrad1)"/>
+  <rect width="400" height="250" fill="url(#gridPattern)"/>
+
+  <!-- Concentric Orbital Synergy Guides -->
+  <circle cx="200" cy="125" r="95" fill="none" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="3,6" opacity="0.35"/>
+  <circle cx="200" cy="125" r="70" fill="none" stroke="#1B2A4A" stroke-width="0.8" stroke-dasharray="2,4" opacity="0.25"/>
+  <circle cx="200" cy="125" r="45" fill="none" stroke="#CAA05C" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="200" cy="125" r="90" fill="#CAA05C" fill-opacity="0.04"/>
+
+  <!-- Orthogonal Center Alignment Axes -->
+  <line x1="60" y1="125" x2="340" y2="125" stroke="#1B2A4A" stroke-width="0.75" stroke-dasharray="4,8" opacity="0.25"/>
+  <line x1="200" y1="15" x2="200" y2="235" stroke="#1B2A4A" stroke-width="0.75" stroke-dasharray="4,8" opacity="0.25"/>
+
+  <!-- Convergence Dynamic Vector Rays -->
+  <line x1="105" y1="65" x2="175" y2="110" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="295" y1="65" x2="225" y2="110" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="105" y1="185" x2="175" y2="140" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="295" y1="185" x2="225" y2="140" stroke="url(#goldGrad)" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- 4 Disciplinary Corner Nodes -->
+  <!-- 01: Civil Engineers -->
+  <g transform="translate(105, 65)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="7" fill="url(#goldGrad)"/>
+    <text x="0" y="-24" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#1B2A4A" text-anchor="middle" letter-spacing="1">CIVIL ENG</text>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#CAA05C" text-anchor="middle">FOUNDATION</text>
+  </g>
+
+  <!-- 02: Master Joiners -->
+  <g transform="translate(295, 65)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="7" fill="url(#goldGrad)"/>
+    <text x="0" y="-24" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#1B2A4A" text-anchor="middle" letter-spacing="1">JOINERY</text>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#CAA05C" text-anchor="middle">CRAFTSMANSHIP</text>
+  </g>
+
+  <!-- 03: Visualizers -->
+  <g transform="translate(105, 185)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="7" fill="url(#goldGrad)"/>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#1B2A4A" text-anchor="middle" letter-spacing="1">VISUALIZATION</text>
+    <text x="0" y="-24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#CAA05C" text-anchor="middle">3D MODELING</text>
+  </g>
+
+  <!-- 04: Project Managers -->
+  <g transform="translate(295, 185)">
+    <circle cx="0" cy="0" r="18" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="7" fill="url(#goldGrad)"/>
+    <text x="0" y="32" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#1B2A4A" text-anchor="middle" letter-spacing="1">PROJECT MGMT</text>
+    <text x="0" y="-24" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="600" fill="#CAA05C" text-anchor="middle">SITE CONTROL</text>
+  </g>
+
+  <!-- Central Interlocking Synergy Frame (Isometric Unity Structure) -->
+  <g transform="translate(200, 125)">
+    <!-- 4 Interlocking Beams -->
+    <path d="M -40 -23 L 0 -46 L 0 -20 L -40 3 Z" fill="url(#navyGrad)" stroke="#CAA05C" stroke-width="0.8"/>
+    <path d="M 0 -46 L 40 -23 L 40 3 L 0 -20 Z" fill="#2A3D63" stroke="#CAA05C" stroke-width="0.8"/>
+    <path d="M 40 3 L 40 29 L 0 52 L 0 26 Z" fill="url(#navyGrad)" stroke="#CAA05C" stroke-width="0.8"/>
+    <path d="M 0 52 L -40 29 L -40 3 L 0 26 Z" fill="#1B2A4A" stroke="#CAA05C" stroke-width="0.8"/>
+
+    <!-- Central Hexagonal Keystone -->
+    <polygon points="0,-18 28,-2 28,18 0,34 -28,18 -28,-2" fill="url(#goldGrad)" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="0" cy="8" r="8" fill="#FFFFFF"/>
+    <circle cx="0" cy="8" r="4" fill="#1B2A4A"/>
+    
+    <!-- Pulse Ring -->
+    <circle cx="0" cy="8" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.75"/>
+  </g>
+
+  <!-- Technical Spec Footer Pill -->
+  <g transform="translate(200, 236)">
+    <rect x="-70" y="-10" width="140" height="20" rx="10" fill="#FFFFFF" stroke="#CAA05C" stroke-width="1" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))"/>
+    <circle cx="-54" cy="0" r="3" fill="#CAA05C"/>
+    <text x="0" y="3.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#1B2A4A" text-anchor="middle" letter-spacing="1">INTEGRATED WORKFORCE</text>
+    <circle cx="54" cy="0" r="3" fill="#CAA05C"/>
+  </g>
+</svg>

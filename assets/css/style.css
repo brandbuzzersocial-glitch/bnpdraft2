@@ -3263,17 +3263,18 @@ body.mouse-moving .mouse-glow-element {
   filter: drop-shadow(0 15px 30px rgba(0,0,0,0.08));
 }
 .state-path {
-  fill: rgba(0, 0, 0, 0.005);
-  stroke: rgba(13, 13, 16, 0.15);
-  stroke-width: 1.2px;
+  fill: rgba(0, 0, 0, 0.015);
+  stroke: rgba(13, 13, 16, 0.35);
+  stroke-width: 2px;
   stroke-linejoin: round;
-  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  stroke-linecap: round;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .state-path:hover, .state-path.active {
-  fill: rgba(202, 160, 92, 0.05);
+  fill: rgba(202, 160, 92, 0.08);
   stroke: var(--color-primary);
-  stroke-width: 1.8px;
-  filter: drop-shadow(0 0 6px rgba(202,160,92,0.15));
+  stroke-width: 2.8px;
+  filter: drop-shadow(0 0 8px rgba(202,160,92,0.25));
 }
 .map-pin {
   cursor: pointer;
@@ -3376,38 +3377,6 @@ body.mouse-moving .mouse-glow-element {
     padding: 60px 0 !important;
   }
   
-  /* Retain worker section's bottom flush layout */
-  #worker-section {
-    padding: 60px 0 0 !important;
-  }
-
-  /* Worker section grid stacking */
-  .worker-grid {
-    grid-template-columns: 1fr !important;
-    gap: 30px !important;
-    text-align: center;
-  }
-  .worker-grid > div:last-child {
-    padding-bottom: 50px !important;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  /* Worker graphic container sizing & positioning */
-  #worker-wrap {
-    height: 380px !important;
-    width: 100%;
-    display: flex !important;
-    align-items: flex-end !important;
-    justify-content: center !important;
-  }
-  #worker-slider {
-    position: relative !important;
-    left: auto !important;
-    bottom: auto !important;
-    margin: 0 auto !important;
-  }
 
   /* Header adjustments for smaller viewport */
   .site-header {
@@ -3448,13 +3417,7 @@ body.mouse-moving .mouse-glow-element {
   .container {
     padding: 0 20px !important;
   }
-  .worker-grid {
-    gap: 20px !important;
-  }
-  #worker-wrap {
-    height: 320px !important;
-  }
-  
+
   /* Experience badge center alignment */
   .experience-badge {
     padding: 12px 20px !important;
@@ -3526,4 +3489,20 @@ body.mouse-moving .mouse-glow-element {
   .process-step > div:first-child {
     margin: 0 auto 10px !important;
   }
+}
+
+/* ============================================================
+   Feature Toggles (Controlled via Backend)
+   ============================================================ */
+[data-feature="blog"] {
+  display: none !important;
+}
+body.feature-blog-enabled [data-feature="blog"] {
+  display: revert !important;
+}
+body.feature-blog-enabled li[data-feature="blog"] {
+  display: list-item !important;
+}
+body.feature-blog-enabled section[data-feature="blog"] {
+  display: block !important;
 }

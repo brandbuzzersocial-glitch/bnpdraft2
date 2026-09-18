@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#F2EBE0"/>
+    </linearGradient>
+    <linearGradient id="goldGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA73"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#9E7530"/>
+    </linearGradient>
+    <linearGradient id="navyGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24375A"/>
+      <stop offset="100%" stop-color="#111B2E"/>
+    </linearGradient>
+    <pattern id="gridPattern4" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="20" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bgGrad4)"/>
+  <rect width="400" height="250" fill="url(#gridPattern4)"/>
+
+  <!-- Radial Glow -->
+  <circle cx="200" cy="125" r="90" fill="#CAA05C" fill-opacity="0.06"/>
+
+  <!-- Empirical Engineering & Acoustic Dynamics Core -->
+  <g transform="translate(200, 115)">
+    <!-- Golden Ratio Fibonacci Spiral (Geometric Harmony) -->
+    <path d="M 0,0 
+             A 10,10 0 0,1 10,10 
+             A 20,20 0 0,1 -10,30 
+             A 40,40 0 0,1 -50,-10 
+             A 80,80 0 0,1 30,-90" 
+          fill="none" stroke="#CAA05C" stroke-width="1.5" opacity="0.6"/>
+
+    <!-- Acoustic Wave Dynamics (Sine Resonance Waves) -->
+    <path d="M -150 -10 Q -110 -55, -70 -10 T 10 -10 T 90 -10 T 170 -10" fill="none" stroke="#1B2A4A" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.45"/>
+    <path d="M -150 20 Q -110 -25, -70 20 T 10 20 T 90 20 T 170 20" fill="none" stroke="url(#goldGrad4)" stroke-width="1.5" opacity="0.7"/>
+
+    <!-- Load Pathway Force Vectors (Structural Stress Analysis Arrows) -->
+    <g stroke="url(#navyGrad4)" stroke-width="1.5">
+      <line x1="-45" y1="-65" x2="-45" y2="-15"/>
+      <polygon points="-45,-10 -48,-19 -42,-19" fill="#1B2A4A"/>
+
+      <line x1="0" y1="-75" x2="0" y2="-25"/>
+      <polygon points="0,-20 -3,-29 3,-29" fill="#1B2A4A"/>
+
+      <line x1="45" y1="-65" x2="45" y2="-15"/>
+      <polygon points="45,-10 42,-19 48,-19" fill="#1B2A4A"/>
+    </g>
+
+    <!-- Master Architectural Compass & Caliper Geometry -->
+    <g transform="translate(0, -10)">
+      <!-- Top Pivot Joint -->
+      <circle cx="0" cy="-60" r="9" fill="url(#navyGrad4)" stroke="url(#goldGrad4)" stroke-width="1.5"/>
+      <circle cx="0" cy="-60" r="3.5" fill="#FFFFFF"/>
+
+      <!-- Compass Left Arm -->
+      <polygon points="-2,-55 2,-55 -45,45 -50,45" fill="url(#navyGrad4)" stroke="#CAA05C" stroke-width="0.8"/>
+      <!-- Compass Left Needle Point -->
+      <polygon points="-48,45 -45,45 -47,65" fill="url(#goldGrad4)"/>
+
+      <!-- Compass Right Arm -->
+      <polygon points="-2,-55 2,-55 50,45 45,45" fill="url(#navyGrad4)" stroke="#CAA05C" stroke-width="0.8"/>
+      <!-- Compass Right Pen/Pencil Nib -->
+      <polygon points="45,45 48,45 47,65" fill="url(#goldGrad4)"/>
+
+      <!-- Center Distance Adjustment Dial -->
+      <line x1="-30" y1="-5" x2="30" y2="-5" stroke="#CAA05C" stroke-width="1.5"/>
+      <circle cx="0" cy="-5" r="7" fill="url(#goldGrad4)" stroke="#FFFFFF" stroke-width="1"/>
+      <circle cx="0" cy="-5" r="2.5" fill="#1B2A4A"/>
+
+      <!-- Arc Measured by Compass -->
+      <path d="M -47 65 A 80 80 0 0 0 47 65" fill="none" stroke="#CAA05C" stroke-width="1.5" stroke-dasharray="3,3"/>
+    </g>
+
+    <!-- Calibration Degree Markings & Micro-Tolerance Indicators -->
+    <circle cx="0" cy="55" r="4" fill="#FFFFFF" stroke="#CAA05C" stroke-width="1.5"/>
+    <text x="0" y="72" font-family="'Plus Jakarta Sans', monospace" font-size="7" font-weight="700" fill="#1B2A4A" text-anchor="middle">&#177;0.1 mm TOLERANCE</text>
+
+    <!-- Acoustic Decibel / Resonance Pill Left -->
+    <g transform="translate(-115, 30)">
+      <rect x="-35" y="-12" width="70" height="24" rx="4" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="0.8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))"/>
+      <text x="0" y="3.5" font-family="'Plus Jakarta Sans', monospace" font-size="7.5" font-weight="700" fill="#CAA05C" text-anchor="middle">STC 55 dB</text>
+    </g>
+
+    <!-- Golden Ratio Pill Right -->
+    <g transform="translate(115, 30)">
+      <rect x="-35" y="-12" width="70" height="24" rx="4" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="0.8" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.04))"/>
+      <text x="0" y="3.5" font-family="'Plus Jakarta Sans', monospace" font-size="7.5" font-weight="700" fill="#1B2A4A" text-anchor="middle">&#934; = 1.618</text>
+    </g>
+  </g>
+
+  <!-- Technical Spec Footer Pill -->
+  <g transform="translate(200, 236)">
+    <rect x="-85" y="-10" width="170" height="20" rx="10" fill="#FFFFFF" stroke="#CAA05C" stroke-width="1" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.06))"/>
+    <circle cx="-68" cy="0" r="3" fill="#CAA05C"/>
+    <text x="0" y="3.5" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="700" fill="#1B2A4A" text-anchor="middle" letter-spacing="1.2">EMPIRICAL ARCHITECTURE</text>
+    <circle cx="68" cy="0" r="3" fill="#CAA05C"/>
+  </g>
+</svg>

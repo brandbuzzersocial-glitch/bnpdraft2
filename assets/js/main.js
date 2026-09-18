@@ -7,6 +7,60 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  // ---- Dynamic Backend Feature Toggles (Blog Visibility) ----
+  const initFeatureToggles = async () => {
+    try {
+      let isEnabled = false;
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('blog') === '1' || urlParams.get('enableBlog') === 'true' || urlParams.get('preview') === 'true') {
+        isEnabled = true;
+      } else if (window.StrapiAPI && typeof window.StrapiAPI.isBlogEnabled === 'function') {
+        isEnabled = await window.StrapiAPI.isBlogEnabled();
+      } else {
+        // 1. Try local site config first
+        try {
+          const res = await fetch('/config/site-config.json?t=' + Date.now());
+          if (res.ok) {
+            const data = await res.json();
+            if (typeof data.enableBlog === 'boolean') isEnabled = data.enableBlog;
+          }
+        } catch (e) {}
+
+        // 2. Try Strapi backend features.json
+        if (!isEnabled) {
+          try {
+            const sRes = await fetch('http://localhost:1337/features.json?t=' + Date.now());
+            if (sRes.ok) {
+              const sData = await sRes.json();
+              if (typeof sData.enableBlog === 'boolean') isEnabled = sData.enableBlog;
+            }
+          } catch (e) {}
+        }
+      }
+
+      if (isEnabled) {
+        document.body.classList.add('feature-blog-enabled');
+        document.querySelectorAll('[data-feature="blog"]').forEach(el => {
+          el.style.removeProperty('display');
+        });
+      } else {
+        document.body.classList.remove('feature-blog-enabled');
+        document.querySelectorAll('[data-feature="blog"]').forEach(el => {
+          el.style.setProperty('display', 'none', 'important');
+        });
+        // If current page is blog.html and blog is disabled, redirect to index.html
+        if (window.location.pathname.endsWith('blog.html') && !urlParams.get('blog')) {
+          window.location.replace('index.html');
+        }
+      }
+    } catch (err) {
+      document.querySelectorAll('[data-feature="blog"]').forEach(el => {
+        el.style.setProperty('display', 'none', 'important');
+      });
+    }
+  };
+  initFeatureToggles();
+
   // ---- Page Loader (Smooth Preloader Animation & Safe Dismiss) --
   const loader = document.getElementById('page-loader');
   if (loader) {
@@ -141,6 +195,10 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.display = 'none';
           }
         });
+
+        if (projectsGrid.scrollTo) {
+          projectsGrid.scrollTo({ left: 0, behavior: 'smooth' });
+        }
       });
     });
 
@@ -151,6 +209,11 @@ document.addEventListener('DOMContentLoaded', () => {
       const matchBtn = Array.from(filterBtns).find(btn => btn.getAttribute('data-filter') === filterParam);
       if (matchBtn) {
         setTimeout(() => matchBtn.click(), 100);
+      }
+    } else {
+      const initialActiveBtn = filterNav.querySelector('.filter-btn.active') || filterBtns[0];
+      if (initialActiveBtn) {
+        initialActiveBtn.click();
       }
     }
   }
@@ -1229,7 +1292,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderStateProjects('mh');
 
     // Video Playback Performance Observer (pauses autoplay videos when off-screen)
-    const autoplayVideos = document.querySelectorAll('video[autoplay]:not(#worker-video)');
+    const autoplayVideos = document.querySelectorAll('video[autoplay]');
     if ('IntersectionObserver' in window && autoplayVideos.length > 0) {
       const videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {

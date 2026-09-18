@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&amp;family=Golos+Text:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2026_v17">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026_v19">
 </head>
 <body>
 
@@ -37,7 +37,7 @@
           <li><a href="services.html">Services</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="media.html">Media &amp; Features</a></li>
-          <li><a href="blog.html">Blog</a></li>
+          <li data-feature="blog" style="display:none !important;"><a href="blog.html">Blog</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
@@ -214,6 +214,43 @@
         <span>Published 2026</span>
       </div>
 
+      <!-- DIGITAL FLIPBOOK SHOWCASE -->
+      <div class="editorial-flipbook-card" style="background: linear-gradient(135deg, #14171f 0%, #1f2533 100%); border-radius: 16px; padding: 28px; margin-bottom: 48px; border: 1px solid rgba(202, 160, 92, 0.4); box-shadow: 0 20px 45px rgba(0,0,0,0.18);">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 16px;">
+          <div>
+            <div style="display: inline-flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+              <span style="width: 8px; height: 8px; border-radius: 50%; background: var(--color-primary); display: inline-block;"></span>
+              <span style="font-size: 0.72rem; font-weight: 800; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-primary);">Official Feature Publication</span>
+            </div>
+            <h3 style="font-family: 'Playfair Display', serif; font-size: clamp(1.3rem, 2.2vw, 1.75rem); color: #ffffff; margin: 0; font-weight: 600;">
+              SOH Magazine — The Brand Edit Issue
+            </h3>
+            <p style="font-size: 0.88rem; color: #a5adbb; margin: 4px 0 0; font-family: 'Golos Text', sans-serif;">
+              Special Editorial Edition on Punamchand D. Kularia &amp; BNP Interiors
+            </p>
+          </div>
+          <a href="https://issuu.com/soulofhospitality/docs/the_brand_edit_issue_-_punamchand_d_kularia" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 12px 24px; font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 10px; border-radius: 8px; text-decoration: none;">
+            <span>Open Fullscreen</span>
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+        <div class="flipbook-iframe-wrapper" style="position: relative; padding-top: 58%; width: 100%; height: 0; min-height: 420px; border-radius: 12px; overflow: hidden; background: #0b0d13; box-shadow: inset 0 0 20px rgba(0,0,0,0.6);">
+          <iframe allow="clipboard-write" sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms" allowfullscreen="true" style="position: absolute; border: none; width: 100%; height: 100%; left: 0; right: 0; top: 0; bottom: 0;" src="https://e.issuu.com/embed.html?d=the_brand_edit_issue_-_punamchand_d_kularia&u=soulofhospitality"></iframe>
+        </div>
+
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px; font-size: 0.82rem; color: #8c95a6; flex-wrap: wrap; gap: 12px; font-family: 'Golos Text', sans-serif;">
+          <span style="display: inline-flex; align-items: center; gap: 6px;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+            Interactive Flipbook — Use controls or swipe to flip pages
+          </span>
+          <a href="https://issuu.com/soulofhospitality/docs/the_brand_edit_issue_-_punamchand_d_kularia" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; gap: 4px;">
+            <span>View on Issuu.com</span>
+            <span>↗</span>
+          </a>
+        </div>
+      </div>
+
       <div class="editorial-content">
         <p><span class="editorial-dropcap">P</span>unam Kularia hails from a traditional Marwari family of Rajasthan, where business acumen and structural woodwork are second nature. His father, Sant Dularam Kularia, was a respected suthar (carpenter), and it was through watching him work with dedication and precision that Punam absorbed the values of trust, craftsmanship, and quality.</p>
         
@@ -265,7 +302,7 @@
           <a href="index.html" class="footer-logo">
             <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto" loading="eager">
           </a>
-          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
+          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, banking, corporate, mall/retail, restaurant, residential, healthcare, and education addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
             <a href="https://www.linkedin.com/company/bnpinteriorsindia/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.46 1.46 0 1 0 0 2.92 1.46 1.46 0 0 0 0-2.92z"/></svg></a>
             <a href="https://instagram.com/bnpinteriors" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -282,7 +319,7 @@
             <li><a href="projects.html">Our Projects</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="media.html">Media &amp; Features</a></li>
-            <li><a href="blog.html">Blog &amp; News</a></li>
+            <li data-feature="blog" style="display:none !important;"><a href="blog.html">Blog &amp; News</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>

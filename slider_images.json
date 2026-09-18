@@ -1,0 +1,204 @@
+{
+  "COURTYARD BY MARRIOT, RANCHI, JHARKHAND": {
+    "safe_name": "courtyard_by_marriot_ranchi_jharkhand",
+    "images": [
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_1.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_2.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_4.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_5.png",
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_6.png"
+    ]
+  },
+  "DISTRICT 150, HYDERABAD": {
+    "safe_name": "district_150_hyderabad",
+    "images": [
+      "assets/images/portfolio/district_150_hyderabad/1_1.png",
+      "assets/images/portfolio/district_150_hyderabad/1_2.png",
+      "assets/images/portfolio/district_150_hyderabad/1_3.png",
+      "assets/images/portfolio/district_150_hyderabad/1_4.png"
+    ]
+  },
+  "FAIRFIELD, CHENNAI, TAMIL NADU": {
+    "safe_name": "fairfield_chennai_tamil_nadu",
+    "images": [
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__1.png",
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__2.png",
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__3.png",
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__5.png",
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png"
+    ]
+  },
+  "HYATT PLACE, GURUGRAM, HARYANA": {
+    "safe_name": "hyatt_place_gurugram_haryana",
+    "images": [
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__1.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__2.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__3.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__4.png",
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__5.png"
+    ]
+  },
+  "HYATT REGENCY, PUNE, MAHARASHTRA": {
+    "safe_name": "hyatt_regency_pune_maharashtra",
+    "images": [
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__2.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__3.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__4.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png"
+    ]
+  },
+  "INDIAN ACCENT, NMACC, BKC, MUMBAI, MAHARASHTRA": {
+    "safe_name": "indian_accent_nmacc_bkc_mumbai_maharashtra",
+    "images": [
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_1.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_2.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_3.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_4.png",
+      "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_5.png"
+    ]
+  },
+  "NOVOTAL HOTEL, SUITES AND RESORT, , PUNE, MAHARASHTRA": {
+    "safe_name": "novotal_hotel_suites_and_resort_pune_maharashtra",
+    "images": [
+      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__1.png",
+      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__2.png",
+      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__3.png"
+    ]
+  },
+  "PIRAMAL CLUBHOUSE, MUMBAI, MAHARSTHRA": {
+    "safe_name": "piramal_clubhouse_mumbai_maharsthra",
+    "images": [
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_1.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_2.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_3.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_4.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_5.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_6.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_7.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_8.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_9_1.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_9_2.png"
+    ]
+  },
+  "QUORUM CLUB, HYDERABAD": {
+    "safe_name": "quorum_club_hyderabad",
+    "images": [
+      "assets/images/portfolio/quorum_club_hyderabad/1_1.png",
+      "assets/images/portfolio/quorum_club_hyderabad/1_2.png",
+      "assets/images/portfolio/quorum_club_hyderabad/1_3.png",
+      "assets/images/portfolio/quorum_club_hyderabad/1_4.png"
+    ]
+  },
+  "RADISSON, JAMHSHEDPUR, JHARKHAND": {
+    "safe_name": "radisson_jamhshedpur_jharkhand",
+    "images": [
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_1.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_2.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_4.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_5.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_6.png",
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png"
+    ]
+  },
+  "SHERATON, HYDERABAD, TELANGANA": {
+    "safe_name": "sheraton_hyderabad_telangana",
+    "images": [
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__2.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__3.png",
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__4.png"
+    ]
+  },
+  "TAJ AMER, JAIPUR, RAJASTHAN": {
+    "safe_name": "taj_amer_jaipur_rajasthan",
+    "images": [
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png",
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png"
+    ]
+  },
+  "TAJ CHAMBERS, TAJ MAHAL PALACE MUMBAI, MAHARASHTRA": {
+    "safe_name": "taj_chambers_taj_mahal_palace_mumbai_maharashtra",
+    "images": [
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__1.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__10.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__11.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__12.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__13.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__14.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__2.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__3.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__4.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__5.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__7.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__8.png",
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__9.png"
+    ]
+  },
+  "TAJ CIADADE DE, GOA": {
+    "safe_name": "taj_ciadade_de_goa",
+    "images": [
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__1.png",
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__2.png",
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__3.png",
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__4.png"
+    ]
+  },
+  "TAJ GANGA KUTIR, RAICHAK, WEST BENGAL": {
+    "safe_name": "taj_ganga_kutir_raichak_west_bengal",
+    "images": [
+      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_1.webp",
+      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp"
+    ]
+  },
+  "TAJ GORBANDH PALACE, JAISALMER, RAJASTHAN": {
+    "safe_name": "taj_gorbandh_palace_jaisalmer_rajasthan",
+    "images": [
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__1.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__10.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__11.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__12.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__13.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__15.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__16.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__2.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__3.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__4.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__5.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__6.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__7.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__8.png",
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png"
+    ]
+  },
+  "TAJ THE TREES, VIKHROLI, MAHARASHTRA": {
+    "safe_name": "taj_the_trees_vikhroli_maharashtra",
+    "images": [
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_1.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_2.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_3.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_4.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_5.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_7.png",
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_8.png"
+    ]
+  },
+  "VIVANTA, BHUBANESHWAR, ODISHA": {
+    "safe_name": "vivanta_bhubaneshwar_odisha",
+    "images": [
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_1.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_2.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_3.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_5.png",
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_6.png"
+    ]
+  }
+}

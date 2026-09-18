@@ -11,4 +11,6 @@ __pycache__/
 *.pyc
 .gemini/
 assets/extracted_profile/
-
+~$*
+.DS_Store
+Thumbs.db

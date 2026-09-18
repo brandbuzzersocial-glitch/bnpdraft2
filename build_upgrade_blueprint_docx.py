@@ -214,9 +214,9 @@ def build_upgrade_blueprint():
             'sections': [
                 {
                     'target': 'Hero Banner & Key Metrics',
-                    'current': 'Headline: "Crafting Timeless Architecture & Interior Spaces"\nSub: Turnkey Civil & Interior Contracting Since 2006.\nMetrics: 20+ Years, 500+ Projects, 100K+ Sq. Ft. Facility.',
-                    'pdf_data': 'Slide 01 & 06: Founded in 2006 by Founder & MD Mr. Punam D. Kularia.\nSlide 08 & 70: Regional Headquarters up to 13,00,000 SQ. FT (1.3 Million Sq. Ft. Kerala HQ), 3,00,000 SQ. FT Pune HQs, 20+ Years of Industry Leadership.',
-                    'proposed': 'Headline: "Redefining Luxury With Vision & Precision Since 2006"\nSub: India\'s Premier Turnkey Civil & Interior Contracting Firm. Led by Founder & MD Mr. Punam D. Kularia, executing landmark commercial, hospitality, and residential HQs up to 1.3 Million Sq. Ft.\nKey Metrics Counter:\n• 20+ Years of Master Craftsmanship (2006 – 2026)\n• 500+ Landmark Turnkey Projects Delivered PAN India\n• 1.3 Million Sq. Ft. Largest Single Regional HQ Executed\n• 100,000+ Sq. Ft. German HOMAG Manufacturing Facility'
+                    'current': 'Headline: "Crafting Timeless Architecture & Interior Spaces"\nSub: Turnkey Civil & Interior Contracting Since 2006.\nMetrics: 25+ Years, 500+ Projects, 100K+ Sq. Ft. Facility.',
+                    'pdf_data': 'Slide 01 & 06: Founded in 2006 by Founder & MD Mr. Punam D. Kularia.\nSlide 08 & 70: Regional Headquarters up to 13,00,000 SQ. FT (1.3 Million Sq. Ft. Kerala HQ), 3,00,000 SQ. FT Pune HQs, 25+ Years of Industry Leadership.',
+                    'proposed': 'Headline: "Redefining Luxury With Vision & Precision Since 2006"\nSub: India\'s Premier Turnkey Civil & Interior Contracting Firm. Led by Founder & MD Mr. Punam D. Kularia, executing landmark commercial, hospitality, and residential HQs up to 1.3 Million Sq. Ft.\nKey Metrics Counter:\n• 25+ Years of Master Craftsmanship (2006 – 2026)\n• 500+ Landmark Turnkey Projects Delivered PAN India\n• 1.3 Million Sq. Ft. Largest Single Regional HQ Executed\n• 100,000+ Sq. Ft. German HOMAG Manufacturing Facility'
                 },
                 {
                     'target': 'Founder Message & Leadership Intro',
@@ -250,7 +250,7 @@ def build_upgrade_blueprint():
             'sections': [
                 {
                     'target': 'Hero Banner & Brand Story',
-                    'current': 'Headline: "20 Years of Mastering Luxury With Vision and Precision"',
+                    'current': 'Headline: "25+ Years of Mastering Luxury With Vision and Precision"',
                     'pdf_data': 'Slides 03 & 04:\n"BNP Interiors was founded in the Year 2006, by the Visionary Entrepreneur and Industry Mentor Mr. Punam D. Kularia. REDEFINING LUXURY WITH PRECISION AND CRAFT."',
                     'proposed': 'Hero Tagline: ESTABLISHED IN 2006\nMain Heading: "Redefining Luxury with Vision, Precision & Architectural Mastery"\nBody Copy:\n"Founded in 2006 by visionary entrepreneur Mr. Punam D. Kularia, BNP Interiors has evolved into India\'s leading turnkey civil and interior contracting enterprise. With over two decades of relentless dedication, we bridge complex architectural visions with flawless factory-finished execution, managing iconic projects across corporate, hospitality, retail, healthcare, and luxury residential sectors."'
                 },

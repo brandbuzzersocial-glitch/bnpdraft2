@@ -16,6 +16,10 @@
       "type": "string",
       "default": "Antra Architecture & Interior Design"
     },
+    "enableBlog": {
+      "type": "boolean",
+      "default": false
+    },
     "phone": {
       "type": "string",
       "default": "(+480) 123 678 900"

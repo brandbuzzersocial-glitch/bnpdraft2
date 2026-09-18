@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&family=Golos+Text:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2026_v17">
+  <link rel="stylesheet" href="assets/css/style.css?v=2026_v19">
 </head>
 <body>
   <!-- PAGE LOADER -->
@@ -36,7 +36,7 @@
           <li><a href="services.html" class="">Services</a></li>
           <li><a href="projects.html" class="">Projects</a></li>
           <li><a href="media.html" class="">Media & Features</a></li>
-          <li><a href="blog.html" class="">Blog</a></li>
+          <li data-feature="blog" style="display:none !important;"><a href="blog.html" class="">Blog</a></li>
           <li><a href="contact.html" class="">Contact Us</a></li>
         </ul>
       </nav>
@@ -54,10 +54,10 @@
     <div class="container" style="text-align:center;">
       <span class="section-tag" style="color: var(--color-primary);">ABOUT OUR STUDIO</span>
       <h1 style="color: var(--color-white); margin-top: 10px; font-size: clamp(1.8rem, 3.5vw, 2.6rem);">
-        20 Years of Mastering Luxury With Vision and Precision
+        25+ Years of Mastering Luxury With Vision and Precision
       </h1>
       <p style="max-width: 680px; margin: 20px auto 0; color: #ccc; font-size: 0.95rem; line-height: 1.6;">
-        Founded in 2006 by Mr. Punamchand Kularia, BNP Interiors began its journey with a ₹9 crore landmark win from Shoppers Stop. What started as a modest venture has grown into one of India's leading civil and interior turnkey contracting firms — delivering over 700 projects across hospitality, commercial, banking, IT, and residential sectors.
+        Founded in 2006 by Mr. Punamchand Kularia, BNP Interiors began its journey with a ₹9 crore landmark win from Shoppers Stop. What started as a modest venture has grown into one of India's leading civil and interior turnkey contracting firms — delivering over 700 projects across hospitality, banking, corporate, mall/retail, restaurant, residential, healthcare, and education sectors.
       </p>
     </div>
   </section>
@@ -73,8 +73,8 @@
 
         <!-- LEFT: Portrait Panel -->
         <div style="position:relative; overflow:hidden; min-height:500px;">
-          <img src="assets/images/soh/image2.png" alt="Punamchand D. Kularia — Founder &amp; MD, BNP Interiors"
-        style="width:100%; height:100%; object-fit:cover; object-position:center 15%; display:block;" loading="lazy">
+          <img src="assets/images/soh/punam-kalaria-leading-force.jpg" alt="Punamchand D. Kularia — Founder &amp; MD, BNP Interiors"
+        style="width:100%; height:100%; object-fit:cover; object-position:center top; display:block;" loading="lazy">
           <div style="position:absolute; inset:0; background: linear-gradient(to right, transparent 65%, var(--color-bg-light) 100%), linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 30%);"></div>
           
           <!-- SOH badge -->
@@ -110,7 +110,7 @@
               <span style="display: block; font-family: var(--font-body); font-size: 0.65rem; color: var(--color-text); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.8;">Projects</span>
             </div>
             <div style="text-align: center; padding: 14px 18px; border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-white); flex: 1; min-width: 80px; box-shadow: var(--shadow-sm);">
-              <span class="stat-value" style="display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--color-primary); line-height: 1;">20+</span>
+              <span class="stat-value" style="display: block; font-family: var(--font-heading); font-size: 1.6rem; font-weight: 700; color: var(--color-primary); line-height: 1;">25+</span>
               <span style="display: block; font-family: var(--font-body); font-size: 0.65rem; color: var(--color-text); font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; opacity: 0.8;">Years</span>
             </div>
             <div style="text-align: center; padding: 14px 18px; border: 1px solid var(--color-border); border-radius: 10px; background: var(--color-white); flex: 1; min-width: 80px; box-shadow: var(--shadow-sm);">
@@ -119,9 +119,14 @@
             </div>
           </div>
 
-          <a href="founder.html" class="btn btn-primary" style="padding: 14px 28px; font-size: 0.85rem; width: fit-content; text-align: center; display: inline-block;">
-            Read the Complete Journey &nbsp;→
-          </a>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap; align-items: center;">
+            <a href="founder.html" class="btn btn-primary" style="padding: 14px 26px; font-size: 0.85rem; font-weight: 700; text-align: center; display: inline-block;">
+              Read the Complete Journey &nbsp;→
+            </a>
+            <a href="https://issuu.com/soulofhospitality/docs/the_brand_edit_issue_-_punamchand_d_kularia" target="_blank" rel="noopener noreferrer" class="btn btn-outline" style="padding: 14px 22px; font-size: 0.85rem; font-weight: 700; display: inline-flex; align-items: center; gap: 8px; text-decoration: none;">
+              <span>📖 Read SOH Flipbook ↗</span>
+            </a>
+          </div>
         </div>
       </div>
 
@@ -237,7 +242,7 @@
     <div class="container">
       <div class="section-header centered" data-anim="fadeUp" style="text-align: center; margin-bottom: 50px;">
         <span class="section-tag">CORE VALUES</span>
-        <h2 class="section-title">What Drives Our Studio</h2>
+        <h2 class="section-title">What Drives BNP Interiors</h2>
       </div>
 
       <style>
@@ -282,6 +287,9 @@
           border-radius: 12px;
           margin-bottom: 20px;
           aspect-ratio: 16/10;
+          background: #FCFAF7;
+          border: 1px solid rgba(202, 160, 92, 0.25);
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.03);
         }
         .value-img-wrap img {
           width: 100%;
@@ -289,28 +297,10 @@
           object-fit: cover;
           display: block;
           transform-origin: center center;
+          transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
-        
-        /* Subtle continuous motion / pan for sketches (Ken Burns) */
-        @keyframes kenBurns1 {
-          0% { transform: scale(1) translate(0, 0); }
-          50% { transform: scale(1.08) translate(-1.5%, -1%); }
-          100% { transform: scale(1) translate(0, 0); }
-        }
-        @keyframes kenBurns2 {
-          0% { transform: scale(1.08) translate(1%, 1.5%); }
-          50% { transform: scale(1) translate(-1%, -0.5%); }
-          100% { transform: scale(1.08) translate(1%, 1.5%); }
-        }
-        @keyframes kenBurns3 {
-          0% { transform: scale(1) translate(-1%, 1.5%); }
-          50% { transform: scale(1.09) translate(1%, -1%); }
-          100% { transform: scale(1) translate(-1%, 1.5%); }
-        }
-        @keyframes kenBurns4 {
-          0% { transform: scale(1.07) translate(1.5%, -0.5%); }
-          50% { transform: scale(1) translate(-1%, 1%); }
-          100% { transform: scale(1.07) translate(1.5%, -0.5%); }
+        .value-card:hover .value-img-wrap img {
+          transform: scale(1.035);
         }
         
         .value-watermark {
@@ -332,7 +322,7 @@
         <!-- STEP 01: Teamwork -->
         <div class="value-card" data-anim="fadeUp">
           <div class="value-img-wrap">
-            <img src="assets/images/concept_teamwork.jpg" alt="Teamwork and collaboration floorplan sketch" loading="lazy" style="animation: kenBurns1 24s ease-in-out infinite;">
+            <img src="assets/images/vector_teamwork.svg" alt="Architectural synergy and collaborative execution vector" loading="lazy">
           </div>
           <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-secondary); margin-bottom: 12px; font-weight: 700; display: flex; gap: 6px; align-items: center;">
             <span style="color: var(--color-primary);">01.</span> Teamwork
@@ -346,7 +336,7 @@
         <!-- STEP 02: Reliability -->
         <div class="value-card" data-anim="fadeUp">
           <div class="value-img-wrap">
-            <img src="assets/images/concept_reliability.jpg" alt="Reliability and precision facade sketch" loading="lazy" style="animation: kenBurns2 28s ease-in-out infinite;">
+            <img src="assets/images/vector_reliability.svg" alt="Structural integrity and client trust vector" loading="lazy">
           </div>
           <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-secondary); margin-bottom: 12px; font-weight: 700; display: flex; gap: 6px; align-items: center;">
             <span style="color: var(--color-primary);">02.</span> Reliability
@@ -360,10 +350,10 @@
         <!-- STEP 03: Passion for Technology -->
         <div class="value-card" data-anim="fadeUp">
           <div class="value-img-wrap">
-            <img src="assets/images/concept_tech_passion.jpg" alt="Passion for technology skyscraper sketch" loading="lazy" style="animation: kenBurns3 26s ease-in-out infinite;">
+            <img src="assets/images/vector_technology.svg" alt="HOMAG CNC digital fabrication and ERP tracking vector" loading="lazy">
           </div>
           <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-secondary); margin-bottom: 12px; font-weight: 700; display: flex; gap: 6px; align-items: center;">
-            <span style="color: var(--color-primary);">03.</span> Tech Passion
+            <span style="color: var(--color-primary);">03.</span> Passion for Technology
           </h3>
           <p style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.65; color: var(--color-text); margin: 0; padding-bottom: 28px;">
             We believe quality improves, and time and effort are saved, by adopting new technology across all operations — from HOMAG CNC machinery to ERP site tracking.
@@ -371,16 +361,16 @@
           <span class="value-watermark">03</span>
         </div>
 
-        <!-- STEP 04: Lasting Relationships -->
+        <!-- STEP 04: Science -->
         <div class="value-card" data-anim="fadeUp">
           <div class="value-img-wrap">
-            <img src="assets/images/concept_relationships.jpg" alt="Lasting relationships interior sketch" loading="lazy" style="animation: kenBurns4 30s ease-in-out infinite;">
+            <img src="assets/images/vector_science.svg" alt="Empirical architectural physics and micro-tolerance calibration vector" loading="lazy">
           </div>
           <h3 style="font-family: var(--font-heading); font-size: 1.25rem; color: var(--color-secondary); margin-bottom: 12px; font-weight: 700; display: flex; gap: 6px; align-items: center;">
-            <span style="color: var(--color-primary);">04.</span> Relationships
+            <span style="color: var(--color-primary);">04.</span> Science
           </h3>
           <p style="font-family: var(--font-body); font-size: 0.9rem; line-height: 1.65; color: var(--color-text); margin: 0; padding-bottom: 28px;">
-            It's all about people. Cultivating and maintaining relationships — with clients, architects, and trade partners alike — is fundamental to our success.
+            Execution is an exact science. From acoustic dynamics and load pathways to micro-material tolerances and climate-controlled millwork, every detail is engineered with empirical precision.
           </p>
           <span class="value-watermark">04</span>
         </div>
@@ -419,34 +409,34 @@
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-1.jpg" alt="Head of Design" loading="lazy">
+            <img src="assets/images/team/gouri-kularia.jpg" alt="Gouri Kularia - Head of Design (Gouri Kularia Designs)" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">02</span>
-            <h3>Design Leadership</h3>
-            <p>Head of Interior Architecture</p>
+            <h3>Gouri Kularia</h3>
+            <p>Head of Design (Gouri Kularia Designs)</p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-3.jpg" alt="Head of 3D Visualization" loading="lazy">
+            <img src="assets/images/team/ameet-babrekar.jpg" alt="Ameet Babrekar - CEO" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">03</span>
-            <h3>BIM & 3D Engineering</h3>
-            <p>Head of 3D Visualization</p>
+            <h3>Ameet Babrekar</h3>
+            <p>CEO</p>
           </div>
         </div>
 
         <div class="team-card">
           <div class="team-img">
-            <img src="assets/images/gallery-4.jpg" alt="Head of Manufacturing" loading="lazy">
+            <img src="assets/images/team/ajay-masand.jpg" alt="Ajay Masand - Business Head" loading="lazy">
           </div>
           <div class="team-info">
             <span class="team-num">04</span>
-            <h3>Factory Operations</h3>
-            <p>Head of Furniture Manufacturing</p>
+            <h3>Ajay Masand</h3>
+            <p>Business Head</p>
           </div>
         </div>
       </div>
@@ -474,7 +464,7 @@
           <a href="index.html" class="footer-logo">
             <img src="assets/images/bnp-logo.png" alt="BNP Interiors Logo" style="height:44px;width:auto" loading="eager">
           </a>
-          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, commercial, and residential addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
+          <p>BNP Interiors — Where visionary ideas meet flawless execution. Founded in 2006, we deliver turnkey civil and interior contracting and in-house furniture manufacturing for India's leading hospitality, banking, corporate, mall/retail, restaurant, residential, healthcare, and education addresses. 700+ Projects | 35+ Million Sq. Ft. | Pan-India.</p>
           <div class="footer-social">
             <a href="https://www.linkedin.com/company/bnpinteriorsindia/" target="_blank" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.75a1.46 1.46 0 1 0 0 2.92 1.46 1.46 0 0 0 0-2.92z"/></svg></a>
             <a href="https://instagram.com/bnpinteriors" target="_blank" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
@@ -491,7 +481,7 @@
             <li><a href="projects.html">Our Projects</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="media.html">Media & Features</a></li>
-            <li><a href="blog.html">Blog & News</a></li>
+            <li data-feature="blog" style="display:none !important;"><a href="blog.html">Blog & News</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
