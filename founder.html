@@ -183,11 +183,27 @@
 }
 
 .editorial-divider {
-  text-align: center;
-  font-size: 2rem;
-  color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
   margin: 50px 0;
   column-span: all;
+}
+.editorial-divider::before,
+.editorial-divider::after {
+  content: "";
+  height: 1px;
+  width: 60px;
+  background: var(--color-primary);
+  opacity: 0.6;
+}
+.editorial-divider span {
+  width: 6px;
+  height: 6px;
+  background: var(--color-primary);
+  border-radius: 50%;
+  display: inline-block;
 }
 
 @media (max-width: 768px) {
@@ -272,7 +288,7 @@
         <h3 class="editorial-chapter-title">The Novotel Pune Breakthrough</h3>
         <p>Bidding for Novotel Pune, BNP took a calculated risk: they built sample rooms at their own cost in just 25 days. The Accor group was so profoundly impressed by the quality and speed that they cancelled a major China import order, awarding BNP the entire 300-room contract. This marked BNP's aggressive entry into the luxury hospitality sector.</p>
 
-        <div class="editorial-divider">✦ ✦ ✦</div>
+        <div class="editorial-divider"><span></span></div>
 
         <span class="editorial-chapter-meta">National Honor · 2015</span>
         <h3 class="editorial-chapter-title">Make in India Leadership</h3>

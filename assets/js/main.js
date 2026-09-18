@@ -514,7 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
     image.style.cssText = 'max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);';
 
     const closeBtn = document.createElement('button');
-    closeBtn.textContent = '✕';
+    closeBtn.innerHTML = '&times;';
     closeBtn.style.cssText = `
       position: absolute; top: 24px; right: 32px; background: none; border: none;
       color: #fff; font-size: 2.2rem; cursor: pointer; opacity: 0.8; transition: opacity 0.2s;
@@ -554,7 +554,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = newsletterForm.querySelector('button');
       if (input && input.value) {
         const origText = btn.textContent;
-        btn.textContent = '✓ Subscribed!';
+        btn.textContent = 'Subscribed!';
         btn.style.background = '#caa05c';
         btn.style.borderColor = '#caa05c';
         btn.style.color = '#1c1c1d';
@@ -576,7 +576,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const btn = contactForm.querySelector('button[type="submit"]');
       if (btn) {
         const origText = btn.innerHTML;
-        btn.innerHTML = '✓ Message Sent Successfully!';
+        btn.innerHTML = 'Message Sent Successfully!';
         btn.style.background = '#caa05c';
         btn.style.borderColor = '#caa05c';
         btn.style.color = '#1c1c1d';
