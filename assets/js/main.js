@@ -1307,6 +1307,30 @@ document.addEventListener('DOMContentLoaded', () => {
       autoplayVideos.forEach((v) => videoObserver.observe(v));
     }
 
+    // ---- Hero Banner Video Sound & Voiceover Toggle ------------
+    const heroVideo = document.getElementById('hero-bg-video');
+    const soundToggleBtn = document.getElementById('hero-sound-toggle');
+    const soundToggleText = document.getElementById('hero-sound-text');
+
+    if (heroVideo && soundToggleBtn) {
+      soundToggleBtn.addEventListener('click', () => {
+        if (heroVideo.muted) {
+          heroVideo.muted = false;
+          heroVideo.volume = 1.0;
+          heroVideo.currentTime = 0;
+          heroVideo.play().catch(() => {});
+          if (soundToggleText) soundToggleText.textContent = 'Mute Voiceover';
+          soundToggleBtn.style.background = 'var(--color-secondary)';
+          soundToggleBtn.style.color = 'var(--color-primary)';
+        } else {
+          heroVideo.muted = true;
+          if (soundToggleText) soundToggleText.textContent = 'Play With Voiceover';
+          soundToggleBtn.style.background = 'var(--color-primary)';
+          soundToggleBtn.style.color = 'var(--color-secondary)';
+        }
+      });
+    }
+
   }
 
 });
