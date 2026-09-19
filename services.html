@@ -346,38 +346,124 @@
     </div>
   </section>
 
-  <!-- NAVI MUMBAI MANUFACTURING PLANT SHOWCASE -->
-  <section class="manufacturing-highlight" id="manufacturing">
+    <!-- NAVI MUMBAI MANUFACTURING PLANT SHOWCASE (BLUEPRINT SECTION) -->
+  <section class="section manufacturing-section sketch-bg sketch-bg-floorplan blueprint-grid-bg" id="manufacturing">
     <div class="container">
       <div class="manufacturing-grid">
+        
+        <!-- LEFT COLUMN: HEADER & 4 SUBHEAD CARDS (2x2 GRID) -->
         <div data-anim="fadeRight">
           <span class="section-tag">IN-HOUSE MANUFACTURING PLANT</span>
-          <h2 class="section-title">Navi Mumbai HOMAG Millwork Plant</h2>
-          <p class="section-desc">Operating out of MIDC Kopar Khairane, Navi Mumbai, our ISO-certified manufacturing facility features HOMAG (Germany) CNC routers, beam saws, edge banders, hot presses, and dust-free spray paint booths for zero on-site delay.</p>
+          <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.3rem); margin-top: 10px; margin-bottom: 14px;">
+            Navi Mumbai HOMAG Millwork Plant
+          </h2>
+          <p class="section-desc" style="font-size: 0.98rem; line-height: 1.65; margin-bottom: 0;">
+            Operating out of MIDC Kopar Khairane, Navi Mumbai, our ISO-certified manufacturing facility features HOMAG (Germany) CNC routers, beam saws, edge banders, hot presses, and dust-free spray paint booths for zero on-site delay.
+          </p>
 
-          <div class="mfg-specs">
-            <div class="mfg-spec-card">
-              <h4>HOMAG (Germany) Tech</h4>
-              <p>CNC routers and beam saws ensuring sub-millimeter precision joinery.</p>
+          <!-- 4 SUBHEADS AS CARDS -->
+          <div class="mfg-cards-grid">
+            
+            <!-- CARD 1: HOMAG Tech -->
+            <div class="mfg-subhead-card">
+              <div>
+                <div class="mfg-card-top">
+                  <div class="mfg-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="3"/>
+                      <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                    </svg>
+                  </div>
+                  <span class="mfg-card-badge">0.1mm CNC</span>
+                </div>
+                <h3 class="mfg-card-title">HOMAG (Germany) Tech</h3>
+              </div>
+              <p class="mfg-card-desc">CNC routers and beam saws ensuring sub-millimeter precision joinery.</p>
             </div>
-            <div class="mfg-spec-card">
-              <h4>Factory-Finished</h4>
-              <p>Hot press, post-forming, and dust-free paint booth lines for immaculate polishes.</p>
+
+            <!-- CARD 2: Factory-Finished -->
+            <div class="mfg-subhead-card">
+              <div>
+                <div class="mfg-card-top">
+                  <div class="mfg-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v4"/>
+                      <path d="m4.93 4.93 2.83 2.83"/>
+                      <path d="M2 12h4"/>
+                      <path d="m4.93 19.07 2.83-2.83"/>
+                      <path d="M12 22v-4"/>
+                      <path d="m19.07 19.07-2.83-2.83"/>
+                      <path d="M22 12h-4"/>
+                      <path d="m19.07 4.93-2.83 2.83"/>
+                      <circle cx="12" cy="12" r="4"/>
+                    </svg>
+                  </div>
+                  <span class="mfg-card-badge">Dust-Free</span>
+                </div>
+                <h3 class="mfg-card-title">Factory-Finished</h3>
+              </div>
+              <p class="mfg-card-desc">Hot press, post-forming, and dust-free paint booth lines for immaculate polishes.</p>
             </div>
-            <div class="mfg-spec-card">
-              <h4>5,000+ Skilled Craftsmen</h4>
-              <p>Master joiners and woodworkers trained in high-volume luxury fit-outs.</p>
+
+            <!-- CARD 3: 5,000+ Skilled Craftsmen -->
+            <div class="mfg-subhead-card">
+              <div>
+                <div class="mfg-card-top">
+                  <div class="mfg-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                  <span class="mfg-card-badge">5,000+ Artisans</span>
+                </div>
+                <h3 class="mfg-card-title">5,000+ Skilled Craftsmen</h3>
+              </div>
+              <p class="mfg-card-desc">Master joiners and woodworkers trained in high-volume luxury fit-outs.</p>
             </div>
-            <div class="mfg-spec-card">
-              <h4>Rapid Installation</h4>
-              <p>Factory modular assembly reduces site installation timelines by up to 40%.</p>
+
+            <!-- CARD 4: Rapid Installation -->
+            <div class="mfg-subhead-card">
+              <div>
+                <div class="mfg-card-top">
+                  <div class="mfg-card-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"/>
+                      <polyline points="12 6 12 12 16 14"/>
+                    </svg>
+                  </div>
+                  <span class="mfg-card-badge">-40% On-Site</span>
+                </div>
+                <h3 class="mfg-card-title">Rapid Installation</h3>
+              </div>
+              <p class="mfg-card-desc">Factory modular assembly reduces site installation timelines by up to 40%.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: BLUEPRINT FRAMED FACILITY VISUAL -->
+        <div data-anim="fadeLeft">
+          <div class="mfg-visual-wrap">
+            <div class="mfg-corner-accent mfg-corner-tl"></div>
+            <div class="mfg-corner-accent mfg-corner-tr"></div>
+            <div class="mfg-corner-accent mfg-corner-bl"></div>
+            <div class="mfg-corner-accent mfg-corner-br"></div>
+            <img src="assets/images/service-4.jpg" alt="Navi Mumbai Furniture Manufacturing Facility" loading="lazy">
+            <div class="mfg-visual-plaque">
+              <span class="mfg-plaque-tag">CENTRAL MANUFACTURING PLANT</span>
+              <div class="mfg-plaque-title">MIDC Kopar Khairane, Navi Mumbai</div>
+              <div class="mfg-plaque-specs">
+                <span>✦ HOMAG (Germany) Plant</span>
+                <span>✦ ISO 9001:2015</span>
+                <span>✦ Factory Prefabrication</span>
+              </div>
             </div>
           </div>
         </div>
 
-        <div data-anim="fadeLeft">
-          <img src="assets/images/service-4.jpg" alt="Navi Mumbai Furniture Manufacturing Facility" style="width:100%; height:450px; object-fit:cover; border-radius:var(--radius-lg); box-shadow:var(--shadow-lg);" loading="lazy">
-        </div>
       </div>
     </div>
   </section>

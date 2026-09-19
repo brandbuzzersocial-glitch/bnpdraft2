@@ -4026,3 +4026,211 @@ body.feature-blog-enabled li[data-feature="blog"] {
 body.feature-blog-enabled section[data-feature="blog"] {
   display: block !important;
 }
+
+
+/* ============================================================
+   NAVI MUMBAI HOMAG MANUFACTURING PLANT (BLUEPRINT SECTION)
+   ============================================================ */
+.manufacturing-section {
+  padding: 100px 0;
+  background: var(--color-white);
+  position: relative;
+}
+
+.manufacturing-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.mfg-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.mfg-subhead-card {
+  background: var(--color-white);
+  border: 1px solid rgba(202, 160, 92, 0.28);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 18px rgba(16, 28, 54, 0.04);
+  transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mfg-subhead-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #caa05c, #e2c28e);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.mfg-subhead-card:hover {
+  transform: translateY(-5px);
+  border-color: #caa05c;
+  box-shadow: 0 14px 30px rgba(16, 28, 54, 0.1);
+}
+
+.mfg-subhead-card:hover::before {
+  opacity: 1;
+}
+
+.mfg-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.mfg-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: rgba(202, 160, 92, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #caa05c;
+  transition: all 0.3s ease;
+}
+
+.mfg-subhead-card:hover .mfg-card-icon {
+  background: #caa05c;
+  color: #ffffff;
+  transform: scale(1.08) rotate(6deg);
+}
+
+.mfg-card-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #caa05c;
+  background: rgba(202, 160, 92, 0.1);
+  border: 1px solid rgba(202, 160, 92, 0.3);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.mfg-card-title {
+  font-family: var(--font-heading, 'Cinzel', serif);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 1.35;
+  margin-bottom: 8px;
+}
+
+.mfg-card-desc {
+  font-size: 0.84rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Right Column: Blueprint Framed Plant Visual */
+.mfg-visual-wrap {
+  position: relative;
+  border-radius: var(--radius-lg);
+  border: 2px solid rgba(202, 160, 92, 0.4);
+  box-shadow: 0 16px 40px rgba(16, 28, 54, 0.12);
+  overflow: hidden;
+}
+
+.mfg-visual-wrap img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.mfg-visual-wrap:hover img {
+  transform: scale(1.03);
+}
+
+.mfg-corner-accent {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: #caa05c;
+  pointer-events: none;
+  z-index: 3;
+}
+.mfg-corner-tl { top: 6px; left: 6px; border-top: 2px solid #caa05c; border-left: 2px solid #caa05c; }
+.mfg-corner-tr { top: 6px; right: 6px; border-top: 2px solid #caa05c; border-right: 2px solid #caa05c; }
+.mfg-corner-bl { bottom: 6px; left: 6px; border-bottom: 2px solid #caa05c; border-left: 2px solid #caa05c; }
+.mfg-corner-br { bottom: 6px; right: 6px; border-bottom: 2px solid #caa05c; border-right: 2px solid #caa05c; }
+
+.mfg-visual-plaque {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(16, 28, 54, 0.85) 0%, rgba(10, 16, 28, 0.96) 100%);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid #caa05c;
+  padding: 16px 20px;
+  color: #ffffff;
+}
+
+.mfg-plaque-tag {
+  font-family: var(--font-accent, 'Cinzel', serif);
+  font-size: 0.68rem;
+  letter-spacing: 2px;
+  color: #caa05c;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.mfg-plaque-title {
+  font-family: var(--font-heading, 'Cinzel', serif);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.mfg-plaque-specs {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.mfg-plaque-specs span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 1024px) {
+  .manufacturing-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .mfg-visual-wrap img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  .mfg-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
