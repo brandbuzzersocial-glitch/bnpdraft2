@@ -2434,6 +2434,9 @@ h6 { font-size: 1rem; }
   margin-bottom: 18px;
 }
 
+/* ============================================================
+   EXPERTISE ICONS MOTION & ANIMATION
+   ============================================================ */
 .expertise-card-icon {
   width: 48px;
   height: 48px;
@@ -2444,13 +2447,110 @@ h6 { font-size: 1rem; }
   justify-content: center;
   color: #caa05c;
   flex-shrink: 0;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
 }
 
+.expertise-card-icon svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+  will-change: transform;
+}
+
+/* Ambient Subtle Motion on Idle */
+.expertise-icon-bim svg {
+  animation: bimFloat 3.6s ease-in-out infinite alternate;
+}
+@keyframes bimFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-3px) rotate(4deg); }
+  100% { transform: translateY(-6px) rotate(-2deg); }
+}
+
+.expertise-icon-mfg svg {
+  animation: mfgPulse 4.2s ease-in-out infinite;
+}
+@keyframes mfgPulse {
+  0%, 100% { transform: rotate(0deg) scale(1); }
+  35% { transform: rotate(16deg) scale(1.06); }
+  70% { transform: rotate(-10deg) scale(0.96); }
+}
+
+.expertise-icon-design svg {
+  animation: designBreathe 3.8s ease-in-out infinite alternate;
+}
+@keyframes designBreathe {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.08) translateY(-2px); }
+}
+
+.expertise-icon-erp svg {
+  animation: erpBounce 3.4s ease-in-out infinite;
+}
+@keyframes erpBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px) scale(1.05); }
+}
+
+.expertise-icon-civil svg {
+  animation: civilLift 4s ease-in-out infinite alternate;
+}
+@keyframes civilLift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-4px); }
+}
+
+/* Dynamic Interactive Hover Motion & Gold Aura */
 .expertise-card:hover .expertise-card-icon {
-  transform: scale(1.08);
+  transform: translateY(-4px) scale(1.12);
   background: #caa05c;
   color: #ffffff;
+  box-shadow: 0 10px 24px rgba(202, 160, 92, 0.4), 0 0 0 4px rgba(202, 160, 92, 0.15);
+}
+
+.expertise-card:hover .expertise-icon-bim svg {
+  animation: bimSpin 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) infinite alternate;
+}
+@keyframes bimSpin {
+  0% { transform: rotateY(0deg) scale(1); }
+  100% { transform: rotateY(180deg) scale(1.18); }
+}
+
+.expertise-card:hover .expertise-icon-mfg svg {
+  animation: mfgSpin 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes mfgSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(180deg) scale(1.18); }
+}
+
+.expertise-card:hover .expertise-icon-design svg {
+  animation: designExpand 0.8s ease forwards;
+}
+@keyframes designExpand {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.24) rotate(-6deg); }
+  100% { transform: scale(1.15) rotate(0deg); }
+}
+
+.expertise-card:hover .expertise-icon-erp svg {
+  animation: erpPulseActive 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes erpPulseActive {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.25) translateY(-5px); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1.15) translateY(-2px); }
+}
+
+.expertise-card:hover .expertise-icon-civil svg {
+  animation: civilLiftActive 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+@keyframes civilLiftActive {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px) scale(1.22); }
+  100% { transform: translateY(-4px) scale(1.15); }
 }
 
 .expertise-card-pct {
