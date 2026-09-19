@@ -220,77 +220,169 @@
     </div>
   </section>
 
-  <!-- EXPERTISE & PROGRESS BARS SECTION (MATCHING SERVICES-01 LAYOUT) -->
+    <!-- EXPERTISE & 5 CARDS SIDE BY SIDE WITH PROGRESS BARS -->
   <section class="section sketch-bg sketch-bg-floorplan blueprint-grid-bg" style="background: var(--color-bg-section);">
     <div class="container">
-      <div style="display:grid; grid-template-columns: 1fr 1fr; gap:60px; align-items:center;" data-anim="fadeUp">
-        
-        <!-- LEFT COLUMN: TITLE & CTA -->
-        <div>
+      
+      <!-- HEADER: TITLE, DESCRIPTION & CTA -->
+      <div class="expertise-header-wrap" data-anim="fadeUp">
+        <div class="expertise-header-content">
           <span class="section-tag">OUR EXPERTISE</span>
-          <h2 class="section-title" style="font-size: clamp(1.6rem, 3vw, 2.2rem); margin-top:10px;">
+          <h2 class="section-title" style="font-size: clamp(1.8rem, 3vw, 2.3rem); margin-top:10px; margin-bottom: 12px;">
             Trusted Expert in Architectural Design and Innovation
           </h2>
-          <p class="section-desc" style="margin-bottom:30px; font-size:1rem; line-height: 1.6;">
+          <p class="section-desc" style="margin:0; font-size:1rem; line-height: 1.65;">
             We specialize in transforming visions into reality. Our team brings decades of experience across residential, commercial, and hospitality contracting disciplines, backed by an in-house ERP system and state-of-the-art HOMAG machinery.
           </p>
+        </div>
+        <div>
           <a href="contact.html" class="btn btn-primary" style="padding: 16px 36px;">Work With Us →</a>
         </div>
+      </div>
 
-        <!-- RIGHT COLUMN: PROGRESS GAUGES -->
-        <div>
-          <div style="margin-bottom:28px;">
-            <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-weight:700; color:var(--color-secondary);">
-              <span>3D Visualization & BIM</span>
-              <span style="color:var(--color-primary);">95%</span>
-            </div>
-            <div style="height:10px; background:var(--color-white); border-radius:10px; overflow:hidden; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);">
-              <div style="width:95%; height:100%; background:var(--color-primary); border-radius:10px;"></div>
-            </div>
-          </div>
-
-          <div style="margin-bottom:28px;">
-            <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-weight:700; color:var(--color-secondary);">
-              <span>Furniture Manufacturing & Craftsmanship</span>
-              <span style="color:var(--color-primary);">92%</span>
-            </div>
-            <div style="height:10px; background:var(--color-white); border-radius:10px; overflow:hidden; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);">
-              <div style="width:92%; height:100%; background:var(--color-primary); border-radius:10px;"></div>
-            </div>
-          </div>
-
-          <div style="margin-bottom:28px;">
-            <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-weight:700; color:var(--color-secondary);">
-              <span>Interior Design & Space Planning</span>
-              <span style="color:var(--color-primary);">90%</span>
-            </div>
-            <div style="height:10px; background:var(--color-white); border-radius:10px; overflow:hidden; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);">
-              <div style="width:90%; height:100%; background:var(--color-primary); border-radius:10px;"></div>
-            </div>
-          </div>
-
-          <div style="margin-bottom:28px;">
-            <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-weight:700; color:var(--color-secondary);">
-              <span>Project & Vendor Management (ERP)</span>
-              <span style="color:var(--color-primary);">90%</span>
-            </div>
-            <div style="height:10px; background:var(--color-white); border-radius:10px; overflow:hidden; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);">
-              <div style="width:90%; height:100%; background:var(--color-primary); border-radius:10px;"></div>
-            </div>
-          </div>
-
+      <!-- FIVE EXPERTISE CARDS PLACED SIDE BY SIDE -->
+      <div class="expertise-cards-grid" data-anim="fadeUp">
+        
+        <!-- CARD 1: 3D Visualization & BIM -->
+        <div class="expertise-card">
           <div>
-            <div style="display:flex; justify-content:space-between; margin-bottom:10px; font-weight:700; color:var(--color-secondary);">
-              <span>Civil & MEP Execution</span>
-              <span style="color:var(--color-primary);">88%</span>
+            <div class="expertise-card-head">
+              <div class="expertise-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                  <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                  <line x1="12" y1="22.08" x2="12" y2="12"/>
+                </svg>
+              </div>
+              <span class="expertise-card-pct">95%</span>
             </div>
-            <div style="height:10px; background:var(--color-white); border-radius:10px; overflow:hidden; box-shadow:inset 0 1px 3px rgba(0,0,0,0.1);">
-              <div style="width:88%; height:100%; background:var(--color-primary); border-radius:10px;"></div>
+            <h3 class="expertise-card-title">3D Visualization &amp; BIM</h3>
+            <div class="expertise-card-bar-wrap">
+              <div class="expertise-card-bar-label">
+                <span>Capability Score</span>
+                <span>95%</span>
+              </div>
+              <div class="expertise-card-bar-track">
+                <div class="expertise-card-bar-fill" style="width: 95%;"></div>
+              </div>
             </div>
           </div>
+          <p class="expertise-card-desc">Photorealistic renders, BIM coordination, and 3D architectural walk-throughs before on-site execution.</p>
+        </div>
+
+        <!-- CARD 2: Furniture Manufacturing & Craftsmanship -->
+        <div class="expertise-card">
+          <div>
+            <div class="expertise-card-head">
+              <div class="expertise-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 7h-9"/>
+                  <path d="M14 17H5"/>
+                  <circle cx="17" cy="17" r="3"/>
+                  <circle cx="7" cy="7" r="3"/>
+                </svg>
+              </div>
+              <span class="expertise-card-pct">92%</span>
+            </div>
+            <h3 class="expertise-card-title">Furniture Manufacturing &amp; Craftsmanship</h3>
+            <div class="expertise-card-bar-wrap">
+              <div class="expertise-card-bar-label">
+                <span>Capability Score</span>
+                <span>92%</span>
+              </div>
+              <div class="expertise-card-bar-track">
+                <div class="expertise-card-bar-fill" style="width: 92%;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="expertise-card-desc">In-house HOMAG CNC joinery, German machinery, and master woodcarving for bespoke luxury hospitality furniture.</p>
+        </div>
+
+        <!-- CARD 3: Interior Design & Space Planning -->
+        <div class="expertise-card">
+          <div>
+            <div class="expertise-card-head">
+              <div class="expertise-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="3" width="18" height="18" rx="2"/>
+                  <path d="M3 9h18"/>
+                  <path d="M9 21V9"/>
+                </svg>
+              </div>
+              <span class="expertise-card-pct">90%</span>
+            </div>
+            <h3 class="expertise-card-title">Interior Design &amp; Space Planning</h3>
+            <div class="expertise-card-bar-wrap">
+              <div class="expertise-card-bar-label">
+                <span>Capability Score</span>
+                <span>90%</span>
+              </div>
+              <div class="expertise-card-bar-track">
+                <div class="expertise-card-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="expertise-card-desc">Ergonomic workplace zoning, luxury hospitality palettes, and meticulous interior architectural detailing.</p>
+        </div>
+
+        <!-- CARD 4: Project & Vendor Management (ERP) -->
+        <div class="expertise-card">
+          <div>
+            <div class="expertise-card-head">
+              <div class="expertise-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="expertise-card-pct">90%</span>
+            </div>
+            <h3 class="expertise-card-title">Project &amp; Vendor Management (ERP)</h3>
+            <div class="expertise-card-bar-wrap">
+              <div class="expertise-card-bar-label">
+                <span>Capability Score</span>
+                <span>90%</span>
+              </div>
+              <div class="expertise-card-bar-track">
+                <div class="expertise-card-bar-fill" style="width: 90%;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="expertise-card-desc">Real-time proprietary ERP tracking, supply chain synchronisation, and deployment of 5,000+ artisans.</p>
+        </div>
+
+        <!-- CARD 5: Civil & MEP Execution -->
+        <div class="expertise-card">
+          <div>
+            <div class="expertise-card-head">
+              <div class="expertise-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M2 20h20"/>
+                  <path d="M5 20V8l7-5 7 5v12"/>
+                  <path d="M9 12h6"/>
+                  <path d="M9 16h6"/>
+                </svg>
+              </div>
+              <span class="expertise-card-pct">88%</span>
+            </div>
+            <h3 class="expertise-card-title">Civil &amp; MEP Execution</h3>
+            <div class="expertise-card-bar-wrap">
+              <div class="expertise-card-bar-label">
+                <span>Capability Score</span>
+                <span>88%</span>
+              </div>
+              <div class="expertise-card-bar-track">
+                <div class="expertise-card-bar-fill" style="width: 88%;"></div>
+              </div>
+            </div>
+          </div>
+          <p class="expertise-card-desc">Turnkey civil engineering, HVAC, electrical, fire protection, and statutory safety code compliance.</p>
         </div>
 
       </div>
+
     </div>
   </section>
 
