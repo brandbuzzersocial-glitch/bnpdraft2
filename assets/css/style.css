@@ -1690,6 +1690,261 @@ h6 { font-size: 1rem; }
   transform: scale(1.4);
 }
 
+
+/* ============================================================
+   CLIENT CERTIFICATES & COMMENDATIONS MARQUEE
+   ============================================================ */
+.cert-showcase-section {
+  margin-top: 60px;
+  padding-top: 45px;
+  border-top: 1px solid rgba(202, 160, 92, 0.25);
+  position: relative;
+}
+
+.cert-showcase-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 36px;
+}
+
+.cert-gold-ribbon {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.cert-ribbon-line {
+  display: inline-block;
+  width: 42px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, #caa05c);
+}
+
+.cert-ribbon-line:last-child {
+  background: linear-gradient(90deg, #caa05c, transparent);
+}
+
+.cert-ribbon-text {
+  font-family: var(--font-accent, 'Cinzel', serif);
+  font-size: 0.72rem;
+  letter-spacing: 3px;
+  color: #caa05c;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.cert-showcase-title {
+  font-family: var(--font-heading, 'Cinzel', serif);
+  font-size: 1.85rem;
+  font-weight: 700;
+  color: var(--color-secondary, #101c36);
+  margin-bottom: 10px;
+  letter-spacing: -0.01em;
+}
+
+.cert-showcase-subtitle {
+  font-size: 0.95rem;
+  color: var(--color-text, #555555);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.cert-marquee-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  overflow: hidden;
+  position: relative;
+  padding: 16px 0 24px;
+  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+}
+
+.cert-marquee-track {
+  display: flex;
+  gap: 26px;
+  width: max-content;
+  animation: certMarqueeSlide 80s linear infinite;
+  will-change: transform;
+}
+
+.cert-marquee-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes certMarqueeSlide {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/* Common Museum-Grade Architectural Frame */
+.cert-card-frame {
+  width: 275px;
+  background: #0f1a2e;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(16, 28, 54, 0.12), 0 2px 6px rgba(0, 0, 0, 0.08);
+  border: 2px solid #caa05c;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s ease;
+  cursor: pointer;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.cert-card-frame:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(16, 28, 54, 0.25), 0 0 16px rgba(202, 160, 92, 0.4);
+  border-color: #dfba78;
+}
+
+/* Corner brass accents */
+.cert-frame-corner {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-color: #dfba78;
+  pointer-events: none;
+  z-index: 3;
+}
+.cert-corner-tl { top: 3px; left: 3px; border-top: 2px solid #dfba78; border-left: 2px solid #dfba78; }
+.cert-corner-tr { top: 3px; right: 3px; border-top: 2px solid #dfba78; border-right: 2px solid #dfba78; }
+.cert-corner-bl { bottom: 3px; left: 3px; border-bottom: 2px solid #dfba78; border-left: 2px solid #dfba78; }
+.cert-corner-br { bottom: 3px; right: 3px; border-bottom: 2px solid #dfba78; border-right: 2px solid #dfba78; }
+
+/* Inner Certificate Canvas */
+.cert-frame-inner {
+  height: 330px;
+  background: #ffffff;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.08);
+}
+
+.cert-frame-inner img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.cert-card-frame:hover .cert-frame-inner img {
+  transform: scale(1.03);
+}
+
+/* Hover Veil & Magnifying CTA */
+.cert-hover-veil {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 28, 54, 0.65);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.cert-card-frame:hover .cert-hover-veil {
+  opacity: 1;
+}
+
+.cert-zoom-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #caa05c;
+  color: #101c36;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  text-transform: uppercase;
+}
+
+/* Bottom Plaque */
+.cert-plaque {
+  margin-top: 8px;
+  padding: 10px 8px 6px;
+  background: linear-gradient(180deg, rgba(202, 160, 92, 0.12) 0%, rgba(202, 160, 92, 0.03) 100%);
+  border-top: 1px solid rgba(202, 160, 92, 0.35);
+  border-radius: 0 0 3px 3px;
+  text-align: center;
+}
+
+.cert-plaque-title {
+  font-family: var(--font-heading, 'Cinzel', serif);
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: #f7e7ce;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cert-plaque-type {
+  font-size: 0.74rem;
+  color: #caa05c;
+  font-weight: 600;
+  margin-top: 3px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cert-plaque-sub {
+  font-size: 0.7rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hint below marquee */
+.cert-marquee-hint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 14px;
+  font-size: 0.8rem;
+  color: var(--color-lighter, #888888);
+}
+
+.cert-hint-icon {
+  color: #caa05c;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+  .cert-card-frame {
+    width: 235px;
+  }
+  .cert-frame-inner {
+    height: 280px;
+  }
+  .cert-showcase-title {
+    font-size: 1.45rem;
+  }
+}
+
 /* ============================================================
    TEAM
    ============================================================ */

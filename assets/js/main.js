@@ -494,6 +494,18 @@ document.addEventListener('DOMContentLoaded', () => {
     updateScrollState();
   }
 
+  
+  // ---- Client Certificates Lightbox Handler ---------------
+  document.querySelectorAll('.cert-card-frame').forEach(card => {
+    card.addEventListener('click', () => {
+      const src = card.getAttribute('data-cert-src');
+      const title = card.getAttribute('data-cert-title');
+      if (typeof openLightbox === 'function') {
+        openLightbox(src, title);
+      }
+    });
+  });
+
   // ---- Lightbox for Gallery & Portfolio Images ---------------
   const galleryItems = document.querySelectorAll('.gallery-strip-item img, .project-img-wrap img, .about-img-main img');
   galleryItems.forEach(img => {
@@ -504,28 +516,65 @@ document.addEventListener('DOMContentLoaded', () => {
   function openLightbox(src, alt) {
     const overlay = document.createElement('div');
     overlay.style.cssText = `
-      position: fixed; inset: 0; background: rgba(17,17,18,0.94); z-index: 99999;
-      display: flex; align-items: center; justify-content: center; cursor: pointer;
-      backdrop-filter: blur(10px); animation: tabFadeIn 0.3s ease;
+      position: fixed; inset: 0; background: rgba(10, 16, 28, 0.96); z-index: 99999;
+      display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
+      backdrop-filter: blur(12px); animation: tabFadeIn 0.3s ease; padding: 24px;
     `;
+    
+    const wrapper = document.createElement('div');
+    wrapper.style.cssText = `
+      display: flex; flex-direction: column; align-items: center; max-width: 92vw; max-height: 92vh;
+      cursor: default; position: relative;
+    `;
+
     const image = document.createElement('img');
     image.src = src;
     image.alt = alt || '';
-    image.style.cssText = 'max-width: 90vw; max-height: 88vh; object-fit: contain; border-radius: 8px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);';
+    image.style.cssText = 'max-width: 88vw; max-height: 80vh; object-fit: contain; border-radius: 4px; box-shadow: 0 25px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(202,160,92,0.3); background: #fff;';
 
     const closeBtn = document.createElement('button');
     closeBtn.innerHTML = '&times;';
+    closeBtn.setAttribute('aria-label', 'Close certificate preview');
     closeBtn.style.cssText = `
-      position: absolute; top: 24px; right: 32px; background: none; border: none;
-      color: #fff; font-size: 2.2rem; cursor: pointer; opacity: 0.8; transition: opacity 0.2s;
+      position: fixed; top: 20px; right: 28px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; font-size: 2.2rem; cursor: pointer; border-radius: 50%; width: 44px; height: 44px;
+      display: flex; align-items: center; justify-content: center; line-height: 1; transition: all 0.2s; z-index: 100000;
     `;
-    closeBtn.addEventListener('mouseenter', () => closeBtn.style.opacity = '1');
-    closeBtn.addEventListener('mouseleave', () => closeBtn.style.opacity = '0.8');
-    closeBtn.addEventListener('click', () => document.body.removeChild(overlay));
+    closeBtn.addEventListener('mouseenter', () => {
+      closeBtn.style.background = '#caa05c';
+      closeBtn.style.borderColor = '#caa05c';
+      closeBtn.style.color = '#101c36';
+    });
+    closeBtn.addEventListener('mouseleave', () => {
+      closeBtn.style.background = 'rgba(255,255,255,0.1)';
+      closeBtn.style.borderColor = 'rgba(255,255,255,0.2)';
+      closeBtn.style.color = '#fff';
+    });
+    closeBtn.addEventListener('click', () => {
+      if (document.body.contains(overlay)) document.body.removeChild(overlay);
+    });
 
-    overlay.appendChild(image);
+    wrapper.appendChild(image);
+
+    if (alt) {
+      const caption = document.createElement('div');
+      caption.style.cssText = `
+        margin-top: 14px; text-align: center; color: #fdfaf5; font-family: var(--font-heading, 'Cinzel', serif);
+        font-size: 1rem; font-weight: 600; letter-spacing: 0.5px;
+        background: rgba(16, 28, 54, 0.85); border: 1px solid rgba(202, 160, 92, 0.4);
+        padding: 8px 24px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      `;
+      caption.innerHTML = `<span style="color:#caa05c; margin-right:6px;">✦</span> ${alt}`;
+      wrapper.appendChild(caption);
+    }
+
+    overlay.appendChild(wrapper);
     overlay.appendChild(closeBtn);
-    overlay.addEventListener('click', (e) => { if (e.target === overlay) document.body.removeChild(overlay); });
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) {
+        if (document.body.contains(overlay)) document.body.removeChild(overlay);
+      }
+    });
     document.body.appendChild(overlay);
 
     document.addEventListener('keydown', function esc(e) {
