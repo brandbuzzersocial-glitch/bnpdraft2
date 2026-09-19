@@ -1417,6 +1417,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ============================================================
   // HERO BANNER VIDEO & SOUNDTRACK SHOWCASE CONTROLLER
+  // - Audio is UNMUTED BY DEFAULT
   // - Plays automatically when user is on the hero banner
   // - Pauses automatically as soon as user scrolls past it
   // - Resumes automatically from the exact point where it stopped when returning
@@ -1428,6 +1429,10 @@ document.addEventListener('DOMContentLoaded', () => {
   if (heroVideo && heroSoundToggle) {
     let userExplicitlyMuted = false;
     let isHeroInView = true;
+
+    // Ensure audio is NOT muted by default
+    heroVideo.muted = false;
+    heroVideo.volume = 0.85;
 
     const updateSoundUI = (isMuted) => {
       if (isMuted) {
@@ -1441,8 +1446,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Attempt to start audio playback smoothly (respecting browser autoplay policies)
-    const tryUnmute = () => {
+    // Default UI to UNMUTED / SOUND ON
+    updateSoundUI(false);
+
+    // Attempt unmuted playback immediately on page load
+    const startUnmutedPlayback = () => {
       if (userExplicitlyMuted) return;
       heroVideo.muted = false;
       heroVideo.volume = 0.85;
@@ -1451,45 +1459,53 @@ document.addEventListener('DOMContentLoaded', () => {
         playPromise.then(() => {
           updateSoundUI(false);
         }).catch(() => {
-          // Autoplay policy prevented unmuted audio on cold start; keep muted until user gesture
+          // If browser Autoplay policy blocks unmuted autoplay before gesture,
+          // play muted temporarily in background, keeping UI ready to unmute on first gesture
           heroVideo.muted = true;
           heroVideo.play().catch(() => {});
-          updateSoundUI(true);
+          updateSoundUI(false);
         });
       }
     };
 
-    // User gesture listener: triggers sound automatically on first scroll, touch, or click
-    const handleFirstGesture = () => {
-      if (!userExplicitlyMuted && isHeroInView) {
-        tryUnmute();
+    // Trigger audio immediately on any initial user engagement
+    const triggerAudioOnGesture = () => {
+      if (!userExplicitlyMuted) {
+        heroVideo.muted = false;
+        heroVideo.volume = 0.85;
+        heroVideo.play().then(() => {
+          updateSoundUI(false);
+        }).catch(() => {});
       }
       removeGestureListeners();
     };
 
-    const gestureEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'wheel'];
+    const gestureEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'wheel', 'scroll', 'mousemove', 'pointermove'];
     const removeGestureListeners = () => {
       gestureEvents.forEach(evt => {
-        window.removeEventListener(evt, handleFirstGesture, { passive: true });
+        window.removeEventListener(evt, triggerAudioOnGesture, { passive: true });
       });
     };
 
     gestureEvents.forEach(evt => {
-      window.addEventListener(evt, handleFirstGesture, { passive: true, once: true });
+      window.addEventListener(evt, triggerAudioOnGesture, { passive: true, once: true });
     });
 
-    // Hero section click: unmute if clicking on hero area
+    // Hero section click: toggle/unmute if clicking on hero area
     if (heroSection) {
       heroSection.addEventListener('click', (e) => {
         if (e.target.closest('#hero-sound-toggle')) return;
         if (heroVideo.muted) {
           userExplicitlyMuted = false;
-          tryUnmute();
+          heroVideo.muted = false;
+          heroVideo.volume = 0.85;
+          heroVideo.play().catch(() => {});
+          updateSoundUI(false);
         }
       });
     }
 
-    // Toggle button click handler
+    // Toggle button click handler (manual override)
     heroSoundToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       if (heroVideo.muted) {
@@ -1505,13 +1521,8 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Sync with external volume/mute events
-    heroVideo.addEventListener('volumechange', () => {
-      updateSoundUI(heroVideo.muted || heroVideo.volume === 0);
-    });
-
-    // Initial load playback attempt
-    tryUnmute();
+    // Start unmuted playback immediately on page load
+    startUnmutedPlayback();
 
     // IntersectionObserver: automatically pause when scrolled past, resume from where it stopped when back
     if ('IntersectionObserver' in window && heroSection) {
@@ -1523,7 +1534,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Resume video and audio from where it stopped
             heroVideo.play().catch(() => {});
             if (!userExplicitlyMuted && heroVideo.muted) {
-              tryUnmute();
+              heroVideo.muted = false;
+              heroVideo.volume = 0.85;
+              updateSoundUI(false);
             }
           } else {
             isHeroInView = false;
