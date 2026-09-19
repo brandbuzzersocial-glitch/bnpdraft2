@@ -1415,4 +1415,47 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  // ============================================================
+  // HERO BANNER VIDEO SOUND SHOWCASE CONTROLLER
+  // ============================================================
+  const heroVideo = document.getElementById('hero-bg-video');
+  const heroSoundToggle = document.getElementById('hero-sound-toggle');
+
+  if (heroVideo && heroSoundToggle) {
+    const updateSoundUI = (isMuted) => {
+      if (isMuted) {
+        heroSoundToggle.classList.remove('active');
+        heroSoundToggle.setAttribute('aria-pressed', 'false');
+        heroSoundToggle.setAttribute('title', 'Play Sound');
+      } else {
+        heroSoundToggle.classList.add('active');
+        heroSoundToggle.setAttribute('aria-pressed', 'true');
+        heroSoundToggle.setAttribute('title', 'Mute Sound');
+      }
+    };
+
+    // Toggle sound on button click
+    heroSoundToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (heroVideo.muted) {
+        heroVideo.muted = false;
+        heroVideo.volume = 0.85;
+        heroVideo.play().catch(() => {});
+        updateSoundUI(false);
+      } else {
+        heroVideo.muted = true;
+        updateSoundUI(true);
+      }
+    });
+
+    // Sync with external volume/mute events (browser controls, headphones, etc.)
+    heroVideo.addEventListener('volumechange', () => {
+      updateSoundUI(heroVideo.muted || heroVideo.volume === 0);
+    });
+
+    // Initialize UI matching initial video state
+    updateSoundUI(heroVideo.muted);
+  }
+
 });
+
