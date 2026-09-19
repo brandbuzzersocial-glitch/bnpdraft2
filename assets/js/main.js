@@ -1417,10 +1417,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // ============================================================
   // HERO BANNER VIDEO & SOUNDTRACK SHOWCASE CONTROLLER
-  // - Audio is UNMUTED BY DEFAULT
-  // - Plays automatically when user is on the hero banner
-  // - Pauses automatically as soon as user scrolls past it
-  // - Resumes automatically from the exact point where it stopped when returning
+  // - Ensures video ALWAYS plays smoothly and immediately
+  // - Plays unmuted by default (or instantly on first user interaction)
+  // - Pauses automatically when scrolled past
+  // - Resumes from where it stopped when returning to hero
   // ============================================================
   const heroVideo = document.getElementById('hero-bg-video');
   const heroSoundToggle = document.getElementById('hero-sound-toggle');
@@ -1430,15 +1430,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let userExplicitlyMuted = false;
     let isHeroInView = true;
 
-    // Ensure audio is NOT muted by default
-    heroVideo.muted = false;
-    heroVideo.volume = 0.85;
-
     const updateSoundUI = (isMuted) => {
       if (isMuted) {
         heroSoundToggle.classList.remove('active');
         heroSoundToggle.setAttribute('aria-pressed', 'false');
-        heroSoundToggle.setAttribute('title', 'Play Sound');
+        heroSoundToggle.setAttribute('title', 'Enable Sound');
       } else {
         heroSoundToggle.classList.add('active');
         heroSoundToggle.setAttribute('aria-pressed', 'true');
@@ -1446,31 +1442,42 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Default UI to UNMUTED / SOUND ON
-    updateSoundUI(false);
+    // 1. GUARANTEE VIDEO PLAYBACK:
+    // Video starts playing muted so browser policy NEVER blocks video display
+    heroVideo.muted = true;
+    const initialPlay = heroVideo.play();
+    if (initialPlay !== undefined) {
+      initialPlay.then(() => {
+        // Once video is rolling, attempt unmuted playback
+        attemptUnmute();
+      }).catch(() => {
+        heroVideo.muted = true;
+        heroVideo.play().catch(() => {});
+      });
+    }
 
-    // Attempt unmuted playback immediately on page load
-    const startUnmutedPlayback = () => {
+    // Function to unmute audio safely
+    const attemptUnmute = () => {
       if (userExplicitlyMuted) return;
       heroVideo.muted = false;
       heroVideo.volume = 0.85;
-      const playPromise = heroVideo.play();
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
+      const p = heroVideo.play();
+      if (p !== undefined) {
+        p.then(() => {
           updateSoundUI(false);
         }).catch(() => {
-          // If browser Autoplay policy blocks unmuted autoplay before gesture,
-          // play muted temporarily in background, keeping UI ready to unmute on first gesture
+          // If browser requires user gesture before unmuting,
+          // keep video running smoothly muted until first gesture
           heroVideo.muted = true;
           heroVideo.play().catch(() => {});
-          updateSoundUI(false);
+          updateSoundUI(true);
         });
       }
     };
 
-    // Trigger audio immediately on any initial user engagement
-    const triggerAudioOnGesture = () => {
-      if (!userExplicitlyMuted) {
+    // 2. UNMUTE INSTANTLY ON USER GESTURE (scroll, click, tap, key):
+    const handleFirstGesture = () => {
+      if (!userExplicitlyMuted && isHeroInView) {
         heroVideo.muted = false;
         heroVideo.volume = 0.85;
         heroVideo.play().then(() => {
@@ -1480,18 +1487,18 @@ document.addEventListener('DOMContentLoaded', () => {
       removeGestureListeners();
     };
 
-    const gestureEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'wheel', 'scroll', 'mousemove', 'pointermove'];
+    const gestureEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'wheel', 'scroll'];
     const removeGestureListeners = () => {
       gestureEvents.forEach(evt => {
-        window.removeEventListener(evt, triggerAudioOnGesture, { passive: true });
+        window.removeEventListener(evt, handleFirstGesture, { passive: true });
       });
     };
 
     gestureEvents.forEach(evt => {
-      window.addEventListener(evt, triggerAudioOnGesture, { passive: true, once: true });
+      window.addEventListener(evt, handleFirstGesture, { passive: true, once: true });
     });
 
-    // Hero section click: toggle/unmute if clicking on hero area
+    // 3. HERO BANNER CLICK TO UNMUTE:
     if (heroSection) {
       heroSection.addEventListener('click', (e) => {
         if (e.target.closest('#hero-sound-toggle')) return;
@@ -1505,7 +1512,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
 
-    // Toggle button click handler (manual override)
+    // 4. SOUND TOGGLE BUTTON CLICK:
     heroSoundToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       if (heroVideo.muted) {
@@ -1521,10 +1528,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Start unmuted playback immediately on page load
-    startUnmutedPlayback();
-
-    // IntersectionObserver: automatically pause when scrolled past, resume from where it stopped when back
+    // 5. INTERSECTION OBSERVER (Auto-pause when scrolled past, auto-resume when returning):
     if ('IntersectionObserver' in window && heroSection) {
       const heroObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -1533,9 +1537,7 @@ document.addEventListener('DOMContentLoaded', () => {
             heroSoundToggle.classList.remove('hero-paused');
             // Resume video and audio from where it stopped
             heroVideo.play().catch(() => {});
-            if (!userExplicitlyMuted && heroVideo.muted) {
-              heroVideo.muted = false;
-              heroVideo.volume = 0.85;
+            if (!userExplicitlyMuted && !heroVideo.muted) {
               updateSoundUI(false);
             }
           } else {
@@ -1553,7 +1555,7 @@ document.addEventListener('DOMContentLoaded', () => {
       heroObserver.observe(heroSection);
     }
 
-    // Pause when user switches browser tabs, resume when active and in view
+    // 6. TAB VISIBILITY:
     document.addEventListener('visibilitychange', () => {
       if (document.hidden) {
         heroVideo.pause();

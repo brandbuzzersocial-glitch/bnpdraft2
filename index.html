@@ -70,11 +70,11 @@
 
   <!-- CINEMATIC VIDEO HERO BANNER (PURE VIDEO - NO TEXT) -->
   <section class="hero hero-cinematic">
-    <video autoplay loop playsinline webkit-playsinline id="hero-bg-video" class="hero-video-bg">
+    <video autoplay loop muted playsinline webkit-playsinline preload="auto" id="hero-bg-video" class="hero-video-bg">
       <source src="assets/images/hero-banner.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
     </video>
-    <button class="hero-sound-toggle active" id="hero-sound-toggle" type="button" aria-label="Toggle Hero Video Sound" aria-pressed="true" title="Mute Sound">
+    <button class="hero-sound-toggle" id="hero-sound-toggle" type="button" aria-label="Toggle Hero Video Sound" aria-pressed="false" title="Enable Sound">
       <span class="sound-icon-wrap" aria-hidden="true">
         <!-- Muted state icon (default) -->
         <svg class="sound-icon-muted" viewBox="0 0 24 24" fill="currentColor">
@@ -86,7 +86,7 @@
         </svg>
       </span>
       <span class="sound-toggle-text">
-        <span class="sound-text-off">SOUND OFF</span>
+        <span class="sound-text-off">ENABLE SOUND</span>
         <span class="sound-text-on">SOUND ON</span>
       </span>
       <span class="sound-waves-indicator" aria-hidden="true">
