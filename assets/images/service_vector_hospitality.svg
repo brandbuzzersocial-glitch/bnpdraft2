@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="hospBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="50%" stop-color="#F6EFE6"/>
+      <stop offset="100%" stop-color="#ECE2D0"/>
+    </linearGradient>
+    <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C785"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#99732B"/>
+    </linearGradient>
+    <linearGradient id="goldSheen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA73" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#CAA05C" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="charcoalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D333F"/>
+      <stop offset="100%" stop-color="#14171F"/>
+    </linearGradient>
+    <linearGradient id="softFloor" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E2D6C3" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#D5C5AC" stop-opacity="0.9"/>
+    </linearGradient>
+    <pattern id="archGridHosp" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="24" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.25"/>
+    </pattern>
+    <filter id="vectorDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#14171F" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="600" height="360" fill="url(#hospBgGrad)"/>
+  <rect width="600" height="360" fill="url(#archGridHosp)"/>
+
+  <!-- Subtle Architectural Perspective Lines -->
+  <g opacity="0.35">
+    <line x1="0" y1="260" x2="600" y2="260" stroke="#CAA05C" stroke-width="1.2"/>
+    <line x1="80" y1="360" x2="220" y2="260" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="4 4"/>
+    <line x1="520" y1="360" x2="380" y2="260" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="4 4"/>
+  </g>
+
+  <!-- Flooring Horizon Layer -->
+  <polygon points="0,260 600,260 600,360 0,360" fill="url(#softFloor)"/>
+
+  <!-- Compass / Scale Calibration Arc in Background -->
+  <g transform="translate(300, 180)" opacity="0.25">
+    <circle cx="0" cy="0" r="140" fill="none" stroke="#CAA05C" stroke-width="0.75" stroke-dasharray="2 6"/>
+    <circle cx="0" cy="0" r="110" fill="none" stroke="#2D333F" stroke-width="0.5"/>
+  </g>
+
+  <!-- Grand Luxury Architectural Archway & Fluted Wall Panel -->
+  <g transform="translate(300, 40)">
+    <!-- Back Arch Recess -->
+    <path d="M -110,220 L -110,90 A 110,110 0 0,1 110,90 L 110,220 Z" fill="#F4EDE4" stroke="#CAA05C" stroke-width="1.5" opacity="0.8"/>
+    <!-- Inner Accent Arch Rib -->
+    <path d="M -90,220 L -90,95 A 90,90 0 0,1 90,95 L 90,220 Z" fill="none" stroke="#CAA05C" stroke-width="1" stroke-dasharray="3 3" opacity="0.5"/>
+    
+    <!-- Fluted Vertical Panelling Lines -->
+    <g stroke="#CAA05C" stroke-width="0.75" opacity="0.3">
+      <line x1="-70" y1="100" x2="-70" y2="220"/>
+      <line x1="-50" y1="75" x2="-50" y2="220"/>
+      <line x1="-30" y1="60" x2="-30" y2="220"/>
+      <line x1="-10" y1="55" x2="-10" y2="220"/>
+      <line x1="10" y1="55" x2="10" y2="220"/>
+      <line x1="30" y1="60" x2="30" y2="220"/>
+      <line x1="50" y1="75" x2="50" y2="220"/>
+      <line x1="70" y1="100" x2="70" y2="220"/>
+    </g>
+
+    <!-- Hospitality Chandelier Pendant (Modern Geometry) -->
+    <line x1="0" y1="0" x2="0" y2="55" stroke="#CAA05C" stroke-width="1.5"/>
+    <circle cx="0" cy="65" r="14" fill="none" stroke="url(#goldLinear)" stroke-width="2"/>
+    <circle cx="0" cy="65" r="5" fill="#CAA05C"/>
+    <line x1="-20" y1="65" x2="20" y2="65" stroke="#CAA05C" stroke-width="1.5"/>
+    <line x1="-14" y1="75" x2="14" y2="75" stroke="#CAA05C" stroke-width="1"/>
+  </g>
+
+  <!-- Foreground Hotel Suite / Lounge Seating Composition -->
+  <g filter="url(#vectorDropShadow)">
+    <!-- Elegant Curved Hotel Lounge Sofa -->
+    <g transform="translate(190, 200)">
+      <!-- Sofa Backrest Cushion Arc -->
+      <path d="M 0,40 Q 110,-10 220,40 Q 230,55 210,65 Q 110,25 10,65 Q -10,55 0,40 Z" fill="url(#charcoalGrad)"/>
+      <path d="M 5,42 Q 110,-5 215,42" fill="none" stroke="url(#goldLinear)" stroke-width="2"/>
+      
+      <!-- Sofa Seat Base Cushion -->
+      <rect x="18" y="48" width="184" height="28" rx="8" fill="#3D4554"/>
+      <line x1="25" y1="62" x2="195" y2="62" stroke="#CAA05C" stroke-width="0.8" opacity="0.6"/>
+
+      <!-- Sofa Legs (Brass / Gold Tapered) -->
+      <polygon points="30,76 34,76 31,94 28,94" fill="url(#goldLinear)"/>
+      <polygon points="190,76 186,76 189,94 192,94" fill="url(#goldLinear)"/>
+      <polygon points="110,76 108,76 109,94 111,94" fill="url(#goldLinear)"/>
+
+      <!-- Bolster Cushions -->
+      <ellipse cx="45" cy="48" rx="14" ry="10" fill="#EAE1D3" stroke="#CAA05C" stroke-width="1"/>
+      <ellipse cx="175" cy="48" rx="14" ry="10" fill="#EAE1D3" stroke="#CAA05C" stroke-width="1"/>
+    </g>
+
+    <!-- Luxury Marble / Brass Center Coffee Table -->
+    <g transform="translate(255, 260)">
+      <!-- Oval Table Top -->
+      <ellipse cx="45" cy="18" rx="42" ry="12" fill="#FFFFFF" stroke="#CAA05C" stroke-width="2"/>
+      <ellipse cx="45" cy="18" rx="36" ry="9" fill="none" stroke="#E6D7BD" stroke-width="1"/>
+      <!-- Brass Cylindrical Base / Pedestal -->
+      <polygon points="35,26 55,26 58,45 32,45" fill="url(#goldLinear)"/>
+      <ellipse cx="45" cy="45" rx="18" ry="5" fill="#8F6A24"/>
+    </g>
+
+    <!-- Floor Standing Brass Hotel Arch Lamp (Left) -->
+    <g transform="translate(100, 110)">
+      <!-- Heavy Base -->
+      <ellipse cx="20" cy="185" rx="18" ry="6" fill="url(#charcoalGrad)"/>
+      <ellipse cx="20" cy="184" rx="16" ry="4" fill="url(#goldLinear)"/>
+      <!-- Sweeping Arc Stem -->
+      <path d="M 20,184 C 20,60 50,20 90,25 C 105,27 110,40 108,55" fill="none" stroke="url(#goldLinear)" stroke-width="2.5"/>
+      <!-- Dome Shade -->
+      <path d="M 94,55 Q 108,45 122,55 Z" fill="url(#goldLinear)" stroke="#8F6A24" stroke-width="1"/>
+      <!-- Warm Light Cone Silhouette -->
+      <polygon points="101,55 115,55 130,95 86,95" fill="url(#goldSheen)" opacity="0.3"/>
+    </g>
+
+    <!-- Architectural Indoor Planter Urn (Right) -->
+    <g transform="translate(470, 175)">
+      <!-- Ribbed Ceramic Pot -->
+      <path d="M 12,50 L 38,50 L 32,100 L 18,100 Z" fill="url(#charcoalGrad)"/>
+      <line x1="16" y1="50" x2="20" y2="100" stroke="#CAA05C" stroke-width="1" opacity="0.4"/>
+      <line x1="25" y1="50" x2="25" y2="100" stroke="#CAA05C" stroke-width="1" opacity="0.4"/>
+      <line x1="34" y1="50" x2="30" y2="100" stroke="#CAA05C" stroke-width="1" opacity="0.4"/>
+      <ellipse cx="25" cy="50" rx="13" ry="4" fill="url(#goldLinear)"/>
+      <!-- Stylized Botanical Fan Leaves -->
+      <path d="M 25,50 Q 5,10 0,-15 Q 15,15 25,50" fill="#2D333F"/>
+      <path d="M 25,50 Q 30,5 35,-20 Q 38,15 25,50" fill="#CAA05C"/>
+      <path d="M 25,50 Q 45,15 55,-5 Q 42,25 25,50" fill="#2D333F"/>
+    </g>
+  </g>
+
+  <!-- Architectural Tag Overlay at Bottom Left -->
+  <g transform="translate(30, 325)">
+    <rect x="0" y="0" width="160" height="22" rx="4" fill="#14171F" opacity="0.85"/>
+    <circle cx="12" cy="11" r="3" fill="#CAA05C"/>
+    <text x="24" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">HOSPITALITY FIT-OUT</text>
+  </g>
+
+  <!-- Elegant Gold Frame Border Trim -->
+  <rect x="12" y="12" width="576" height="336" fill="none" stroke="#CAA05C" stroke-width="1" opacity="0.35"/>
+  <rect x="16" y="16" width="568" height="328" fill="none" stroke="#CAA05C" stroke-width="0.5" opacity="0.2"/>
+</svg>

@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="commBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="50%" stop-color="#F5F0E8"/>
+      <stop offset="100%" stop-color="#EAE3D5"/>
+    </linearGradient>
+    <linearGradient id="goldLinearComm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C785"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#99732B"/>
+    </linearGradient>
+    <linearGradient id="charcoalCorp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D333F"/>
+      <stop offset="100%" stop-color="#14171F"/>
+    </linearGradient>
+    <linearGradient id="glassTbl" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#E4ECF5" stop-opacity="0.75"/>
+    </linearGradient>
+    <pattern id="archGridComm" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="24" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.25"/>
+    </pattern>
+    <filter id="commDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#14171F" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#commBgGrad)"/>
+  <rect width="600" height="360" fill="url(#archGridComm)"/>
+
+  <!-- Corporate Curtain Wall Glass Mullions in Background -->
+  <g opacity="0.4">
+    <!-- Ceiling Grid Lines -->
+    <line x1="0" y1="40" x2="600" y2="40" stroke="#CAA05C" stroke-width="0.8"/>
+    <line x1="0" y1="75" x2="600" y2="75" stroke="#CAA05C" stroke-width="0.8"/>
+    <!-- Vertical Glazing Pillars -->
+    <line x1="90" y1="0" x2="90" y2="250" stroke="#CAA05C" stroke-width="1.2"/>
+    <line x1="180" y1="0" x2="180" y2="250" stroke="#CAA05C" stroke-width="1.2"/>
+    <line x1="420" y1="0" x2="420" y2="250" stroke="#CAA05C" stroke-width="1.2"/>
+    <line x1="510" y1="0" x2="510" y2="250" stroke="#CAA05C" stroke-width="1.2"/>
+    <!-- City Skyline Minimalist Blueprint Silhouette outside window -->
+    <polyline points="90,190 120,190 120,110 150,110 150,140 180,140" fill="none" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="3 3"/>
+    <polyline points="420,160 450,160 450,90 480,90 480,130 510,130" fill="none" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="3 3"/>
+  </g>
+
+  <!-- Flooring Horizon -->
+  <polygon points="0,250 600,250 600,360 0,360" fill="#E6DCCA" opacity="0.85"/>
+  <line x1="0" y1="250" x2="600" y2="250" stroke="#CAA05C" stroke-width="1.5"/>
+
+  <!-- Linear Modern Acoustic Lighting Fixture Overhead -->
+  <g transform="translate(190, 45)">
+    <rect x="0" y="0" width="220" height="12" rx="4" fill="url(#charcoalCorp)"/>
+    <line x1="15" y1="6" x2="205" y2="6" stroke="#CAA05C" stroke-width="2"/>
+    <line x1="40" y1="-45" x2="40" y2="0" stroke="#CAA05C" stroke-width="1"/>
+    <line x1="180" y1="-45" x2="180" y2="0" stroke="#CAA05C" stroke-width="1"/>
+  </g>
+
+  <!-- Executive Boardroom / Corporate Workspace Layout -->
+  <g filter="url(#commDropShadow)">
+    <!-- Back Wall Acoustic Slat Panels -->
+    <g transform="translate(210, 70)" opacity="0.85">
+      <rect x="0" y="0" width="180" height="120" rx="6" fill="#F0E8DC" stroke="#CAA05C" stroke-width="1"/>
+      <!-- Digital Video Conference Screen -->
+      <rect x="25" y="20" width="130" height="75" rx="4" fill="url(#charcoalCorp)"/>
+      <rect x="30" y="25" width="120" height="65" rx="2" fill="#1C212D"/>
+      <!-- Screen Graphic (Analytics / Global Graph) -->
+      <polyline points="40,75 65,55 90,62 115,42 140,48" fill="none" stroke="url(#goldLinearComm)" stroke-width="2"/>
+      <circle cx="115" cy="42" r="3" fill="#CAA05C"/>
+    </g>
+
+    <!-- Executive Conference Table (Perspective Oval) -->
+    <g transform="translate(130, 205)">
+      <!-- Under-structure -->
+      <polygon points="120,40 220,40 200,85 140,85" fill="url(#charcoalCorp)"/>
+      <line x1="170" y1="40" x2="170" y2="85" stroke="#CAA05C" stroke-width="1.5"/>
+      <!-- Glass Table Surface -->
+      <ellipse cx="170" cy="35" rx="160" ry="38" fill="url(#glassTbl)" stroke="#CAA05C" stroke-width="2"/>
+      <ellipse cx="170" cy="35" rx="145" ry="32" fill="none" stroke="#CAA05C" stroke-width="0.75" stroke-dasharray="4 4" opacity="0.5"/>
+      <!-- Built-in Connectivity Hub (Popup box) -->
+      <rect x="140" y="30" width="60" height="10" rx="2" fill="url(#charcoalCorp)"/>
+      <circle cx="155" cy="35" r="2" fill="#CAA05C"/>
+      <circle cx="170" cy="35" r="2" fill="#CAA05C"/>
+      <circle cx="185" cy="35" r="2" fill="#CAA05C"/>
+    </g>
+
+    <!-- Ergonomic Executive Chairs (Architectural Silhouettes) -->
+    <!-- Chair Left Background -->
+    <g transform="translate(145, 175)">
+      <path d="M 0,20 C 0,5 25,5 25,20 L 25,35 L 0,35 Z" fill="#4B5363"/>
+      <rect x="10" y="35" width="5" height="15" fill="url(#goldLinearComm)"/>
+    </g>
+    <!-- Chair Center Background Left -->
+    <g transform="translate(235, 165)">
+      <path d="M 0,22 C 0,5 28,5 28,22 L 28,38 L 0,38 Z" fill="url(#charcoalCorp)"/>
+      <rect x="12" y="38" width="5" height="18" fill="url(#goldLinearComm)"/>
+    </g>
+    <!-- Chair Center Background Right -->
+    <g transform="translate(335, 165)">
+      <path d="M 0,22 C 0,5 28,5 28,22 L 28,38 L 0,38 Z" fill="url(#charcoalCorp)"/>
+      <rect x="12" y="38" width="5" height="18" fill="url(#goldLinearComm)"/>
+    </g>
+    <!-- Chair Right Background -->
+    <g transform="translate(425, 175)">
+      <path d="M 0,20 C 0,5 25,5 25,20 L 25,35 L 0,35 Z" fill="#4B5363"/>
+      <rect x="10" y="35" width="5" height="15" fill="url(#goldLinearComm)"/>
+    </g>
+
+    <!-- Foreground Executive Task Chair (Center Foreground) -->
+    <g transform="translate(275, 230)">
+      <!-- Mesh Ergonomic Backrest -->
+      <path d="M 5,50 C 5,20 45,20 45,50 L 48,70 C 48,75 2,75 2,70 Z" fill="url(#charcoalCorp)"/>
+      <path d="M 5,50 C 5,20 45,20 45,50" fill="none" stroke="url(#goldLinearComm)" stroke-width="2"/>
+      <!-- Armrests -->
+      <path d="M -2,48 L 5,48 L 5,60" fill="none" stroke="url(#goldLinearComm)" stroke-width="1.5"/>
+      <path d="M 52,48 L 45,48 L 45,60" fill="none" stroke="url(#goldLinearComm)" stroke-width="1.5"/>
+      <!-- Heavy Cast 5-Star Polished Base -->
+      <polygon points="22,75 28,75 29,88 21,88" fill="url(#charcoalCorp)"/>
+      <line x1="8" y1="92" x2="42" y2="92" stroke="url(#goldLinearComm)" stroke-width="2.5"/>
+      <circle cx="8" cy="93" r="2.5" fill="#14171F"/>
+      <circle cx="42" cy="93" r="2.5" fill="#14171F"/>
+    </g>
+  </g>
+
+  <!-- Architectural Tag Overlay at Bottom Left -->
+  <g transform="translate(30, 325)">
+    <rect x="0" y="0" width="185" height="22" rx="4" fill="#14171F" opacity="0.85"/>
+    <circle cx="12" cy="11" r="3" fill="#CAA05C"/>
+    <text x="24" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">COMMERCIAL / BFSI FIT-OUT</text>
+  </g>
+
+  <!-- Elegant Gold Border Frame -->
+  <rect x="12" y="12" width="576" height="336" fill="none" stroke="#CAA05C" stroke-width="1" opacity="0.35"/>
+  <rect x="16" y="16" width="568" height="328" fill="none" stroke="#CAA05C" stroke-width="0.5" opacity="0.2"/>
+</svg>

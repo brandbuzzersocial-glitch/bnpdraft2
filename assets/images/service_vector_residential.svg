@@ -1,0 +1,131 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" width="100%" height="100%">
+  <defs>
+    <linearGradient id="resBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDFBF7"/>
+      <stop offset="50%" stop-color="#F7F1E7"/>
+      <stop offset="100%" stop-color="#ECE3D2"/>
+    </linearGradient>
+    <linearGradient id="goldLinearRes" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C785"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#99732B"/>
+    </linearGradient>
+    <linearGradient id="marbleFireplace" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#EDE6DA"/>
+      <stop offset="100%" stop-color="#DACFBE"/>
+    </linearGradient>
+    <linearGradient id="velvetChair" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2D333F"/>
+      <stop offset="100%" stop-color="#14171F"/>
+    </linearGradient>
+    <pattern id="archGridRes" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M 22 0 L 0 0 0 22" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.15"/>
+      <circle cx="22" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.25"/>
+    </pattern>
+    <filter id="resDropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#14171F" flood-opacity="0.09"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="600" height="360" fill="url(#resBgGrad)"/>
+  <rect width="600" height="360" fill="url(#archGridRes)"/>
+
+  <!-- Architectural Wall Moulding (Wainscoting / Picture Frame Panelling) -->
+  <g opacity="0.45" stroke="#CAA05C" stroke-width="1.2">
+    <!-- Left Picture Frame Moulding -->
+    <rect x="50" y="45" width="110" height="180" rx="3" fill="none"/>
+    <rect x="58" y="53" width="94" height="164" rx="2" fill="none" stroke-width="0.75"/>
+    <!-- Center Grand Arch Frame -->
+    <path d="M 210,225 L 210,105 A 90,90 0 0,1 390,105 L 390,225" fill="none"/>
+    <path d="M 220,225 L 220,110 A 80,80 0 0,1 380,110 L 380,225" fill="none" stroke-width="0.75" stroke-dasharray="3 3"/>
+    <!-- Right Picture Frame Moulding -->
+    <rect x="440" y="45" width="110" height="180" rx="3" fill="none"/>
+    <rect x="448" y="53" width="94" height="164" rx="2" fill="none" stroke-width="0.75"/>
+  </g>
+
+  <!-- Hardwood Parquet / Chevron Flooring Horizon -->
+  <polygon points="0,250 600,250 600,360 0,360" fill="#E2D6C3" opacity="0.9"/>
+  <line x1="0" y1="250" x2="600" y2="250" stroke="#CAA05C" stroke-width="1.2"/>
+  <!-- Subtle Chevron Flooring Lines -->
+  <g opacity="0.25" stroke="#CAA05C" stroke-width="0.8">
+    <polyline points="100,360 140,305 180,360"/>
+    <polyline points="200,360 240,305 280,360"/>
+    <polyline points="300,360 340,305 380,360"/>
+    <polyline points="400,360 440,305 480,360"/>
+  </g>
+
+  <!-- Luxury Fireplace Mantle & Hearth (Center Landmark) -->
+  <g filter="url(#resDropShadow)">
+    <g transform="translate(225, 125)">
+      <!-- Mantel Top Shelf -->
+      <polygon points="-15,0 165,0 160,12 -10,12" fill="url(#marbleFireplace)" stroke="url(#goldLinearRes)" stroke-width="1.2"/>
+      <!-- Mantle Pilasters -->
+      <rect x="0" y="12" width="25" height="120" fill="url(#marbleFireplace)" stroke="#CAA05C" stroke-width="1"/>
+      <rect x="125" y="12" width="25" height="120" fill="url(#marbleFireplace)" stroke="#CAA05C" stroke-width="1"/>
+      <!-- Frieze Arch Band -->
+      <rect x="25" y="12" width="100" height="25" fill="#FAF5ED" stroke="#CAA05C" stroke-width="1"/>
+      <circle cx="75" cy="24" r="7" fill="none" stroke="url(#goldLinearRes)" stroke-width="1.2"/>
+      <circle cx="75" cy="24" r="3" fill="#CAA05C"/>
+      
+      <!-- Fireplace Inner Hearth (Black Granite) -->
+      <rect x="25" y="37" width="100" height="95" fill="#14171F"/>
+      <!-- Stylized Warm Fireplace Ribbon Glow -->
+      <path d="M 40,120 Q 55,90 65,115 Q 75,80 85,115 Q 95,95 110,120 Z" fill="url(#goldLinearRes)" opacity="0.85"/>
+      <!-- Hearth Base Slab -->
+      <rect x="-10" y="132" width="170" height="10" rx="2" fill="url(#marbleFireplace)" stroke="#CAA05C" stroke-width="1"/>
+    </g>
+
+    <!-- Contemporary Luxury Art Piece Above Fireplace -->
+    <g transform="translate(265, 35)">
+      <circle cx="35" cy="38" r="34" fill="none" stroke="url(#goldLinearRes)" stroke-width="2"/>
+      <ellipse cx="35" cy="38" rx="25" ry="12" fill="none" stroke="#2D333F" stroke-width="1.5" transform="rotate(30 35 38)"/>
+      <circle cx="35" cy="38" r="6" fill="url(#goldLinearRes)"/>
+    </g>
+
+    <!-- Luxury High-Back Wing Lounge Chair (Foreground Left) -->
+    <g transform="translate(90, 155)">
+      <!-- Wingback Contour -->
+      <path d="M 15,20 C 5,60 5,100 20,110 L 80,110 C 95,100 95,60 85,20 C 70,12 30,12 15,20 Z" fill="url(#velvetChair)" stroke="url(#goldLinearRes)" stroke-width="1.5"/>
+      <!-- Plush Cushion -->
+      <ellipse cx="50" cy="98" rx="32" ry="14" fill="#3A4150" stroke="url(#goldLinearRes)" stroke-width="1"/>
+      <!-- Accent Silk Throw Pillow -->
+      <polygon points="35,80 62,75 58,95 32,95" fill="url(#goldLinearRes)"/>
+      <!-- Tapered Brass Chair Legs -->
+      <polygon points="25,115 30,115 22,145 18,145" fill="url(#goldLinearRes)"/>
+      <polygon points="75,115 70,115 78,145 82,145" fill="url(#goldLinearRes)"/>
+    </g>
+
+    <!-- Side Pedestal Table with Wine Glass / Décor (Right of Chair) -->
+    <g transform="translate(195, 230)">
+      <ellipse cx="18" cy="8" rx="16" ry="5" fill="#FAF7F2" stroke="url(#goldLinearRes)" stroke-width="1.5"/>
+      <line x1="18" y1="13" x2="18" y2="45" stroke="url(#goldLinearRes)" stroke-width="3"/>
+      <ellipse cx="18" cy="45" rx="14" ry="4" fill="url(#goldLinearRes)"/>
+    </g>
+
+    <!-- Designer Brass Floor Planter Urn (Right) -->
+    <g transform="translate(460, 170)">
+      <polygon points="10,40 38,40 32,90 16,90" fill="url(#velvetChair)"/>
+      <ellipse cx="24" cy="40" rx="14" ry="5" fill="url(#goldLinearRes)"/>
+      <!-- Architectural Palm Fronds -->
+      <path d="M 24,40 Q 10,5 0,-15 Q 15,10 24,40" fill="#2D333F"/>
+      <path d="M 24,40 Q 28,0 35,-25 Q 35,10 24,40" fill="#CAA05C"/>
+      <path d="M 24,40 Q 42,10 52,-10 Q 40,20 24,40" fill="#2D333F"/>
+      <!-- Pedestal Stand -->
+      <line x1="24" y1="90" x2="24" y2="120" stroke="url(#goldLinearRes)" stroke-width="2"/>
+      <ellipse cx="24" cy="120" rx="16" ry="4" fill="url(#goldLinearRes)"/>
+    </g>
+  </g>
+
+  <!-- Architectural Tag Overlay at Bottom Left -->
+  <g transform="translate(30, 325)">
+    <rect x="0" y="0" width="205" height="22" rx="4" fill="#14171F" opacity="0.85"/>
+    <circle cx="12" cy="11" r="3" fill="#CAA05C"/>
+    <text x="24" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">HIGH-END RESIDENTIAL VILLA</text>
+  </g>
+
+  <!-- Elegant Gold Border Frame -->
+  <rect x="12" y="12" width="576" height="336" fill="none" stroke="#CAA05C" stroke-width="1" opacity="0.35"/>
+  <rect x="16" y="16" width="568" height="328" fill="none" stroke="#CAA05C" stroke-width="0.5" opacity="0.2"/>
+</svg>
