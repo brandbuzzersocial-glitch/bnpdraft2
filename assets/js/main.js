@@ -518,7 +518,7 @@ document.addEventListener('DOMContentLoaded', () => {
     overlay.style.cssText = `
       position: fixed; inset: 0; background: rgba(10, 16, 28, 0.96); z-index: 99999;
       display: flex; flex-direction: column; align-items: center; justify-content: center; cursor: pointer;
-      backdrop-filter: blur(12px); animation: tabFadeIn 0.3s ease; padding: 24px;
+      -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); animation: tabFadeIn 0.3s ease; padding: 16px; touch-action: pan-y;
     `;
     
     const wrapper = document.createElement('div');
@@ -530,7 +530,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const image = document.createElement('img');
     image.src = src;
     image.alt = alt || '';
-    image.style.cssText = 'max-width: 88vw; max-height: 80vh; object-fit: contain; border-radius: 4px; box-shadow: 0 25px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(202,160,92,0.3); background: #fff;';
+    image.style.cssText = 'max-width: 90vw; max-height: 74vh; object-fit: contain; border-radius: 4px; box-shadow: 0 25px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(202,160,92,0.3); background: #fff;';
 
     const closeBtn = document.createElement('button');
     closeBtn.innerHTML = '&times;';

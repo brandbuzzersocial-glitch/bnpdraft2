@@ -746,6 +746,7 @@ h6 { font-size: 1rem; }
 
 .site-header.scrolled {
   background: rgba(18, 18, 20, 0.95) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
@@ -1102,6 +1103,7 @@ h6 { font-size: 1rem; }
   border-radius: 50%;
   border: 1px solid rgba(255,255,255,0.35);
   background: rgba(255,255,255,0.08);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   color: var(--color-white);
   font-size: 1.3rem;
@@ -1751,13 +1753,15 @@ h6 { font-size: 1rem; }
 }
 
 .cert-marquee-container {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+  width: 100%;
+  max-width: 100vw;
   overflow: hidden;
   position: relative;
   padding: 16px 0 24px;
-  mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 7%, black 93%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
 }
 
 .cert-marquee-track {
@@ -1766,17 +1770,33 @@ h6 { font-size: 1rem; }
   width: max-content;
   animation: certMarqueeSlide 80s linear infinite;
   will-change: transform;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .cert-marquee-track:hover {
   animation-play-state: paused;
 }
 
-@keyframes certMarqueeSlide {
+@-webkit-keyframes certMarqueeSlide {
   0% {
+    -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
   100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+@keyframes certMarqueeSlide {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 0, 0);
     transform: translate3d(-50%, 0, 0);
   }
 }
@@ -1795,6 +1815,7 @@ h6 { font-size: 1rem; }
   transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), border-color 0.35s ease;
   cursor: pointer;
   flex-shrink: 0;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -1849,6 +1870,7 @@ h6 { font-size: 1rem; }
   position: absolute;
   inset: 0;
   background: rgba(16, 28, 54, 0.65);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
@@ -3147,6 +3169,7 @@ h6 { font-size: 1rem; }
 /* GLASSMORPHISM 3D MILESTONE CARDS */
 .timeline-content {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.06) 0%, rgba(255, 255, 255, 0.02) 100%);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   padding: 34px 36px;
@@ -3386,6 +3409,7 @@ h6 { font-size: 1rem; }
   color: #ffffff;
   font-size: 0.88rem;
   margin-bottom: 25px;
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   transition: transform 0.3s ease, border-color 0.3s ease;
@@ -3553,6 +3577,7 @@ h6 { font-size: 1rem; }
 /* Glassmorphism Header Effects */
 .site-header {
   background: transparent;
+  -webkit-backdrop-filter: none;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
   box-shadow: none;
@@ -3560,6 +3585,7 @@ h6 { font-size: 1rem; }
 
 .site-header.scrolled {
   background: rgba(18, 18, 20, 0.95) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
   backdrop-filter: blur(20px) !important;
   -webkit-backdrop-filter: blur(20px) !important;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4) !important;
@@ -4180,6 +4206,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
   left: 0;
   right: 0;
   background: linear-gradient(180deg, rgba(16, 28, 54, 0.85) 0%, rgba(10, 16, 28, 0.96) 100%);
+  -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   border-top: 1px solid #caa05c;
   padding: 16px 20px;
@@ -4232,5 +4259,113 @@ body.feature-blog-enabled section[data-feature="blog"] {
 @media (max-width: 640px) {
   .mfg-cards-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+
+/* ============================================================
+   CROSS-BROWSER & DEVICE RESPONSIVENESS OPTIMIZATIONS
+   (Safari, Chrome, Firefox, Edge, iOS, Android, Tablets, Desktops)
+   ============================================================ */
+
+/* iOS Safari Smooth Scrolling & Text Sizing */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* Touch targets & button tap optimizations */
+button, a, input, select, textarea {
+  touch-action: manipulation;
+}
+
+/* Ensure images never overflow containers */
+img, svg, video, canvas {
+  max-width: 100%;
+}
+
+/* Break words to prevent viewport blowout on narrow screens */
+h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+/* Tablet & Mobile Media Queries for Expertise & Manufacturing */
+@media (max-width: 1024px) {
+  .expertise-header-wrap {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 32px;
+  }
+  .expertise-cards-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .manufacturing-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .mfg-visual-wrap img {
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .expertise-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .expertise-card {
+    padding: 20px 16px;
+  }
+  .mfg-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+  .mfg-subhead-card {
+    padding: 18px 16px;
+  }
+  .mfg-visual-wrap img {
+    height: 320px;
+  }
+  .cert-card-frame {
+    width: 220px;
+  }
+  .cert-frame-inner {
+    height: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .expertise-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .mfg-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .mfg-visual-wrap img {
+    height: 260px;
+  }
+  .mfg-plaque-specs {
+    font-size: 0.72rem;
+    gap: 8px;
+  }
+  .cert-card-frame {
+    width: 200px;
+  }
+  .cert-frame-inner {
+    height: 250px;
+  }
+  .cert-showcase-title {
+    font-size: 1.35rem;
   }
 }
