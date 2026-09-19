@@ -1397,8 +1397,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize with Maharashtra
     renderStateProjects('mh');
 
-    // Video Playback Performance Observer (pauses autoplay videos when off-screen)
-    const autoplayVideos = document.querySelectorAll('video[autoplay]');
+    // Video Playback Performance Observer (pauses other autoplay videos when off-screen)
+    const autoplayVideos = document.querySelectorAll('video[autoplay]:not(#hero-bg-video)');
     if ('IntersectionObserver' in window && autoplayVideos.length > 0) {
       const videoObserver = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
@@ -1416,12 +1416,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ============================================================
-  // HERO BANNER VIDEO SOUND SHOWCASE CONTROLLER
+  // HERO BANNER VIDEO & SOUNDTRACK SHOWCASE CONTROLLER
+  // - Plays automatically when user is on the hero banner
+  // - Pauses automatically as soon as user scrolls past it
+  // - Resumes automatically from the exact point where it stopped when returning
   // ============================================================
   const heroVideo = document.getElementById('hero-bg-video');
   const heroSoundToggle = document.getElementById('hero-sound-toggle');
+  const heroSection = document.querySelector('.hero.hero-cinematic') || (heroVideo ? heroVideo.parentElement : null);
 
   if (heroVideo && heroSoundToggle) {
+    let userExplicitlyMuted = false;
+    let isHeroInView = true;
+
     const updateSoundUI = (isMuted) => {
       if (isMuted) {
         heroSoundToggle.classList.remove('active');
@@ -1434,28 +1441,115 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Toggle sound on button click
+    // Attempt to start audio playback smoothly (respecting browser autoplay policies)
+    const tryUnmute = () => {
+      if (userExplicitlyMuted) return;
+      heroVideo.muted = false;
+      heroVideo.volume = 0.85;
+      const playPromise = heroVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          updateSoundUI(false);
+        }).catch(() => {
+          // Autoplay policy prevented unmuted audio on cold start; keep muted until user gesture
+          heroVideo.muted = true;
+          heroVideo.play().catch(() => {});
+          updateSoundUI(true);
+        });
+      }
+    };
+
+    // User gesture listener: triggers sound automatically on first scroll, touch, or click
+    const handleFirstGesture = () => {
+      if (!userExplicitlyMuted && isHeroInView) {
+        tryUnmute();
+      }
+      removeGestureListeners();
+    };
+
+    const gestureEvents = ['pointerdown', 'touchstart', 'click', 'keydown', 'wheel'];
+    const removeGestureListeners = () => {
+      gestureEvents.forEach(evt => {
+        window.removeEventListener(evt, handleFirstGesture, { passive: true });
+      });
+    };
+
+    gestureEvents.forEach(evt => {
+      window.addEventListener(evt, handleFirstGesture, { passive: true, once: true });
+    });
+
+    // Hero section click: unmute if clicking on hero area
+    if (heroSection) {
+      heroSection.addEventListener('click', (e) => {
+        if (e.target.closest('#hero-sound-toggle')) return;
+        if (heroVideo.muted) {
+          userExplicitlyMuted = false;
+          tryUnmute();
+        }
+      });
+    }
+
+    // Toggle button click handler
     heroSoundToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       if (heroVideo.muted) {
+        userExplicitlyMuted = false;
         heroVideo.muted = false;
         heroVideo.volume = 0.85;
         heroVideo.play().catch(() => {});
         updateSoundUI(false);
       } else {
+        userExplicitlyMuted = true;
         heroVideo.muted = true;
         updateSoundUI(true);
       }
     });
 
-    // Sync with external volume/mute events (browser controls, headphones, etc.)
+    // Sync with external volume/mute events
     heroVideo.addEventListener('volumechange', () => {
       updateSoundUI(heroVideo.muted || heroVideo.volume === 0);
     });
 
-    // Initialize UI matching initial video state
-    updateSoundUI(heroVideo.muted);
+    // Initial load playback attempt
+    tryUnmute();
+
+    // IntersectionObserver: automatically pause when scrolled past, resume from where it stopped when back
+    if ('IntersectionObserver' in window && heroSection) {
+      const heroObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.08) {
+            isHeroInView = true;
+            heroSoundToggle.classList.remove('hero-paused');
+            // Resume video and audio from where it stopped
+            heroVideo.play().catch(() => {});
+            if (!userExplicitlyMuted && heroVideo.muted) {
+              tryUnmute();
+            }
+          } else {
+            isHeroInView = false;
+            heroSoundToggle.classList.add('hero-paused');
+            // Pause video and audio immediately when scrolled past
+            heroVideo.pause();
+          }
+        });
+      }, {
+        threshold: [0, 0.08, 0.25],
+        rootMargin: '0px'
+      });
+
+      heroObserver.observe(heroSection);
+    }
+
+    // Pause when user switches browser tabs, resume when active and in view
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        heroVideo.pause();
+      } else if (isHeroInView) {
+        heroVideo.play().catch(() => {});
+      }
+    });
   }
 
 });
+
 

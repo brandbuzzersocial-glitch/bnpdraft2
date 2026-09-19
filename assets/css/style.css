@@ -1009,6 +1009,11 @@ h6 { font-size: 1rem; }
   animation-delay: 0.48s;
 }
 
+.hero-sound-toggle.hero-paused .sound-waves-indicator span {
+  animation-play-state: paused !important;
+  opacity: 0.4 !important;
+}
+
 @keyframes heroSoundWave {
   0% {
     height: 3px;
