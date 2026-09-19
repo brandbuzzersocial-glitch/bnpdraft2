@@ -616,7 +616,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (alt) {
       const caption = document.createElement('div');
       caption.style.cssText = `
-        margin-top: 14px; text-align: center; color: #fdfaf5; font-family: var(--font-heading, 'Cinzel', serif);
+        margin-top: 14px; text-align: center; color: #fdfaf5; font-family: var(--font-heading);
         font-size: 1rem; font-weight: 600; letter-spacing: 0.5px;
         background: rgba(16, 28, 54, 0.85); border: 1px solid rgba(202, 160, 92, 0.4);
         padding: 8px 24px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);

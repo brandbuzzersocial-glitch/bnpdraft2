@@ -27,7 +27,7 @@
   --color-bg-section:  #f2f0eb;
 
   /* Fonts — exact from theme */
-  --font-heading: 'Cal Sans', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, serif;
+  --font-heading: 'Cal Sans', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-body:    'Golos Text', 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
   /* Layout */
@@ -1728,7 +1728,7 @@ h6 { font-size: 1rem; }
 }
 
 .cert-ribbon-text {
-  font-family: var(--font-accent, 'Cinzel', serif);
+  font-family: var(--font-body);
   font-size: 0.68rem;
   letter-spacing: 2px;
   color: #caa05c;
@@ -1737,7 +1737,7 @@ h6 { font-size: 1rem; }
 }
 
 .cert-showcase-title {
-  font-family: var(--font-heading, 'Cinzel', serif);
+  font-family: var(--font-heading);
   font-size: 1.45rem;
   font-weight: 700;
   color: var(--color-secondary, #101c36);
@@ -1909,7 +1909,7 @@ h6 { font-size: 1rem; }
 }
 
 .cert-plaque-title {
-  font-family: var(--font-heading, 'Cinzel', serif);
+  font-family: var(--font-heading);
   font-size: 0.76rem;
   font-weight: 700;
   color: #f7e7ce;
@@ -2576,7 +2576,7 @@ h6 { font-size: 1rem; }
 }
 
 .expertise-card-pct {
-  font-family: var(--font-heading, 'Cinzel', serif);
+  font-family: var(--font-heading);
   font-size: 1.55rem;
   font-weight: 800;
   color: #caa05c;
@@ -4356,7 +4356,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
 }
 
 .mfg-card-title {
-  font-family: var(--font-heading, 'Cinzel', serif);
+  font-family: var(--font-heading);
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-secondary);
@@ -4419,7 +4419,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
 }
 
 .mfg-plaque-tag {
-  font-family: var(--font-accent, 'Cinzel', serif);
+  font-family: var(--font-body);
   font-size: 0.68rem;
   letter-spacing: 2px;
   color: #caa05c;
@@ -4430,7 +4430,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
 }
 
 .mfg-plaque-title {
-  font-family: var(--font-heading, 'Cinzel', serif);
+  font-family: var(--font-heading);
   font-size: 1.1rem;
   font-weight: 700;
   color: #ffffff;
