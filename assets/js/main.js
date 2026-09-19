@@ -397,7 +397,14 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Function to calculate and update sizes dynamically based on actual width
     const updateTimelineDimensions = () => {
-      // Calculate the total scrollable width of the timeline
+      // On mobile devices, disable artificial vertical height and let container size naturally
+      if (window.innerWidth <= 768) {
+        timelineSection.style.height = 'auto';
+        timelineContainer.style.transform = 'none';
+        return;
+      }
+
+      // Calculate the total scrollable width of the timeline on desktop
       const containerWidth = timelineContainer.scrollWidth;
       const viewportWidth = window.innerWidth;
       
@@ -428,7 +435,43 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('resize', updateTimelineDimensions);
     setTimeout(updateTimelineDimensions, 300);
 
-    const updateScrollState = () => {
+    const updateScrollState = (e) => {
+      // MOBILE PHONE & SMALL TABLET BEHAVIOR (<= 768px):
+      if (window.innerWidth <= 768) {
+        timelineContainer.style.transform = 'none';
+
+        // When scrolling the viewport horizontally via touch or buttons, highlight active card
+        if (timelineViewport) {
+          const viewportCenter = timelineViewport.scrollLeft + (timelineViewport.clientWidth / 2);
+          let closestCard = null;
+          let closestDist = Infinity;
+
+          timelineCards.forEach((card) => {
+            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
+            const dist = Math.abs(viewportCenter - cardCenter);
+            if (dist < closestDist) {
+              closestDist = dist;
+              closestCard = card;
+            }
+          });
+
+          if (closestCard) {
+            timelineCards.forEach(c => c.classList.remove('active'));
+            closestCard.classList.add('active');
+
+            if (trackProgress) {
+              const node = closestCard.querySelector('.timeline-card-node');
+              if (node) {
+                const nodeX = closestCard.offsetLeft + node.offsetLeft + (node.offsetWidth / 2);
+                trackProgress.style.width = `${nodeX}px`;
+              }
+            }
+          }
+        }
+        return;
+      }
+
+      // DESKTOP BEHAVIOR: Sticky horizontal translation on vertical page scroll (100% untouched)
       let lastActiveCard = null;
       
       const sectionRect = timelineSection.getBoundingClientRect();
@@ -492,6 +535,20 @@ document.addEventListener('DOMContentLoaded', () => {
       timelineViewport.addEventListener('scroll', updateScrollState, { passive: true });
     }
     updateScrollState();
+
+    // Mobile prev/next button handlers
+    const mobilePrev = document.getElementById('timeline-mobile-prev');
+    const mobileNext = document.getElementById('timeline-mobile-next');
+    if (mobilePrev && timelineViewport) {
+      mobilePrev.addEventListener('click', () => {
+        timelineViewport.scrollBy({ left: -300, behavior: 'smooth' });
+      });
+    }
+    if (mobileNext && timelineViewport) {
+      mobileNext.addEventListener('click', () => {
+        timelineViewport.scrollBy({ left: 300, behavior: 'smooth' });
+      });
+    }
   }
 
   

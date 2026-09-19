@@ -3956,6 +3956,200 @@ body.mouse-moving .mouse-glow-element {
   .map-project-item {
     padding: 14px !important;
   }
+
+  /* ============================================================
+     HERO BANNER MOBILE OPTIMIZATION (PREVENT ENLARGED / CROPPED VIDEO)
+     ============================================================ */
+  .hero.hero-cinematic {
+    position: relative !important;
+    height: auto !important;
+    min-height: unset !important;
+    padding-top: var(--header-h, 70px) !important;
+    background: #0b0b0c !important;
+    overflow: hidden !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .hero.hero-cinematic .hero-video-bg {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    object-fit: cover !important;
+    display: block !important;
+  }
+
+  /* Header stays solid & readable on mobile */
+  .site-header {
+    background: rgba(18, 18, 20, 0.96) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(202, 160, 92, 0.2) !important;
+  }
+
+  /* Hero stats box on mobile */
+  .hero-stats-box {
+    padding: 20px 14px !important;
+  }
+
+  .hero-stat-card {
+    border-right: none !important;
+    border-bottom: 1px solid rgba(202, 160, 92, 0.2) !important;
+    padding: 14px 10px !important;
+  }
+
+  .hero-stat-card:last-child {
+    border-bottom: none !important;
+  }
+
+  /* ============================================================
+     TIMELINE SECTION MOBILE OPTIMIZATION
+     (ELIMINATE GIANT BLACK VOID & DRIFTING - NATIVE TOUCH CAROUSEL)
+     ============================================================ */
+  #journey-timeline,
+  .timeline-section {
+    height: auto !important;
+    min-height: unset !important;
+    padding: 50px 0 35px !important;
+    overflow: hidden !important;
+    background: #0d0d10 !important;
+  }
+
+  .timeline-sticky-wrapper {
+    position: relative !important;
+    top: auto !important;
+    height: auto !important;
+    min-height: unset !important;
+    display: block !important;
+    padding: 0 !important;
+    overflow: visible !important;
+    background: transparent !important;
+  }
+
+  .timeline-section .container {
+    padding: 0 16px !important;
+    max-width: 100% !important;
+  }
+
+  .timeline-section .section-header {
+    margin-bottom: 16px !important;
+    padding: 0 8px !important;
+  }
+
+  .timeline-section .section-title {
+    font-size: 1.75rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .timeline-section .section-desc {
+    font-size: 0.88rem !important;
+    line-height: 1.55 !important;
+    margin-top: 8px !important;
+  }
+
+  /* Horizontal scroll viewport as native touch swipe */
+  .timeline-horizontal-viewport {
+    position: relative !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    -webkit-overflow-scrolling: touch !important;
+    scroll-snap-type: x mandatory !important;
+    padding: 15px 0 25px !important;
+    scrollbar-width: none !important;
+    -ms-overflow-style: none !important;
+  }
+
+  .timeline-horizontal-viewport::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .timeline-container {
+    position: relative !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    width: max-content !important;
+    gap: 16px !important;
+    padding: 0 20px !important;
+    transform: none !important;
+    transition: none !important;
+    will-change: auto !important;
+  }
+
+  .timeline-card {
+    position: relative !important;
+    width: min(80vw, 310px) !important;
+    scroll-snap-align: center !important;
+    flex-shrink: 0 !important;
+    margin: 0 !important;
+  }
+
+  .timeline-card .timeline-content {
+    margin-top: 32px !important;
+    padding: 22px 20px !important;
+    opacity: 0.82 !important;
+    transform: scale(0.97) !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .timeline-card.active .timeline-content {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6), 0 0 20px rgba(202, 160, 92, 0.25) !important;
+  }
+
+  .timeline-card .timeline-content h3 {
+    font-size: 1.15rem !important;
+    margin-bottom: 8px !important;
+  }
+
+  .timeline-card .timeline-content p {
+    font-size: 0.86rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Mobile interactive navigation controls */
+  .timeline-mobile-nav {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
+  }
+
+  .timeline-mobile-nav button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(202, 160, 92, 0.4);
+    color: var(--color-primary);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .timeline-mobile-nav button:active {
+    background: var(--color-primary);
+    color: #0d0d10;
+    transform: scale(0.92);
+  }
+
+  .timeline-mobile-hint {
+    font-size: 0.76rem;
+    color: rgba(255, 255, 255, 0.65);
+    letter-spacing: 0.5px;
+  }
 }
 
 @media (max-width: 480px) {
