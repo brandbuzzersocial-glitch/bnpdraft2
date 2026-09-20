@@ -1851,83 +1851,215 @@
     });
   </script>
 
-  <!-- CLIENT LOGO MARQUEE (Auto-scrolling clientele ticker under projects - Transparent on White Background) -->
-  <section class="section blueprint-grid-bg" style="background: var(--color-white); padding: 80px 0; overflow: hidden;" id="clientele-marquee">
-    <div class="container" style="margin-bottom: 40px;">
+  <!-- CLIENT LOGO MARQUEE (Auto-scrolling clientele ticker by Sector - Transparent on White Background) -->
+  <section class="section blueprint-grid-bg" style="background: var(--color-white); padding: 75px 0; overflow: hidden;" id="clientele-marquee">
+    <div class="container" style="margin-bottom: 36px;">
       <div class="section-header centered" data-anim="fadeUp">
         <span class="section-tag" style="background: rgba(202,160,92,0.08); color: var(--color-primary); border-color: rgba(202,160,92,0.25);">TRUSTED PARTNERS</span>
         <h2 class="section-title" style="color: var(--color-secondary); margin-top: 8px;">Our Clientele</h2>
-        <p class="section-desc" style="color: var(--color-text); margin: 12px auto 0;">700+ landmark projects delivered for India's most prestigious hospitality, banking, and corporate brands.</p>
+        <p class="section-desc" style="color: var(--color-text); margin: 12px auto 0;">700+ landmark projects delivered for India's most prestigious hospitality, corporate, and retail brands.</p>
       </div>
     </div>
 
-    <!-- MARQUEE TRACK 1: Hospitality -->
-    <div class="marquee-wrapper" style="overflow: hidden; position: relative; width: 100%;">
-      <div class="marquee-track" id="marquee-track-1" style="display: flex; gap: 50px; width: max-content; animation: marqueeScroll 38s linear infinite;">
-        <!-- Duplicated set for seamless loop -->
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_taj_trans.png" alt="Taj Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hyatt_trans.png" alt="Hyatt International" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_marriott_trans.png" alt="Marriott International" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_accor_trans.png" alt="Accor Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_radisson_trans.png" alt="Radisson Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_ihg_trans.png" alt="IHG Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_novotel_trans.png" alt="Novotel" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_jw_marriott_trans.png" alt="JW Marriott" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_vivanta_trans.png" alt="Vivanta by Taj" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_samhi_trans.png" alt="Samhi Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_mercure_trans.png" alt="Mercure Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_westin_trans.png" alt="Westin Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_sheraton_trans.png" alt="Sheraton Hotels" loading="lazy"></div>
-        <!-- Duplicated for infinite loop -->
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_taj_trans.png" alt="Taj Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hyatt_trans.png" alt="Hyatt International" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_marriott_trans.png" alt="Marriott International" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_accor_trans.png" alt="Accor Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_radisson_trans.png" alt="Radisson Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_ihg_trans.png" alt="IHG Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_novotel_trans.png" alt="Novotel" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_jw_marriott_trans.png" alt="JW Marriott" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_vivanta_trans.png" alt="Vivanta by Taj" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_samhi_trans.png" alt="Samhi Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_mercure_trans.png" alt="Mercure Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_westin_trans.png" alt="Westin Hotels" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_sheraton_trans.png" alt="Sheraton Hotels" loading="lazy"></div>
+    <!-- SECTOR 1: HOSPITALITY -->
+    <div class="marquee-sector-block" style="margin-bottom: 32px;">
+      <div class="container" style="margin-bottom: 14px;">
+        <div class="marquee-sector-header">
+          <span class="marquee-sector-badge"><i class="fas fa-hotel"></i> Hospitality</span>
+          <span class="marquee-sector-line"></span>
+        </div>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee-track marquee-track-hosp" style="display: flex; align-items: center; gap: 40px; width: max-content; animation: marqueeScroll 46s linear infinite;">
+        <div class="marquee-cat-chip"><span>HOSPITALITY</span></div>
+        <div class="marquee-logo-item" title="Taj Hotels"><img src="assets/images/clients/hosp_taj.png" alt="Taj Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="IHCL"><img src="assets/images/clients/hosp_ihcl.png" alt="IHCL" loading="lazy"></div>
+        <div class="marquee-logo-item" title="The Chambers"><img src="assets/images/clients/hosp_the_chambers.png" alt="The Chambers" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vivanta by Taj"><img src="assets/images/clients/hosp_vivanta.png" alt="Vivanta by Taj" loading="lazy"></div>
+        <div class="marquee-logo-item" title="SeleQtions"><img src="assets/images/clients/hosp_seleqtions.png" alt="SeleQtions" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt"><img src="assets/images/clients/hosp_hyatt.png" alt="Hyatt" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Regency"><img src="assets/images/clients/hosp_hyatt_regency.png" alt="Hyatt Regency" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Place"><img src="assets/images/clients/hosp_hyatt_place.png" alt="Hyatt Place" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Centric"><img src="assets/images/clients/hosp_hyatt_centric.png" alt="Hyatt Centric" loading="lazy"></div>
+        <div class="marquee-logo-item" title="JW Marriott"><img src="assets/images/clients/hosp_jw_marriott.png" alt="JW Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Westin"><img src="assets/images/clients/hosp_westin.png" alt="Westin" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Sheraton"><img src="assets/images/clients/hosp_sheraton.png" alt="Sheraton" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Marriott"><img src="assets/images/clients/hosp_marriott.png" alt="Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Courtyard by Marriott"><img src="assets/images/clients/hosp_courtyard_marriott.png" alt="Courtyard by Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Fairfield by Marriott"><img src="assets/images/clients/hosp_fairfield_marriott.png" alt="Fairfield by Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Novotel"><img src="assets/images/clients/hosp_novotel.png" alt="Novotel" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Grand Mercure"><img src="assets/images/clients/hosp_grand_mercure.png" alt="Grand Mercure" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Blu"><img src="assets/images/clients/hosp_radisson_blu.png" alt="Radisson Blu" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Hotels"><img src="assets/images/clients/hosp_radisson_hotels.png" alt="Radisson Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Red"><img src="assets/images/clients/hosp_radisson_red.png" alt="Radisson Red" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Holiday Inn Express"><img src="assets/images/clients/hosp_holiday_inn_express.png" alt="Holiday Inn Express" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Indian Accent"><img src="assets/images/clients/hosp_indian_accent.png" alt="Indian Accent" loading="lazy"></div>
+        <div class="marquee-logo-item" title="The Quorum"><img src="assets/images/clients/hosp_the_quorum.png" alt="The Quorum" loading="lazy"></div>
+        <div class="marquee-logo-item" title="District 150"><img src="assets/images/clients/hosp_district_150.png" alt="District 150" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Premier Inn"><img src="assets/images/clients/hosp_premier_inn.png" alt="Premier Inn" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Pride Hotels"><img src="assets/images/clients/hosp_pride_hotels.png" alt="Pride Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vantara Niwas"><img src="assets/images/clients/hosp_vantara_niwas.png" alt="Vantara Niwas" loading="lazy"></div>
+        <div class="marquee-cat-chip"><span>HOSPITALITY</span></div>
+        <div class="marquee-logo-item" title="Taj Hotels"><img src="assets/images/clients/hosp_taj.png" alt="Taj Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="IHCL"><img src="assets/images/clients/hosp_ihcl.png" alt="IHCL" loading="lazy"></div>
+        <div class="marquee-logo-item" title="The Chambers"><img src="assets/images/clients/hosp_the_chambers.png" alt="The Chambers" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vivanta by Taj"><img src="assets/images/clients/hosp_vivanta.png" alt="Vivanta by Taj" loading="lazy"></div>
+        <div class="marquee-logo-item" title="SeleQtions"><img src="assets/images/clients/hosp_seleqtions.png" alt="SeleQtions" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt"><img src="assets/images/clients/hosp_hyatt.png" alt="Hyatt" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Regency"><img src="assets/images/clients/hosp_hyatt_regency.png" alt="Hyatt Regency" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Place"><img src="assets/images/clients/hosp_hyatt_place.png" alt="Hyatt Place" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Hyatt Centric"><img src="assets/images/clients/hosp_hyatt_centric.png" alt="Hyatt Centric" loading="lazy"></div>
+        <div class="marquee-logo-item" title="JW Marriott"><img src="assets/images/clients/hosp_jw_marriott.png" alt="JW Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Westin"><img src="assets/images/clients/hosp_westin.png" alt="Westin" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Sheraton"><img src="assets/images/clients/hosp_sheraton.png" alt="Sheraton" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Marriott"><img src="assets/images/clients/hosp_marriott.png" alt="Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Courtyard by Marriott"><img src="assets/images/clients/hosp_courtyard_marriott.png" alt="Courtyard by Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Fairfield by Marriott"><img src="assets/images/clients/hosp_fairfield_marriott.png" alt="Fairfield by Marriott" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Novotel"><img src="assets/images/clients/hosp_novotel.png" alt="Novotel" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Grand Mercure"><img src="assets/images/clients/hosp_grand_mercure.png" alt="Grand Mercure" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Blu"><img src="assets/images/clients/hosp_radisson_blu.png" alt="Radisson Blu" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Hotels"><img src="assets/images/clients/hosp_radisson_hotels.png" alt="Radisson Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Radisson Red"><img src="assets/images/clients/hosp_radisson_red.png" alt="Radisson Red" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Holiday Inn Express"><img src="assets/images/clients/hosp_holiday_inn_express.png" alt="Holiday Inn Express" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Indian Accent"><img src="assets/images/clients/hosp_indian_accent.png" alt="Indian Accent" loading="lazy"></div>
+        <div class="marquee-logo-item" title="The Quorum"><img src="assets/images/clients/hosp_the_quorum.png" alt="The Quorum" loading="lazy"></div>
+        <div class="marquee-logo-item" title="District 150"><img src="assets/images/clients/hosp_district_150.png" alt="District 150" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Premier Inn"><img src="assets/images/clients/hosp_premier_inn.png" alt="Premier Inn" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Pride Hotels"><img src="assets/images/clients/hosp_pride_hotels.png" alt="Pride Hotels" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vantara Niwas"><img src="assets/images/clients/hosp_vantara_niwas.png" alt="Vantara Niwas" loading="lazy"></div>
+        </div>
       </div>
     </div>
 
-    <div style="height: 35px;"></div>
+    <!-- SECTOR 2: CORPORATE -->
+    <div class="marquee-sector-block" style="margin-bottom: 32px;">
+      <div class="container" style="margin-bottom: 14px;">
+        <div class="marquee-sector-header">
+          <span class="marquee-sector-badge"><i class="fas fa-building"></i> Corporate</span>
+          <span class="marquee-sector-line"></span>
+        </div>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee-track marquee-track-corp" style="display: flex; align-items: center; gap: 40px; width: max-content; animation: marqueeScrollReverse 56s linear infinite;">
+        <div class="marquee-cat-chip"><span>CORPORATE</span></div>
+        <div class="marquee-logo-item" title="HDFC Bank"><img src="assets/images/clients/corp_hdfc.png" alt="HDFC Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HSBC"><img src="assets/images/clients/corp_hsbc.png" alt="HSBC" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Citibank"><img src="assets/images/clients/corp_citibank.png" alt="Citibank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="ICICI Bank"><img src="assets/images/clients/corp_icici.png" alt="ICICI Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Credit Suisse"><img src="assets/images/clients/corp_credit_suisse.png" alt="Credit Suisse" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Deutsche Bank"><img src="assets/images/clients/corp_deutsche_bank.png" alt="Deutsche Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Concentrix"><img src="assets/images/clients/corp_concentrix.png" alt="Concentrix" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Bentley"><img src="assets/images/clients/corp_bentley.png" alt="Bentley" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Google"><img src="assets/images/clients/corp_google.png" alt="Google" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HCL"><img src="assets/images/clients/corp_hcl.png" alt="HCL" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Red Hat"><img src="assets/images/clients/corp_redhat.png" alt="Red Hat" loading="lazy"></div>
+        <div class="marquee-logo-item" title="T-Systems"><img src="assets/images/clients/corp_tsystems.png" alt="T-Systems" loading="lazy"></div>
+        <div class="marquee-logo-item" title="UST Global"><img src="assets/images/clients/corp_ust_global.png" alt="UST Global" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vodafone"><img src="assets/images/clients/corp_vodafone.png" alt="Vodafone" loading="lazy"></div>
+        <div class="marquee-logo-item" title="BNP Paribas"><img src="assets/images/clients/corp_bnp_paribas.png" alt="BNP Paribas" loading="lazy"></div>
+        <div class="marquee-logo-item" title="CPP Investment Board"><img src="assets/images/clients/corp_cpp_investment.png" alt="CPP Investment Board" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Motilal Oswal"><img src="assets/images/clients/corp_motilal_oswal.png" alt="Motilal Oswal" loading="lazy"></div>
+        <div class="marquee-logo-item" title="PwC"><img src="assets/images/clients/corp_pwc.png" alt="PwC" loading="lazy"></div>
+        <div class="marquee-logo-item" title="NVIDIA"><img src="assets/images/clients/corp_nvidia.png" alt="NVIDIA" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Worldline"><img src="assets/images/clients/corp_worldline.png" alt="Worldline" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Workday"><img src="assets/images/clients/corp_workday.png" alt="Workday" loading="lazy"></div>
+        <div class="marquee-logo-item" title="EY"><img src="assets/images/clients/corp_ey.png" alt="EY" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dainik Bhaskar"><img src="assets/images/clients/corp_dainik_bhaskar.png" alt="Dainik Bhaskar" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Disney"><img src="assets/images/clients/corp_disney.png" alt="Disney" loading="lazy"></div>
+        <div class="marquee-logo-item" title="UTV"><img src="assets/images/clients/corp_utv.png" alt="UTV" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Essel Group"><img src="assets/images/clients/corp_essel_group.png" alt="Essel Group" loading="lazy"></div>
+        <div class="marquee-logo-item" title="MTS"><img src="assets/images/clients/corp_mts.png" alt="MTS" loading="lazy"></div>
+        <div class="marquee-logo-item" title="9X Media"><img src="assets/images/clients/corp_nine_x.png" alt="9X Media" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Zee Media"><img src="assets/images/clients/corp_zee_media.png" alt="Zee Media" loading="lazy"></div>
+        <div class="marquee-logo-item" title="L&T"><img src="assets/images/clients/corp_landt.png" alt="L&T" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Asian Paints"><img src="assets/images/clients/corp_asian_paints.png" alt="Asian Paints" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Regus"><img src="assets/images/clients/corp_regus.png" alt="Regus" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Reliance"><img src="assets/images/clients/corp_reliance.png" alt="Reliance" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Equinox"><img src="assets/images/clients/corp_equinox.png" alt="Equinox" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Seva Teerth"><img src="assets/images/clients/corp_seva_teerth.png" alt="Seva Teerth" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Adani"><img src="assets/images/clients/corp_adani.png" alt="Adani" loading="lazy"></div>
+        <div class="marquee-cat-chip"><span>CORPORATE</span></div>
+        <div class="marquee-logo-item" title="HDFC Bank"><img src="assets/images/clients/corp_hdfc.png" alt="HDFC Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HSBC"><img src="assets/images/clients/corp_hsbc.png" alt="HSBC" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Citibank"><img src="assets/images/clients/corp_citibank.png" alt="Citibank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="ICICI Bank"><img src="assets/images/clients/corp_icici.png" alt="ICICI Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Credit Suisse"><img src="assets/images/clients/corp_credit_suisse.png" alt="Credit Suisse" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Deutsche Bank"><img src="assets/images/clients/corp_deutsche_bank.png" alt="Deutsche Bank" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Concentrix"><img src="assets/images/clients/corp_concentrix.png" alt="Concentrix" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Bentley"><img src="assets/images/clients/corp_bentley.png" alt="Bentley" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Google"><img src="assets/images/clients/corp_google.png" alt="Google" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HCL"><img src="assets/images/clients/corp_hcl.png" alt="HCL" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Red Hat"><img src="assets/images/clients/corp_redhat.png" alt="Red Hat" loading="lazy"></div>
+        <div class="marquee-logo-item" title="T-Systems"><img src="assets/images/clients/corp_tsystems.png" alt="T-Systems" loading="lazy"></div>
+        <div class="marquee-logo-item" title="UST Global"><img src="assets/images/clients/corp_ust_global.png" alt="UST Global" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vodafone"><img src="assets/images/clients/corp_vodafone.png" alt="Vodafone" loading="lazy"></div>
+        <div class="marquee-logo-item" title="BNP Paribas"><img src="assets/images/clients/corp_bnp_paribas.png" alt="BNP Paribas" loading="lazy"></div>
+        <div class="marquee-logo-item" title="CPP Investment Board"><img src="assets/images/clients/corp_cpp_investment.png" alt="CPP Investment Board" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Motilal Oswal"><img src="assets/images/clients/corp_motilal_oswal.png" alt="Motilal Oswal" loading="lazy"></div>
+        <div class="marquee-logo-item" title="PwC"><img src="assets/images/clients/corp_pwc.png" alt="PwC" loading="lazy"></div>
+        <div class="marquee-logo-item" title="NVIDIA"><img src="assets/images/clients/corp_nvidia.png" alt="NVIDIA" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Worldline"><img src="assets/images/clients/corp_worldline.png" alt="Worldline" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Workday"><img src="assets/images/clients/corp_workday.png" alt="Workday" loading="lazy"></div>
+        <div class="marquee-logo-item" title="EY"><img src="assets/images/clients/corp_ey.png" alt="EY" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dainik Bhaskar"><img src="assets/images/clients/corp_dainik_bhaskar.png" alt="Dainik Bhaskar" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Disney"><img src="assets/images/clients/corp_disney.png" alt="Disney" loading="lazy"></div>
+        <div class="marquee-logo-item" title="UTV"><img src="assets/images/clients/corp_utv.png" alt="UTV" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Essel Group"><img src="assets/images/clients/corp_essel_group.png" alt="Essel Group" loading="lazy"></div>
+        <div class="marquee-logo-item" title="MTS"><img src="assets/images/clients/corp_mts.png" alt="MTS" loading="lazy"></div>
+        <div class="marquee-logo-item" title="9X Media"><img src="assets/images/clients/corp_nine_x.png" alt="9X Media" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Zee Media"><img src="assets/images/clients/corp_zee_media.png" alt="Zee Media" loading="lazy"></div>
+        <div class="marquee-logo-item" title="L&T"><img src="assets/images/clients/corp_landt.png" alt="L&T" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Asian Paints"><img src="assets/images/clients/corp_asian_paints.png" alt="Asian Paints" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Regus"><img src="assets/images/clients/corp_regus.png" alt="Regus" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Reliance"><img src="assets/images/clients/corp_reliance.png" alt="Reliance" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Equinox"><img src="assets/images/clients/corp_equinox.png" alt="Equinox" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Seva Teerth"><img src="assets/images/clients/corp_seva_teerth.png" alt="Seva Teerth" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Adani"><img src="assets/images/clients/corp_adani.png" alt="Adani" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
 
-    <!-- MARQUEE TRACK 2: Corporate (reverse direction) -->
-    <div class="marquee-wrapper" style="overflow: hidden; position: relative; width: 100%;">
-      <div class="marquee-track" id="marquee-track-2" style="display: flex; gap: 50px; width: max-content; animation: marqueeScrollReverse 44s linear infinite;">
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hdfc_trans.png" alt="HDFC Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_bnpparibas_trans.png" alt="BNP Paribas" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_citibank_trans.png" alt="Citi Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_wipro_trans.png" alt="Wipro" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hsbc_trans.png" alt="HSBC" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_l_and_t_trans.png" alt="Larsen &amp; Toubro (L&amp;T)" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_ust_global_trans.png" alt="UST Global" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_shoppers_stop_trans.png" alt="Shoppers Stop" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_samsung_trans.png" alt="Samsung" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_cognizant_trans.png" alt="Cognizant" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_deutsche_trans.png" alt="Deutsche Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_motilal_trans.png" alt="Motilal Oswal" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_axis_trans.png" alt="Axis Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_kotak_trans.png" alt="Kotak Bank" loading="lazy"></div>
-        <!-- Duplicate for seamless loop -->
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hdfc_trans.png" alt="HDFC Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_bnpparibas_trans.png" alt="BNP Paribas" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_citibank_trans.png" alt="Citi Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_wipro_trans.png" alt="Wipro" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_hsbc_trans.png" alt="HSBC" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_l_and_t_trans.png" alt="Larsen &amp; Toubro (L&amp;T)" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_ust_global_trans.png" alt="UST Global" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_shoppers_stop_trans.png" alt="Shoppers Stop" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_samsung_trans.png" alt="Samsung" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_cognizant_trans.png" alt="Cognizant" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_motilal_trans.png" alt="Motilal Oswal" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_axis_trans.png" alt="Axis Bank" loading="lazy"></div>
-        <div class="marquee-logo-item"><img src="assets/images/clients/logo_kotak_trans.png" alt="Kotak Bank" loading="lazy"></div>
+    <!-- SECTOR 3: RETAIL & INSTITUTIONS -->
+    <div class="marquee-sector-block">
+      <div class="container" style="margin-bottom: 14px;">
+        <div class="marquee-sector-header">
+          <span class="marquee-sector-badge"><i class="fas fa-shopping-bag"></i> Retail &amp; Institutions</span>
+          <span class="marquee-sector-line"></span>
+        </div>
+      </div>
+      <div class="marquee-wrapper">
+        <div class="marquee-track marquee-track-retail" style="display: flex; align-items: center; gap: 40px; width: max-content; animation: marqueeScroll 34s linear infinite;">
+        <div class="marquee-cat-chip"><span>RETAIL &amp; INSTITUTIONS</span></div>
+        <div class="marquee-logo-item" title="DB City Mall"><img src="assets/images/clients/retail_db_city.png" alt="DB City Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="H&M"><img src="assets/images/clients/retail_hm.png" alt="H&M" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HomeStop"><img src="assets/images/clients/retail_homestop.png" alt="HomeStop" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HyperCITY"><img src="assets/images/clients/retail_hypercity.png" alt="HyperCITY" loading="lazy"></div>
+        <div class="marquee-logo-item" title="CP 67 Mall"><img src="assets/images/clients/retail_cp67.png" alt="CP 67 Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Nucleus Mall"><img src="assets/images/clients/retail_nucleus.png" alt="Nucleus Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Raymond"><img src="assets/images/clients/retail_raymond.png" alt="Raymond" loading="lazy"></div>
+        <div class="marquee-logo-item" title="R City Mall"><img src="assets/images/clients/retail_rcity.png" alt="R City Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Shoppers Stop"><img src="assets/images/clients/retail_shoppers_stop.png" alt="Shoppers Stop" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vegas Mall"><img src="assets/images/clients/retail_vegas.png" alt="Vegas Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dhirubhai Ambani International School"><img src="assets/images/clients/retail_dais.png" alt="Dhirubhai Ambani International School" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Shiv Nadar University"><img src="assets/images/clients/retail_shiv_nadar.png" alt="Shiv Nadar University" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dr. Agarwals Eye Hospital"><img src="assets/images/clients/retail_dr_agarwals.png" alt="Dr. Agarwals Eye Hospital" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Amrita Vishwa Vidyapeetham"><img src="assets/images/clients/retail_amrita.png" alt="Amrita Vishwa Vidyapeetham" loading="lazy"></div>
+        <div class="marquee-cat-chip"><span>RETAIL &amp; INSTITUTIONS</span></div>
+        <div class="marquee-logo-item" title="DB City Mall"><img src="assets/images/clients/retail_db_city.png" alt="DB City Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="H&M"><img src="assets/images/clients/retail_hm.png" alt="H&M" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HomeStop"><img src="assets/images/clients/retail_homestop.png" alt="HomeStop" loading="lazy"></div>
+        <div class="marquee-logo-item" title="HyperCITY"><img src="assets/images/clients/retail_hypercity.png" alt="HyperCITY" loading="lazy"></div>
+        <div class="marquee-logo-item" title="CP 67 Mall"><img src="assets/images/clients/retail_cp67.png" alt="CP 67 Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Nucleus Mall"><img src="assets/images/clients/retail_nucleus.png" alt="Nucleus Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Raymond"><img src="assets/images/clients/retail_raymond.png" alt="Raymond" loading="lazy"></div>
+        <div class="marquee-logo-item" title="R City Mall"><img src="assets/images/clients/retail_rcity.png" alt="R City Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Shoppers Stop"><img src="assets/images/clients/retail_shoppers_stop.png" alt="Shoppers Stop" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Vegas Mall"><img src="assets/images/clients/retail_vegas.png" alt="Vegas Mall" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dhirubhai Ambani International School"><img src="assets/images/clients/retail_dais.png" alt="Dhirubhai Ambani International School" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Shiv Nadar University"><img src="assets/images/clients/retail_shiv_nadar.png" alt="Shiv Nadar University" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Dr. Agarwals Eye Hospital"><img src="assets/images/clients/retail_dr_agarwals.png" alt="Dr. Agarwals Eye Hospital" loading="lazy"></div>
+        <div class="marquee-logo-item" title="Amrita Vishwa Vidyapeetham"><img src="assets/images/clients/retail_amrita.png" alt="Amrita Vishwa Vidyapeetham" loading="lazy"></div>
+        </div>
       </div>
     </div>
   </section>
@@ -1949,29 +2081,90 @@
       0%   { -webkit-transform: translate3d(-50%, 0, 0); transform: translate3d(-50%, 0, 0); }
       100% { -webkit-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
     }
+    .marquee-wrapper {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding: 6px 0;
+      mask-image: linear-gradient(to right, transparent 0%, black 60px, black calc(100% - 60px), transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, black 60px, black calc(100% - 60px), transparent 100%);
+    }
+    .marquee-sector-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .marquee-sector-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 18px;
+      background: rgba(202, 160, 92, 0.09);
+      color: #8c6827;
+      border: 1px solid rgba(202, 160, 92, 0.32);
+      border-radius: 999px;
+      font-family: var(--font-heading);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(202, 160, 92, 0.08);
+      white-space: nowrap;
+    }
+    .marquee-sector-badge i {
+      color: var(--color-primary);
+      font-size: 0.85rem;
+    }
+    .marquee-sector-line {
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, rgba(202, 160, 92, 0.28) 0%, rgba(0, 0, 0, 0.04) 80%, transparent 100%);
+    }
+    .marquee-cat-chip {
+      flex-shrink: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 20px;
+      border-radius: 999px;
+      background: #1e2229;
+      color: #dfb260;
+      font-family: var(--font-heading);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      border: 1px solid rgba(202, 160, 92, 0.45);
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+      margin-right: 12px;
+    }
     .marquee-logo-item {
       flex-shrink: 0;
-      width: 150px;
-      height: 60px;
+      width: 140px;
+      height: 56px;
       background: transparent;
       border: none;
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 0;
-      transition: transform 0.3s ease;
+      padding: 0 8px;
+      transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
     }
     .marquee-logo-item img {
       max-width: 100%;
       max-height: 44px;
       object-fit: contain;
-      opacity: 1;
-      transition: transform 0.3s ease;
+      opacity: 0.96;
+      transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1), opacity 0.3s ease;
+      filter: drop-shadow(0 1px 2px rgba(0,0,0,0.04));
     }
     .marquee-logo-item:hover img {
-      transform: scale(1.08);
+      transform: scale(1.12);
+      opacity: 1;
     }
-    .marquee-wrapper:hover .marquee-track { animation-play-state: paused; }
+    .marquee-wrapper:hover .marquee-track {
+      animation-play-state: paused;
+    }
   </style>
 
 
