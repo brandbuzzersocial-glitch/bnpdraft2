@@ -5066,40 +5066,29 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   color: #caa05c;
 }
 
-/* Mode Switcher Buttons */
-.cv-mode-toggle {
-  display: inline-flex;
-  align-items: center;
-  background: rgba(8, 8, 8, 0.7);
-  padding: 4px;
-  border-radius: 30px;
-  border: 1px solid rgba(202, 160, 92, 0.25);
-}
-
-.cv-toggle-btn {
+/* Auto-cycling label */
+.cv-auto-label {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 8px 18px;
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 0.78rem;
+  font-weight: 600;
   color: #888888;
-  background: transparent;
-  border: none;
-  border-radius: 24px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
-.cv-toggle-btn.active {
+.cv-auto-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
   background: #caa05c;
-  color: #111111;
-  box-shadow: 0 2px 10px rgba(202, 160, 92, 0.35);
+  animation: cvDotPulse 2s ease-in-out infinite;
 }
 
-.cv-toggle-btn:not(.active):hover {
-  color: #ffffff;
+@keyframes cvDotPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.75); }
 }
 
 /* Visual Stage */

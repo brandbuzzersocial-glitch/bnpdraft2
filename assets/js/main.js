@@ -1736,33 +1736,23 @@ document.addEventListener('DOMContentLoaded', () => {
      BNP FACTORY CRAFT VILLAGE DAY / NIGHT TOGGLE
      ============================================================ */
   const initCraftVillageToggle = () => {
-    const dayBtn = document.getElementById('cv-btn-day');
-    const nightBtn = document.getElementById('cv-btn-night');
     const dayImg = document.getElementById('cv-img-day');
     const nightImg = document.getElementById('cv-img-night');
 
-    if (!dayBtn || !nightBtn || !dayImg || !nightImg) return;
+    if (!dayImg || !nightImg) return;
 
-    const setMode = (mode) => {
-      if (mode === 'day') {
-        dayBtn.classList.add('active');
-        dayBtn.setAttribute('aria-selected', 'true');
-        nightBtn.classList.remove('active');
-        nightBtn.setAttribute('aria-selected', 'false');
-        dayImg.classList.add('active');
-        nightImg.classList.remove('active');
-      } else {
-        nightBtn.classList.add('active');
-        nightBtn.setAttribute('aria-selected', 'true');
-        dayBtn.classList.remove('active');
-        dayBtn.setAttribute('aria-selected', 'false');
-        nightImg.classList.add('active');
+    let showingDay = true;
+
+    setInterval(() => {
+      if (showingDay) {
         dayImg.classList.remove('active');
+        nightImg.classList.add('active');
+      } else {
+        nightImg.classList.remove('active');
+        dayImg.classList.add('active');
       }
-    };
-
-    dayBtn.addEventListener('click', () => setMode('day'));
-    nightBtn.addEventListener('click', () => setMode('night'));
+      showingDay = !showingDay;
+    }, 2000);
   };
 
   initCraftVillageToggle();
