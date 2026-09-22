@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#F2EBE0"/>
+    </linearGradient>
+    <linearGradient id="goldGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA73"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#9E7530"/>
+    </linearGradient>
+    <linearGradient id="navyGradM" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24375A"/>
+      <stop offset="100%" stop-color="#111B2E"/>
+    </linearGradient>
+    <pattern id="gridPatternM" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="20" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bgGradM)"/>
+  <rect width="400" height="250" fill="url(#gridPatternM)"/>
+
+  <!-- Blueprint Calibration Arc & Schedule Circle -->
+  <circle cx="200" cy="115" r="92" fill="none" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="3,6" opacity="0.35"/>
+  <circle cx="200" cy="115" r="72" fill="none" stroke="#1B2A4A" stroke-width="0.75" opacity="0.2"/>
+
+  <!-- Horizontal Process Alignment Axis -->
+  <line x1="40" y1="115" x2="360" y2="115" stroke="#1B2A4A" stroke-width="0.6" stroke-dasharray="4,8" opacity="0.25"/>
+
+  <!-- Turnkey Execution & Precision Machinery Centerpiece -->
+  <g transform="translate(200, 115)">
+    <!-- Outer Precision Machinery Gear (State-of-the-art Execution) -->
+    <circle cx="0" cy="0" r="54" fill="#FFFFFF" stroke="#24375A" stroke-width="1.4" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.06))"/>
+    
+    <!-- Precision Cog Teeth -->
+    <path d="M-6,-58 L6,-58 L4,-54 L-4,-54 Z" fill="url(#goldGradM)"/>
+    <path d="M-6,58 L6,58 L4,54 L-4,54 Z" fill="url(#goldGradM)"/>
+    <path d="M-58,-6 L-58,6 L-54,4 L-54,-4 Z" fill="url(#goldGradM)"/>
+    <path d="M58,-6 L58,6 L54,4 L54,-4 Z" fill="url(#goldGradM)"/>
+    <path d="M-42,-42 L-34,-50 L-32,-46 L-40,-38 Z" fill="url(#goldGradM)"/>
+    <path d="M42,42 L34,50 L32,46 L40,38 Z" fill="url(#goldGradM)"/>
+    <path d="M42,-42 L50,-34 L46,-32 L38,-40 Z" fill="url(#goldGradM)"/>
+    <path d="M-42,42 L-50,34 L-46,32 L-38,40 Z" fill="url(#goldGradM)"/>
+
+    <!-- Inner Calibration Ring (Schedule & Timeline Dial) -->
+    <circle cx="0" cy="0" r="42" fill="#F8F4EC" stroke="url(#goldGradM)" stroke-width="1.2"/>
+    <circle cx="0" cy="0" r="28" fill="#FFFFFF" stroke="#24375A" stroke-width="1"/>
+
+    <!-- Center Crosshair & Chronometer Hand (On-Time Delivery) -->
+    <line x1="0" y1="-22" x2="0" y2="22" stroke="url(#goldGradM)" stroke-width="1.5"/>
+    <line x1="-22" y1="0" x2="22" y2="0" stroke="url(#goldGradM)" stroke-width="1.5"/>
+    <polygon points="0,0 16,-16 12,-18" fill="#24375A"/>
+    <circle cx="0" cy="0" r="4.5" fill="url(#goldGradM)" stroke="#FFFFFF" stroke-width="1.5"/>
+
+    <!-- Caliper / Compass Drafting Arms (Precision Engineering) -->
+    <line x1="-68" y1="-45" x2="-28" y2="-12" stroke="#24375A" stroke-width="1.5"/>
+    <line x1="68" y1="-45" x2="28" y2="-12" stroke="#24375A" stroke-width="1.5"/>
+    <circle cx="-68" cy="-45" r="3" fill="url(#goldGradM)"/>
+    <circle cx="68" cy="-45" r="3" fill="url(#goldGradM)"/>
+  </g>
+
+  <!-- Left Flank: Quality & Cost-Efficiency Gauge -->
+  <g transform="translate(85, 115)">
+    <!-- Milestone Node 01 -->
+    <rect x="-36" y="-30" width="72" height="60" rx="8" fill="#FFFFFF" stroke="url(#goldGradM)" stroke-width="1.2" filter="drop-shadow(0 3px 8px rgba(0,0,0,0.04))"/>
+    <circle cx="0" cy="-10" r="10" fill="#F4EFE6" stroke="#24375A" stroke-width="1"/>
+    <!-- Checkmark SVG inside node -->
+    <polyline points="-4,-10 -1,-7 5,-13" fill="none" stroke="#CAA05C" stroke-width="1.6" stroke-linecap="round"/>
+    <text x="0" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#24375A" text-anchor="middle">QUALITY</text>
+    <text x="0" y="20" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#CAA05C" text-anchor="middle">±0.1MM</text>
+    <!-- Connecting dashed line -->
+    <line x1="36" y1="0" x2="61" y2="0" stroke="url(#goldGradM)" stroke-width="1.2" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Right Flank: Schedule Delivery Milestone -->
+  <g transform="translate(315, 115)">
+    <!-- Milestone Node 02 -->
+    <rect x="-36" y="-30" width="72" height="60" rx="8" fill="#FFFFFF" stroke="url(#goldGradM)" stroke-width="1.2" filter="drop-shadow(0 3px 8px rgba(0,0,0,0.04))"/>
+    <circle cx="0" cy="-10" r="10" fill="#F4EFE6" stroke="#24375A" stroke-width="1"/>
+    <!-- Fast-forward / On-time triangle -->
+    <polygon points="-3,-15 4,-10 -3,-5" fill="url(#goldGradM)"/>
+    <text x="0" y="10" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#24375A" text-anchor="middle">SCHEDULE</text>
+    <text x="0" y="20" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#CAA05C" text-anchor="middle">ON-TIME</text>
+    <!-- Connecting dashed line -->
+    <line x1="-36" y1="0" x2="-61" y2="0" stroke="url(#goldGradM)" stroke-width="1.2" stroke-dasharray="2,2"/>
+  </g>
+
+  <!-- Top Machinery Tag -->
+  <g transform="translate(200, 36)">
+    <rect x="-56" y="-12" width="112" height="24" rx="12" fill="#FFFFFF" stroke="#24375A" stroke-width="1.2" filter="drop-shadow(0 2px 6px rgba(0,0,0,0.04))"/>
+    <circle cx="-42" cy="0" r="3.5" fill="url(#goldGradM)"/>
+    <text x="6" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="0.5">HOMAG CNC PRECISION</text>
+  </g>
+
+  <!-- Bottom Blueprint Technical Rulers & Annotations -->
+  <g transform="translate(200, 222)">
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#CAA05C" stroke-width="0.75"/>
+    <line x1="-150" y1="-3" x2="-150" y2="3" stroke="#CAA05C" stroke-width="0.75"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="url(#goldGradM)" stroke-width="1"/>
+    <line x1="150" y1="-3" x2="150" y2="3" stroke="#CAA05C" stroke-width="0.75"/>
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#1B2A4A" opacity="0.65" text-anchor="middle" letter-spacing="1">TURNKEY PROJECT DELIVERY • SCALE EFFICIENCY</text>
+  </g>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 250" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FCFAF7"/>
+      <stop offset="100%" stop-color="#F2EBE0"/>
+    </linearGradient>
+    <linearGradient id="goldGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DFBA73"/>
+      <stop offset="50%" stop-color="#CAA05C"/>
+      <stop offset="100%" stop-color="#9E7530"/>
+    </linearGradient>
+    <linearGradient id="navyGradF" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#24375A"/>
+      <stop offset="100%" stop-color="#111B2E"/>
+    </linearGradient>
+    <pattern id="gridPatternF" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#CAA05C" stroke-width="0.5" stroke-opacity="0.14"/>
+      <circle cx="20" cy="0" r="0.75" fill="#CAA05C" fill-opacity="0.22"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="250" fill="url(#bgGradF)"/>
+  <rect width="400" height="250" fill="url(#gridPatternF)"/>
+
+  <!-- Blueprint Calibration Circles & Coordinate Axes -->
+  <circle cx="200" cy="120" r="95" fill="none" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="3,6" opacity="0.35"/>
+  <circle cx="200" cy="120" r="68" fill="none" stroke="#1B2A4A" stroke-width="0.75" stroke-dasharray="2,4" opacity="0.2"/>
+  <circle cx="200" cy="120" r="42" fill="#CAA05C" fill-opacity="0.04"/>
+
+  <!-- Coordinate Lines -->
+  <line x1="40" y1="120" x2="360" y2="120" stroke="#1B2A4A" stroke-width="0.6" stroke-dasharray="4,8" opacity="0.22"/>
+  <line x1="200" y1="20" x2="200" y2="230" stroke="#1B2A4A" stroke-width="0.6" stroke-dasharray="4,8" opacity="0.22"/>
+
+  <!-- Architectural Framework: Isometric Structural Prism Triad -->
+  <!-- Central Isometric Structural Node (Wireframe Cube) -->
+  <g transform="translate(200, 116)">
+    <!-- Isometric Top Face -->
+    <polygon points="0,-48 42,-24 0,0 -42,-24" fill="#FFFFFF" stroke="url(#goldGradF)" stroke-width="1.6" filter="drop-shadow(0 4px 10px rgba(0,0,0,0.05))"/>
+    <!-- Isometric Left Face -->
+    <polygon points="-42,-24 0,0 0,48 -42,24" fill="#F5EFE6" stroke="#24375A" stroke-width="1.2"/>
+    <!-- Isometric Right Face -->
+    <polygon points="0,0 42,-24 42,24 0,48" fill="#EDE4D6" stroke="#24375A" stroke-width="1.2"/>
+
+    <!-- Internal Architectural Grid Wireframe Lines -->
+    <line x1="0" y1="-24" x2="21" y2="-12" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <line x1="0" y1="-24" x2="-21" y2="-12" stroke="#CAA05C" stroke-width="0.8" stroke-dasharray="2,2"/>
+    <line x1="-21" y1="12" x2="0" y2="24" stroke="#24375A" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+    <line x1="21" y1="12" x2="0" y2="24" stroke="#24375A" stroke-width="0.8" stroke-dasharray="2,2" opacity="0.5"/>
+    <line x1="0" y1="0" x2="0" y2="48" stroke="#CAA05C" stroke-width="1"/>
+
+    <!-- Central Hub Pin -->
+    <circle cx="0" cy="0" r="4.5" fill="url(#goldGradF)" stroke="#FFFFFF" stroke-width="1.5"/>
+  </g>
+
+  <!-- Node B: Building Innovation (Left Flank) -->
+  <g transform="translate(85, 116)">
+    <!-- Connecting Ray to Center -->
+    <line x1="30" y1="0" x2="73" y2="0" stroke="url(#goldGradF)" stroke-width="1.4" stroke-dasharray="3,3"/>
+    <!-- Circular Technical Node -->
+    <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#24375A" stroke-width="1.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.04))"/>
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#CAA05C" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="0" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#24375A" text-anchor="middle">B</text>
+    <!-- Label -->
+    <text x="0" y="-32" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="1">BUILDING</text>
+    <text x="0" y="-22" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700" fill="#CAA05C" text-anchor="middle" letter-spacing="0.5">INNOVATION</text>
+    <!-- Technical Elevation Tick -->
+    <line x1="-16" y1="34" x2="16" y2="34" stroke="#CAA05C" stroke-width="1"/>
+    <line x1="0" y1="24" x2="0" y2="34" stroke="#CAA05C" stroke-width="1"/>
+    <text x="0" y="44" font-family="monospace" font-size="6.5" fill="#1B2A4A" opacity="0.6" text-anchor="middle">AXIS-01</text>
+  </g>
+
+  <!-- Node N: Neo Concepts (Right Flank) -->
+  <g transform="translate(315, 116)">
+    <!-- Connecting Ray to Center -->
+    <line x1="-30" y1="0" x2="-73" y2="0" stroke="url(#goldGradF)" stroke-width="1.4" stroke-dasharray="3,3"/>
+    <!-- Circular Technical Node -->
+    <circle cx="0" cy="0" r="24" fill="#FFFFFF" stroke="#24375A" stroke-width="1.5" filter="drop-shadow(0 4px 8px rgba(0,0,0,0.04))"/>
+    <circle cx="0" cy="0" r="18" fill="none" stroke="#CAA05C" stroke-width="1" stroke-dasharray="3,2"/>
+    <text x="0" y="6" font-family="'Plus Jakarta Sans', sans-serif" font-size="16" font-weight="900" fill="#24375A" text-anchor="middle">N</text>
+    <!-- Label -->
+    <text x="0" y="-32" font-family="'Plus Jakarta Sans', sans-serif" font-size="7.5" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="1">NEO</text>
+    <text x="0" y="-22" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="700" fill="#CAA05C" text-anchor="middle" letter-spacing="0.5">CONCEPTS</text>
+    <!-- Technical Elevation Tick -->
+    <line x1="-16" y1="34" x2="16" y2="34" stroke="#CAA05C" stroke-width="1"/>
+    <line x1="0" y1="24" x2="0" y2="34" stroke="#CAA05C" stroke-width="1"/>
+    <text x="0" y="44" font-family="monospace" font-size="6.5" fill="#1B2A4A" opacity="0.6" text-anchor="middle">AXIS-02</text>
+  </g>
+
+  <!-- Node P: Co-ordinated Planning (Top Apex) -->
+  <g transform="translate(200, 36)">
+    <!-- Vertical Dimension Connecting Line to Cube -->
+    <line x1="0" y1="18" x2="0" y2="32" stroke="url(#goldGradF)" stroke-width="1.4" stroke-dasharray="2,2"/>
+    <!-- Pill Node -->
+    <rect x="-48" y="-12" width="96" height="24" rx="12" fill="#FFFFFF" stroke="url(#goldGradF)" stroke-width="1.4" filter="drop-shadow(0 3px 6px rgba(0,0,0,0.04))"/>
+    <text x="-26" y="5" font-family="'Plus Jakarta Sans', sans-serif" font-size="14" font-weight="900" fill="#24375A" text-anchor="middle">P</text>
+    <line x1="-14" y1="-7" x2="-14" y2="7" stroke="#CAA05C" stroke-width="1" opacity="0.5"/>
+    <text x="14" y="-1" font-family="'Plus Jakarta Sans', sans-serif" font-size="6.5" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="0.5">CO-ORDINATED</text>
+    <text x="14" y="8" font-family="'Plus Jakarta Sans', sans-serif" font-size="6" font-weight="700" fill="#CAA05C" text-anchor="middle" letter-spacing="0.5">PLANNING</text>
+  </g>
+
+  <!-- Bottom Blueprint Metadata Rulers & Annotations -->
+  <g transform="translate(200, 222)">
+    <line x1="-150" y1="0" x2="150" y2="0" stroke="#CAA05C" stroke-width="0.75"/>
+    <line x1="-150" y1="-3" x2="-150" y2="3" stroke="#CAA05C" stroke-width="0.75"/>
+    <line x1="-75" y1="-2" x2="-75" y2="2" stroke="#CAA05C" stroke-width="0.5"/>
+    <line x1="0" y1="-4" x2="0" y2="4" stroke="url(#goldGradF)" stroke-width="1"/>
+    <line x1="75" y1="-2" x2="75" y2="2" stroke="#CAA05C" stroke-width="0.5"/>
+    <line x1="150" y1="-3" x2="150" y2="3" stroke="#CAA05C" stroke-width="0.75"/>
+    <text x="0" y="14" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#1B2A4A" opacity="0.65" text-anchor="middle" letter-spacing="1">BNP ARCHITECTURAL FRAMEWORK • PRECISION INTEGRATION</text>
+  </g>
+</svg>
