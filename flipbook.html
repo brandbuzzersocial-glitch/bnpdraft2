@@ -490,32 +490,9 @@
       });
 
       // Sound Effect using Web Audio API
-      let soundEnabled = true;
+      let soundEnabled = false;
       function playFlipSound() {
-        if (!soundEnabled) return;
-        try {
-          const ctx = new (window.AudioContext || window.webkitAudioContext)();
-          const bufferSize = ctx.sampleRate * 0.12;
-          const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
-          const data = buffer.getChannelData(0);
-          for (let i = 0; i < bufferSize; i++) {
-            data[i] = (Math.random() * 2 - 1) * Math.exp(-i / (bufferSize * 0.4));
-          }
-          const noise = ctx.createBufferSource();
-          noise.buffer = buffer;
-          const filter = ctx.createBiquadFilter();
-          filter.type = 'bandpass';
-          filter.frequency.setValueAtTime(900, ctx.currentTime);
-          filter.frequency.exponentialRampToValueAtTime(250, ctx.currentTime + 0.12);
-          filter.Q.value = 1.1;
-          const gain = ctx.createGain();
-          gain.gain.setValueAtTime(0.09, ctx.currentTime);
-          gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.12);
-          noise.connect(filter);
-          filter.connect(gain);
-          gain.connect(ctx.destination);
-          noise.start();
-        } catch (e) {}
+        // Page flip sound effect disabled
       }
 
       // Calculate Stage Sizing

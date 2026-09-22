@@ -397,23 +397,15 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Function to calculate and update sizes dynamically based on actual width
     const updateTimelineDimensions = () => {
-      // On mobile devices, disable artificial vertical height and let container size naturally
-      if (window.innerWidth <= 768) {
-        timelineSection.style.height = 'auto';
-        timelineContainer.style.transform = 'none';
-        return;
-      }
-
-      // Calculate the total scrollable width of the timeline on desktop
+      // Calculate the total scrollable width of the timeline
       const containerWidth = timelineContainer.scrollWidth;
       const viewportWidth = window.innerWidth;
       
       // Horizontal distance the timeline needs to scroll:
-      // We want the last card to fully reveal and center, so add some extra end padding
-      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
+      // We want the last card to fully reveal and center properly
+      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.25));
       
       // Make the vertical section height directly proportional to the horizontal scrollable width!
-      // Scroll travel = maxTranslate. Adding window.innerHeight keeps it sticky for exactly that scroll travel.
       const scrollHeight = maxTranslate + window.innerHeight;
       timelineSection.style.height = `${scrollHeight}px`;
     };
@@ -436,42 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(updateTimelineDimensions, 300);
 
     const updateScrollState = (e) => {
-      // MOBILE PHONE & SMALL TABLET BEHAVIOR (<= 768px):
-      if (window.innerWidth <= 768) {
-        timelineContainer.style.transform = 'none';
-
-        // When scrolling the viewport horizontally via touch or buttons, highlight active card
-        if (timelineViewport) {
-          const viewportCenter = timelineViewport.scrollLeft + (timelineViewport.clientWidth / 2);
-          let closestCard = null;
-          let closestDist = Infinity;
-
-          timelineCards.forEach((card) => {
-            const cardCenter = card.offsetLeft + (card.offsetWidth / 2);
-            const dist = Math.abs(viewportCenter - cardCenter);
-            if (dist < closestDist) {
-              closestDist = dist;
-              closestCard = card;
-            }
-          });
-
-          if (closestCard) {
-            timelineCards.forEach(c => c.classList.remove('active'));
-            closestCard.classList.add('active');
-
-            if (trackProgress) {
-              const node = closestCard.querySelector('.timeline-card-node');
-              if (node) {
-                const nodeX = closestCard.offsetLeft + node.offsetLeft + (node.offsetWidth / 2);
-                trackProgress.style.width = `${nodeX}px`;
-              }
-            }
-          }
-        }
-        return;
-      }
-
-      // DESKTOP BEHAVIOR: Sticky horizontal translation on vertical page scroll (100% untouched)
+      // Sticky horizontal translation on vertical page scroll (universal across all viewports)
       let lastActiveCard = null;
       
       const sectionRect = timelineSection.getBoundingClientRect();
@@ -490,7 +447,7 @@ document.addEventListener('DOMContentLoaded', () => {
       // Calculate translation
       const containerWidth = timelineContainer.scrollWidth;
       const viewportWidth = window.innerWidth;
-      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.1));
+      const maxTranslate = Math.max(0, containerWidth - viewportWidth + (viewportWidth * 0.25));
       const currentTranslate = pct * maxTranslate;
       
       // Translate track
@@ -539,15 +496,44 @@ document.addEventListener('DOMContentLoaded', () => {
     // Mobile prev/next button handlers
     const mobilePrev = document.getElementById('timeline-mobile-prev');
     const mobileNext = document.getElementById('timeline-mobile-next');
-    if (mobilePrev && timelineViewport) {
+    if (mobilePrev) {
       mobilePrev.addEventListener('click', () => {
-        timelineViewport.scrollBy({ left: -300, behavior: 'smooth' });
+        window.scrollBy({ top: -350, behavior: 'smooth' });
       });
     }
-    if (mobileNext && timelineViewport) {
+    if (mobileNext) {
       mobileNext.addEventListener('click', () => {
-        timelineViewport.scrollBy({ left: 300, behavior: 'smooth' });
+        window.scrollBy({ top: 350, behavior: 'smooth' });
       });
+    }
+
+    // Touch swipe handling for mobile devices to seamlessly drive compulsory timeline scroll
+    if (timelineSticky) {
+      let touchStartX = 0;
+      let touchStartY = 0;
+
+      timelineSticky.addEventListener('touchstart', (e) => {
+        if (e.touches.length === 1) {
+          touchStartX = e.touches[0].clientX;
+          touchStartY = e.touches[0].clientY;
+        }
+      }, { passive: true });
+
+      timelineSticky.addEventListener('touchmove', (e) => {
+        if (e.touches.length === 1) {
+          const currentX = e.touches[0].clientX;
+          const currentY = e.touches[0].clientY;
+          const deltaX = touchStartX - currentX;
+          const deltaY = touchStartY - currentY;
+
+          // If touch gesture is horizontal swipe, convert to vertical window scroll to drive compulsory horizontal crawling
+          if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > 4) {
+            window.scrollBy(0, deltaX * 1.3);
+            touchStartX = currentX;
+            touchStartY = currentY;
+          }
+        }
+      }, { passive: true });
     }
   }
 
