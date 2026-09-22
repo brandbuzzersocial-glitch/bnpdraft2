@@ -438,99 +438,162 @@
           </div>
         </div>
 
-        <!-- RIGHT COLUMN: BLUEPRINT FRAMED MACHINERY COLLAGE (PAGE 12 & 13) -->
-        <div data-anim="fadeLeft">
+        <!-- RIGHT COLUMN: BLUEPRINT FRAMED AUTOMATIC MACHINERY CAROUSEL -->
+        <div data-anim="fadeLeft" class="in-view">
           <div class="mfg-visual-wrap">
             <div class="mfg-corner-accent mfg-corner-tl"></div>
             <div class="mfg-corner-accent mfg-corner-tr"></div>
             <div class="mfg-corner-accent mfg-corner-bl"></div>
             <div class="mfg-corner-accent mfg-corner-br"></div>
 
-            <!-- COLLAGE GRID OF GERMAN & ITALIAN MACHINERY -->
-            <div class="mfg-machinery-collage">
+            <!-- AUTOMATIC MACHINERY CAROUSEL (PAGES 12 & 13) -->
+            <div class="mfg-carousel-container" id="mfg-carousel" aria-label="Navi Mumbai Plant Machinery Showcase">
               
-              <!-- 1. HOMAG CNC ROUTER -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">HOMAG Germany</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/cnc_machine.jpg" alt="HOMAG CNC Router" loading="lazy">
+              <!-- Top Bar: Counter, Progress Bar & Live Status -->
+              <div class="mfg-carousel-topbar">
+                <div class="mfg-carousel-counter">
+                  <span class="mfg-counter-current" id="mfg-current-slide">01</span>
+                  <span class="mfg-counter-sep">/</span>
+                  <span class="mfg-counter-total">09</span>
                 </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">HOMAG CNC Router</span>
-                  <span class="mfg-machine-tag">0.1mm Precision</span>
+                <div class="mfg-carousel-progress">
+                  <div class="mfg-progress-bar" id="mfg-progress-bar"></div>
                 </div>
-              </div>
-
-              <!-- 2. HOMAG PANEL SAW -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">HOMAG Germany</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/panel_saw_machine.jpg" alt="HOMAG Panel Saw Machine" loading="lazy">
-                </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">HOMAG Panel Saw</span>
-                  <span class="mfg-machine-tag">Sub-Millimeter</span>
+                <div class="mfg-carousel-status">
+                  <span class="mfg-live-dot"></span> Auto-Playing
                 </div>
               </div>
 
-              <!-- 3. BEAM SAW MACHINE -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">High Capacity</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/beam_saw_machine.jpg" alt="Beam Saw Machine" loading="lazy">
-                </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">Beam Saw Machine</span>
-                  <span class="mfg-machine-tag">High-Output</span>
+              <!-- Slides Viewport -->
+              <div class="mfg-carousel-viewport">
+                <div class="mfg-carousel-track" id="mfg-carousel-track">
+
+                  <!-- SLIDE 1: HOMAG CNC ROUTER -->
+                  <div class="mfg-carousel-slide active">
+                    <span class="mfg-slide-badge">HOMAG Germany · 0.1mm CNC</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/cnc_machine.jpg" alt="HOMAG CNC Router" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">HOMAG CNC Router</h3>
+                      <p class="mfg-slide-desc">High-precision multi-axis computer-controlled milling for intricate bespoke joinery.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 2: HOMAG PANEL SAW -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">HOMAG Germany · Precision Sizing</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/panel_saw_machine.jpg" alt="HOMAG Panel Saw Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">HOMAG Panel Saw</h3>
+                      <p class="mfg-slide-desc">Sub-millimeter automated panel cutting ensuring perfect right-angle alignment and zero waste.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 3: BEAM SAW MACHINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">High Capacity · Heavy-Duty</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/beam_saw_machine.jpg" alt="Heavy-Duty Beam Saw Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Heavy-Duty Beam Saw</h3>
+                      <p class="mfg-slide-desc">High-speed beam sizing with multi-sheet cutting capability for large-scale corporate fit-outs.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 4: DUST-FREE PAINT BOOTH -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">Italian Tech · Dust-Free Polish</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/paint_booth_machine.jpg" alt="Automated Dust-Free Paint Booth" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Automated Paint Booth Line</h3>
+                      <p class="mfg-slide-desc">Pressurized climate-controlled spray booths delivering immaculate high-gloss and PU finishes.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 5: EDGE BANDING MACHINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">Precision Joinery · Seamless Finish</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/edge_banding_machine.jpg" alt="Automated Edge Banding Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Edge Banding Machine</h3>
+                      <p class="mfg-slide-desc">Automated hot-melt contour edge binding providing moisture resistance and clean aesthetics.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 6: CALIBRATED SANDING LINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">Surface Calibration · Zero Defect</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/sanding_machine.jpg" alt="Heavy-Duty Calibrated Sanding Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Calibrated Sanding Line</h3>
+                      <p class="mfg-slide-desc">Heavy-duty multi-head sanding machines achieving mirror-smooth veneer and lacquer preparation.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 7: MULTI BORER MACHINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">HOMAG Tech · Multi-Spindle</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/multi_borer_machine.jpg" alt="Multi Borer Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Multi Borer Machine</h3>
+                      <p class="mfg-slide-desc">High-speed multi-axis drilling ensuring rapid hardware assembly and accurate modular fittings.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 8: HOT PRESS MACHINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">Hydraulic Press · Thermal Bonding</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/hot_press_machine.jpg" alt="Multi-Daylight Hot Press Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Hot Press Machine</h3>
+                      <p class="mfg-slide-desc">Uniform thermal hydraulic pressure pressing for durable veneer bonding and laminate adhesion.</p>
+                    </div>
+                  </div>
+
+                  <!-- SLIDE 9: POST FORMING MACHINE -->
+                  <div class="mfg-carousel-slide">
+                    <span class="mfg-slide-badge">Profile Wrapping · Curved Profiles</span>
+                    <div class="mfg-slide-img-wrap">
+                      <img src="assets/images/machinery/post_forming_machine.jpg" alt="Post Forming Machine" loading="lazy">
+                    </div>
+                    <div class="mfg-slide-info">
+                      <h3 class="mfg-slide-title">Post Forming Machine</h3>
+                      <p class="mfg-slide-desc">Bespoke continuous profile wrapping and curved edge forming for counters and executive desks.</p>
+                    </div>
+                  </div>
+
                 </div>
               </div>
 
-              <!-- 4. DUST-FREE PAINT BOOTH -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">Italian Tech</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/paint_booth_machine.jpg" alt="Automated Dust-Free Paint Booth" loading="lazy">
+              <!-- Carousel Controls: Prev / Dots / Next -->
+              <div class="mfg-carousel-controls">
+                <button class="mfg-nav-btn mfg-prev-btn" id="mfg-prev-btn" aria-label="Previous Machine">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+
+                <div class="mfg-carousel-dots" id="mfg-carousel-dots">
+                  <!-- Generated via JS -->
                 </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">Paint Booth Machine</span>
-                  <span class="mfg-machine-tag">Dust-Free Polish</span>
-                </div>
+
+                <button class="mfg-nav-btn mfg-next-btn" id="mfg-next-btn" aria-label="Next Machine">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
               </div>
 
-              <!-- 5. EDGE BANDING MACHINE -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">Joinery</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/edge_banding_machine.jpg" alt="Edge Banding Machine" loading="lazy">
-                </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">Edge Banding Line</span>
-                  <span class="mfg-machine-tag">Seamless Edges</span>
-                </div>
-              </div>
-
-              <!-- 6. CALIBRATED SANDING LINE -->
-              <div class="mfg-collage-card">
-                <span class="mfg-collage-badge">Finishing</span>
-                <div class="mfg-img-box">
-                  <img src="assets/images/machinery/sanding_machine.jpg" alt="Heavy-Duty Calibrated Sanding Machine" loading="lazy">
-                </div>
-                <div class="mfg-card-footer">
-                  <span class="mfg-machine-name">Sanding Machine</span>
-                  <span class="mfg-machine-tag">Surface Calibrated</span>
-                </div>
-              </div>
-
-            </div>
-
-            <!-- AUXILIARY IN-HOUSE MACHINERY STRIP -->
-            <div class="mfg-aux-strip">
-              <span class="mfg-aux-label">Also Operating:</span>
-              <span class="mfg-aux-item">Multi Borer Machine</span>
-              <span class="mfg-aux-dot">•</span>
-              <span class="mfg-aux-item">Hot Press Machine</span>
-              <span class="mfg-aux-dot">•</span>
-              <span class="mfg-aux-item">Post Forming Machine</span>
             </div>
 
             <!-- BLUEPRINT SPEC PLAQUE -->

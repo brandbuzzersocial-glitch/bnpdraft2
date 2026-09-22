@@ -1576,6 +1576,162 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ============================================================
+  // AUTOMATIC MACHINERY CAROUSEL (NAVI MUMBAI PLANT)
+  // ============================================================
+  const initMfgCarousel = () => {
+    const container = document.getElementById('mfg-carousel');
+    if (!container) return;
+
+    const track = document.getElementById('mfg-carousel-track');
+    const slides = container.querySelectorAll('.mfg-carousel-slide');
+    const prevBtn = document.getElementById('mfg-prev-btn');
+    const nextBtn = document.getElementById('mfg-next-btn');
+    const dotsContainer = document.getElementById('mfg-carousel-dots');
+    const currentSlideEl = document.getElementById('mfg-current-slide');
+    const progressBar = document.getElementById('mfg-progress-bar');
+    const statusEl = container.querySelector('.mfg-carousel-status');
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    const slideDuration = 3600; // 3.6 seconds per slide
+    let progressStartTime = Date.now();
+    let autoPlayTimer = null;
+    let progressAnimId = null;
+    let isPaused = false;
+
+    // Generate Dots
+    if (dotsContainer) {
+      dotsContainer.innerHTML = '';
+      slides.forEach((_, idx) => {
+        const dot = document.createElement('button');
+        dot.className = `mfg-dot ${idx === 0 ? 'active' : ''}`;
+        dot.setAttribute('aria-label', `Go to machinery slide ${idx + 1}`);
+        dot.addEventListener('click', () => {
+          goToSlide(idx);
+          restartTimer();
+        });
+        dotsContainer.appendChild(dot);
+      });
+    }
+
+    const updateUI = () => {
+      track.style.transform = `translateX(-${currentIndex * 100}%)`;
+      if (currentSlideEl) {
+        currentSlideEl.textContent = String(currentIndex + 1).padStart(2, '0');
+      }
+      if (dotsContainer) {
+        const dots = dotsContainer.querySelectorAll('.mfg-dot');
+        dots.forEach((d, idx) => {
+          d.classList.toggle('active', idx === currentIndex);
+        });
+      }
+      slides.forEach((s, idx) => {
+        s.classList.toggle('active', idx === currentIndex);
+      });
+    };
+
+    const goToSlide = (index) => {
+      if (index < 0) {
+        currentIndex = totalSlides - 1;
+      } else if (index >= totalSlides) {
+        currentIndex = 0;
+      } else {
+        currentIndex = index;
+      }
+      updateUI();
+      progressStartTime = Date.now();
+    };
+
+    const nextSlide = () => goToSlide(currentIndex + 1);
+    const prevSlide = () => goToSlide(currentIndex - 1);
+
+    if (nextBtn) {
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        restartTimer();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        restartTimer();
+      });
+    }
+
+    // Smooth Progress Bar ticker
+    function tickProgress() {
+      if (!isPaused && progressBar) {
+        const elapsed = Date.now() - progressStartTime;
+        const pct = Math.min((elapsed / slideDuration) * 100, 100);
+        progressBar.style.width = pct + '%';
+      }
+      progressAnimId = requestAnimationFrame(tickProgress);
+    }
+
+    function startTimer() {
+      progressStartTime = Date.now();
+      if (autoPlayTimer) clearInterval(autoPlayTimer);
+      autoPlayTimer = setInterval(() => {
+        if (!isPaused) {
+          nextSlide();
+        }
+      }, slideDuration);
+    }
+
+    function restartTimer() {
+      progressStartTime = Date.now();
+      if (progressBar) progressBar.style.width = '0%';
+      startTimer();
+    }
+
+    // Hover Pause / Resume
+    container.addEventListener('mouseenter', () => {
+      isPaused = true;
+      if (statusEl) {
+        statusEl.classList.add('paused');
+        statusEl.innerHTML = '<span class="mfg-live-dot"></span> Paused';
+      }
+    });
+
+    container.addEventListener('mouseleave', () => {
+      isPaused = false;
+      progressStartTime = Date.now();
+      if (statusEl) {
+        statusEl.classList.remove('paused');
+        statusEl.innerHTML = '<span class="mfg-live-dot"></span> Auto-Playing';
+      }
+    });
+
+    // Touch Swipe support
+    let touchStartX = 0;
+    container.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      isPaused = true;
+    }, { passive: true });
+
+    container.addEventListener('touchend', (e) => {
+      const touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 40) {
+        if (diff > 0) nextSlide();
+        else prevSlide();
+      }
+      isPaused = false;
+      restartTimer();
+    }, { passive: true });
+
+    // Initialize
+    updateUI();
+    startTimer();
+    progressAnimId = requestAnimationFrame(tickProgress);
+  };
+
+  initMfgCarousel();
+
 });
 
 
