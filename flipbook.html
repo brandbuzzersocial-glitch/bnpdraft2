@@ -126,8 +126,9 @@
 
     .flipbook-render-target {
       position: relative;
-      box-shadow: 0 30px 80px rgba(0, 0, 0, 0.7), 0 0 40px rgba(202, 160, 92, 0.15);
       border-radius: 4px;
+      transition: transform 0.45s cubic-bezier(0.2, 0, 0.2, 1);
+      filter: drop-shadow(0 20px 45px rgba(0, 0, 0, 0.65));
     }
 
     /* Floating Arrow Navigation */
@@ -548,6 +549,20 @@
         const displayNum = pageIdx + 1;
         pageNumEl.textContent = displayNum;
         scrubber.value = displayNum;
+
+        // Auto-center single cover and back cover in landscape spread
+        const isMobile = window.innerWidth <= 768;
+        if (!isMobile) {
+          if (pageIdx === 0) {
+            bookEl.style.transform = 'translateX(-25%)';
+          } else if (pageIdx >= TOTAL_PAGES - 1) {
+            bookEl.style.transform = 'translateX(25%)';
+          } else {
+            bookEl.style.transform = 'translateX(0)';
+          }
+        } else {
+          bookEl.style.transform = 'translateX(0)';
+        }
 
         // Active thumbnail
         document.querySelectorAll('.thumb-item').forEach((el, idx) => {
