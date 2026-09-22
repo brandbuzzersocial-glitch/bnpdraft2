@@ -3919,20 +3919,23 @@ body.mouse-moving .mouse-glow-element {
   height: auto;
   filter: drop-shadow(0 15px 30px rgba(0,0,0,0.08));
 }
-.state-path {
+.states-group, .state-path {
   fill: rgba(0, 0, 0, 0.01);
   stroke: #9d9992;
   stroke-width: 1.2px;
+  pointer-events: none !important;
+  cursor: default !important;
   transition: all 0.3s ease;
 }
-.state-path:hover, .state-path.active {
+.state-path.active {
   fill: rgba(202, 160, 92, 0.08);
   stroke: var(--color-primary);
-  stroke-width: 2.5px;
+  stroke-width: 2.2px;
   filter: drop-shadow(0 0 8px rgba(202,160,92,0.25));
 }
 .map-pin {
-  cursor: pointer;
+  cursor: pointer !important;
+  pointer-events: all !important;
   outline: none;
 }
 .map-pin .pin-pulse {

@@ -1329,7 +1329,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     };
 
-    // Hover / Click Event listeners on pins
+    // Hover / Click Event listeners on pins only (state map paths are non-interactive background)
     mapPins.forEach(pin => {
       const stateCode = pin.getAttribute('data-state');
       
@@ -1342,26 +1342,6 @@ document.addEventListener('DOMContentLoaded', () => {
         renderStateProjects(stateCode);
       });
     });
-
-    // Hover / Click Event listeners on state paths themselves to prevent hover miss or lag
-    if (indiaSvgMap) {
-      const statePaths = indiaSvgMap.querySelectorAll('.state-path');
-      statePaths.forEach(path => {
-        const stateCode = path.getAttribute('id');
-        if (mapData[stateCode]) {
-          path.style.cursor = 'pointer';
-          
-          path.addEventListener('mouseenter', () => {
-            renderStateProjects(stateCode);
-          });
-          
-          path.addEventListener('click', (e) => {
-            e.preventDefault();
-            renderStateProjects(stateCode);
-          });
-        }
-      });
-    }
 
     // Pan India Trigger Click
     if (panIndiaTrigger) {
