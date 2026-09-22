@@ -4955,36 +4955,26 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
 /* ============================================================
    BNP FACTORY CRAFT VILLAGE (27-ACRE RAJASTHAN MEGA CAMPUS)
    ============================================================ */
+/* ============================================================
+   BNP CRAFT VILLAGE SECTION — WHITE BG, SPLIT LAYOUT
+   ============================================================ */
+
 .craft-village-section {
-  padding: 120px 0 110px;
-  background: #0e0e0e;
-  color: #ffffff;
+  padding: 100px 0 90px;
+  background: #ffffff;
+  color: #1a1a1a;
   position: relative;
-  overflow: hidden;
 }
 
-.cv-ambient-glow {
-  position: absolute;
-  top: 15%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 900px;
-  height: 500px;
-  background: radial-gradient(ellipse at center, rgba(202, 160, 92, 0.14) 0%, rgba(14, 14, 14, 0) 70%);
-  pointer-events: none;
-  z-index: 0;
-}
-
+/* Centered header */
 .cv-header {
   text-align: center;
-  max-width: 880px;
-  margin: 0 auto 50px;
-  position: relative;
-  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto 52px;
 }
 
 .cv-tag {
-  background: rgba(202, 160, 92, 0.12);
+  background: rgba(202, 160, 92, 0.1);
   color: #caa05c;
   border: 1px solid rgba(202, 160, 92, 0.35);
   margin-bottom: 14px;
@@ -4992,113 +4982,45 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
 
 .cv-title {
   font-family: var(--font-heading);
-  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  font-size: clamp(2rem, 3.5vw, 2.8rem);
   font-weight: 800;
-  color: #ffffff;
+  color: #111111;
   letter-spacing: -0.5px;
   margin-bottom: 8px;
 }
 
 .cv-subtitle {
   font-family: var(--font-heading);
-  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
   font-weight: 600;
   color: #caa05c;
-  margin-bottom: 18px;
-  letter-spacing: 0.2px;
-}
-
-.cv-desc {
-  font-size: 0.98rem;
-  line-height: 1.75;
-  color: #999999;
   margin: 0;
 }
 
-/* Visualizer Card */
-.cv-visualizer-card {
-  background: rgba(18, 18, 18, 0.85);
-  border: 1px solid rgba(202, 160, 92, 0.3);
-  border-radius: var(--radius-lg);
-  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+/* ---- SPLIT LAYOUT ---- */
+.cv-split-layout {
+  display: grid;
+  grid-template-columns: 52% 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+/* ---- LEFT: Image Column ---- */
+.cv-image-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-radius: 14px;
   overflow: hidden;
-  margin-bottom: 50px;
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
 }
 
-.cv-viz-topbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 16px 24px;
-  background: rgba(10, 10, 10, 0.95);
-  border-bottom: 1px solid rgba(202, 160, 92, 0.2);
-}
-
-.cv-viz-meta {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.cv-status-badge {
-  font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  color: #caa05c;
-}
-
-.cv-location-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: #888888;
-}
-
-.cv-location-badge svg {
-  color: #caa05c;
-}
-
-/* Auto-cycling label */
-.cv-auto-label {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #888888;
-  letter-spacing: 0.3px;
-}
-
-.cv-auto-dot {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #caa05c;
-  animation: cvDotPulse 2s ease-in-out infinite;
-}
-
-@keyframes cvDotPulse {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.4; transform: scale(0.75); }
-}
-
-/* Visual Stage */
 .cv-viz-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 8;
-  max-height: 640px;
+  aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: #080808;
+  background: #111;
 }
 
 .cv-viz-img {
@@ -5108,7 +5030,7 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  transition: opacity 0.75s ease, transform 0.8s ease;
+  transition: opacity 0.9s ease;
   pointer-events: none;
 }
 
@@ -5117,36 +5039,14 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   pointer-events: auto;
 }
 
-.cv-viz-overlay-hint {
-  position: absolute;
-  bottom: 16px;
-  right: 20px;
-  z-index: 2;
-}
-
-.cv-hint-pill {
-  font-size: 0.72rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  color: rgba(255, 255, 255, 0.85);
-  background: rgba(10, 10, 10, 0.65);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  padding: 5px 14px;
-  border-radius: 20px;
-}
-
-/* Visualizer Footer Stats */
+/* Stats row below image */
 .cv-viz-footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 24px 30px;
-  background: rgba(10, 10, 10, 0.95);
-  border-top: 1px solid rgba(202, 160, 92, 0.15);
+  padding: 18px 20px;
+  background: #111111;
+  gap: 10px;
 }
 
 .cv-stat-item {
@@ -5155,52 +5055,65 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
 
 .cv-stat-num {
   font-family: var(--font-heading);
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   font-weight: 800;
   color: #caa05c;
   line-height: 1;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .cv-stat-unit {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #ffffff;
 }
 
 .cv-stat-label {
   display: block;
-  font-size: 0.78rem;
+  font-size: 0.7rem;
   font-weight: 600;
   color: #888888;
-  margin-top: 4px;
+  margin-top: 3px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
 }
 
 .cv-stat-sep {
   width: 1px;
-  height: 36px;
-  background: rgba(202, 160, 92, 0.2);
+  height: 30px;
+  background: rgba(202, 160, 92, 0.3);
+  flex-shrink: 0;
 }
 
-/* 4 Pillars Grid */
+/* ---- RIGHT: Content Column ---- */
+.cv-content-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.cv-desc {
+  font-size: 0.93rem;
+  line-height: 1.75;
+  color: #555555;
+  margin: 0;
+}
+
+/* ---- 2x2 Pillar Cards Grid ---- */
 .cv-pillars-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  position: relative;
-  z-index: 1;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
 }
 
 .cv-pillar-card {
-  background: rgba(18, 18, 18, 0.7);
-  border: 1px solid rgba(202, 160, 92, 0.22);
-  border-radius: var(--radius-lg);
-  padding: 30px 24px;
+  background: #f8f7f4;
+  border: 1px solid #eeebe4;
+  border-radius: 12px;
+  padding: 22px 20px;
   position: relative;
-  transition: all 0.35s var(--ease);
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
 }
@@ -5215,14 +5128,13 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   background: linear-gradient(90deg, #caa05c, #e2c28e);
   opacity: 0;
   transition: opacity 0.3s ease;
-  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  border-radius: 12px 12px 0 0;
 }
 
 .cv-pillar-card:hover {
-  transform: translateY(-6px);
-  background: rgba(24, 24, 24, 0.85);
-  border-color: #caa05c;
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+  transform: translateY(-4px);
+  border-color: rgba(202, 160, 92, 0.4);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
 }
 
 .cv-pillar-card:hover::before {
@@ -5231,55 +5143,60 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
 
 .cv-pillar-num {
   position: absolute;
-  top: 20px;
-  right: 22px;
+  top: 14px;
+  right: 16px;
   font-family: var(--font-heading);
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 800;
-  color: rgba(202, 160, 92, 0.3);
+  color: rgba(202, 160, 92, 0.25);
 }
 
 .cv-pillar-icon {
-  width: 48px;
-  height: 48px;
-  border-radius: 12px;
-  background: rgba(202, 160, 92, 0.12);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(202, 160, 92, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #caa05c;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
 .cv-pillar-card:hover .cv-pillar-icon {
   background: #caa05c;
-  color: #111111;
-  transform: scale(1.08) rotate(5deg);
+  color: #ffffff;
+  transform: scale(1.08);
 }
 
 .cv-pillar-title {
   font-family: var(--font-heading);
-  font-size: 1.12rem;
+  font-size: 0.95rem;
   font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 12px;
+  color: #111111;
+  margin-bottom: 8px;
   line-height: 1.35;
 }
 
 .cv-pillar-desc {
-  font-size: 0.86rem;
-  line-height: 1.65;
-  color: #909090;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #777777;
   margin: 0;
 }
 
+/* ---- Responsive ---- */
 @media (max-width: 1024px) {
-  .cv-pillars-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .cv-split-layout {
+    grid-template-columns: 1fr;
+    gap: 36px;
   }
-  .cv-stat-sep {
-    display: none;
+  .cv-image-col {
+    max-width: 680px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -5287,14 +5204,16 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   .cv-pillars-grid {
     grid-template-columns: 1fr;
   }
-  .cv-viz-topbar {
-    flex-direction: column;
-    align-items: flex-start;
-  }
   .cv-viz-footer {
-    grid-template-columns: repeat(2, 1fr);
-    display: grid;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 14px;
+    padding: 16px;
+  }
+  .cv-stat-sep {
+    display: none;
   }
 }
+
+
+
 
