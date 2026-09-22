@@ -4441,7 +4441,8 @@ body.feature-blog-enabled section[data-feature="blog"] {
    NAVI MUMBAI HOMAG MANUFACTURING PLANT (BLUEPRINT SECTION)
    ============================================================ */
 .manufacturing-section {
-  padding: 100px 0;
+  padding: 140px 0 110px;
+  margin-top: 40px;
   background: var(--color-white);
   position: relative;
 }
@@ -4833,35 +4834,6 @@ body.feature-blog-enabled section[data-feature="blog"] {
 
 .mfg-corner-accent {
   display: none !important;
-}
-
-/* Borderless Spec Strip */
-.mfg-plant-meta-strip {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  padding-top: 14px;
-  font-size: 0.76rem;
-  color: #7b8a9e;
-}
-
-.mfg-meta-item {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  color: #4a5568;
-  font-weight: 500;
-}
-
-.mfg-meta-item svg {
-  color: #caa05c;
-}
-
-.mfg-meta-dot {
-  color: #caa05c;
-  font-size: 0.9rem;
 }
 
 @media (max-width: 1024px) {
