@@ -538,12 +538,21 @@
         }
       }
 
+      let hasAutoFlipped = false;
       pageFlip.on('flip', (e) => {
         playFlipSound();
         updateUI(e.data);
       });
       pageFlip.on('init', () => {
         updateUI(0);
+        if (!hasAutoFlipped) {
+          hasAutoFlipped = true;
+          setTimeout(() => {
+            if (pageFlip && pageFlip.getCurrentPageIndex() === 0) {
+              pageFlip.flipNext();
+            }
+          }, 1200);
+        }
       });
 
       if (btnPrev) btnPrev.addEventListener('click', () => pageFlip.flipPrev());
