@@ -2241,7 +2241,7 @@
           <p style="margin-top: 14px; color: var(--color-text); font-size: 1rem; line-height: 1.75; max-width: 560px;">Transforming innovation into a way of life — BNP Interiors forges alliances with the most consequential names in Indian and global industry, shaping the environments that will define tomorrow.</p>
         </div>
         <!-- Founder Quote Badge -->
-        <div style="background: var(--color-secondary); border: 1px solid rgba(202,160,92,0.2); border-radius: 16px; padding: 24px 28px; max-width: 310px; flex-shrink: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
+        <div class="lc-founder-quote" style="background: var(--color-secondary); border: 1px solid rgba(202,160,92,0.2); border-radius: 16px; padding: 24px 28px; max-width: 310px; flex-shrink: 0; box-shadow: 0 8px 30px rgba(0,0,0,0.08);">
           <p style="font-size: 0.95rem; color: rgba(255,255,255,0.8); line-height: 1.75; font-style: italic; margin: 0 0 14px;">"Shaping the environments that will define the world of tomorrow."</p>
           <div style="display: flex; align-items: center; gap: 10px;">
             <div style="width: 32px; height: 2px; background: var(--color-primary); flex-shrink: 0;"></div>
@@ -2380,6 +2380,14 @@
     @media (max-width: 991px) {
       .leadership-grid {
         grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    @media (max-width: 768px) {
+      .lc-founder-quote {
+        max-width: 100% !important;
+        width: 100% !important;
+        margin-top: 12px !important;
+        box-sizing: border-box !important;
       }
     }
     @media (max-width: 575px) {
