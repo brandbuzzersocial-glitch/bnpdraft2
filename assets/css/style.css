@@ -4549,16 +4549,17 @@ body.feature-blog-enabled section[data-feature="blog"] {
   margin: 0;
 }
 
-/* Right Column: Blueprint Framed Plant Visual */
+/* Right Column: Blueprint Framed Plant Visual & Machinery Collage */
 .mfg-visual-wrap {
   position: relative;
   border-radius: var(--radius-lg);
   border: 2px solid rgba(202, 160, 92, 0.4);
   box-shadow: 0 16px 40px rgba(16, 28, 54, 0.12);
   overflow: hidden;
+  background: #f8f9fb;
 }
 
-.mfg-visual-wrap img {
+.mfg-visual-wrap > img {
   width: 100%;
   height: 520px;
   object-fit: cover;
@@ -4566,8 +4567,139 @@ body.feature-blog-enabled section[data-feature="blog"] {
   transition: transform 0.6s ease;
 }
 
-.mfg-visual-wrap:hover img {
+.mfg-visual-wrap > img:hover {
   transform: scale(1.03);
+}
+
+/* Machinery Collage Style inside Blueprint Frame */
+.mfg-machinery-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  padding: 18px 16px 10px;
+  background: #f8f9fb;
+  background-image: 
+    linear-gradient(rgba(202, 160, 92, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(202, 160, 92, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.mfg-collage-card {
+  background: #ffffff;
+  border: 1px solid rgba(202, 160, 92, 0.26);
+  border-radius: 8px;
+  padding: 8px 10px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 10px rgba(16, 28, 54, 0.04);
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.mfg-collage-card:hover {
+  transform: translateY(-2px);
+  border-color: #caa05c;
+  box-shadow: 0 8px 20px rgba(202, 160, 92, 0.16);
+}
+
+.mfg-collage-badge {
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #caa05c;
+  background: rgba(202, 160, 92, 0.12);
+  border: 1px solid rgba(202, 160, 92, 0.32);
+  padding: 2px 6px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.mfg-img-box {
+  width: 100%;
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+.mfg-img-box img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.mfg-collage-card:hover .mfg-img-box img {
+  transform: scale(1.08);
+}
+
+.mfg-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4px;
+  padding-top: 5px;
+  border-top: 1px solid rgba(202, 160, 92, 0.16);
+}
+
+.mfg-machine-name {
+  font-family: var(--font-heading);
+  font-size: 0.76rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mfg-machine-tag {
+  font-size: 0.62rem;
+  font-weight: 600;
+  color: #7b8a9e;
+  letter-spacing: 0.2px;
+}
+
+/* Auxiliary Equipment Strip */
+.mfg-aux-strip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 16px 12px;
+  background: #f8f9fb;
+  font-size: 0.74rem;
+  color: var(--color-text);
+  border-top: 1px dashed rgba(202, 160, 92, 0.25);
+}
+
+.mfg-aux-label {
+  font-weight: 700;
+  color: #caa05c;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.66rem;
+}
+
+.mfg-aux-item {
+  font-weight: 500;
+  color: var(--color-secondary);
+}
+
+.mfg-aux-dot {
+  color: #caa05c;
+  font-size: 0.7rem;
 }
 
 .mfg-corner-accent {
@@ -4584,15 +4716,10 @@ body.feature-blog-enabled section[data-feature="blog"] {
 .mfg-corner-br { bottom: 6px; right: 6px; border-bottom: 2px solid #caa05c; border-right: 2px solid #caa05c; }
 
 .mfg-visual-plaque {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: linear-gradient(180deg, rgba(16, 28, 54, 0.85) 0%, rgba(10, 16, 28, 0.96) 100%);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  position: relative;
+  background: linear-gradient(180deg, rgba(16, 28, 54, 0.95) 0%, rgba(10, 16, 28, 0.98) 100%);
   border-top: 1px solid #caa05c;
-  padding: 16px 20px;
+  padding: 14px 18px;
   color: #ffffff;
 }
 
@@ -4609,15 +4736,15 @@ body.feature-blog-enabled section[data-feature="blog"] {
 
 .mfg-plaque-title {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 4px;
 }
 
 .mfg-plaque-specs {
-  font-size: 0.78rem;
-  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.76rem;
+  color: rgba(255, 255, 255, 0.8);
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -4634,7 +4761,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
     grid-template-columns: 1fr;
     gap: 40px;
   }
-  .mfg-visual-wrap img {
+  .mfg-visual-wrap > img {
     height: 380px;
   }
 }
@@ -4642,6 +4769,27 @@ body.feature-blog-enabled section[data-feature="blog"] {
 @media (max-width: 640px) {
   .mfg-cards-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .mfg-machinery-collage {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 12px 12px 8px;
+  }
+  .mfg-img-box {
+    height: 120px;
+  }
+  .mfg-machine-name {
+    font-size: 0.82rem;
+  }
+  .mfg-machine-tag {
+    font-size: 0.68rem;
+  }
+  .mfg-aux-strip {
+    font-size: 0.7rem;
+    padding: 8px 12px 10px;
   }
 }
 
