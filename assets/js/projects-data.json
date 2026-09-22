@@ -374,17 +374,6 @@
       "assets/images/portfolio/district_150_hyderabad/1_4.png"
     ]
   },
-  "samhi-hotels-portfolio": {
-    "id": "samhi-hotels-portfolio",
-    "name": "Samhi Hotels Portfolio",
-    "category": "hospitality",
-    "category_label": "Hospitality",
-    "location": "Pan India",
-    "scope": "2,500 Guest Rooms & Public Suites Complete Turnkey Fit-out Across India",
-    "images": [
-      "assets/images/portfolio/project_96.jpg"
-    ]
-  },
   "hdfc-bank-offices": {
     "id": "hdfc-bank-offices",
     "name": "HDFC Bank Offices",

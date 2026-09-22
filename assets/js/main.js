@@ -1203,12 +1203,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "assets/images/portfolio/project_94.jpg"
       },
       {
-        "name": "Samhi Hotels Portfolio",
-        "location": "Pan India",
-        "scope": "2,500 Guest Rooms & Public Suites Complete Fit-out",
-        "image": "assets/images/portfolio/project_96.jpg"
-      },
-      {
         "name": "Deutsche Bank Offices",
         "location": "Pan India",
         "scope": "Turnkey Interior Fit-out & High-Security Transaction Hubs",
