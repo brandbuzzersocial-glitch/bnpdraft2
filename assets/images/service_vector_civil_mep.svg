@@ -158,12 +158,7 @@
     </g>
   </g>
 
-  <!-- Architectural Tag Overlay at Bottom Left -->
-  <g transform="translate(30, 325)">
-    <rect x="0" y="0" width="195" height="22" rx="4" fill="#14171F" opacity="0.85"/>
-    <circle cx="12" cy="11" r="3" fill="#CAA05C"/>
-    <text x="24" y="15" font-family="'Plus Jakarta Sans', sans-serif" font-size="9" font-weight="700" fill="#FFFFFF" letter-spacing="1.5">CIVIL &amp; MEP CONTRACTING</text>
-  </g>
+
 
   <!-- Elegant Gold Border Frame -->
   <rect x="12" y="12" width="576" height="336" fill="none" stroke="#CAA05C" stroke-width="1" opacity="0.35"/>
