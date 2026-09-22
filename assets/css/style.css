@@ -4584,7 +4584,8 @@ body.feature-blog-enabled section[data-feature="blog"] {
 .mfg-carousel-topbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 16px;
   padding: 0 4px 14px;
   border-bottom: none;
   background: transparent;
@@ -4618,7 +4619,7 @@ body.feature-blog-enabled section[data-feature="blog"] {
   height: 4px;
   background: rgba(202, 160, 92, 0.18);
   border-radius: 4px;
-  margin: 0 14px;
+  margin: 0;
   overflow: hidden;
   position: relative;
 }
@@ -4629,36 +4630,6 @@ body.feature-blog-enabled section[data-feature="blog"] {
   background: linear-gradient(90deg, #caa05c, #e2c28e);
   border-radius: 4px;
   transition: width 0.08s linear;
-}
-
-.mfg-carousel-status {
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #2e7d32;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  transition: color 0.3s ease;
-}
-
-.mfg-carousel-status.paused {
-  color: #caa05c;
-}
-
-.mfg-live-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: currentColor;
-  box-shadow: 0 0 0 2px rgba(46, 125, 50, 0.2);
-  animation: mfgPulse 1.8s infinite;
-}
-
-@keyframes mfgPulse {
-  0%, 100% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.35); opacity: 0.6; }
 }
 
 .mfg-carousel-viewport {
