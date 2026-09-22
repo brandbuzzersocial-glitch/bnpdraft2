@@ -252,7 +252,7 @@
         </div>
 
         <!-- Borderless Stage Area (No Box, Sits Naturally on Editorial Page) -->
-        <div class="founder-flipbook-stage" id="founder-flipbook-stage" style="position: relative; width: 100%; display: flex; align-items: center; justify-content: center; overflow: visible; padding: 10px 0 20px; min-height: 520px;">
+        <div class="founder-flipbook-stage" id="founder-flipbook-stage" style="position: relative; width: 100%; display: flex; align-items: center; justify-content: center; overflow: visible; padding: 10px 0 20px; min-height: 560px;">
           <!-- Left Arrow -->
           <button class="stage-nav-arrow" id="founder-arrow-prev" title="Previous Page" aria-label="Previous Page" style="position: absolute; left: 4px; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 50%; background: #ffffff; border: 1px solid rgba(0,0,0,0.1); box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: flex; align-items: center; justify-content: center; cursor: pointer; z-index: 25; color: #222; transition: all 0.2s ease;">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
@@ -434,13 +434,13 @@
         const isMobile = window.innerWidth <= 768;
         let baseW, baseH;
         if (isMobile) {
-          baseW = Math.min(stageW, 360);
+          baseW = Math.min(stageW, 380);
           baseH = baseW / (2314 / 2995);
         } else {
-          let totalW = Math.min(stageW, 900);
+          let totalW = Math.min(stageW, 960);
           let candidateH = (totalW / 2) / (2314 / 2995);
-          if (candidateH > 580) {
-            candidateH = 580;
+          if (candidateH > 640) {
+            candidateH = 640;
             totalW = candidateH * (2314 / 2995) * 2;
           }
           baseH = candidateH;
@@ -455,9 +455,9 @@
         height: dims.height,
         size: 'stretch',
         minWidth: 260,
-        maxWidth: 600,
+        maxWidth: 750,
         minHeight: 330,
-        maxHeight: 760,
+        maxHeight: 880,
         maxShadowOpacity: 0.5,
         showCover: true,
         mobileScrollSupport: false,
