@@ -4951,3 +4951,361 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
     font-size: 1.35rem;
   }
 }
+
+/* ============================================================
+   BNP FACTORY CRAFT VILLAGE (27-ACRE RAJASTHAN MEGA CAMPUS)
+   ============================================================ */
+.craft-village-section {
+  padding: 120px 0 110px;
+  background: #0d1424;
+  color: #ffffff;
+  position: relative;
+  overflow: hidden;
+}
+
+.cv-ambient-glow {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(ellipse at center, rgba(202, 160, 92, 0.14) 0%, rgba(13, 20, 36, 0) 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cv-header {
+  text-align: center;
+  max-width: 880px;
+  margin: 0 auto 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.cv-tag {
+  background: rgba(202, 160, 92, 0.12);
+  color: #caa05c;
+  border: 1px solid rgba(202, 160, 92, 0.35);
+  margin-bottom: 14px;
+}
+
+.cv-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 4vw, 3.1rem);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.5px;
+  margin-bottom: 8px;
+}
+
+.cv-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 1.8vw, 1.35rem);
+  font-weight: 600;
+  color: #caa05c;
+  margin-bottom: 18px;
+  letter-spacing: 0.2px;
+}
+
+.cv-desc {
+  font-size: 0.98rem;
+  line-height: 1.75;
+  color: #a3b1c6;
+  margin: 0;
+}
+
+/* Visualizer Card */
+.cv-visualizer-card {
+  background: rgba(18, 27, 46, 0.85);
+  border: 1px solid rgba(202, 160, 92, 0.3);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.cv-viz-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 16px 24px;
+  background: rgba(13, 20, 36, 0.95);
+  border-bottom: 1px solid rgba(202, 160, 92, 0.2);
+}
+
+.cv-viz-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.cv-status-badge {
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #caa05c;
+}
+
+.cv-location-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #8da0bc;
+}
+
+.cv-location-badge svg {
+  color: #caa05c;
+}
+
+/* Mode Switcher Buttons */
+.cv-mode-toggle {
+  display: inline-flex;
+  align-items: center;
+  background: rgba(8, 12, 22, 0.7);
+  padding: 4px;
+  border-radius: 30px;
+  border: 1px solid rgba(202, 160, 92, 0.25);
+}
+
+.cv-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #8da0bc;
+  background: transparent;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cv-toggle-btn.active {
+  background: #caa05c;
+  color: #101c36;
+  box-shadow: 0 2px 10px rgba(202, 160, 92, 0.35);
+}
+
+.cv-toggle-btn:not(.active):hover {
+  color: #ffffff;
+}
+
+/* Visual Stage */
+.cv-viz-stage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 8;
+  max-height: 640px;
+  overflow: hidden;
+  background: #080d17;
+}
+
+.cv-viz-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.cv-viz-img.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.cv-viz-overlay-hint {
+  position: absolute;
+  bottom: 16px;
+  right: 20px;
+  z-index: 2;
+}
+
+.cv-hint-pill {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: rgba(255, 255, 255, 0.85);
+  background: rgba(10, 16, 28, 0.65);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 5px 14px;
+  border-radius: 20px;
+}
+
+/* Visualizer Footer Stats */
+.cv-viz-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 24px 30px;
+  background: rgba(13, 20, 36, 0.95);
+  border-top: 1px solid rgba(202, 160, 92, 0.15);
+}
+
+.cv-stat-item {
+  text-align: center;
+}
+
+.cv-stat-num {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #caa05c;
+  line-height: 1;
+  margin-right: 4px;
+}
+
+.cv-stat-unit {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.cv-stat-label {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #8da0bc;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cv-stat-sep {
+  width: 1px;
+  height: 36px;
+  background: rgba(202, 160, 92, 0.2);
+}
+
+/* 4 Pillars Grid */
+.cv-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.cv-pillar-card {
+  background: rgba(18, 27, 46, 0.7);
+  border: 1px solid rgba(202, 160, 92, 0.22);
+  border-radius: var(--radius-lg);
+  padding: 30px 24px;
+  position: relative;
+  transition: all 0.35s var(--ease);
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-pillar-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #caa05c, #e2c28e);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.cv-pillar-card:hover {
+  transform: translateY(-6px);
+  background: rgba(24, 36, 60, 0.85);
+  border-color: #caa05c;
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.35);
+}
+
+.cv-pillar-card:hover::before {
+  opacity: 1;
+}
+
+.cv-pillar-num {
+  position: absolute;
+  top: 20px;
+  right: 22px;
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: rgba(202, 160, 92, 0.3);
+}
+
+.cv-pillar-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: rgba(202, 160, 92, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #caa05c;
+  margin-bottom: 20px;
+  transition: all 0.3s ease;
+}
+
+.cv-pillar-card:hover .cv-pillar-icon {
+  background: #caa05c;
+  color: #101c36;
+  transform: scale(1.08) rotate(5deg);
+}
+
+.cv-pillar-title {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.35;
+}
+
+.cv-pillar-desc {
+  font-size: 0.86rem;
+  line-height: 1.65;
+  color: #9cb0c8;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .cv-pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .cv-stat-sep {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .cv-pillars-grid {
+    grid-template-columns: 1fr;
+  }
+  .cv-viz-topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .cv-viz-footer {
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    gap: 16px;
+  }
+}
+
