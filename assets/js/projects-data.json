@@ -315,8 +315,8 @@
   "hdfc-bank-offices": {
     "id": "hdfc-bank-offices",
     "name": "HDFC Bank",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "PAN India (Palava, Nagpur, Turbhe, Airoli, Mumbai, Bangalore, Chennai, Surat, Jaipur, Bhubaneswar, Kolkata)",
     "scope": "35,00,000 sq.ft PAN India Offices + 1,50,000 sq.ft Residential Training Centre in Palava City, Maharashtra",
     "images": [
@@ -330,8 +330,8 @@
   "icici-bank-offices": {
     "id": "icici-bank-offices",
     "name": "ICICI Bank",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Mumbai, Maharashtra",
     "scope": "Corporate Headquarters Fit-Out & Retail Banking Branches",
     "images": [
@@ -344,8 +344,8 @@
   "citibank-corporate-offices": {
     "id": "citibank-corporate-offices",
     "name": "Citi Bank",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
     "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
     "images": [
@@ -357,8 +357,8 @@
   "bnp-paribas-headquarters": {
     "id": "bnp-paribas-headquarters",
     "name": "BNP Paribas",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
     "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
     "images": [
@@ -371,8 +371,8 @@
   "deutsche-bank-offices": {
     "id": "deutsche-bank-offices",
     "name": "Deutsche Bank",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "PAN India (Mumbai, Pune)",
     "scope": "4,50,000 sq.ft Financial Corporate Offices & Trading Floors",
     "images": [
@@ -385,8 +385,8 @@
   "pwc-offices": {
     "id": "pwc-offices",
     "name": "PwC (PricewaterhouseCoopers)",
-    "category": "banking",
-    "category_label": "Commercial/ Banking Sector",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
     "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
     "images": [
@@ -399,8 +399,8 @@
   "motilal-oswal-headquarters": {
     "id": "motilal-oswal-headquarters",
     "name": "Motilal Oswal",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Ahmedabad, Gujarat & Mumbai, Maharashtra",
     "scope": "95,00,00 sq.ft Motilal Oswal Tower Regional HQ in Ahmedabad & 75,000 sq.ft Corporate HQ in Mumbai",
     "images": [
@@ -416,8 +416,8 @@
   "concentrix": {
     "id": "concentrix",
     "name": "Concentrix",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Mumbai, Maharashtra",
     "scope": "Turnkey Corporate Headquarters & Global Operations Center",
     "images": [
@@ -429,8 +429,8 @@
   "t-systems": {
     "id": "t-systems",
     "name": "T-Systems",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Pune, Maharashtra",
     "scope": "3,00,000 sq.ft Enterprise Technology Campus",
     "images": [
@@ -441,8 +441,8 @@
   "red-hat": {
     "id": "red-hat",
     "name": "Red Hat",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Pune, Maharashtra",
     "scope": "2,00,000 sq.ft Tech Enterprise Headquarters",
     "images": [
@@ -455,8 +455,8 @@
   "workday": {
     "id": "workday",
     "name": "Workday",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Pune, Maharashtra",
     "scope": "1,50,000 sq.ft Cloud Enterprise Headquarters",
     "images": [
@@ -470,8 +470,8 @@
   "nvidia": {
     "id": "nvidia",
     "name": "NVIDIA",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Pune, Maharashtra",
     "scope": "3,00,000 sq.ft AI Technology & R&D Campus",
     "images": [
@@ -483,8 +483,8 @@
   "ust-global-kerala-regional-hq": {
     "id": "ust-global-kerala-regional-hq",
     "name": "UST Global",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Kerala",
     "scope": "13,00,000 sq.ft Regional Headquarters Mega Campus",
     "images": [
@@ -496,8 +496,8 @@
   "ey-kerala": {
     "id": "ey-kerala",
     "name": "EY (Ernst & Young)",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Kerala",
     "scope": "2,00,000 sq.ft Regional Headquarters",
     "images": [
@@ -509,8 +509,8 @@
   "tecpro-systems": {
     "id": "tecpro-systems",
     "name": "Tecpro Systems Ltd",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Kolkata, West Bengal",
     "scope": "1,00,000 sq.ft Engineering & Industrial Headquarters",
     "images": [
@@ -522,8 +522,8 @@
   "dainik-bhaskar": {
     "id": "dainik-bhaskar",
     "name": "Dainik Bhaskar",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Noida, Uttar Pradesh",
     "scope": "1,00,000 sq.ft Media & News Corporate Headquarters",
     "images": [
@@ -535,8 +535,8 @@
   "zee-media": {
     "id": "zee-media",
     "name": "Zee Media",
-    "category": "corporate-hq",
-    "category_label": "Corporate Head Quarter",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
     "location": "Mumbai, Maharashtra",
     "scope": "2,50,000 sq.ft Broadcast & Media Corporate Headquarters",
     "images": [
@@ -549,8 +549,8 @@
   "db-mall": {
     "id": "db-mall",
     "name": "DB City Mall",
-    "category": "malls-shopping",
-    "category_label": "Malls/ Shopping Centre",
+    "category": "malls-retail",
+    "category_label": "Malls & Retail",
     "location": "Bhopal, Madhya Pradesh",
     "scope": "15,00,000 sq.ft Mega Retail & Shopping Complex",
     "images": [
@@ -561,8 +561,8 @@
   "nucleus-mall": {
     "id": "nucleus-mall",
     "name": "Nucleus Mall",
-    "category": "malls-shopping",
-    "category_label": "Malls/ Shopping Centre",
+    "category": "malls-retail",
+    "category_label": "Malls & Retail",
     "location": "Ranchi, Jharkhand",
     "scope": "8,00,000 sq.ft Prime Shopping Center & Commercial Hub",
     "images": [
@@ -575,8 +575,8 @@
   "shoppers-stop": {
     "id": "shoppers-stop",
     "name": "Shoppers Stop",
-    "category": "malls-shopping",
-    "category_label": "Malls/ Shopping Centre",
+    "category": "malls-retail",
+    "category_label": "Malls & Retail",
     "location": "PAN India (40 Outlets)",
     "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
     "images": [
@@ -599,8 +599,8 @@
   "vegas-mall": {
     "id": "vegas-mall",
     "name": "Vegas Mall",
-    "category": "malls-shopping",
-    "category_label": "Malls/ Shopping Centre",
+    "category": "malls-retail",
+    "category_label": "Malls & Retail",
     "location": "Delhi NCR",
     "scope": "6,00,000 sq.ft Destination Retail & Entertainment Mall",
     "images": [
@@ -613,8 +613,8 @@
   "amrita-hospitals-aims": {
     "id": "amrita-hospitals-aims",
     "name": "Amrita Hospitals (AIMS)",
-    "category": "healthcare",
-    "category_label": "Healthcare",
+    "category": "healthcare-education",
+    "category_label": "Healthcare & Educational",
     "location": "Faridabad, Delhi NCR",
     "scope": "9,00,000 sq.ft (100 Cr Order) \u00b7 Civil & Interiors: Flooring, PCC, Plaster & POP, Ceiling Finishes, Dry Wall Partitions, Doors, Wall Panelling, Bespoke Furniture (302 ICUs, 4 OTs, 158 Patient Rooms, 4 Floors)",
     "images": [
@@ -624,8 +624,8 @@
   "dhirubhai-ambani-international-school": {
     "id": "dhirubhai-ambani-international-school",
     "name": "Dhirubhai Ambani International School",
-    "category": "education",
-    "category_label": "Education",
+    "category": "healthcare-education",
+    "category_label": "Healthcare & Educational",
     "location": "BKC, Mumbai, Maharashtra",
     "scope": "Turnkey Educational Infrastructure, World-Class Learning Auditoriums & Campus Interiors",
     "images": [
@@ -637,8 +637,8 @@
   "piramal-clubhouse": {
     "id": "piramal-clubhouse",
     "name": "Piramal Clubhouse",
-    "category": "hospitality",
-    "category_label": "Hospitality",
+    "category": "restaurants",
+    "category_label": "Restaurants",
     "location": "Mumbai, Maharashtra",
     "scope": "Ultra-Luxury Private Clubhouse, Reception, Multi-Purpose Recreational & Dining Lounges",
     "images": [
@@ -657,8 +657,8 @@
   "indian-accent": {
     "id": "indian-accent",
     "name": "Indian Accent, NMACC",
-    "category": "restaurant",
-    "category_label": "Restaurant",
+    "category": "restaurants",
+    "category_label": "Restaurants",
     "location": "BKC, Mumbai, Maharashtra",
     "scope": "Bespoke Luxury Fine Dining Fit-Out at Nita Mukesh Ambani Cultural Centre",
     "images": [
@@ -672,8 +672,8 @@
   "quorum-club": {
     "id": "quorum-club",
     "name": "Quorum Club",
-    "category": "hospitality",
-    "category_label": "Hospitality",
+    "category": "restaurants",
+    "category_label": "Restaurants",
     "location": "Hyderabad, Telangana",
     "scope": "Exclusive Members-Only Club, Executive Workspaces, Meeting Suites & Lounges",
     "images": [
@@ -686,8 +686,8 @@
   "district-150": {
     "id": "district-150",
     "name": "District 150",
-    "category": "hospitality",
-    "category_label": "Hospitality",
+    "category": "restaurants",
+    "category_label": "Restaurants",
     "location": "Hyderabad, Telangana",
     "scope": "Hospitality-Powered Cultural & Lifestyle Workspaces, Event Lounges & Public Areas",
     "images": [
@@ -700,8 +700,8 @@
   "celebrity-cricketer-home": {
     "id": "celebrity-cricketer-home",
     "name": "Celebrity Cricketer Residence",
-    "category": "residential",
-    "category_label": "Residential",
+    "category": "luxury-residences",
+    "category_label": "Luxury Residences",
     "location": "Mumbai, Maharashtra",
     "scope": "45,000 sq.ft per floor Multi-Storey Private Luxury Residence",
     "images": [
@@ -716,8 +716,8 @@
   "md-of-the-publishing-house": {
     "id": "md-of-the-publishing-house",
     "name": "Publishing House MD Bungalow",
-    "category": "residential",
-    "category_label": "Residential",
+    "category": "luxury-residences",
+    "category_label": "Luxury Residences",
     "location": "New Delhi",
     "scope": "15,000 sq.ft per floor Multi-Storey Private Estate Bungalow",
     "images": [
