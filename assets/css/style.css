@@ -4320,7 +4320,8 @@ body.feature-blog-enabled section[data-feature="blog"] {
   padding: 22px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 10px;
   box-shadow: 0 4px 18px rgba(16, 28, 54, 0.04);
   transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
   position: relative;
