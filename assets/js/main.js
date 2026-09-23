@@ -849,7 +849,7 @@ document.addEventListener('DOMContentLoaded', () => {
       {
         "name": "BNP Factory Craft Village",
         "location": "Rajasthan",
-        "scope": "27-Acre state-of-the-art Furniture Manufacturing plant & Craft Village",
+        "scope": "State-of-the-art Furniture Manufacturing plant & Craft Village",
         "image": "assets/images/portfolio/project_98.jpg"
       }
     ]
