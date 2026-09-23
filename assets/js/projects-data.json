@@ -7,14 +7,15 @@
     "location": "Lucknow, Uttar Pradesh",
     "scope": "All Public Areas, Presidential Suites & Luxury Guest Rooms",
     "images": [
-      "assets/images/portfolio/taj_palace_lucknow/img_20_1.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_2.jpeg",
+      "assets/images/portfolio/taj_palace_lucknow/img_20_1.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_3.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_4.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_5.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_6.jpeg",
       "assets/images/portfolio/taj_palace_lucknow/img_20_7.jpeg",
-      "assets/images/portfolio/taj_palace_lucknow/img_20_8.jpeg"
+      "assets/images/portfolio/taj_palace_lucknow/img_20_8.jpeg",
+      "assets/images/portfolio/project_20.jpg"
     ]
   },
   "taj-ayodhyam": {
@@ -25,14 +26,15 @@
     "location": "Ayodhya, Uttar Pradesh",
     "scope": "All Public Areas & Luxury Guest Rooms",
     "images": [
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_3.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_1.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_2.jpeg",
-      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_3.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_4.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_5.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_6.jpeg",
       "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_7.jpeg",
-      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_8.jpeg"
+      "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_8.jpeg",
+      "assets/images/portfolio/project_21.jpg"
     ]
   },
   "taj-ganga-kutir": {
@@ -41,24 +43,26 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Raichak, West Bengal",
-    "scope": "150 Rooms + 10 Villas, All Public Areas, Specialty Restaurants, Presidential Suites, Gym, Corridors & Lobbies",
+    "scope": "All Public Areas, Specialty Restaurants, Presidential Suites, 150 Guest Rooms, 10 Luxury Villas & Lobbies",
     "images": [
+      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp",
       "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_1.webp",
-      "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp"
+      "assets/images/portfolio/project_22.jpg",
+      "assets/images/portfolio/project_23.jpg"
     ]
   },
   "taj-puri-resort-spa": {
     "id": "taj-puri-resort-spa",
-    "name": "Taj Resort & Spa",
+    "name": "Taj Puri Resort & Spa",
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Puri, Odisha",
-    "scope": "Guest Rooms, Deluxe Suites, Family Suites, Presidential Suites, Grand Ballroom & Pre-Function, All Day Dining, Specialty Restaurant, Spa & Fitness Centre, Reception",
+    "scope": "Guest Rooms, Deluxe Suites, Grand Ballroom, Specialty Restaurant, Spa, Fitness Center & Reception",
     "images": [
+      "assets/images/portfolio/taj_puri_resort_spa/img_24_4.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_24_1.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_24_2.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_24_3.jpeg",
-      "assets/images/portfolio/taj_puri_resort_spa/img_24_4.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_24_5.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_24_6.jpeg",
       "assets/images/portfolio/taj_puri_resort_spa/img_25_1.jpeg",
@@ -78,14 +82,14 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Jaisalmer, Rajasthan",
-    "scope": "Guest rooms, All Executive suites, All day dining, Veranda, Library/Bar Lounge, Specialty Restaurant, Spa, Gym, Conference Hall",
+    "scope": "Guest Rooms, Executive Suites, All-Day Dining, Library Bar Lounge, Specialty Restaurant, Spa & Gym",
     "images": [
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__1.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__10.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__11.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__12.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__13.png",
-      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__15.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__16.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__2.png",
@@ -95,7 +99,9 @@
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__6.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__7.png",
       "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__8.png",
-      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png"
+      "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__9.png",
+      "assets/images/portfolio/project_26.jpg",
+      "assets/images/portfolio/project_27.jpg"
     ]
   },
   "taj-amer": {
@@ -104,11 +110,13 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Jaipur, Rajasthan",
-    "scope": "173 King Rooms, 52 Twin Rooms, 19 Suites, Presidential Suite, Entrance, Lift Lobby, Reception, All Day Dining, Specialty Restaurant, Board Meeting Room, Bar Lounge, Ballroom & Pre Function, Spa & Fitness Centre, Executive Club",
+    "scope": "173 King Rooms, 52 Twin Rooms, 19 Suites, Spa & Fitness Centre, Executive Club, Boardrooms & Grand Ballrooms",
     "images": [
-      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
       "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png",
-      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png"
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__1.png",
+      "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__3.png",
+      "assets/images/portfolio/project_28.jpg",
+      "assets/images/portfolio/project_29.jpg"
     ]
   },
   "taj-the-trees": {
@@ -117,26 +125,29 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Vikhroli, Mumbai, Maharashtra",
-    "scope": "Ballrooms & Pre Function, Lobby & Circulation, Guest Lift Lobby, Public Toilets, Conference Area, Reception Lobby, Changing Room, Gym & Yoga, Reception & Retail, Relaxation Treatment Room, Spa Circulation, Specialty Restaurant",
+    "scope": "Grand Ballrooms, Pre-Function Area, Reception Lobby, Circulation, Specialty Restaurant, Spa & Conference Facilities",
     "images": [
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_7.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_1.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_2.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_3.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_4.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_5.png",
       "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_7.png",
-      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_8.png"
+      "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_8.png",
+      "assets/images/portfolio/project_30.jpg",
+      "assets/images/portfolio/project_31.jpg"
     ]
   },
   "the-chambers-taj-mahal-palace": {
     "id": "the-chambers-taj-mahal-palace",
-    "name": "Taj Chambers, Taj Mahal Palace",
+    "name": "The Chambers, Taj Mahal Palace",
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Mumbai, Maharashtra",
-    "scope": "Bespoke Furniture, Executive Waiting Area, Fine Dining, Conference Rooms & Lift Lobbies",
+    "scope": "Bespoke Furniture, Executive Waiting Area, Elite Members' Lounges, Private Dining, Conference Suites & Lift Lobbies",
     "images": [
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__1.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__10.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__11.png",
@@ -147,10 +158,12 @@
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__3.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__4.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__5.png",
-      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__7.png",
       "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__8.png",
-      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__9.png"
+      "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__9.png",
+      "assets/images/portfolio/project_32.jpg",
+      "assets/images/portfolio/project_33.jpg",
+      "assets/images/portfolio/project_34.jpg"
     ]
   },
   "seleqtions-by-taj-cidade-de-goa": {
@@ -159,28 +172,30 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Goa",
-    "scope": "All Public Areas, Restaurants, Grand Ballroom & Pre-Function, BOH Areas & GM Office",
+    "scope": "All Public Areas, Restaurants, Grand Ballroom, Pre-Function, BOH Areas & General Manager's Office",
     "images": [
-      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__1.png",
       "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__2.png",
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__1.png",
       "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__3.png",
-      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__4.png"
+      "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__4.png",
+      "assets/images/portfolio/project_35.jpg"
     ]
   },
   "vivanta-by-taj": {
     "id": "vivanta-by-taj",
-    "name": "Vivanta",
+    "name": "Vivanta by Taj",
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Bhubaneswar, Odisha",
-    "scope": "136 Guest Rooms, Specialty Restaurants, All Public Areas, Grand Ballroom & Pre-Function",
+    "scope": "136 Guest Rooms, Specialty Restaurants, Grand Ballroom, Pre-Function & Public Areas",
     "images": [
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png",
       "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_1.png",
       "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_2.png",
       "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_3.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png",
       "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_5.png",
-      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_6.png"
+      "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_6.png",
+      "assets/images/portfolio/project_36.jpg"
     ]
   },
   "fairfield-by-marriott": {
@@ -189,47 +204,33 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Chennai, Tamil Nadu",
-    "scope": "Guest Rooms, Public Areas, Dining & Executive Facilities",
+    "scope": "158 Keys, Bar Area, All-Day Dining, Pool Area, Gym, Market & Conference Rooms (HICSA Hotel of the Year 2019 Award Winner)",
     "images": [
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__1.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__2.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__3.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
       "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__5.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png"
+      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png",
+      "assets/images/portfolio/project_38.jpg"
     ]
   },
   "radisson-hotel": {
     "id": "radisson-hotel",
-    "name": "Radisson",
+    "name": "Radisson Hotel",
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Jamshedpur, Jharkhand",
-    "scope": "Guest Rooms, Premium Suites, Owner Suites, Ballroom and Pre-Function, Presidential Suites, Lobby Reception, All Day Dining",
+    "scope": "Guest Rooms, Premium Suites, Owner's Suite, Presidential Suites, Ballroom, Pre-Function & All-Day Dining",
     "images": [
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_1.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_2.png",
-      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_4.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_5.png",
       "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_6.png",
-      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png"
-    ]
-  },
-  "radisson-blu-chennai": {
-    "id": "radisson-blu-chennai",
-    "name": "Radisson Blu (HICSA Award Winner 2019)",
-    "category": "hospitality",
-    "category_label": "Hospitality",
-    "location": "Chennai, Tamil Nadu",
-    "scope": "158 Keys, Pool Area, Gym, Market, Conference Room, Bar Area, Dining & Common Areas (Awarded HICSA Hotel of the Year 2019)",
-    "images": [
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__1.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__2.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__3.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__5.png",
-      "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__6.png"
+      "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_7.png",
+      "assets/images/portfolio/project_37.jpg"
     ]
   },
   "sheraton": {
@@ -238,12 +239,13 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Hyderabad, Telangana",
-    "scope": "152 Keys & Public Common Areas",
+    "scope": "152 Keys, Grand Lobby & All Common Circulation Areas",
     "images": [
       "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png",
       "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__2.png",
       "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__3.png",
-      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__4.png"
+      "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__4.png",
+      "assets/images/portfolio/project_39.jpg"
     ]
   },
   "courtyard-by-marriott": {
@@ -252,14 +254,15 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Ranchi, Jharkhand",
-    "scope": "330 Keys, Lobby, Common Areas, Reception & Guest Rooms",
+    "scope": "Grand Lobby, Reception, Deluxe Guest Rooms & Public Circulation Spaces",
     "images": [
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png",
       "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_1.png",
       "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_2.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png",
       "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_4.png",
       "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_5.png",
-      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_6.png"
+      "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_6.png",
+      "assets/images/portfolio/project_40.jpg"
     ]
   },
   "hyatt-regency": {
@@ -268,13 +271,15 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Pune, Maharashtra",
-    "scope": "Reception, Restaurant, Common Areas, Lobby, Banquet Area & Bar Lounge",
+    "scope": "Grand Lobby, Reception, Banquet Area, Bar, Specialty Restaurant & Common Areas",
     "images": [
-      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__2.png",
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__1.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__3.png",
       "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__4.png",
-      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png"
+      "assets/images/portfolio/hyatt_regency_pune_maharashtra/HYATT_REGENCY_1__5.png",
+      "assets/images/portfolio/project_42.jpg",
+      "assets/images/portfolio/project_43.jpg"
     ]
   },
   "hyatt-place": {
@@ -283,13 +288,14 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Gurugram, Haryana",
-    "scope": "156 Keys, Waiting Area, Dining & Conference Rooms",
+    "scope": "156 Keys, Waiting Area, All-Day Dining & Conference Rooms",
     "images": [
       "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__1.png",
       "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__2.png",
       "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__3.png",
       "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__4.png",
-      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__5.png"
+      "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__5.png",
+      "assets/images/portfolio/project_44.jpg"
     ]
   },
   "novotel-hotel-suites-resort": {
@@ -298,11 +304,12 @@
     "category": "hospitality",
     "category_label": "Hospitality",
     "location": "Pune, Maharashtra",
-    "scope": "300 Keys, All Day Dining, Specialty Restaurant & Common Areas",
+    "scope": "300 Keys, All-Day Dining, Specialty Restaurant & Common Areas",
     "images": [
       "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__1.png",
       "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__2.png",
-      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__3.png"
+      "assets/images/portfolio/novotal_hotel_suites_and_resort_pune_maharashtra/NOVOTAL_1__3.png",
+      "assets/images/portfolio/project_45.jpg"
     ]
   },
   "hdfc-bank-offices": {
@@ -630,13 +637,13 @@
   "piramal-clubhouse": {
     "id": "piramal-clubhouse",
     "name": "Piramal Clubhouse",
-    "category": "restaurant",
-    "category_label": "Restaurant",
+    "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Mumbai, Maharashtra",
-    "scope": "14,000 sq.ft Executive Members Clubhouse & Fine Dining",
+    "scope": "Ultra-Luxury Private Clubhouse, Reception, Multi-Purpose Recreational & Dining Lounges",
     "images": [
-      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_1.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_2.png",
+      "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_1.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_3.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_4.png",
       "assets/images/portfolio/piramal_clubhouse_mumbai_maharsthra/img_5.png",
@@ -665,28 +672,28 @@
   "quorum-club": {
     "id": "quorum-club",
     "name": "Quorum Club",
-    "category": "restaurant",
-    "category_label": "Restaurant",
+    "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Hyderabad, Telangana",
-    "scope": "Members Only Luxury Lifestyle Club & Executive Dining",
+    "scope": "Exclusive Members-Only Club, Executive Workspaces, Meeting Suites & Lounges",
     "images": [
+      "assets/images/portfolio/quorum_club_hyderabad/1_4.png",
       "assets/images/portfolio/quorum_club_hyderabad/1_1.png",
       "assets/images/portfolio/quorum_club_hyderabad/1_2.png",
-      "assets/images/portfolio/quorum_club_hyderabad/1_3.png",
-      "assets/images/portfolio/quorum_club_hyderabad/1_4.png"
+      "assets/images/portfolio/quorum_club_hyderabad/1_3.png"
     ]
   },
   "district-150": {
     "id": "district-150",
     "name": "District 150",
-    "category": "restaurant",
-    "category_label": "Restaurant",
+    "category": "hospitality",
+    "category_label": "Hospitality",
     "location": "Hyderabad, Telangana",
-    "scope": "Members Only Urban Hospitality & Meeting Hub",
+    "scope": "Hospitality-Powered Cultural & Lifestyle Workspaces, Event Lounges & Public Areas",
     "images": [
+      "assets/images/portfolio/district_150_hyderabad/1_3.png",
       "assets/images/portfolio/district_150_hyderabad/1_1.png",
       "assets/images/portfolio/district_150_hyderabad/1_2.png",
-      "assets/images/portfolio/district_150_hyderabad/1_3.png",
       "assets/images/portfolio/district_150_hyderabad/1_4.png"
     ]
   },
@@ -727,6 +734,20 @@
       "assets/images/portfolio/md_publishing_house/img_85_4.jpeg",
       "assets/images/portfolio/md_publishing_house/img_85_5.jpeg",
       "assets/images/portfolio/md_publishing_house/img_85_6.jpeg"
+    ]
+  },
+  "marriott-hotel": {
+    "id": "marriott-hotel",
+    "name": "Marriott Hotel",
+    "category": "hospitality",
+    "category_label": "Hospitality",
+    "location": "Bangalore, Karnataka",
+    "scope": "330 Keys, Lobby, Corridors & Common Circulation Areas",
+    "images": [
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_3.jpeg",
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_1.jpeg",
+      "assets/images/portfolio/marriott_hotel_bangalore/img_41_2.jpeg",
+      "assets/images/portfolio/project_41.jpg"
     ]
   }
 }
