@@ -179,7 +179,7 @@ def build_word_document():
         ("0.0", "Global Navigation & Header", "Navbar Links, Phone Number, Email, Working Hours, Top Bar, Consultation CTA Button"),
         ("1.0", "Home Page (index.html)", "Hero Banner, Metrics Counter, Manufacturing Plant Intro, Leadership Intro, Journey Timeline (2006-2026), Turnkey Services, Execution Process, Iconic Projects, Media Features, Testimonials, Leadership Bios, CTA Banner, Studio Insights, Newsletter Signup"),
         ("2.0", "About Us (about.html)", "Hero Banner, 20-Year Legacy Story, Core Values, Vision & Mission Framework, Executive Leadership Team & Bios, CTA Banner"),
-        ("3.0", "Our Services (services.html)", "Hero Banner, Turnkey Service Verticals, Precision Civil & Millwork Capabilities, HOMAG Navi Mumbai Plant Details, Step-by-Step Execution Process, CTA Banner"),
+        ("3.0", "Our Services (services.html)", "Hero Banner, Turnkey Service Verticals, Precision Civil & Millwork Capabilities, German Precision Navi Mumbai Plant Details, Step-by-Step Execution Process, CTA Banner"),
         ("4.0", "Projects Portfolio (projects.html)", "Hero Banner, Category Filters, Showcase Projects (Taj Palace, Luxury Commercial & Residential Projects), CTA Banner"),
         ("5.0", "Media & Press (media.html)", "Hero Banner, SOH Magazine Feature Spotlight, Editorial Summary, Media Coverage, Awards & Recognition"),
         ("6.0", "Blog & Insights (blog.html)", "Hero Banner, Featured Editorial on Sustainability & Biophilic Design (2027 Outlook), Architectural Trends"),

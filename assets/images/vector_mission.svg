@@ -92,7 +92,7 @@
   <g transform="translate(200, 36)">
     <rect x="-56" y="-12" width="112" height="24" rx="12" fill="#FFFFFF" stroke="#24375A" stroke-width="1.2" filter="drop-shadow(0 2px 6px rgba(0,0,0,0.04))"/>
     <circle cx="-42" cy="0" r="3.5" fill="url(#goldGradM)"/>
-    <text x="6" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="0.5">HOMAG CNC PRECISION</text>
+    <text x="6" y="4" font-family="'Plus Jakarta Sans', sans-serif" font-size="7" font-weight="800" fill="#24375A" text-anchor="middle" letter-spacing="0.5">GERMAN CNC PRECISION</text>
   </g>
 
   <!-- Bottom Blueprint Technical Rulers & Annotations -->

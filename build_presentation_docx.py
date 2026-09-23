@@ -181,7 +181,7 @@ def build_presentation_word_document():
         ("Cat 1", "Executive Profile, Founder Vision & Brand Story", "Slides 01 – 05", list(range(1, 6))),
         ("Cat 2", "Chronicles of BNP Interiors (Year-by-Year Timeline 2006-2026)", "Slides 06 – 09", list(range(6, 10))),
         ("Cat 3", "Core Values, In-House ERP System & Growth Process", "Slides 10 – 11", list(range(10, 12))),
-        ("Cat 4", "Infrastructure, HOMAG German Millwork Machinery & Turnkey Execution", "Slides 12 – 15", list(range(12, 16))),
+        ("Cat 4", "Infrastructure, German Precision Millwork Machinery & Turnkey Execution", "Slides 12 – 15", list(range(12, 16))),
         ("Cat 5", "Project Sectors & PAN India Geographic Footprint", "Slides 16 – 17", list(range(16, 18))),
         ("Cat 6", "Hospitality Division & Luxury Hotel Case Studies (Taj, Hyatt, Marriott, etc.)", "Slides 18 – 45", list(range(18, 46))),
         ("Cat 7", "High-End Members-Only Luxury Clubs (Jio World Drive BKC, Hyderabad)", "Slides 46 – 49", list(range(46, 50))),

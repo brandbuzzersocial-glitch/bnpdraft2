@@ -52,7 +52,7 @@
   <polygon points="0,265 600,265 600,360 0,360" fill="#E2D6C3" opacity="0.85"/>
   <line x1="0" y1="265" x2="600" y2="265" stroke="#CAA05C" stroke-width="1.2"/>
 
-  <!-- HOMAG / Precision CNC Cutter Beam in Background Header -->
+  <!-- German Precision CNC Cutter Beam in Background Header -->
   <g transform="translate(100, 35)">
     <rect x="0" y="0" width="400" height="16" rx="3" fill="url(#germanCnc)"/>
     <line x1="0" y1="16" x2="400" y2="16" stroke="url(#goldLinearFurn)" stroke-width="1.5"/>

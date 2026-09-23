@@ -46,7 +46,7 @@
     <circle cx="355" cy="205" r="2.5" fill="#CAA05C"/>
   </g>
 
-  <!-- Centerpiece: HOMAG Precision CNC / Digital Fabrication Spindle -->
+  <!-- Centerpiece: German Precision CNC / Digital Fabrication Spindle -->
   <g transform="translate(200, 105)">
     <!-- Parametric 3D Architectural Facet Workpiece -->
     <polygon points="-80,50 0,90 80,50 0,10" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="1.2" filter="drop-shadow(0 6px 12px rgba(0,0,0,0.06))"/>
@@ -94,7 +94,7 @@
 
     <g transform="translate(-116, -30)">
       <rect x="0" y="0" width="58" height="24" rx="4" fill="#FFFFFF" stroke="#1B2A4A" stroke-width="0.8"/>
-      <text x="5" y="10" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#1B2A4A">CNC HOMAG</text>
+      <text x="5" y="10" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#1B2A4A">GERMAN CNC</text>
       <text x="5" y="19" font-family="'Plus Jakarta Sans', monospace" font-size="6.5" font-weight="700" fill="#CAA05C">ERP ACTIVE</text>
     </g>
   </g>
