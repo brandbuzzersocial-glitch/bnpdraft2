@@ -312,21 +312,6 @@
       "assets/images/portfolio/project_45.jpg"
     ]
   },
-  "hdfc-bank-offices": {
-    "id": "hdfc-bank-offices",
-    "name": "HDFC Bank",
-    "category": "corporate-banking",
-    "category_label": "Corporate & Banking",
-    "location": "PAN India (Palava, Nagpur, Turbhe, Airoli, Mumbai, Bangalore, Chennai, Surat, Jaipur, Bhubaneswar, Kolkata)",
-    "scope": "35,00,000 sq.ft PAN India Offices + 1,50,000 sq.ft Residential Training Centre in Palava City, Maharashtra",
-    "images": [
-      "assets/images/portfolio/hdfc_bank_offices/img_61_1.jpeg",
-      "assets/images/portfolio/hdfc_bank_offices/img_61_2.jpeg",
-      "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg",
-      "assets/images/portfolio/hdfc_bank_offices/img_61_4.jpeg",
-      "assets/images/portfolio/hdfc_bank_offices/img_61_5.jpeg"
-    ]
-  },
   "icici-bank-offices": {
     "id": "icici-bank-offices",
     "name": "ICICI Bank",
@@ -394,23 +379,6 @@
       "assets/images/portfolio/pwc/1_(2).png",
       "assets/images/portfolio/pwc/1_(3).png",
       "assets/images/portfolio/pwc/1_(4).png"
-    ]
-  },
-  "motilal-oswal-headquarters": {
-    "id": "motilal-oswal-headquarters",
-    "name": "Motilal Oswal",
-    "category": "corporate-banking",
-    "category_label": "Corporate & Banking",
-    "location": "Ahmedabad, Gujarat & Mumbai, Maharashtra",
-    "scope": "95,00,00 sq.ft Motilal Oswal Tower Regional HQ in Ahmedabad & 75,000 sq.ft Corporate HQ in Mumbai",
-    "images": [
-      "assets/images/portfolio/motilal_oswal/ahm_1__(1).png",
-      "assets/images/portfolio/motilal_oswal/ahm_1__(2).png",
-      "assets/images/portfolio/motilal_oswal/ahm_1__(3).png",
-      "assets/images/portfolio/motilal_oswal/ahm_1__(4).png",
-      "assets/images/portfolio/motilal_oswal/ahm_1__(5).png",
-      "assets/images/portfolio/motilal_oswal/ahm_1__(6).png",
-      "assets/images/portfolio/motilal_oswal/desktop.ini"
     ]
   },
   "concentrix": {
@@ -761,6 +729,119 @@
       "assets/images/portfolio/r_city_mall/r_city_mall_1.jpg",
       "assets/images/portfolio/r_city_mall/r_city_mall_3.jpg",
       "assets/images/portfolio/r_city_mall/r_city_mall_4.jpg"
+    ]
+  },
+  "hdfc-bank-turbhe": {
+    "id": "hdfc-bank-turbhe",
+    "name": "HDFC Bank \u2013 Turbhe",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Turbhe, Navi Mumbai, Maharashtra",
+    "scope": "Turnkey Corporate Office Fit-Out, Executive Workstations & Banking Floors",
+    "images": [
+      "assets/images/portfolio/hdfc_turbhe/turbhe_1.jpg",
+      "assets/images/portfolio/hdfc_turbhe/turbhe_2.jpg",
+      "assets/images/portfolio/hdfc_turbhe/turbhe_3.jpg",
+      "assets/images/portfolio/hdfc_turbhe/turbhe_4.jpg",
+      "assets/images/portfolio/hdfc_turbhe/turbhe_5.jpg",
+      "assets/images/portfolio/hdfc_turbhe/turbhe_6.jpg"
+    ]
+  },
+  "hdfc-bank-airoli-asa": {
+    "id": "hdfc-bank-airoli-asa",
+    "name": "HDFC Bank \u2013 Airoli (ASA)",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Airoli, Navi Mumbai, Maharashtra",
+    "scope": "Corporate Office Architecture & Interior Fit-Out",
+    "images": [
+      "assets/images/portfolio/hdfc_airoli/hdfc_airoli_1.png"
+    ]
+  },
+  "hdfc-bank-gigaplex": {
+    "id": "hdfc-bank-gigaplex",
+    "name": "HDFC Bank \u2013 Gigaplex",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Gigaplex IT Park, Airoli, Navi Mumbai",
+    "scope": "Enterprise IT Campus & Financial Service Facility",
+    "images": [
+      "assets/images/portfolio/hdfc_gigaplex/hdfc_gigaplex_1.png"
+    ]
+  },
+  "hdfc-bank-vikhroli": {
+    "id": "hdfc-bank-vikhroli",
+    "name": "HDFC Bank \u2013 Vikhroli",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Vikhroli, Mumbai, Maharashtra",
+    "scope": "Regional Financial Corporate Headquarters",
+    "images": [
+      "assets/images/portfolio/hdfc_vikhroli/hdfc_vikhroli_1.png"
+    ]
+  },
+  "hdfc-bank-bhubaneshwar": {
+    "id": "hdfc-bank-bhubaneshwar",
+    "name": "HDFC Bank \u2013 Bhubaneswar",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Bhubaneswar, Odisha",
+    "scope": "State Regional Banking Headquarters & Offices",
+    "images": [
+      "assets/images/portfolio/hdfc_bhubaneshwar/hdfc_bhubaneshwar_1.png"
+    ]
+  },
+  "hdfc-bank-palava": {
+    "id": "hdfc-bank-palava",
+    "name": "HDFC Bank \u2013 Palava Training Centre",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Palava City, Maharashtra",
+    "scope": "1,50,000 sq.ft Residential Corporate Training Academy & Guest Suites",
+    "images": [
+      "assets/images/portfolio/hdfc_bank_offices/img_61_1.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_2.jpeg"
+    ]
+  },
+  "hdfc-bank-corporate": {
+    "id": "hdfc-bank-corporate",
+    "name": "HDFC Bank \u2013 Regional Offices",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+    "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+    "images": [
+      "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_4.jpeg",
+      "assets/images/portfolio/hdfc_bank_offices/img_61_5.jpeg"
+    ]
+  },
+  "motilal-oswal-tower": {
+    "id": "motilal-oswal-tower",
+    "name": "Motilal Oswal Tower",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Ahmedabad, Gujarat",
+    "scope": "9,50,000 sq.ft Regional Headquarters Tower",
+    "images": [
+      "assets/images/portfolio/motilal_oswal/ahm_1__(1).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(2).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(3).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(4).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(5).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(6).png"
+    ]
+  },
+  "motilal-oswal-corporate-hq": {
+    "id": "motilal-oswal-corporate-hq",
+    "name": "Motilal Oswal Corporate HQ",
+    "category": "corporate-banking",
+    "category_label": "Corporate & Banking",
+    "location": "Mumbai, Maharashtra",
+    "scope": "75,000 sq.ft Financial Services Corporate Headquarters",
+    "images": [
+      "assets/images/portfolio/motilal_oswal/ahm_1__(1).png",
+      "assets/images/portfolio/motilal_oswal/ahm_1__(2).png"
     ]
   }
 }
