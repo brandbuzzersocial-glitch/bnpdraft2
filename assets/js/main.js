@@ -607,7 +607,7 @@ document.addEventListener('DOMContentLoaded', () => {
         background: rgba(16, 28, 54, 0.85); border: 1px solid rgba(202, 160, 92, 0.4);
         padding: 8px 24px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);
       `;
-      caption.innerHTML = `<span style="color:#caa05c; margin-right:6px;">✦</span> ${alt}`;
+      caption.textContent = alt;
       wrapper.appendChild(caption);
     }
 
