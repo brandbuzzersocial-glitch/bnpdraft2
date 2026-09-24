@@ -5342,6 +5342,118 @@ html, body {
   }
 }
 
+  /* Additional Comprehensive Mobile Layout & Responsiveness Overrides (< 991px / < 768px / < 576px) */
+  /* Desktop styles (> 1024px) remain 100% untouched */
+
+  /* Inline Grid Adjustments on Tablet & Mobile */
+  .about-grid,
+  .map-grid-container,
+  .contact-layout,
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+  .map-details-panel {
+    min-height: auto !important;
+  }
+  .leadership-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+  }
+  .lc-founder-quote {
+    max-width: 100% !important;
+  }
+
+  /* National Footprint SVG Map & Details Panel on Mobile */
+  .map-viewport {
+    padding: 15px !important;
+  }
+  #india-svg-map {
+    max-height: 380px !important;
+    width: 100% !important;
+  }
+  .map-details-panel {
+    min-height: 420px !important;
+  }
+  #active-state-list {
+    padding: 15px 20px 20px !important;
+    max-height: 380px !important;
+  }
+
+  /* Client Marquee Logo Ticker on Mobile */
+  .marquee-logo-item {
+    height: 56px !important;
+    padding: 0 14px !important;
+  }
+  .marquee-logo-item img {
+    height: 36px !important;
+    max-width: 120px !important;
+  }
+  .marquee-sector-badge {
+    font-size: 0.72rem !important;
+    padding: 4px 12px !important;
+  }
+
+  /* Interactive Timeline Milestones on Mobile */
+  .timeline-container {
+    padding-left: 20px !important;
+  }
+  .timeline-card {
+    padding: 20px !important;
+  }
+  .timeline-badge-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 6px !important;
+  }
+
+  /* Modal Popups & Lightboxes on Mobile Touch Screens */
+  .modal-content,
+  .project-modal-content {
+    width: 95% !important;
+    max-width: 95vw !important;
+    padding: 20px 16px !important;
+    margin: 20px auto !important;
+    max-height: 85vh !important;
+    overflow-y: auto !important;
+  }
+  .modal-close-btn {
+    top: 10px !important;
+    right: 10px !important;
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  /* Flipbook Reader on Mobile Screens */
+  .flipbook-container,
+  #canvas-container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+  .flipbook-toolbar {
+    flex-wrap: wrap !important;
+    padding: 8px 12px !important;
+    gap: 8px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .leadership-grid {
+    grid-template-columns: 1fr !important;
+  }
+  .projects-grid,
+  .blog-grid,
+  .team-grid,
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  .hero-slide-content {
+    padding: 0 16px !important;
+  }
+}
+
+
 
 
 
