@@ -736,7 +736,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapData = {
   "mh": {
     "name": "Maharashtra",
-    "count": 29,
+    "count": 35,
     "projects": [
       {
         "name": "Taj The Trees",
@@ -767,6 +767,30 @@ document.addEventListener('DOMContentLoaded', () => {
         "location": "Mumbai, Maharashtra",
         "scope": "Corporate Headquarters Fit-Out & Retail Banking Branches",
         "image": "assets/images/portfolio/icici/1_(1).png"
+      },
+      {
+        "name": "Citi Bank",
+        "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+        "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
+        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+      },
+      {
+        "name": "BNP Paribas",
+        "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+        "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+      },
+      {
+        "name": "Deutsche Bank",
+        "location": "PAN India (Mumbai, Pune)",
+        "scope": "4,50,000 sq.ft Financial Corporate Offices & Trading Floors",
+        "image": "assets/images/portfolio/deutsche_bank/1_(1).png"
+      },
+      {
+        "name": "PwC (PricewaterhouseCoopers)",
+        "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
+        "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
+        "image": "assets/images/portfolio/pwc/1_(1).png"
       },
       {
         "name": "Concentrix",
@@ -803,6 +827,12 @@ document.addEventListener('DOMContentLoaded', () => {
         "location": "Mumbai, Maharashtra",
         "scope": "2,50,000 sq.ft Broadcast & Media Corporate Headquarters",
         "image": "assets/images/portfolio/zee_media/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
       },
       {
         "name": "Dhirubhai Ambani International School",
@@ -857,6 +887,12 @@ document.addEventListener('DOMContentLoaded', () => {
         "location": "Palava City, Maharashtra",
         "scope": "1,50,000 sq.ft Residential Corporate Training Academy",
         "image": "assets/images/portfolio/hdfc_palava/hdfc_palava_1.jpg"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
       },
       {
         "name": "Motilal Oswal Corporate HQ",
@@ -916,8 +952,32 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "gj": {
     "name": "Gujarat",
-    "count": 1,
+    "count": 5,
     "projects": [
+      {
+        "name": "BNP Paribas",
+        "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+        "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+      },
+      {
+        "name": "PwC (PricewaterhouseCoopers)",
+        "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
+        "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
+        "image": "assets/images/portfolio/pwc/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
+      },
       {
         "name": "Motilal Oswal Tower",
         "location": "Ahmedabad, Gujarat",
@@ -928,7 +988,7 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "rj": {
     "name": "Rajasthan",
-    "count": 2,
+    "count": 3,
     "projects": [
       {
         "name": "Taj Gorbandh Palace",
@@ -941,12 +1001,18 @@ document.addEventListener('DOMContentLoaded', () => {
         "location": "Jaipur, Rajasthan",
         "scope": "173 King Rooms, 52 Twin Rooms, 19 Suites, Spa & Fitness Centre, Executive Club, Boardrooms & Grand Ballrooms",
         "image": "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
       }
     ]
   },
   "up": {
     "name": "Uttar Pradesh",
-    "count": 4,
+    "count": 5,
     "projects": [
       {
         "name": "Taj Palace",
@@ -962,9 +1028,15 @@ document.addEventListener('DOMContentLoaded', () => {
       },
       {
         "name": "Dainik Bhaskar",
-        "location": "Noida, Uttar Pradesh",
+        "location": "Bhopal, Madhya Pradesh & Noida, Uttar Pradesh",
         "scope": "1,00,000 sq.ft Media & News Corporate Headquarters",
         "image": "assets/images/portfolio/dainik_baskar/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
       },
       {
         "name": "DB Noida",
@@ -976,7 +1048,7 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "wb": {
     "name": "West Bengal",
-    "count": 3,
+    "count": 7,
     "projects": [
       {
         "name": "Taj Ganga Kutir",
@@ -985,10 +1057,34 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp"
       },
       {
+        "name": "BNP Paribas",
+        "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+        "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+      },
+      {
+        "name": "PwC (PricewaterhouseCoopers)",
+        "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
+        "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
+        "image": "assets/images/portfolio/pwc/1_(1).png"
+      },
+      {
         "name": "Tecpro Systems Ltd",
         "location": "Kolkata, West Bengal",
         "scope": "1,00,000 sq.ft Engineering & Industrial Headquarters",
         "image": "assets/images/portfolio/tecpro_systems_ltd/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
       },
       {
         "name": "HDFC Kolkata",
@@ -1024,13 +1120,31 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "tn": {
     "name": "Tamil Nadu",
-    "count": 4,
+    "count": 7,
     "projects": [
       {
         "name": "Fairfield by Marriott",
         "location": "Chennai, Tamil Nadu",
         "scope": "158 Keys, Bar Area, All-Day Dining, Pool Area, Gym, Market & Conference Rooms (HICSA Hotel of the Year 2019 Award Winner)",
         "image": "assets/images/portfolio/fairfield_chennai_tamil_nadu/FAIRFIELD_1__4.png"
+      },
+      {
+        "name": "BNP Paribas",
+        "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+        "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
       },
       {
         "name": "BNP Paribas Alwarpet",
@@ -1054,13 +1168,31 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "ka": {
     "name": "Karnataka",
-    "count": 2,
+    "count": 5,
     "projects": [
+      {
+        "name": "Citi Bank",
+        "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+        "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
+        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
+      },
       {
         "name": "Marriott Hotel",
         "location": "Bangalore, Karnataka",
         "scope": "330 Keys, Lobby, Corridors & Common Circulation Areas",
         "image": "assets/images/portfolio/marriott_hotel_bangalore/img_41_3.jpeg"
+      },
+      {
+        "name": "HDFC Bank \u2013 Regional Offices",
+        "location": "Pan-India (Nagpur, Kolkata, Chennai, Bangalore, Surat, Jaipur)",
+        "scope": "35,00,000 sq.ft Pan-India Corporate & Retail Banking Network",
+        "image": "assets/images/portfolio/hdfc_bank_offices/img_61_3.jpeg"
       },
       {
         "name": "HDFC JAYANAGAR BANGALORE",
@@ -1072,13 +1204,25 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "tg": {
     "name": "Telangana",
-    "count": 3,
+    "count": 5,
     "projects": [
       {
         "name": "Sheraton",
         "location": "Hyderabad, Telangana",
         "scope": "152 Keys, Grand Lobby & All Common Circulation Areas",
         "image": "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png"
+      },
+      {
+        "name": "PwC (PricewaterhouseCoopers)",
+        "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
+        "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
+        "image": "assets/images/portfolio/pwc/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
       },
       {
         "name": "Quorum Club",
@@ -1114,13 +1258,25 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "mp": {
     "name": "Madhya Pradesh",
-    "count": 2,
+    "count": 4,
     "projects": [
+      {
+        "name": "Dainik Bhaskar",
+        "location": "Bhopal, Madhya Pradesh & Noida, Uttar Pradesh",
+        "scope": "1,00,000 sq.ft Media & News Corporate Headquarters",
+        "image": "assets/images/portfolio/dainik_baskar/1_(1).png"
+      },
       {
         "name": "DB City Mall",
         "location": "Bhopal, Madhya Pradesh",
         "scope": "15,00,000 sq.ft Mega Retail & Shopping Complex",
         "image": "assets/images/portfolio/db_city_mall/db_city_mall_1.jpg"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
       },
       {
         "name": "DB VILLA BHOPAL",
@@ -1156,13 +1312,19 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "hr": {
     "name": "Haryana",
-    "count": 2,
+    "count": 3,
     "projects": [
       {
         "name": "Hyatt Place",
         "location": "Gurugram, Haryana",
         "scope": "156 Keys, Waiting Area, All-Day Dining & Conference Rooms",
         "image": "assets/images/portfolio/hyatt_place_gurugram_haryana/HYATT_PLACE_1__1.png"
+      },
+      {
+        "name": "Citi Bank",
+        "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+        "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
+        "image": "assets/images/portfolio/citi_bank/1_(1).png"
       },
       {
         "name": "Amrita Hospitals (AIMS)",
@@ -1174,13 +1336,37 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "dl": {
     "name": "Delhi NCR",
-    "count": 5,
+    "count": 9,
     "projects": [
+      {
+        "name": "Citi Bank",
+        "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+        "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
+        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+      },
+      {
+        "name": "BNP Paribas",
+        "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
+        "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+      },
+      {
+        "name": "Shoppers Stop",
+        "location": "PAN India (40 Outlets)",
+        "scope": "20,00,000 sq.ft Retail Outlets Across 40 Malls Nationwide",
+        "image": "assets/images/portfolio/shoppers_stop/img_80_1.jpeg"
+      },
       {
         "name": "Vegas Mall",
         "location": "Delhi NCR",
         "scope": "6,00,000 sq.ft Destination Retail & Entertainment Mall",
         "image": "assets/images/portfolio/vegas_mall/vegas.png"
+      },
+      {
+        "name": "Amrita Hospitals (AIMS)",
+        "location": "Faridabad, Delhi NCR",
+        "scope": "9,00,000 sq.ft (100 Cr Order) \u00b7 Civil & Interiors: Flooring, PCC, Plaster & POP, Ceiling Finishes, Dry Wall Partitions, Doors, Wall Panelling, Bespoke Furniture (302 ICUs, 4 OTs, 158 Patient Rooms, 4 Floors)",
+        "image": "assets/images/portfolio/amrita_hospitals_faridabad/img_77_1.jpeg"
       },
       {
         "name": "Publishing House MD Bungalow",
@@ -1210,8 +1396,15 @@ document.addEventListener('DOMContentLoaded', () => {
   },
   "pb": {
     "name": "Punjab",
-    "count": 0,
-    "projects": []
+    "count": 1,
+    "projects": [
+      {
+        "name": "Citi Bank",
+        "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
+        "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
+        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+      }
+    ]
   },
   "ga": {
     "name": "Goa",
