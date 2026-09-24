@@ -952,7 +952,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Taj Palace",
         "location": "Lucknow, Uttar Pradesh",
         "scope": "All Public Areas, Presidential Suites & Luxury Guest Rooms",
-        "image": "assets/images/portfolio/taj_palace_lucknow/img_20_2.jpeg"
+        "image": "assets/images/portfolio/taj_palace_lucknow/img_20_1.jpeg"
       },
       {
         "name": "Taj Ayodhyam",
@@ -1126,7 +1126,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "DB VILLA BHOPAL",
         "location": "Bhopal, Madhya Pradesh",
         "scope": "Bespoke Private Mansion Villa & Landscaping",
-        "image": "assets/images/portfolio/db_villa_bhopal/db_villa_bhopal_1.jpg"
+        "image": "assets/images/portfolio/db_villa_bhopal/db_villa_bhopal_2.jpg"
       }
     ]
   },
