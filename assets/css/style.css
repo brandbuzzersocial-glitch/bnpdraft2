@@ -5342,6 +5342,129 @@ html, body {
   }
 }
 
+/* ============================================================
+   DESKTOP VIEWPORT-FIT OPTIMIZATIONS (ALL SECTIONS VIEWABLE AT ONCE)
+   ============================================================ */
+@media (min-width: 1025px) {
+  /* Scroll Margin Anchor Offset for Sticky Header */
+  .section,
+  .craft-village-section,
+  .manufacturing-section,
+  .expertise-section,
+  #services-grid,
+  #craft-village,
+  #manufacturing {
+    scroll-margin-top: 80px;
+  }
+
+  /* 1. BNP Craft Village Section */
+  .craft-village-section {
+    padding: 42px 0 36px !important;
+  }
+  .cv-header {
+    margin: 0 auto 18px !important;
+  }
+  .cv-title {
+    font-size: clamp(1.75rem, 2.4vw, 2.2rem) !important;
+    margin-bottom: 4px !important;
+  }
+  .cv-subtitle {
+    font-size: 0.88rem !important;
+  }
+  .cv-split-layout {
+    gap: 32px !important;
+    align-items: stretch !important;
+  }
+  .cv-desc {
+    font-size: 0.85rem !important;
+    line-height: 1.5 !important;
+    margin-bottom: 12px !important;
+  }
+  .cv-pillars-grid {
+    gap: 10px !important;
+  }
+  .cv-pillar-card {
+    padding: 12px 14px !important;
+  }
+  .cv-pillar-title {
+    font-size: 0.88rem !important;
+    margin-bottom: 3px !important;
+  }
+  .cv-pillar-desc {
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+  }
+  .cv-viz-footer {
+    padding: 10px 14px !important;
+    gap: 8px !important;
+  }
+  .cv-stat-num {
+    font-size: 1.25rem !important;
+  }
+  .cv-stat-unit {
+    font-size: 0.75rem !important;
+  }
+  .cv-stat-label {
+    font-size: 0.6rem !important;
+  }
+
+  /* 2. Navi Mumbai Furniture Manufacturing Facility Section */
+  .manufacturing-section {
+    padding: 42px 0 36px !important;
+    margin-top: 0 !important;
+  }
+  .manufacturing-grid {
+    gap: 32px !important;
+    align-items: center !important;
+  }
+  .mfg-cards-grid {
+    gap: 10px !important;
+    margin-top: 14px !important;
+  }
+  .mfg-subhead-card {
+    padding: 12px 14px !important;
+    gap: 4px !important;
+  }
+  .mfg-card-title {
+    font-size: 0.88rem !important;
+  }
+  .mfg-card-desc {
+    font-size: 0.75rem !important;
+    line-height: 1.35 !important;
+  }
+  .mfg-carousel-viewport {
+    height: 240px !important;
+  }
+  .mfg-slide-info {
+    padding: 10px 14px !important;
+  }
+  .mfg-slide-title {
+    font-size: 0.88rem !important;
+  }
+  .mfg-slide-desc {
+    font-size: 0.75rem !important;
+    line-height: 1.3 !important;
+  }
+
+  /* 3. Expertise Section (OUR EXPERTISE) */
+  .expertise-header-wrap {
+    margin-bottom: 20px !important;
+  }
+  .expertise-cards-grid {
+    gap: 12px !important;
+  }
+  .expertise-card {
+    padding: 16px 14px !important;
+  }
+  .expertise-card-title {
+    font-size: 0.88rem !important;
+  }
+  .expertise-card-desc {
+    font-size: 0.75rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
 
 
 
