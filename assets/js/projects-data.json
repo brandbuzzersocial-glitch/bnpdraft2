@@ -772,17 +772,6 @@
       "assets/images/portfolio/hdfc_airoli/hdfc_airoli_8.jpg"
     ]
   },
-  "hdfc-bank-gigaplex": {
-    "id": "hdfc-bank-gigaplex",
-    "name": "HDFC Bank \u2013 Gigaplex",
-    "category": "corporate-banking",
-    "category_label": "Corporate & Banking",
-    "location": "Gigaplex IT Park, Airoli, Navi Mumbai",
-    "scope": "Enterprise IT Campus & Financial Service Facility",
-    "images": [
-      "assets/images/portfolio/hdfc_gigaplex/hdfc_gigaplex_1.png"
-    ]
-  },
   "hdfc-bank-vikhroli": {
     "id": "hdfc-bank-vikhroli",
     "name": "HDFC Bank \u2013 Vikhroli",

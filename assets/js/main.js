@@ -736,7 +736,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const mapData = {
   "mh": {
     "name": "Maharashtra",
-    "count": 30,
+    "count": 29,
     "projects": [
       {
         "name": "Taj The Trees",
@@ -845,12 +845,6 @@ document.addEventListener('DOMContentLoaded', () => {
         "location": "Airoli, Navi Mumbai, Maharashtra",
         "scope": "Corporate Office Architecture & Interior Fit-Out",
         "image": "assets/images/portfolio/hdfc_airoli/hdfc_airoli_1.jpg"
-      },
-      {
-        "name": "HDFC Bank \u2013 Gigaplex",
-        "location": "Gigaplex IT Park, Airoli, Navi Mumbai",
-        "scope": "Enterprise IT Campus & Financial Service Facility",
-        "image": "assets/images/portfolio/hdfc_gigaplex/hdfc_gigaplex_1.png"
       },
       {
         "name": "HDFC Bank \u2013 Vikhroli",
