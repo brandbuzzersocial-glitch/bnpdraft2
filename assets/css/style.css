@@ -4857,7 +4857,7 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   display: grid;
   grid-template-columns: 52% 1fr;
   gap: 48px;
-  align-items: start;
+  align-items: stretch;
 }
 
 /* ---- LEFT: Image Column ---- */
@@ -4868,12 +4868,14 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  height: 100%;
 }
 
 .cv-viz-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  flex: 1;
+  min-height: 240px;
   overflow: hidden;
   background: #111;
 }
@@ -5052,6 +5054,11 @@ h1, h2, h3, h4, h5, h6, p, span, .section-title, .section-desc {
     max-width: 680px;
     margin: 0 auto;
     width: 100%;
+    height: auto;
+  }
+  .cv-viz-stage {
+    aspect-ratio: 16 / 9;
+    flex: none;
   }
 }
 
