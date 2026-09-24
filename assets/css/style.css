@@ -5345,6 +5345,7 @@ html, body {
   /* Additional Comprehensive Mobile Layout & Responsiveness Overrides (< 991px / < 768px / < 576px) */
   /* Desktop styles (> 1024px) remain 100% untouched */
 
+@media (max-width: 991px) {
   /* Inline Grid Adjustments on Tablet & Mobile */
   .about-grid,
   .map-grid-container,
