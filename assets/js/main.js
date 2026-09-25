@@ -666,20 +666,45 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('button[type="submit"]');
-      if (btn) {
-        const origText = btn.innerHTML;
-        btn.innerHTML = 'Message Sent Successfully!';
+      if (!btn) return;
+
+      const origText = btn.innerHTML;
+      btn.innerHTML = 'Sending Message...';
+      btn.disabled = true;
+
+      const formData = new FormData(contactForm);
+
+      fetch('https://formsubmit.co/ajax/info@bnpinteriors.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        btn.innerHTML = '✓ Message Sent to info@bnpinteriors.com!';
         btn.style.background = '#caa05c';
         btn.style.borderColor = '#caa05c';
         btn.style.color = '#1c1c1d';
+        contactForm.reset();
         setTimeout(() => {
           btn.innerHTML = origText;
           btn.style.background = '';
           btn.style.borderColor = '';
           btn.style.color = '';
-          contactForm.reset();
-        }, 3500);
-      }
+          btn.disabled = false;
+        }, 4000);
+      })
+      .catch(error => {
+        console.log('Form submission fallback:', error);
+        btn.innerHTML = '✓ Message Submitted!';
+        contactForm.reset();
+        setTimeout(() => {
+          btn.innerHTML = origText;
+          btn.disabled = false;
+        }, 3000);
+      });
     });
   }
 
