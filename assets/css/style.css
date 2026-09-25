@@ -4286,15 +4286,37 @@ body.mouse-moving .mouse-glow-element {
     line-height: 1.5 !important;
   }
 
-  /* Process steps stacking in founder.html */
+  /* Process steps flex alignment on mobile */
   .process-step {
-    grid-template-columns: 1fr !important;
-    text-align: center;
-    padding: 25px 20px !important;
-    gap: 15px !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 20px 14px !important;
+    gap: 16px !important;
   }
-  .process-step > div:first-child {
-    margin: 0 auto 10px !important;
+  .process-step > div:first-child,
+  .step-num {
+    margin: 0 !important;
+    font-size: 2.2rem !important;
+    min-width: 44px !important;
+    opacity: 0.45 !important;
+    line-height: 1 !important;
+    text-align: left !important;
+  }
+  .step-body {
+    flex: 1 !important;
+    text-align: left !important;
+  }
+  .step-body h3 {
+    text-align: left !important;
+    font-size: 1.05rem !important;
+    margin-bottom: 6px !important;
+  }
+  .step-body p {
+    text-align: left !important;
+    font-size: 0.85rem !important;
+    line-height: 1.55 !important;
   }
 }
 
@@ -5556,6 +5578,16 @@ html, body {
     word-break: normal !important;
     overflow: hidden !important;
     text-overflow: ellipsis !important;
+  }
+}
+
+/* Scroll Margin Top Clearance for Fixed Header on Mobile Devices */
+@media (max-width: 991px) {
+  section[id],
+  .section[id],
+  .section,
+  div[id] {
+    scroll-margin-top: 85px !important;
   }
 }
 
