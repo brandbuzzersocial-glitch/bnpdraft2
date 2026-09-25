@@ -1915,6 +1915,179 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initCraftVillageToggle();
 
+  /* ============================================================
+     PROJECT CARD FULL-CLICKABILITY & 2-SECOND HOVER GALLERY SLIDESHOW
+     ============================================================ */
+  const initProjectCardInteractiveFeatures = () => {
+    let projectsData = null;
+
+    // Fetch projects data JSON
+    fetch('assets/js/projects-data.json')
+      .then(res => res.json())
+      .then(data => {
+        projectsData = data;
+        // Preload image objects for ultra-smooth hover slideshow
+        Object.values(data).forEach(p => {
+          if (p.images && p.images.length > 1) {
+            p.images.forEach(src => {
+              const img = new Image();
+              img.src = src;
+            });
+          }
+        });
+      })
+      .catch(err => console.log('Projects data JSON load note:', err));
+
+    // Helper to get project data for a card
+    const getProjectData = (card) => {
+      if (!projectsData) return null;
+      // 1. Try URL parameter from link inside card
+      const link = card.querySelector('a[href*="id="]');
+      if (link) {
+        const href = link.getAttribute('href');
+        const match = href.match(/id=([^&]+)/);
+        if (match && projectsData[match[1]]) {
+          return projectsData[match[1]];
+        }
+      }
+      // 2. Try title matching
+      const titleEl = card.querySelector('.project-name, h3, h4');
+      if (titleEl) {
+        const text = titleEl.textContent.trim().toLowerCase();
+        for (const pid in projectsData) {
+          if (projectsData[pid].name.toLowerCase() === text) {
+            return projectsData[pid];
+          }
+        }
+      }
+      return null;
+    };
+
+    // Attach full card clickability via event delegation
+    document.addEventListener('click', (e) => {
+      const card = e.target.closest('.project-card');
+      if (!card) return;
+
+      const link = card.querySelector('a[href]');
+      if (!link) return;
+
+      const href = link.getAttribute('href');
+      if (!href) return;
+
+      // If user clicked directly on an anchor or button inside the card, allow natural behavior
+      if (e.target.closest('a') || e.target.closest('button')) {
+        return;
+      }
+
+      // Otherwise navigate to href
+      window.location.href = href;
+    });
+
+    // Attach 2-second hover gallery slideshow listeners
+    const setupCardHoverGallery = (card) => {
+      if (card._hoverSetupDone) return;
+      card._hoverSetupDone = true;
+
+      const imgWrap = card.querySelector('.project-img-wrap');
+      const mainImg = imgWrap ? imgWrap.querySelector('img') : null;
+      if (!imgWrap || !mainImg) return;
+
+      let hoverTimer = null;
+      let slideshowInterval = null;
+      let originalSrc = mainImg.src;
+      let indicator = null;
+
+      const getOrCreateIndicator = () => {
+        let ind = imgWrap.querySelector('.card-gallery-indicator');
+        if (!ind) {
+          ind = document.createElement('div');
+          ind.className = 'card-gallery-indicator';
+          imgWrap.appendChild(ind);
+        }
+        return ind;
+      };
+
+      card.addEventListener('mouseenter', () => {
+        // Save original src in case it changed dynamically
+        originalSrc = mainImg.src;
+
+        // Clear any existing timer
+        if (hoverTimer) clearTimeout(hoverTimer);
+
+        // Start 2-second timer (2000 ms)
+        hoverTimer = setTimeout(() => {
+          const pData = getProjectData(card);
+          if (!pData || !pData.images || pData.images.length <= 1) return;
+
+          const images = pData.images;
+          let currentIndex = images.indexOf(originalSrc);
+          if (currentIndex === -1) currentIndex = 0;
+
+          indicator = getOrCreateIndicator();
+          indicator.textContent = `Gallery • ${currentIndex + 1}/${images.length}`;
+          indicator.classList.add('active');
+
+          // Start slideshow cycling every 1.8s
+          slideshowInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % images.length;
+            
+            // Smooth transition opacity
+            mainImg.style.opacity = '0.4';
+            setTimeout(() => {
+              mainImg.src = images[currentIndex];
+              mainImg.style.opacity = '1';
+              if (indicator) {
+                indicator.textContent = `Gallery • ${currentIndex + 1}/${images.length}`;
+              }
+            }, 180);
+
+          }, 1800);
+
+        }, 2000);
+      });
+
+      card.addEventListener('mouseleave', () => {
+        // Clear 2-second hover timer
+        if (hoverTimer) {
+          clearTimeout(hoverTimer);
+          hoverTimer = null;
+        }
+
+        // Stop slideshow interval
+        if (slideshowInterval) {
+          clearInterval(slideshowInterval);
+          slideshowInterval = null;
+        }
+
+        // Revert image back to original cover photo
+        if (mainImg && originalSrc) {
+          mainImg.style.opacity = '0.5';
+          setTimeout(() => {
+            mainImg.src = originalSrc;
+            mainImg.style.opacity = '1';
+          }, 150);
+        }
+
+        // Hide gallery indicator badge
+        if (indicator) {
+          indicator.classList.remove('active');
+        }
+      });
+    };
+
+    // Observe and initialize all cards dynamically (supporting filtered / slider cards)
+    const initCards = () => {
+      document.querySelectorAll('.project-card').forEach(setupCardHoverGallery);
+    };
+
+    initCards();
+    // Re-check periodically or on DOM changes for newly rendered cards
+    const observer = new MutationObserver(() => initCards());
+    observer.observe(document.body, { childList: true, subtree: true });
+  };
+
+  initProjectCardInteractiveFeatures();
+
 });
 
 
