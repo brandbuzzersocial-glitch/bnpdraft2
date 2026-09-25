@@ -5490,6 +5490,75 @@ html, body {
   }
 }
 
+/* ============================================================
+   MOBILE RESPONSIVE FIXES (HEADER CLEARANCE, STAT NUMBERS, INITIAL LOADER)
+   ============================================================ */
+@media (max-width: 991px) {
+  .page-header-banner,
+  .section.blueprint-grid-bg[style*="padding: 140px"],
+  .section.blueprint-grid-bg[style*="padding: 140px 0 40px"] {
+    padding-top: 130px !important;
+    padding-bottom: 35px !important;
+  }
+  .page-header-banner .section-tag {
+    margin-top: 10px !important;
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Initial Loading Screen Logo Size Fix on Mobile */
+  .page-loader .loader-logo img,
+  .loader-logo img {
+    height: 32px !important;
+    max-height: 32px !important;
+    width: auto !important;
+  }
+  .loader-inner {
+    max-width: 240px !important;
+    padding: 0 16px !important;
+    gap: 14px !important;
+  }
+  .loader-bar {
+    height: 3px !important;
+    margin-top: 10px !important;
+    width: 100px !important;
+  }
+
+  /* Stat Cards Numbers & Labels Single-Line Mobile Alignment */
+  .stat-cards-row {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 6px !important;
+    margin-bottom: 24px !important;
+  }
+  .stat-cards-row > div {
+    flex: 1 1 0% !important;
+    min-width: 0 !important;
+    padding: 10px 4px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  .stat-cards-row .stat-value,
+  .stat-cards-row span[style*="font-size: 1.6rem"],
+  .stat-cards-row .badge-num {
+    font-size: clamp(1.05rem, 4vw, 1.3rem) !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    line-height: 1.1 !important;
+  }
+  .stat-cards-row .stat-label,
+  .stat-cards-row span[style*="font-size: 0.65rem"],
+  .stat-cards-row .badge-text {
+    font-size: clamp(0.55rem, 2vw, 0.62rem) !important;
+    letter-spacing: 0.2px !important;
+    white-space: nowrap !important;
+    word-break: normal !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+  }
+}
+
 
 
 
