@@ -1021,7 +1021,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "image": "assets/images/portfolio/taj_palace_lucknow/img_20_1.jpeg"
       },
       {
-        "name": "Taj Ayodhyam",
+        "name": "TAJ-IHCL SELEQTIONS AYODHYAM, AYODHYA",
         "location": "Ayodhya, Uttar Pradesh",
         "scope": "All Public Areas & Luxury Guest Rooms",
         "image": "assets/images/portfolio/taj_ayodhyam_ayodhya/img_21_3.jpeg"
