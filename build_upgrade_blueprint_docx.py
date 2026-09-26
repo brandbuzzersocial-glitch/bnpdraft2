@@ -181,7 +181,7 @@ def build_upgrade_blueprint():
         ("3.0", "Our Services (services.html)", "German Precision Millwork Machinery specs (MIDC Pawne Plant), Sanding & Automated Paint Booths, In-House ERP tracking & quality checks, 5-Step Concept to Completion turnkey process"),
         ("4.0", "Projects Portfolio (projects.html)", "Comprehensive Project Case Studies & Client Rosters:\n• Hospitality: Taj Mahal Palace Mumbai, Taj Ayodhya (150 Rooms + 10 Villas), Taj Lucknow, Cidade De Goa, Taj Bhubaneswar (136 Rooms), Taj Jamshedpur, Radisson Chennai (HICSA Award Winner)\n• Members Clubs: Jio World Drive BKC (14k sq ft), Hyderabad Clubs\n• Corporate HQs: Palava (150k sq ft), Ahmedabad HQ (95k sq ft), Mumbai HQ (75k sq ft), Pune HQs (300k, 200k, 150k sq ft), Kerala Regional HQ (1.3M sq ft), Noida HQ (100k sq ft)\n• Malls/Retail/Edu/Health: Dhirubhai Ambani International School BKC, Kokilaben Hospital, Bhopal (1.5M sq ft), Ranchi (800k sq ft), Reliance Retail 40 Stores (2M sq ft)\n• High-End Residential: Bandra Celebrity Cricketer Mansion (45k sqft), Publishing House MD Residence New Delhi (15k sqft), RIL MD Jamnagar Residence (15k sqft)\n• Ongoing Sites: Active projects in Chennai, Delhi, New Delhi, Mumbai"),
         ("5.0", "Media & Press (media.html)", "SOH Magazine April Edition Feature Spotlight, HICSA Hotel of the Year Award 2019 (Radisson Blu Chennai)"),
-        ("6.0", "Contact Us (contact.html)", "Updated direct telephone lines ((022)-61570554, +91 98213 10554), direct email (punamkularia@bnpinteriors.com), Corporate HQ & Pawne Plant details")
+        ("6.0", "Contact Us (contact.html)", "Updated direct telephone lines ((022)-61570554, (+91) 932 031 0554 / (+91) 900 461 3393), direct email (punamkularia@bnpinteriors.com), Corporate HQ & Pawne Plant details")
     ]
 
     for p_num, p_name, p_sec in pages_plan_summary:
@@ -341,8 +341,8 @@ def build_upgrade_blueprint():
                 {
                     'target': 'Updated Corporate Contact Lines',
                     'current': 'General contact numbers.',
-                    'pdf_data': 'Slide 92:\nCorporate Office Direct Lines: (022)-61570554, (+91) 9821310554\nDirect Email: punamkularia@bnpinteriors.com',
-                    'proposed': 'Direct Managing Director Hotline: +91 98213 10554\nCorporate Board Line: (022)-61570554\nDirect Executive Email: punamkularia@bnpinteriors.com\nGeneral Enquiries: info@bnpinteriors.com / projects@bnpinteriors.com'
+                    'pdf_data': 'Slide 92:\nCorporate Office Direct Lines: (022)-61570554, (+91) 932 031 0554, (+91) 900 461 3393\nDirect Email: punamkularia@bnpinteriors.com',
+                    'proposed': 'Direct Managing Director Hotline: (+91) 932 031 0554 / (+91) 900 461 3393\nCorporate Board Line: (022)-61570554\nDirect Executive Email: punamkularia@bnpinteriors.com\nGeneral Enquiries: info@bnpinteriors.com / projects@bnpinteriors.com'
                 }
             ]
         }

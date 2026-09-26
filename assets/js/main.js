@@ -767,13 +767,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Taj The Trees",
         "location": "Vikhroli, Mumbai, Maharashtra",
         "scope": "Grand Ballrooms, Pre-Function Area, Reception Lobby, Circulation, Specialty Restaurant, Spa & Conference Facilities",
-        "image": "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.png"
+        "image": "assets/images/portfolio/taj_the_trees_vikhroli_maharashtra/1_6.jpg"
       },
       {
         "name": "The Chambers, Taj Mahal Palace",
         "location": "Mumbai, Maharashtra",
         "scope": "Bespoke Furniture, Executive Waiting Area, Elite Members' Lounges, Private Dining, Conference Suites & Lift Lobbies",
-        "image": "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.png"
+        "image": "assets/images/portfolio/taj_chambers_taj_mahal_palace_mumbai_maharashtra/chamber_1__6.jpg"
       },
       {
         "name": "Hyatt Regency",
@@ -791,55 +791,55 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "ICICI Bank",
         "location": "Mumbai, Maharashtra",
         "scope": "Corporate Headquarters Fit-Out & Retail Banking Branches",
-        "image": "assets/images/portfolio/icici/1_(1).png"
+        "image": "assets/images/portfolio/icici/1_(1).jpg"
       },
       {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       },
       {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "Deutsche Bank",
         "location": "PAN India (Mumbai, Pune)",
         "scope": "4,50,000 sq.ft Financial Corporate Offices & Trading Floors",
-        "image": "assets/images/portfolio/deutsche_bank/1_(1).png"
+        "image": "assets/images/portfolio/deutsche_bank/1_(1).jpg"
       },
       {
         "name": "PwC (PricewaterhouseCoopers)",
         "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
         "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
-        "image": "assets/images/portfolio/pwc/1_(1).png"
+        "image": "assets/images/portfolio/pwc/1_(1).jpg"
       },
       {
         "name": "Concentrix",
         "location": "Mumbai, Maharashtra",
         "scope": "Turnkey Corporate Headquarters & Global Operations Center",
-        "image": "assets/images/portfolio/concentrix/1_(1).png"
+        "image": "assets/images/portfolio/concentrix/1_(1).jpg"
       },
       {
         "name": "T-Systems",
         "location": "Pune, Maharashtra",
         "scope": "3,00,000 sq.ft Enterprise Technology Campus",
-        "image": "assets/images/portfolio/t_systems/1_(1).png"
+        "image": "assets/images/portfolio/t_systems/1_(1).jpg"
       },
       {
         "name": "Red Hat",
         "location": "Pune, Maharashtra",
         "scope": "2,00,000 sq.ft Tech Enterprise Headquarters",
-        "image": "assets/images/portfolio/red_hat/1_(1).png"
+        "image": "assets/images/portfolio/red_hat/1_(1).jpg"
       },
       {
         "name": "Workday",
         "location": "Pune, Maharashtra",
         "scope": "1,50,000 sq.ft Cloud Enterprise Headquarters",
-        "image": "assets/images/portfolio/workday/1(5).png"
+        "image": "assets/images/portfolio/workday/1(5).jpg"
       },
       {
         "name": "NVIDIA",
@@ -851,7 +851,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Zee Media",
         "location": "Mumbai, Maharashtra",
         "scope": "2,50,000 sq.ft Broadcast & Media Corporate Headquarters",
-        "image": "assets/images/portfolio/zee_media/1_(1).png"
+        "image": "assets/images/portfolio/zee_media/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -875,7 +875,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Indian Accent, NMACC",
         "location": "BKC, Mumbai, Maharashtra",
         "scope": "Bespoke Luxury Fine Dining Fit-Out at Nita Mukesh Ambani Cultural Centre",
-        "image": "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_1.png"
+        "image": "assets/images/portfolio/indian_accent_nmacc_bkc_mumbai_maharashtra/INDIAN_ACCENT_1_1.jpg"
       },
       {
         "name": "Celebrity Cricketer Residence",
@@ -983,13 +983,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "PwC (PricewaterhouseCoopers)",
         "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
         "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
-        "image": "assets/images/portfolio/pwc/1_(1).png"
+        "image": "assets/images/portfolio/pwc/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1019,13 +1019,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Taj Gorbandh Palace",
         "location": "Jaisalmer, Rajasthan",
         "scope": "Guest Rooms, Executive Suites, All-Day Dining, Library Bar Lounge, Specialty Restaurant, Spa & Gym",
-        "image": "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.png"
+        "image": "assets/images/portfolio/taj_gorbandh_palace_jaisalmer_rajasthan/gorbandh_1__14.jpg"
       },
       {
         "name": "Taj Amer",
         "location": "Jaipur, Rajasthan",
         "scope": "173 King Rooms, 52 Twin Rooms, 19 Suites, Spa & Fitness Centre, Executive Club, Boardrooms & Grand Ballrooms",
-        "image": "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.png"
+        "image": "assets/images/portfolio/taj_amer_jaipur_rajasthan/amer_1__2.jpg"
       },
       {
         "name": "HDFC Bank \u2013 Regional Offices",
@@ -1055,7 +1055,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Dainik Bhaskar",
         "location": "Bhopal, Madhya Pradesh & Noida, Uttar Pradesh",
         "scope": "1,00,000 sq.ft Media & News Corporate Headquarters",
-        "image": "assets/images/portfolio/dainik_baskar/1_(1).png"
+        "image": "assets/images/portfolio/dainik_baskar/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1085,19 +1085,19 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "PwC (PricewaterhouseCoopers)",
         "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
         "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
-        "image": "assets/images/portfolio/pwc/1_(1).png"
+        "image": "assets/images/portfolio/pwc/1_(1).jpg"
       },
       {
         "name": "Tecpro Systems Ltd",
         "location": "Kolkata, West Bengal",
         "scope": "1,00,000 sq.ft Engineering & Industrial Headquarters",
-        "image": "assets/images/portfolio/tecpro_systems_ltd/1_(1).png"
+        "image": "assets/images/portfolio/tecpro_systems_ltd/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1133,7 +1133,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Vivanta by Taj",
         "location": "Bhubaneswar, Odisha",
         "scope": "136 Guest Rooms, Specialty Restaurants, Grand Ballroom, Pre-Function & Public Areas",
-        "image": "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.png"
+        "image": "assets/images/portfolio/vivanta_bhubaneshwar_odisha/VIVANTA_1_4.jpg"
       },
       {
         "name": "HDFC Bank \u2013 Bhubaneswar",
@@ -1157,7 +1157,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1199,7 +1199,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1235,13 +1235,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Sheraton",
         "location": "Hyderabad, Telangana",
         "scope": "152 Keys, Grand Lobby & All Common Circulation Areas",
-        "image": "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.png"
+        "image": "assets/images/portfolio/sheraton_hyderabad_telangana/img_1__1.jpg"
       },
       {
         "name": "PwC (PricewaterhouseCoopers)",
         "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
         "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
-        "image": "assets/images/portfolio/pwc/1_(1).png"
+        "image": "assets/images/portfolio/pwc/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1271,13 +1271,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "UST Global",
         "location": "Kerala",
         "scope": "13,00,000 sq.ft Regional Headquarters Mega Campus",
-        "image": "assets/images/portfolio/ust_global/1_(1).png"
+        "image": "assets/images/portfolio/ust_global/1_(1).jpg"
       },
       {
         "name": "EY (Ernst & Young)",
         "location": "Kerala",
         "scope": "2,00,000 sq.ft Regional Headquarters",
-        "image": "assets/images/portfolio/ey/1_(1).png"
+        "image": "assets/images/portfolio/ey/1_(1).jpg"
       }
     ]
   },
@@ -1289,7 +1289,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Dainik Bhaskar",
         "location": "Bhopal, Madhya Pradesh & Noida, Uttar Pradesh",
         "scope": "1,00,000 sq.ft Media & News Corporate Headquarters",
-        "image": "assets/images/portfolio/dainik_baskar/1_(1).png"
+        "image": "assets/images/portfolio/dainik_baskar/1_(1).jpg"
       },
       {
         "name": "DB City Mall",
@@ -1319,13 +1319,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Radisson Hotel",
         "location": "Jamshedpur, Jharkhand",
         "scope": "Guest Rooms, Premium Suites, Owner's Suite, Presidential Suites, Ballroom, Pre-Function & All-Day Dining",
-        "image": "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.png"
+        "image": "assets/images/portfolio/radisson_jamhshedpur_jharkhand/1_3.jpg"
       },
       {
         "name": "Courtyard by Marriott",
         "location": "Ranchi, Jharkhand",
         "scope": "Grand Lobby, Reception, Deluxe Guest Rooms & Public Circulation Spaces",
-        "image": "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.png"
+        "image": "assets/images/portfolio/courtyard_by_marriot_ranchi_jharkhand/COURTYARD_1_3.jpg"
       },
       {
         "name": "Nucleus Mall",
@@ -1349,7 +1349,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       },
       {
         "name": "Amrita Hospitals (AIMS)",
@@ -1367,13 +1367,13 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       },
       {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
@@ -1385,7 +1385,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Vegas Mall",
         "location": "Delhi NCR",
         "scope": "6,00,000 sq.ft Destination Retail & Entertainment Mall",
-        "image": "assets/images/portfolio/vegas_mall/vegas.png"
+        "image": "assets/images/portfolio/vegas_mall/vegas.jpg"
       },
       {
         "name": "Amrita Hospitals (AIMS)",
@@ -1427,7 +1427,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       }
     ]
   },
@@ -1439,7 +1439,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "SeleQtions by Taj - Cidade de Goa",
         "location": "Goa",
         "scope": "All Public Areas, Restaurants, Grand Ballroom, Pre-Function, BOH Areas & General Manager's Office",
-        "image": "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__2.png"
+        "image": "assets/images/portfolio/taj_ciadade_de_goa/GOA_1__2.jpg"
       }
     ]
   },
@@ -1451,25 +1451,25 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Citi Bank",
         "location": "PAN India (Pune, Gurgaon, Bangalore, Delhi, Chandigarh, Mumbai)",
         "scope": "10,00,000 sq.ft Financial Corporate Spaces & Banking Headquarters",
-        "image": "assets/images/portfolio/citi_bank/1_(1).png"
+        "image": "assets/images/portfolio/citi_bank/1_(1).jpg"
       },
       {
         "name": "BNP Paribas",
         "location": "PAN India (Mumbai, Chennai, Kolkata, Delhi, Ahmedabad)",
         "scope": "15,00,000 sq.ft Global Financial Banking Headquarters",
-        "image": "assets/images/portfolio/bnp_paribas/1_(1).png"
+        "image": "assets/images/portfolio/bnp_paribas/1_(1).jpg"
       },
       {
         "name": "Deutsche Bank",
         "location": "PAN India (Mumbai, Pune)",
         "scope": "4,50,000 sq.ft Financial Corporate Offices & Trading Floors",
-        "image": "assets/images/portfolio/deutsche_bank/1_(1).png"
+        "image": "assets/images/portfolio/deutsche_bank/1_(1).jpg"
       },
       {
         "name": "PwC (PricewaterhouseCoopers)",
         "location": "PAN India (Hyderabad, Mumbai, Kolkata, Gujarat)",
         "scope": "10,00,000 sq.ft Professional Services Corporate Offices",
-        "image": "assets/images/portfolio/pwc/1_(1).png"
+        "image": "assets/images/portfolio/pwc/1_(1).jpg"
       },
       {
         "name": "Shoppers Stop",
