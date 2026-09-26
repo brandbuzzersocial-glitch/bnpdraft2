@@ -1534,7 +1534,7 @@ document.addEventListener('DOMContentLoaded', () => {
       stateInfo.projects.forEach(p => {
         const itemHtml = `
           <div class="map-project-item" style="opacity: 0; animation: tabFadeIn 0.4s ease forwards;">
-            <img src="${p.image}" alt="${p.name}" style="width: 70px; height: 70px; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.06);">
+            <img src="${p.image}" alt="${p.name}" loading="lazy" decoding="async" style="width: 70px; height: 70px; object-fit: cover; border-radius: var(--radius-sm); border: 1px solid rgba(0,0,0,0.06);">
             <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; gap: 4px;">
               <h4 style="font-size: 0.95rem; color: var(--color-secondary); font-weight: 600; margin: 0; line-height: 1.3;">${p.name}</h4>
               <p style="font-size: 0.8rem; color: var(--color-text); margin: 0; line-height: 1.3;">${p.location}</p>

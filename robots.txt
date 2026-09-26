@@ -1,4 +1,4 @@
-# Standard Robots.txt for BNP Interiors Backend / Public
+# Standard Robots.txt for BNP Interiors
 User-agent: *
 Allow: /
 

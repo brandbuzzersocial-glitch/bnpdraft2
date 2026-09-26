@@ -1,0 +1,16 @@
+# Wrangler / Cloudflare Pages Ignore File
+node_modules/
+backend/
+scratch/
+.gemini/
+.git/
+*.py
+*.pyc
+*.docx
+*.xlsx
+*.json
+!slider_images.json
+!projects_from_html.json
+!extracted_portfolio.json
+!extracted_portfolio_v2.json
+!map_centroids.json
