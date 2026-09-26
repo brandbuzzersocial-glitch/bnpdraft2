@@ -5591,6 +5591,20 @@ html, body {
   }
 }
 
+/* Responsive Brand Edit Button Placement */
+.mobile-brand-edit-wrapper {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .desktop-brand-edit-btn {
+    display: none !important;
+  }
+  .mobile-brand-edit-wrapper {
+    display: block !important;
+  }
+}
+
 
 
 
