@@ -1079,7 +1079,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "name": "Taj Ganga Kutir",
         "location": "Raichak, West Bengal",
         "scope": "All Public Areas, Specialty Restaurants, Presidential Suites, 150 Guest Rooms, 10 Luxury Villas & Lobbies",
-        "image": "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.webp"
+        "image": "assets/images/portfolio/taj_ganga_kutir_raichak_west_bengal/1_3.jpg"
       },
       {
         "name": "BNP Paribas",
